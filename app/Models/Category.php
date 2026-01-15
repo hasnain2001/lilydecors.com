@@ -37,5 +37,10 @@ protected $fillable = [
     {
         return $this->hasMany(Store::class, 'category_id');
     }
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class);
+    }
+
 
 }

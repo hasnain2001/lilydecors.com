@@ -45,6 +45,7 @@ class BlogController extends Controller
         $request->validate([
             'name'             => 'required|string|max:255',
             'slug'             => 'required|string|max:255|unique:blogs,slug',
+            'description'      => 'nullable',
             'title'            => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
             'meta_keyword'     => 'nullable|string|max:255',
@@ -62,6 +63,7 @@ class BlogController extends Controller
         $blog->store_id       = $request->store_id;
         $blog->name           = $request->name;
         $blog->slug           = $request->slug;
+        $blog->description    = $request->description;
         $blog->title          = $request->title;
         $blog->content        = $request->content;
         $blog->meta_keyword   = $request->meta_keyword;
@@ -119,6 +121,7 @@ class BlogController extends Controller
         $request->validate([
             'name'             => 'required|string|max:255',
             'slug'             => 'required|string|max:255|unique:blogs,slug,' . $blog->id,
+            'description'      => 'nullable|string',
             'title'            => 'required|string|max:255',
             'content'          => 'required|string',
             'image'            => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
@@ -157,6 +160,7 @@ class BlogController extends Controller
         $blog->store_id         = $request->store_id;
         $blog->name             = $request->name;
         $blog->slug             = $request->slug;
+        $blog->description      = $request->description;
         $blog->title            = $request->title;
         $blog->content          = $request->content;
         $blog->meta_keyword     = $request->meta_keyword;

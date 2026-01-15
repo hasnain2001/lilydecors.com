@@ -1,5 +1,120 @@
 @extends('employee.layouts.app')
 @section('title', 'Blog Management')
+@push('styles')
+<style>
+    .stats-card {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        margin-bottom: 1.5rem;
+    }
+
+    .stats-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .stats-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .stats-icon.primary { background: linear-gradient(135deg, #5b73e8, #4b60d2); }
+    .stats-icon.success { background: linear-gradient(135deg, #34c38f, #27a876); }
+    .stats-icon.warning { background: linear-gradient(135deg, #f1b44c, #e6a841); }
+    .stats-icon.info { background: linear-gradient(135deg, #50a5f1, #3d8fd6); }
+
+    .page-title-box {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .avatar-xs {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
+
+    .audit-info .avatar-title {
+        font-size: 0.7rem;
+    }
+
+    .table th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        color: #6c757d;
+    }
+
+    .blog-row:hover {
+        background-color: rgba(91, 115, 232, 0.02);
+        transform: translateY(-1px);
+        transition: all 0.2s ease;
+    }
+
+    .empty-state {
+        padding: 3rem 1rem;
+    }
+
+    .card {
+        border-radius: 1rem;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-1px);
+    }
+
+    .badge {
+        font-weight: 500;
+    }
+
+    .form-control, .form-select {
+        border-radius: 0.5rem;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(91, 115, 232, 0.1);
+    }
+
+    .input-group-text {
+        background-color: #f8f9fa;
+        border-color: #e9ecef;
+    }
+
+    .btn-group .btn {
+        border-radius: 0;
+    }
+
+    .btn-group .btn:first-child {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .btn-group .btn:last-child {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+</style>
+@endpush
 @section('content')
 <div class="row">
     <div class="col-12">
@@ -215,6 +330,12 @@
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </form>
+                                         <a href="{{ route('blog.details', $blog->slug) }}"
+                                           class="btn btn-outline-info btn-sm rounded-start-3 px-3"
+                                           data-bs-toggle="tooltip"
+                                           title="View Blog">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
@@ -319,118 +440,4 @@ function exportBlogs(format) {
 </script>
 @endpush
 
-@push('styles')
-<style>
-.stats-card {
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    margin-bottom: 1.5rem;
-}
 
-.stats-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
-}
-
-.stats-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.stats-icon.primary { background: linear-gradient(135deg, #5b73e8, #4b60d2); }
-.stats-icon.success { background: linear-gradient(135deg, #34c38f, #27a876); }
-.stats-icon.warning { background: linear-gradient(135deg, #f1b44c, #e6a841); }
-.stats-icon.info { background: linear-gradient(135deg, #50a5f1, #3d8fd6); }
-
-.page-title-box {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.avatar-xs {
-    width: 24px;
-    height: 24px;
-    font-size: 0.75rem;
-}
-
-.audit-info .avatar-title {
-    font-size: 0.7rem;
-}
-
-.table th {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    color: #6c757d;
-}
-
-.blog-row:hover {
-    background-color: rgba(91, 115, 232, 0.02);
-    transform: translateY(-1px);
-    transition: all 0.2s ease;
-}
-
-.empty-state {
-    padding: 3rem 1rem;
-}
-
-.card {
-    border-radius: 1rem;
-}
-
-.btn {
-    border-radius: 0.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-1px);
-}
-
-.badge {
-    font-weight: 500;
-}
-
-.form-control, .form-select {
-    border-radius: 0.5rem;
-    border: 2px solid #e9ecef;
-    transition: all 0.3s ease;
-}
-
-.form-control:focus, .form-select:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(91, 115, 232, 0.1);
-}
-
-.input-group-text {
-    background-color: #f8f9fa;
-    border-color: #e9ecef;
-}
-
-.btn-group .btn {
-    border-radius: 0;
-}
-
-.btn-group .btn:first-child {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
-
-.btn-group .btn:last-child {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-}
-</style>
-@endpush

@@ -32,7 +32,7 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#">Shop Our Favorites</a></li>
                     <li><a href="#">Design Services</a></li>
                     <li><a href="#">Room Makeovers</a></li>
@@ -45,12 +45,10 @@
             <div class="footer-column">
                 <h4>Categories</h4>
                 <ul>
-                    <li><a href="#">Living Room Ideas</a></li>
-                    <li><a href="#">Bedroom Design</a></li>
-                    <li><a href="#">Kitchen & Dining</a></li>
-                    <li><a href="#">Home Office</a></li>
-                    <li><a href="#">Outdoor Spaces</a></li>
-                    <li><a href="#">Small Space Solutions</a></li>
+                    @foreach ($categories as $category)
+                        <li><a href="{{ route('category.details', $category->slug) }}">{{ $category->name }}</a></li>
+                    @endforeach
+
                 </ul>
             </div>
 

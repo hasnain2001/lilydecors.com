@@ -46,6 +46,10 @@
                                         </div>
                                         <div id="slug-message" class="form-text"></div>
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label text-dark fw-bold">Short Description</label>
+                                        <textarea name="description" id="description" class="form-control" rows="2" placeholder="Brief description of the store" required>{{ old('description', $blog->description) }}</textarea>
+                                    </div>
                                </div>
                             </div>
 
@@ -136,17 +140,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="language_id" class="form-label">Language <span class="text-danger">*</span></label>
-                                        <select name="language_id" id="language_id" class="form-select" required>
-                                            <option value="" disabled>-- Select Language --</option>
-                                            @foreach ($languages as $language)
-                                                <option value="{{ $language->id }}" {{ old('language_id', $blog->language_id) == $language->id ? 'selected' : '' }}>
-                                                    {{ $language->name }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                    </div>
+                                
 
                                     <div class="mb-3">
                                         <label for="image" class="form-label">blog Logo</label>

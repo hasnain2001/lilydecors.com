@@ -36,6 +36,11 @@
                                     </button>
                                 </form>
                             </li>
+                            <li>
+                                <a class="dropdown-item text-primary" href="{{ route('store.details', $store->slug) }}" target="_blank">
+                                    <i class="fas fa-eye me-2"></i> View Store on Frontend
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -133,7 +138,7 @@
                                     <span class="text-muted">
                                         <i class="fas fa-network-wired me-2 text-primary"></i>Network
                                     </span>
-                                    <span class="fw-semibold">{{ $store->network->title ?? 'N/A' }}</span>
+                                    <span class="fw-semibold">{{ $store->network->name ?? 'N/A' }}</span>
                                 </div>
                             </div>
                             <div class="detail-item mb-3">

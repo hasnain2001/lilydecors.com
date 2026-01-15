@@ -132,7 +132,7 @@
             </a>
 
             <!-- Front View -->
-            <a href="{{ route('store.detail', $store->slug) }}"
+            <a href="{{ route('store.details', $store->slug) }}"
                class="btn btn-outline-info"
                target="_blank"
                data-bs-toggle="tooltip"

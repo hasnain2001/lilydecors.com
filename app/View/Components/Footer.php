@@ -6,9 +6,8 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\App;
-use App\Models\Language;
 use App\Models\Category;
-use App\Models\Store;
+
 
 
 class Footer extends Component
@@ -26,6 +25,8 @@ class Footer extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.footer');
+        $categories = Category::where('top_category', 1)->orderBy('name')->get();
+
+        return view('components.footer', compact('categories'));
     }
 }

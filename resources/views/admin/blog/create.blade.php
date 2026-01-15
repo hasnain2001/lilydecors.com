@@ -43,6 +43,10 @@
                                         </div>
                                         <div id="slug-message" class="form-text"></div>
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label text-dark fw-bold">Short Description</label>
+                                        <textarea name="description" id="description" class="form-control" rows="2" placeholder="Brief description of the store" required>{{ old('description') }}</textarea>
+                                    </div>
 
                                                                   </div>
                             </div>
@@ -135,7 +139,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="mb-3">
+                                    {{-- <div class="mb-3">
                                         <label for="language_id" class="form-label">Language <span class="text-danger">*</span></label>
                                         <select name="language_id" id="language_id" class="form-select" required>
                                             <option value="" disabled selected>-- Select Language --</option>
@@ -145,7 +149,7 @@
                                                 </option>
                                             @endforeach
                                         </select>
-                                    </div>
+                                    </div> --}}
 
 
                                     <div class="mb-3">
@@ -244,8 +248,8 @@
                 // Generate slug from name
                 const generatedSlug = name.toLowerCase()
                     .replace(/[^\w\s-]/g, '')  // Remove special chars
-                    .replace(/\s+/g, ' ')      // Replace spaces with -
-                    .replace(/--+/g, ' ');     // Replace multiple - with single -
+                    .replace(/\s+/g, '-')      // Replace spaces with -
+                    .replace(/--+/g, '-');     // Replace multiple - with single -
 
                 // Generate website URL (basic version)
                 const currentUrl = window.location.origin;

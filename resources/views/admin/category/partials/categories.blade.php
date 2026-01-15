@@ -47,7 +47,7 @@
                 <i class="fas fa-trash"></i>
             </button>
         </form>
-         <a href="{{ route('category.detail', ['slug' => $category->slug]) }}" class="btn btn-sm btn-primary" target="blank" title="view">
+         <a href="{{ route('category.details', ['slug' => $category->slug]) }}" class="btn btn-sm btn-primary" target="blank" title="view">
             <i class="fas fa-eye"></i>
         </a>
     </td>

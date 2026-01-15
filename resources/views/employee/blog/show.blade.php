@@ -118,7 +118,10 @@
     </div>
 </div>
 
-<style>
+
+@endsection
+@push('styles')
+    <style>
     .card-header.bg-gradient-primary {
         background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
     }
@@ -137,4 +140,4 @@
         overflow: hidden;
     }
 </style>
-@endsection
+@endpush

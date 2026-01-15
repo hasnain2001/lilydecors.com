@@ -265,7 +265,7 @@
             // Generate slug from name (keep spaces)
             const generatedSlug = name.toLowerCase()
                 .replace(/[^\w\s-]/g, '')  // Remove special chars (keep letters, numbers, spaces, and hyphens)
-                .replace(/\s+/g, ' ')      // Replace multiple spaces with single space
+                .replace(/\s+/g, '-')      // Replace multiple spaces with single space
                 .trim();                   // Trim whitespace from both ends
 
             // Generate website URL (replace spaces with hyphens)

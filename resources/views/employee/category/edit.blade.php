@@ -105,3 +105,36 @@
     </div>
 </div>
 @endsection
+@push('scripts')
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        console.log("jQuery version:", $.fn.jquery);
+
+        // Generate slug automatically when typing name
+        $('#name').on('input', function() {
+            const name = $(this).val();
+            generateSlug(name);
+        });
+
+        // Manual slug generation button
+        $('#slug-generator').click(function() {
+            generateSlug($('#name').val());
+        });
+
+        // Function to generate slug
+        function generateSlug(name) {
+            if (!name) return;
+
+            const slug = name.toLowerCase()
+                .replace(/[^\w\s-]/g, '')   // remove non-word characters
+                .replace(/[\s_-]+/g, '-')   // replace spaces/underscores with dash
+                .replace(/^-+|-+$/g, '');   // trim leading/trailing dashes
+
+            $('#slug').val(slug);
+        }
+    });
+</script>
+
+@endpush

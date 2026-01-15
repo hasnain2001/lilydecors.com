@@ -204,7 +204,7 @@
 <!-- end row-->
 @endsection
 
-@section('styles')
+@push('styles')
 <style>
     .card-header.bg-primary {
         color: white;
@@ -239,9 +239,9 @@
         height: auto;
     }
 </style>
-@endsection
+@endpush
 
-@section('scripts')
+@Push('scripts')
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const storeSelect = document.getElementById('store_id');
@@ -294,8 +294,8 @@
                 // Generate slug from name
                 const generatedSlug = name.toLowerCase()
                     .replace(/[^\w\s-]/g, '')  // Remove special chars
-                    .replace(/\s+/g, ' ')      // Replace spaces with -
-                    .replace(/--+/g, ' ');     // Replace multiple - with single -
+                    .replace(/\s+/g, '-')      // Replace spaces with -
+                    .replace(/--+/g, '-');     // Replace multiple - with single -
 
                 // Generate website URL (basic version)
                 const currentUrl = window.location.origin;

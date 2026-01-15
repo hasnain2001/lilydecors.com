@@ -9,11 +9,16 @@ class Blog extends Model
     protected $fillable = [
         'title',
         'slug',
+        'description',
         'content',
         'image',
         'status',
         'user_id',
         'updated_id',
+        'category_id',
+        'language_id',
+        'store_id',
+        'updated_at',
     ];
 
     protected $casts = [

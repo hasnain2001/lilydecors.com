@@ -215,7 +215,7 @@
                                         <a href="{{ route('admin.blog.show', $blog->id) }}"
                                            class="btn btn-outline-info btn-sm rounded-start-3 px-3"
                                            data-bs-toggle="tooltip"
-                                           title="View Blog">
+                                           title="View Blog in Admin">
                                             <i class="fas fa-eye"></i>
                                         </a>
                                         <a href="{{ route('admin.blog.edit', $blog->id) }}"
@@ -237,10 +237,10 @@
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </form>
-                                          <a href="{{ route('blog.detail', $blog->slug) }}"
+                                          <a href="{{ route('blog.details', $blog->slug) }}"
                                            class="btn btn-outline-info btn-sm rounded-start-3 px-3"
                                            data-bs-toggle="tooltip"
-                                           title="View Blog">
+                                           title="View Blog on Front-end" target="_blank">
                                             <i class="fas fa-eye"></i>
                                         </a>
                                     </div>

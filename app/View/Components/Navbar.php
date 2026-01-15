@@ -6,9 +6,8 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\App;
 use Illuminate\View\Component;
-use App\Models\Language;
 use App\Models\Category;
-use App\Models\Store;
+
 
 class Navbar extends Component
 {
@@ -26,6 +25,8 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navbar');
+        $categories = Category::where('top_category', 1)->orderBy('name')->get();
+
+        return view('components.navbar', compact('categories'));
     }
 }

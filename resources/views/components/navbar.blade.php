@@ -1,87 +1,73 @@
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="nav-container">
-            <!-- Logo -->
-            <a href="/" class="logo">
+
+<nav class="navbar-custom text-capitalize">
+    <div class="nav-container">
+        <!-- Logo -->
+      <a href="/" class="logo">
                 <i class="fas fa-spa logo-icon"></i>
                 <div class="logo-text">Lily<span>Decors</span></div>
             </a>
 
-            <!-- Desktop Navigation Menu -->
-            <ul class="nav-menu">
-                <li class="nav-item active">
-                    <a href="#" class="link-nav">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="link-nav">Ideas by Room <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#" class="link-nav">Living Room</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Bedroom & Bath</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Kitchen & Dining</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Home Office</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Outdoor Spaces</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="link-nav">Design Styles <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#" class="link-nav">Modern & Minimal</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Rustic & Farmhouse</a></li>
-                        <li class="dropdown-item dropdown">
-                            <a href="#" class="link-nav">Luxury & Elegant</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a href="#" class="link-nav">Classic Luxury</a></li>
-                                <li class="dropdown-item"><a href="#" class="link-nav">Modern Luxury</a></li>
-                                <li class="dropdown-item"><a href="#" class="link-nav">Global Elegance</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Bohemian & Eclectic</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="link-nav">Seasonal Guides</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="link-nav">Shop <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#" class="link-nav">Furniture Picks</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Lighting & Decor</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">Textiles & Rugs</a></li>
-                        <li class="dropdown-item"><a href="#" class="link-nav">DIY Supplies</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="link-nav">About</a>
-                </li>
-            </ul>
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu-custom" id="navMenuCustom">
+            <li class="nav-item-custom active">
+                <a href="{{ url('/') }}" class="nav-link-custom">Home</a>
+            </li>
+            <li class="nav-item-custom nav-dropdown">
+                <a href="#" class="nav-link-custom">Categories <i class="fas fa-chevron-down"></i></a>
+                <ul class="nav-dropdown-menu">
+                    @foreach ($categories as $category)
+                        <li class="nav-dropdown-item"><a href="{{ route('category.details', $category->slug) }}" class="nav-link-custom">{{ $category->name }}</a></li>
+                    @endforeach
+                </ul>
+            </li>
+            <li class="nav-item-custom nav-dropdown">
+                <a href="{{ route('store') }}" class="nav-link-custom">Stores <i class="fas fa-chevron-down"></i></a>
+                <ul class="nav-dropdown-menu">
+                    <li class="nav-dropdown-item"><a href="{{ route('store') }}" class="nav-link-custom">Top Rated Stores</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('store') }}" class="nav-link-custom">New Stores</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('deals') }}" class="nav-link-custom">Today's Deals</a></li>
 
-            <!-- Desktop Action Buttons -->
-            <div class="nav-actions">
-                <button class="search-btn" id="searchToggle">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="subscribe-btn">Subscribe</button>
-                <button class="mobile-toggle" id="mobileToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+                    <li class="nav-dropdown-item"><a href="#" class="nav-link-custom">Expiring Soon</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item-custom nav-dropdown">
+                <a href="#" class="nav-link-custom">Resources <i class="fas fa-chevron-down"></i></a>
+                <ul class="nav-dropdown-menu">
+                    <li class="nav-dropdown-item"><a href="{{ route('faq') }}" class="nav-link-custom">How to Save</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('blog') }}" class="nav-link-custom">Blog & Tips</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('faq') }}" class="nav-link-custom">FAQ</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-custom">
+                <a href="{{ route('blog') }}" class="nav-link-custom">All Posts</a>
+            </li>
+            <li class="nav-item-custom">
+                <a href="{{ route('about') }}" class="nav-link-custom">About</a>
+            </li>
+        </ul>
+
+        <!-- Desktop Action Buttons -->
+        <div class="nav-actions">
+            <button class="nav-search-btn" id="navSearchToggle">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="nav-subscribe-btn">Subscribe</button>
+            <button class="nav-mobile-toggle" id="navMobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+    </div>
 
-        <!-- Desktop Search Bar -->
-        <div class="search-container" id="searchContainer">
-            <div class="search-box">
-                <input type="text" placeholder="Search for inspiration, guides, or products...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
+    <!-- Desktop Search Bar -->
+    <div class="nav-search-container" id="navSearchContainer">
+        <div class="nav-search-box">
+            <input type="text" placeholder="Search for coupons, stores, or categories...">
+            <button><i class="fas fa-search"></i></button>
         </div>
+    </div>
+</nav>
 
-    </header>
-
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-  <!-- Back to Top Button -->
-        <a href="#" class="back-to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+<!-- Mobile Overlay -->
+<div class="nav-mobile-overlay" id="navMobileOverlay"></div>
