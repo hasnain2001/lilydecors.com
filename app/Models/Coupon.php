@@ -17,6 +17,10 @@ class Coupon extends Model
         'status',
         'langauge_id'
     ];
+    protected $casts = [
+        'ending_date' => 'date',
+        'status' => 'boolean'
+    ];
 
     public function stores()
     {

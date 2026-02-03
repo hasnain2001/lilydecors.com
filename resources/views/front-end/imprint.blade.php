@@ -38,7 +38,7 @@
                         </div>
                         <h3 class="info-title">Company Details</h3>
                         <div class="info-content">
-                            <p class="mb-2"><strong>Streamcoupon Ltd.</strong></p>
+                            <p class="mb-2"><strong>Lilydecors Ltd.</strong></p>
                             <p class="mb-0">Your trusted partner for deals and coupons</p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             <div class="contact-highlight">
                                 <p class="mb-2">
                                     <strong>Email:</strong>
-                                    <a href="mailto:contact@streamcoupon.com">contact@streamcoupon.com</a>
+                                    <a href="mailto:contact@Lilydecors.com">contact@Lilydecors.com</a>
                                 </p>
                                 <p class="mb-0">
                                     <strong>Phone:</strong>
@@ -122,8 +122,8 @@
                         </div>
                         <h3 class="info-title">External Links Disclaimer</h3>
                         <div class="info-content">
-                            <p class="mb-3">Through this website you are able to link to other websites which are not under the control of Streamcoupon Ltd. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
-                            <p class="mb-0">Every effort is made to keep the website up and running smoothly. However, Streamcoupon Ltd. takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+                            <p class="mb-3">Through this website you are able to link to other websites which are not under the control of Lilydecors Ltd. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+                            <p class="mb-0">Every effort is made to keep the website up and running smoothly. However, Lilydecors Ltd. takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
                         </div>
                     </div>
 
@@ -134,8 +134,8 @@
                         </div>
                         <h3 class="info-title">Copyright Notice</h3>
                         <div class="info-content">
-                            <p class="mb-3">© {{ date('Y') }} Streamcoupon Ltd. All rights reserved.</p>
-                            <p class="mb-0">All content, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Streamcoupon Ltd. or its content suppliers and protected by international copyright laws.</p>
+                            <p class="mb-3">© {{ date('Y') }} Lilydecors Ltd. All rights reserved.</p>
+                            <p class="mb-0">All content, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Lilydecors Ltd. or its content suppliers and protected by international copyright laws.</p>
                         </div>
                     </div>
 

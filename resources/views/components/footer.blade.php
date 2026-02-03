@@ -1,7 +1,7 @@
 
 `
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer text-capitalize">
         <div class="footer-container">
             <!-- Brand Section -->
             <div class="footer-brand">
@@ -14,8 +14,8 @@
 
                 <div class="socials">
                     <a href="https://www.pinterest.com/lilydecorsofficial/" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lilydecors58/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61586886530136" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
 
                 <div class="newsletter">
@@ -33,11 +33,11 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#">Shop Our Favorites</a></li>
-                    <li><a href="#">Design Services</a></li>
-                    <li><a href="#">Room Makeovers</a></li>
-                    <li><a href="#">Before & After</a></li>
-                    <li><a href="#">Free Design Guides</a></li>
+                    <li><a href="/">Shop Our Favorites</a></li>
+                    <li><a href="/">Design Services</a></li>
+                    <li><a href="/">Room Makeovers</a></li>
+                    <li><a href="/">Before & After</a></li>
+                    <li><a href="/">Free Design Guides</a></li>
                 </ul>
             </div>
 
@@ -56,12 +56,12 @@
             <div class="footer-column">
                 <h4>About & Help</h4>
                 <ul>
-                    <li><a href="#">About LilyDecors</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Affiliate Disclosure</a></li>
+                    <li><a href="{{ route('about')}}">About LilyDecors</a></li>
+                    <li><a href="{{ route('contact')}}">Contact Us</a></li>
+                    <li><a href="{{ route('faq')}}">FAQ</a></li>
+                    <li><a href="{{ route('privacy-policy')}}">Privacy Policy</a></li>
+                    <li><a href="{{ route('terms-and-conditions')}}">Terms of Service</a></li>
+                    <li><a href="{{ route('affiliate-disclosure')}}">Affiliate Disclosure</a></li>
                 </ul>
             </div>
         </div>
@@ -72,9 +72,9 @@
                 © {{ date('Y') }}  {{ config('app.name') }} – All Rights Reserved | Interior Design Blog & Inspiration
             </div>
             <div class="footer-links">
-                <a href="#">Sitemap</a>
-                <a href="#">Accessibility</a>
-                <a href="#">Cookie Policy</a>
+                <a href="/">Sitemap</a>
+                <a href="/">Accessibility</a>
+                <a href="/">Cookie Policy</a>
             </div>
         </div>
 

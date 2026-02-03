@@ -221,7 +221,7 @@
 </div>
 
 <!-- Contact Form Section -->
-<div class="container py-4">
+<div class="container py-4 text-capitalize">
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <!-- Success Message -->
@@ -313,25 +313,30 @@
                         <div class="card-body text-center">
                             <i class="fas fa-map-marker-alt mb-3" style="font-size: 2.5rem;"></i>
                             <h5 class="card-title">@lang('contact.Our Location')</h5>
-                            <p class="card-text text-muted">123 Main Street<br>City, Country 12345</p>
+                            <p class="card-text text-muted">3000 Hoffman Drive<br>Plano, united states of america<br>75025</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 mb-md-0">
+                {{-- <div class="col-md-4 mb-4 mb-md-0">
                     <div class="card info-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <i class="fas fa-phone-alt mb-3" style="font-size: 2.5rem;"></i>
                             <h5 class="card-title">@lang('contact.Call Us')</h5>
-                            {{-- <p class="card-text text-muted">+1 (123) 456-7890<br>+1 (098) 765-4321</p> --}}
+                            <p class="card-text text-muted">+1 (123) 456-7890<br>+1 (098) 765-4321</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-md-4">
                     <div class="card info-card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope mb-3" style="font-size: 2.5rem;"></i>
                             <h5 class="card-title">@lang('contact.email us')</h5>
-                            <p class="card-text text-muted">contact@Streamcoupon.com<br>support@Streamcoupon.com</p>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-envelope-open-text"></i>
+                                contact@Lilydecors.com<br>
+                                <i class="fas fa-envelope-open-text"></i>
+                                support@Lilydecors.com
+                            </p>
                         </div>
                     </div>
                 </div>

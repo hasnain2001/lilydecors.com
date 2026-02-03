@@ -76,8 +76,8 @@
                         <div class="category-header">
                             <!-- Category Image -->
                             <div class="category-img-container">
-                                @if ($category->image && file_exists(public_path('storage/categories/' . $category->image)))
-                                    <img src="{{ asset('storage/categories/' . $category->image) }}"
+                                @if ($category->image && file_exists(public_path('uploads/categories/' . $category->image)))
+                                    <img src="{{ asset('uploads/categories/' . $category->image) }}"
                                          class="category-img"
                                          alt="{{ $category->name }} - Category Image"
                                          itemprop="image"
@@ -101,10 +101,14 @@
                                     <i class="fas fa-store"></i>
                                     <span>{{ $category->stores()->count()?? 0 }} @lang('nav.stores')</span>
                                 </div>
+                                <div class="blog-count">
+                                    <i class="fas fa-blog"></i>
+                                    <span>{{ $category->blogs()->count()?? 0 }} @lang('nav.blogs')</span>
+                                </div>
 
-                                <meta itemprop="url" content="{{ route('category.detail', ['slug' => Str::slug($category->slug)]) }}">
+                                <meta itemprop="url" content="{{ route('category.details', ['slug' => Str::slug($category->slug)]) }}">
 
-                                <a href="{{ route('category.detail', ['slug' => Str::slug($category->slug)]) }}"
+                                <a href="{{ route('category.details', ['slug' => Str::slug($category->slug)]) }}"
                                    class="view-more-btn"
                                    aria-label="Explore {{ $category->name }} category"
                                    itemprop="url">

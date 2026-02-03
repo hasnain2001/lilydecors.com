@@ -21,8 +21,8 @@ header("X-Robots-Tag:index, follow");
     <meta name="google" content="notranslate">
 
     <!-- Author / Publisher -->
-    <meta name="author" content="streamcoupon">
-    <meta name="publisher" content="streamcoupon">
+    <meta name="author" content="lilydecors">
+    <meta name="publisher" content="lilydecors">
 
     <!-- Canonical URL (Correct Placement) -->
     <link rel="canonical" href="{{ url()->current() }}">
@@ -52,6 +52,8 @@ header("X-Robots-Tag:index, follow");
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+   
+
 
 
     @stack('styles')
@@ -79,7 +81,7 @@ header("X-Robots-Tag:index, follow");
     <script src="{{ asset('assets/js/navbar.js') }}"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+
 </body>
 </html>

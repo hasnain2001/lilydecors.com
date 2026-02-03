@@ -47,7 +47,7 @@
             <div class="breadcrumb-wrapper">
                 <nav class="breadcrumb-nav" aria-label="breadcrumb">
                     <div class="breadcrumb-container">
-                        <a href="{{ url(app()->getLocale() . '/') }}" class="breadcrumb-item">
+                        <a href="/" class="breadcrumb-item">
                             <span class="breadcrumb-icon">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -66,7 +66,7 @@
                         <!-- Category Link -->
                         <div class="breadcrumb-item">
                             @if(!empty($store->category))
-                                <a href="{{ route('category.detail', ['slug' => Str::slug($store->category->slug)]) }}" class="breadcrumb-link">
+                                <a href="{{ route('category.details', ['slug' => Str::slug($store->category->slug)]) }}" class="breadcrumb-link">
                                     <span class="breadcrumb-icon">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
@@ -86,7 +86,7 @@
                         </span>
 
                         <!-- Stores Link -->
-                        <a href="{{ route('stores',['lang' => app()->getLocale()]) }}" class="breadcrumb-item">
+                        <a href="{{ route('store') }}" class="breadcrumb-item">
                             <span class="breadcrumb-icon">
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
@@ -228,7 +228,7 @@
                             </div>
                             <h3 class="empty-title mb-3">@lang('message.Oops! No Coupons Available')</h3>
                             <p class="empty-text text-muted mb-4">@lang('message.Dont worry, you can still explore amazing deals from our partnered brands.')</p>
-                            <a href="{{ route('stores') }}" class="btn btn-golden btn-lg px-4 rounded-pill">
+                            <a href="{{ route('store') }}" class="btn btn-golden btn-lg px-4 rounded-pill">
                                 @lang('message.Explore Brands')<i class="fas fa-arrow-right ms-2"></i>
                             </a>
                         </div>
@@ -344,7 +344,7 @@
                                         <div class="blog-content small">
                                             {!! Str::limit(strip_tags($blog->content), 150) !!}
                                         </div>
-                                        <a href="{{ route('blog.detail', ['slug' => Str::slug($blog->slug)]) }}" class="btn btn-link text-primary p-0 mt-2 small">
+                                        <a href="{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}" class="btn btn-link text-primary p-0 mt-2 small">
                                             Read More <i class="fas fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
@@ -470,7 +470,7 @@
                             <div class="card-body">
                                 <div class="related-stores-list">
                                     @foreach ($relatedStores as $relatedStore)
-                                    <a href="{{ route('store.detail', ['slug' => Str::slug($relatedStore->slug)]) }}"
+                                    <a href="{{ route('store.details', ['slug' => Str::slug($relatedStore->slug)]) }}"
                                        class="related-store-item d-flex align-items-center text-decoration-none text-dark mb-3">
                                         <img src="{{ asset('uploads/stores/' . $relatedStore->image) }}"
                                             class="related-store-image me-3"

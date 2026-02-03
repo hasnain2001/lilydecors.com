@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 @section('title', 'Create blog')
 @section('content')
-<div class="row">
+<div class="row text-capitalize">
     <div class="col-12">
         <div class="card">
             <div class="card-header bg-primary text-white">
@@ -57,18 +57,18 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="mb-3">
-                                        <label for="title" class="form-label">Meta Title <span class="text-danger">*</span></label>
+                                        <label for="title" class="form-label fw-bold">Meta Title <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}" placeholder="Meta title for SEO">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="meta_keyword" class="form-label">Meta Keywords <span class="text-danger">*</span></label>
+                                        <label for="meta_keyword" class="form-label fw-bold">Meta Keywords <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="meta_keyword" id="meta_keyword" value="{{ old('meta_keyword') }}" placeholder="keyword1, keyword2, keyword3">
                                         <div class="form-text">Separate keywords with commas</div>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="meta_description" class="form-label">Meta Description</label>
+                                        <label for="meta_description" class="form-label fw-bold">Meta Description</label>
                                         <textarea name="meta_description" id="meta_description" class="form-control" rows="2" placeholder="Meta description for SEO">{{ old('meta_description') }}</textarea>
                                     </div>
                                 </div>
@@ -139,19 +139,6 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    {{-- <div class="mb-3">
-                                        <label for="language_id" class="form-label">Language <span class="text-danger">*</span></label>
-                                        <select name="language_id" id="language_id" class="form-select" required>
-                                            <option value="" disabled selected>-- Select Language --</option>
-                                            @foreach ($languages as $language)
-                                                <option value="{{ $language->id }}" {{ old('language_id') == $language->id ? 'selected' : '' }}>
-                                                    {{ $language->name }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                    </div> --}}
-
-
                                     <div class="mb-3">
                                         <label for="image" class="form-label">blog Logo <span class="text-danger">*</span></label>
                                         <input type="file" class="form-control" name="image" id="image" accept="image/*" required>

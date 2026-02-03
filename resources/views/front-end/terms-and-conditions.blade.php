@@ -82,7 +82,7 @@
                                     <li>Ensuring that your use of our Services does not violate any third-party rights</li>
                                 </ul>
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> You agree to notify us immediately of any unauthorized access to or use of your account at <strong>security@Streamcoupon.com</strong>.</p>
+                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> You agree to notify us immediately of any unauthorized access to or use of your account at <strong>support@lilydecors.com</strong>.</p>
                                 </div>
                             </div>
                         </section>
@@ -223,7 +223,7 @@
                                 <h3 class="section-title">7. Governing Law & Jurisdiction</h3>
                             </div>
                             <div class="section-content">
-                                <p>These Terms shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+                                <p>These Terms shall be governed by and construed in accordance with the laws of united states of america, without regard to its conflict of law provisions.</p>
 
                                 <div class="info-card">
                                     <div class="d-flex">
@@ -270,7 +270,7 @@
                                 <p>For questions, concerns, or notices about these Terms and Conditions, please contact us through any of the following methods:</p>
 
                                 <div class="contact-buttons">
-                                    <a href="mailto:contact@Streamcoupon.com" class="contact-btn">
+                                    <a href="mailto:contact@lilydecors.com" class="contact-btn">
                                         <i class="fas fa-envelope me-2"></i>Email Legal Team
                                     </a>
                                     <a href="{{ url('contact') }}" class="contact-btn">

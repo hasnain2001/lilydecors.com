@@ -87,8 +87,12 @@
             <div class="dropdown">
                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
                     <div class="user-avatar me-2">
-                        <img src="https://ui-avatars.com/api/?name={{ urlencode(Auth::user()->name) }}&background=5b73e8&color=ffffff"
-                             alt="{{ Auth::user()->name }}" class="rounded-circle">
+                        @if (Auth::user()->avatar)
+                            <img src="{{ asset('uploads/avatar/' . Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}" class="rounded-circle">
+                        @else
+                            <img src="https://ui-avatars.com/api/?name={{ urlencode(Auth::user()->name) }}&background=5b73e8&color=ffffff"
+                                 alt="{{ Auth::user()->name }}" class="rounded-circle">
+                        @endif
                     </div>
                     <div class="user-info d-none d-md-block">
                         <div class="user-name">{{ Auth::user()->name }}</div>

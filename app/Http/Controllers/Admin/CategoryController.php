@@ -7,15 +7,52 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use App\Models\User;
+
 
 class CategoryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $categories = Category::with('user','updatedBy')->get();
-        return view('admin.category.index', compact('categories'));
-    }
+        // Users that have categories
+        $users = User::whereHas('categories')->get();
 
+        $selectedUser = $request->input('user_id');
+
+        $query = Category::select(
+                'id',
+                'slug',
+                'name',
+                'user_id',
+                'image',
+                'created_at',
+                'status',
+                'updated_id',
+                'updated_at',
+            )
+            ->with('user', 'updatedBy',)
+            ->when($selectedUser, function ($query) use ($selectedUser) {
+                $query->where('user_id', $selectedUser);
+            })
+            ->orderBy('created_at', 'desc');
+
+        // AJAX request
+        if ($request->ajax()) {
+            $categories = $query->limit(200)->get();
+
+            return response()->json([
+                'html' => view('admin.category.partials.categories', compact('categories'))->render()
+            ]);
+        }
+
+        $categories = $query->get();
+
+        return view('admin.category.index', compact(
+            'categories',
+            'users',
+            'selectedUser'
+        ));
+    }
     public function create()
     {
         return view('admin.category.create');

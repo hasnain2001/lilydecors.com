@@ -20,6 +20,14 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item">
+                    <a href="{{ route('category.details', ['slug' => $blog->category->slug])}}" class="text-decoration-none">
+                        <i class="fas fa-folder-open me-1"></i>
+                        {{ $blog->category->name }}
+                        <i class="fas fa-angle-right ms-1"></i>
+                    </a>
+                </li>
+              
+                <li class="breadcrumb-item">
                     <a href="{{ route('blog', ['lang' => app()->getLocale()]) }}" class="text-decoration-none">
                         <i class="fas fa-blog me-1"></i> @lang('nav.blogs')
                     </a>
@@ -59,7 +67,7 @@
                                 {{ $blog->user->name ?? 'Unknown' }}
                             </span>
                         </div>
-                        <p class="blog-description">{{ $blog->description }}</p>
+                        {{-- <p class="blog-description">{{ $blog->description }}</p> --}}
 
                         <div class="blog-body">
                             {!! $blog->content !!}

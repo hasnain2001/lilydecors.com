@@ -5,13 +5,18 @@ require __DIR__.'/employee.php';
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\CouponController;
+use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
+
 
     Route::get('/about', function () {return view('front-end.about');})->name('about');
     Route::get('/contact', function () {return view('front-end.contact');})->name('contact');
     Route::get('/privacy-policy', function () {return view('front-end.privacy-policy');})->name('privacy-policy');
     Route::get('/terms-and-conditions', function () {return view('front-end.terms-and-conditions');})->name('terms-and-conditions');
     Route::get('/faq', function () {return view('front-end.faq');})->name('faq');
+    Route::get('/affiliate-disclosure', function () {return view('front-end.affiliate-disclosure');})->name('affiliate-disclosure');
 
     Route::middleware(['auth','role:user'])->group(function () {
     Route::get('/dashboard', function () { return view('dashboard');})->name('dashboard');
@@ -32,10 +37,26 @@ use Illuminate\Support\Facades\Route;
     Route::get('/store/{slug}', 'StoreDetails')->name('store.details');
     Route::get('/coupon', 'coupon')->name('coupon');
     Route::get('/coupon/{slug}', 'couponDetails')->name('coupon.details');
-    Route::get('/deals', 'deals')->name('deals');
-    Route::get('/search', 'search')->name('search');
+  
+    Route::get('/top-store', 'topstore')->name('top-store');
+    Route::get('/new-store', 'newstore')->name('new-store');
+    Route::get('/today-deals', 'todaydeals')->name('today-deals');
+    Route::get('/expring-soon', 'expringsoon')->name('expring-soon');
+     Route::get('/contact/store', 'contactStore')->name('contact.store');
+
     });
 
+    Route::controller(SearchController::class)->group(function () {
+        Route::get('/search', 'search')->name('search');
+        Route::get('/search-results', 'searchResults')->name('search_results');
+     });
 
 
-
+ Route::controller(CouponController::class)->group(function () {
+        Route::post('/update-clicks', 'updateClicks')->name('update.clicks');
+        Route::get('/clicks/{couponId}',  'openCoupon')->name('open.coupon');
+     });
+     Route::controller(SitemapController::class)->group(function () {
+        Route::get('/sitemap.xml', 'index')->name('sitemap');
+        Route::get('/generate-sitemap', 'generate')->name('generate.sitemap');
+     });

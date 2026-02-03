@@ -300,6 +300,25 @@
     .store-count i {
         font-size: 1.2rem;
     }
+        .blog-count {
+        background: var(--secondary-dark);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        animation: fadeInUp 0.8s ease-out 0.7s both;
+        opacity: 0;
+        box-shadow: var(--secondary-glow);
+    }
+
+    .blog-count i {
+        font-size: 1.2rem;
+    }
 
     /* Blog Section */
     .blog-section {

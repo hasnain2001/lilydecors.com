@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Coupon;
 use App\Models\Slider;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -30,8 +31,8 @@ class HomeController extends Controller
             ->latest()
             ->take(6)
             ->get();
-        $blogs = Blog::latest()->take(6)->get();
-        $categories = Category::latest()->take(6)->get();
+        $blogs = Blog::all(); 
+        $categories = Category::where('top_category', 1)->orderBy('name')->get();
 
         return view('welcome', compact('roomBlogs', 'fashionBlogs', 'blogs', 'categories'));
     }
@@ -169,44 +170,53 @@ class HomeController extends Controller
                 ->take(5)
                 ->get();
                 
-        $relatedstores = Store::where('category_id', $blog->category_id)->get();
+        $relatedstores = Store::where('id', $blog->store_id)->get();
 
         return view('front-end.blog_detail', compact('blog', 'relatedBlogs','relatedstores'));
     }
 
-    public function coupons()
+
+
+    public function expringsoon()
     {
-        $coupons = Coupon::orderBy('created_at', 'desc')
-            ->whereNotNull('code')
+        $coupons = Coupon::whereNotNull('code')
             ->where('status', 1)
+            ->whereBetween('ending_date', [
+                Carbon::now(),
+                Carbon::now()->addDays(10)
+            ])
+            ->orderBy('ending_date', 'asc')
             ->paginate(10);
 
         return view('front-end.coupon', compact('coupons'));
     }
 
-    public function deal()
+
+    public function todaydeals()
     {
         $coupons = Coupon::orderBy('created_at', 'desc')
             ->whereNull('code')
             ->paginate(10);
+        $categories = Category::where('top_category', 1)->orderBy('name')->get();
 
-        return view('front-end.deal', compact('coupons'));
+        return view('front-end.today-deals', compact('coupons', 'categories'));
     }
-
-    public function coupon_detail($slug)
+    public function topstore()
     {
-        $coupon = Coupon::where('slug', $slug)->first();
-        
-        if (!$coupon) {
-            abort(404, 'Coupon not found');
-        }
-        
-        $relatedcoupon = Blog::where('store_id', $coupon->store_id)
-            ->where('id', '!=', $coupon->id)
-            ->orderBy('created_at', 'desc')
-            ->take(5)
-            ->get();
-            
-        return view('front-end.coupon_detail', compact('coupon', 'relatedcoupon'));
+        $stores = Store::withCount('coupons')
+                        ->where('top_store', 1)
+                        ->orderBy('created_at','desc')
+                        ->paginate(40);
+
+        return view('front-end.top-stores', compact('stores'));
     }
+    public function newstore()
+    {
+        $stores = Store::withCount('coupons')
+                        ->orderBy('created_at','desc')
+                        ->paginate(40);
+
+        return view('front-end.new-stores', compact('stores'));
+    }
+
 }

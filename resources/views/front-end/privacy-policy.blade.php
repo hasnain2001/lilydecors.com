@@ -182,7 +182,7 @@
                             <div class="section-content">
                                 <p>We're committed to being transparent about our privacy practices. If you have questions or concerns:</p>
                                 <ul>
-                                    <li><strong>Email:</strong> <a href="mailto:contact@Streamcoupon.com" class="contact-email">contact@Streamcoupon.com</a></li>
+                                    <li><strong>Email:</strong> <a href="mailto:contact@lilydecors.com" class="contact-email">contact@lilydecors.com</a></li>
                                     <li><strong>Data Protection Officer:</strong> John Smith</li>
                                     <li><strong>Mail:</strong> 123 Privacy Lane, Data City, DC 12345</li>
                                     <li><strong>Response Time:</strong> We aim to respond within 48 hours</li>

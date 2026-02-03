@@ -31,6 +31,8 @@ use App\Http\Controllers\Admin\SliderController;
 
     Route::resource('/blog', BlogController::class)->names('admin.blog');
     Route::delete('/blog/deleteSelected', [BlogController::class, 'deleteSelected'])->name('admin.blog.deleteSelected');
+    Route::post('blog/update-order',[BlogController::class,'updateOrder'])->name('admin.blog.update-order');
+    Route::post('blog/check-slug',[BlogController::class,'checkSlug'])->name('admin.blog.check-slug');
 
     Route::controller(SearchController::class)->name('admin.')->group(function () {
     Route::get('/search/store', 'searchStores')->name('search.store');

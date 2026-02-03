@@ -36,7 +36,7 @@
 @endpush
 
 @section('content')
-    <div class="container py-4">
+    <div class="container py-4 text-capitalize">
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="breadcrumb">
             <ol class="breadcrumb">
@@ -72,13 +72,43 @@
         </div>
 
         <!-- Store Count -->
+        <div class="blog-count">
+            <i class="fas fa-tags"></i>
+            Total Blogs<strong>{{ $relatedblogs->count() }}</strong>
+        </div>
         <div class="store-count">
             <i class="fas fa-tags"></i>
             @lang('message.total store') <strong>{{ $stores->count() }}</strong>
         </div>
-
+        
+        <!-- Blog Section -->
+        @if($relatedblogs->count() > 0)
+            <section class="blog-section">
+                <h2 class="section-title">@lang('message.Shopping Hacks & Savings Tips & Tricks')</h2>
+                <div class="blog-grid">
+                    @foreach ($relatedblogs as $blog)
+                        <article class="blog-card">
+                            <a href="{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}">
+                                <img src="{{ asset('uploads/blogs/' . $blog->image) }}" 
+                                     class="blog-img" 
+                                     alt="{{ $blog->title }}"
+                                     loading="lazy">
+                            </a>
+                            <div class="blog-content">
+                                <h5 class="blog-title">{{ $blog->title }}</h5>
+                                <button class="read-more-btn" onclick="window.location.href='{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}'">
+                                    @lang('welcome.Read More')
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </article>
+                    @endforeach
+                </div>
+            </section>
+        @endif
         <!-- Stores Grid -->
         <section>
+         @if($stores->count() > 0)
             <div class="stores-grid">
                 @forelse ($stores as $store)
                     <a href="{{ route('store.details', ['slug' => Str::slug($store->slug)]) }}" class="text-decoration-none">
@@ -108,33 +138,10 @@
                     </div>
                 @endforelse
             </div>
+        @endif
         </section>
 
-        <!-- Blog Section -->
-        @if($relatedblogs->count() > 0)
-            <section class="blog-section">
-                <h2 class="section-title">@lang('message.Shopping Hacks & Savings Tips & Tricks')</h2>
-                <div class="blog-grid">
-                    @foreach ($relatedblogs as $blog)
-                        <article class="blog-card">
-                            <a href="{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}">
-                                <img src="{{ asset('uploads/blogs/' . $blog->image) }}" 
-                                     class="blog-img" 
-                                     alt="{{ $blog->title }}"
-                                     loading="lazy">
-                            </a>
-                            <div class="blog-content">
-                                <h5 class="blog-title">{{ $blog->title }}</h5>
-                                <button class="read-more-btn" onclick="window.location.href='{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}'">
-                                    @lang('welcome.Read More')
-                                    <i class="fas fa-arrow-right ms-2"></i>
-                                </button>
-                            </div>
-                        </article>
-                    @endforeach
-                </div>
-            </section>
-        @endif
+
     </div>
 @endsection
 

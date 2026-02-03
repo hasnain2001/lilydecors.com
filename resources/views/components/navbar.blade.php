@@ -14,7 +14,7 @@
                 <a href="{{ url('/') }}" class="nav-link-custom">Home</a>
             </li>
             <li class="nav-item-custom nav-dropdown">
-                <a href="#" class="nav-link-custom">Categories <i class="fas fa-chevron-down"></i></a>
+                <a href="{{ route('category') }}" class="nav-link-custom">Categories <i class="fas fa-chevron-down"></i></a>
                 <ul class="nav-dropdown-menu">
                     @foreach ($categories as $category)
                         <li class="nav-dropdown-item"><a href="{{ route('category.details', $category->slug) }}" class="nav-link-custom">{{ $category->name }}</a></li>
@@ -24,11 +24,11 @@
             <li class="nav-item-custom nav-dropdown">
                 <a href="{{ route('store') }}" class="nav-link-custom">Stores <i class="fas fa-chevron-down"></i></a>
                 <ul class="nav-dropdown-menu">
-                    <li class="nav-dropdown-item"><a href="{{ route('store') }}" class="nav-link-custom">Top Rated Stores</a></li>
-                    <li class="nav-dropdown-item"><a href="{{ route('store') }}" class="nav-link-custom">New Stores</a></li>
-                    <li class="nav-dropdown-item"><a href="{{ route('deals') }}" class="nav-link-custom">Today's Deals</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('top-store') }}" class="nav-link-custom">Top Rated Stores</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('new-store') }}" class="nav-link-custom">New Stores</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('today-deals') }}" class="nav-link-custom">Today's Deals</a></li>
 
-                    <li class="nav-dropdown-item"><a href="#" class="nav-link-custom">Expiring Soon</a></li>
+                    <li class="nav-dropdown-item"><a href="{{ route('expring-soon') }}" class="nav-link-custom">Expiring Soon</a></li>
                 </ul>
             </li>
 
@@ -62,12 +62,30 @@
 
     <!-- Desktop Search Bar -->
     <div class="nav-search-container" id="navSearchContainer">
+         <form action="{{ route('search') }}" method="GET">
         <div class="nav-search-box">
-            <input type="text" placeholder="Search for coupons, stores, or categories...">
+               <input type="text" placeholder="Search for Blog posts, stores, or categories..." name="query" required>
             <button><i class="fas fa-search"></i></button>
         </div>
+         </form>
     </div>
 </nav>
 
 <!-- Mobile Overlay -->
 <div class="nav-mobile-overlay" id="navMobileOverlay"></div>
+<!-- Loader HTML -->
+<div class="loader-wrapper" id="loaderWrapper">
+    <div class="loader-container">
+        <div class="loader-spinner"></div>
+        <div class="loader-content">
+            <div class="loader-text">Lily<span>Decors</span></div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar" id="loaderProgressBar"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Back to Top Button HTML -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>

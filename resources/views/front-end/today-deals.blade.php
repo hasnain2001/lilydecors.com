@@ -27,12 +27,9 @@
     <div class="deal-categories text-center">
         <h5 class="mb-3">Shop by Category:</h5>
         <div>
-            <span class="category-badge active">All Deals</span>
-            <span class="category-badge">Fashion</span>
-            <span class="category-badge">Electronics</span>
-            <span class="category-badge">Home & Garden</span>
-            <span class="category-badge">Travel</span>
-            <span class="category-badge">Food & Drink</span>
+            @foreach ($categories as $category)
+            <span class="category-badge" data-category="{{ $category->id }}">{{ $category->name }}</span>
+            @endforeach
         </div>
     </div>
 
@@ -80,7 +77,7 @@
                        @lang('welcome.View Deal')
                     </a>
 
-                    <a href="{{ route('store.detail', ['slug' => Str::slug($coupon->stores->slug)]) }}" 
+                    <a href="{{ route('store.details', ['slug' => Str::slug($coupon->stores->slug)]) }}" 
                        class="more-offers-btn">
                       @lang('welcome.More Offers')
                     </a>
