@@ -1,22 +1,33 @@
 @extends('layouts.master')
-@section('title', 'All Stores Coupons, Promo Codes & Best Deals '.date('Y').' | '.config('app.name'))
+@section('title')
+    @lang('stores.meta-title')
+@endsection
 
-@section('description', 'Discover amazing stores with exclusive offers, discounts, and coupons. Find the best deals from top brands in one place.')
-@section('keywords', 'stores, offers, discounts, coupons, deals, shopping, brands, savings')
-@section('author', 'Your Brand Name')
-@section('content')
+@section('description')
+    @lang('stores.description')
+@endsection
+
+@section('keywords')
+    @lang('stores.keywords')
+@endsection
+
+@section('author')
+    @lang('stores.author', ['brand_name' => 'Lilydecors'])
+@endsection
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/stores.css') }}">
 @endpush
 
+@section('content')
+
 <main class="container py-4">
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1 class="page-title floating-text">@lang('nav.stores')</h1>
+            <h1 class="page-title floating-text">@lang('stores.header.title')</h1>
             <p class="page-subtitle">
-                Discover amazing stores with exclusive offers and discounts. Find the best deals from trusted brands.
+                @lang('stores.header.subtitle')
             </p>
         </div>
     </header>
@@ -28,7 +39,7 @@
             <ol class="breadcrumb breadcrumb-custom">
                 <li class="breadcrumb-item">
                     <a href="{{ url(app()->getLocale() . '/') }}" class="text-decoration-none">
-                        <i class="fas fa-home me-1"></i>@lang('nav.home')
+                        <i class="fas fa-home me-1"></i>@lang('stores.common.home')
                     </a>
                 </li>
                 <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
@@ -36,7 +47,7 @@
                         <i class="fas fa-chevron-right small"></i>
                     </span>
                     <i class="fas fa-store me-2 text-primary"></i>
-                    @lang('nav.stores')
+                    @lang('stores.common.stores')
                 </li>
             </ol>
         </nav>
@@ -45,22 +56,22 @@
         <div class="stats-bar">
             <div class="stat-item">
                 <i class="fas fa-store"></i>
-                <span>{{ $stores->total() }} Stores</span>
+                <span>{{ $stores->total() }} @lang('stores.stats.stores')</span>
             </div>
             <div class="stat-item">
                 <i class="fas fa-tags"></i>
-                <span>Latest {{ date('Y') }} Deals</span>
+                <span>@lang('stores.stats.latest_deals', ['year' => date('Y')])</span>
             </div>
             <div class="stat-item">
                 <i class="fas fa-star"></i>
-                <span>Verified Offers</span>
+                <span>@lang('stores.stats.verified_offers')</span>
             </div>
         </div>
 
         <!-- Stores Grid -->
         <div class="stores-grid">
             @forelse ($stores as $store)
-                <a href="{{route('store.details', ['slug' => Str::slug($store->slug)]) }}" class="text-decoration-none">
+                <a href="{{ route('store.details', ['slug' => Str::slug($store->slug)]) }}" class="text-decoration-none">
                     <div class="store-card">
                         <div class="store-image-container">
                             <img
@@ -72,17 +83,17 @@
                             />
                             @if($store->top_store)
                                 <div class="store-badge">
-                                    <i class="fas fa-crown me-1"></i>Top Store
+                                    <i class="fas fa-crown me-1"></i>@lang('stores.store_badge.top_store')
                                 </div>
                             @endif
                         </div>
                         <div class="store-content">
                             <h5 class="store-name">
-                                {{ $store->name ?: 'Store Name' }}
+                                {{ $store->name ?: trans('stores.store_default_name') }}
                             </h5>
                             <div class="store-meta">
                                 <i class="fas fa-tag"></i>
-                                <span>{{ $store->coupons->count() ?? '0'}} Offers</span>
+                                <span>{{ $store->coupons->count() ?? 0 }} @lang('stores.offers_count')</span>
                             </div>
                         </div>
                     </div>
@@ -93,9 +104,9 @@
                         <div class="no-stores-icon">
                             <i class="fas fa-store-slash"></i>
                         </div>
-                        <h4 class="text-dark mb-3">No Stores Available</h4>
+                        <h4 class="text-dark mb-3">@lang('stores.empty.title')</h4>
                         <p class="text-muted mb-0">
-                            @lang('message.No stores found in this category!Explore new')
+                            @lang('stores.empty.message')
                         </p>
                     </div>
                 </div>
@@ -105,7 +116,7 @@
         <!-- Pagination -->
         @if($stores->hasPages())
             <div class="d-flex justify-content-center mt-5">
-                <nav aria-label="Stores pagination">
+                <nav aria-label="@lang('stores.pagination.label')">
                     <ul class="pagination pagination-custom">
                         {{ $stores->links('pagination::bootstrap-5') }}
                     </ul>

@@ -1,8 +1,19 @@
 @extends('layouts.master')
-@section('title', 'Privacy Policy')
-@section('description', 'Read our privacy policy to understand how we handle your data and protect your privacy.')
-@section('keywords', 'privacy, policy, data protection')
-@section('author', 'John Doe')
+@section('title')
+    @lang('privacy.meta.title')
+@endsection
+
+@section('description')
+    @lang('privacy.meta.description')
+@endsection
+
+@section('keywords')
+    @lang('privacy.meta.keywords')
+@endsection
+
+@section('author')
+    @lang('privacy.meta.author')
+@endsection
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/privacy.css') }}">
@@ -13,10 +24,10 @@
 <div class="privacy-header">
     <div class="container">
         <div class="privacy-header-content">
-            <h1>Privacy Policy</h1>
-            <p class="lead">Your privacy is important to us. Learn how we protect and handle your data.</p>
+            <h1>@lang('privacy.header.title')</h1>
+            <p class="lead">@lang('privacy.header.subtitle')</p>
             <div class="last-updated">
-                <i class="fas fa-calendar-alt me-2"></i>Last updated on {{ now()->format('F d, Y') }}
+                <i class="fas fa-calendar-alt me-2"></i>@lang('privacy.header.last_updated') {{ now()->format('F d, Y') }}
             </div>
         </div>
     </div>
@@ -31,7 +42,7 @@
                 <!-- Card Header -->
                 <div class="card-header policy-card-header">
                     <i class="fas fa-shield-alt policy-icon"></i>
-                    <h2>Your Data Protection & Privacy</h2>
+                    <h2>@lang('privacy.card.title')</h2>
                 </div>
 
                 <!-- Card Body -->
@@ -41,7 +52,7 @@
                         <div class="d-flex align-items-center">
                             <i class="fas fa-info-circle me-3"></i>
                             <div>
-                                <strong>Transparency Matters:</strong> This policy explains how we collect, use, and protect your information in clear, simple terms.
+                                <strong>@lang('privacy.alert.title'):</strong> @lang('privacy.alert.description')
                             </div>
                         </div>
                     </div>
@@ -54,17 +65,16 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-database"></i>
                                 </div>
-                                <h3 class="section-title">Information We Collect</h3>
+                                <h3 class="section-title">@lang('privacy.sections.collection.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>We collect information that helps us provide better services and improve your experience. This includes:</p>
+                                <p>@lang('privacy.sections.collection.intro')</p>
                                 <ul>
-                                    <li><strong>Personal Information:</strong> Name, email address, and contact details when you register or contact us</li>
-                                    <li><strong>Usage Data:</strong> How you interact with our website, pages visited, and features used</li>
-                                    <li><strong>Technical Information:</strong> Browser type, device information, and IP address for security purposes</li>
-                                    <li><strong>Communication Data:</strong> Messages, feedback, and inquiries you send to us</li>
+                                    @foreach(__('privacy.sections.collection.types') as $type => $description)
+                                        <li><strong>{{ $type }}:</strong> {{ $description }}</li>
+                                    @endforeach
                                 </ul>
-                                <p>We only collect information that's necessary to provide our services and enhance your experience.</p>
+                                <p>@lang('privacy.sections.collection.conclusion')</p>
                             </div>
                         </div>
 
@@ -74,19 +84,16 @@
                                 <div class="section-icon success">
                                     <i class="fas fa-cogs"></i>
                                 </div>
-                                <h3 class="section-title">How We Use Your Information</h3>
+                                <h3 class="section-title">@lang('privacy.sections.usage.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>Your information helps us deliver excellent service and improve our platform. We use it to:</p>
+                                <p>@lang('privacy.sections.usage.intro')</p>
                                 <ul>
-                                    <li>Respond to your inquiries and provide personalized customer support</li>
-                                    <li>Process transactions and deliver the services you request</li>
-                                    <li>Improve our website functionality and user experience</li>
-                                    <li>Send important updates about our services (you can opt-out anytime)</li>
-                                    <li>Protect against fraud and ensure platform security</li>
-                                    <li>Analyze usage patterns to enhance our offerings</li>
+                                    @foreach(__('privacy.sections.usage.purposes') as $purpose)
+                                        <li>{{ $purpose }}</li>
+                                    @endforeach
                                 </ul>
-                                <p class="highlight-text">We do not and will never sell your personal information to third parties.</p>
+                                <p class="highlight-text">@lang('privacy.sections.usage.important_note')</p>
                             </div>
                         </div>
 
@@ -96,18 +103,16 @@
                                 <div class="section-icon warning">
                                     <i class="fas fa-lock"></i>
                                 </div>
-                                <h3 class="section-title">Data Security & Protection</h3>
+                                <h3 class="section-title">@lang('privacy.sections.security.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>We take your data security seriously and implement robust measures to protect it:</p>
+                                <p>@lang('privacy.sections.security.intro')</p>
                                 <ul>
-                                    <li><strong>Encryption:</strong> All sensitive data is encrypted during transmission and storage</li>
-                                    <li><strong>Secure Servers:</strong> Your information is stored on protected servers with limited access</li>
-                                    <li><strong>Access Controls:</strong> Strict internal policies control who can access your data</li>
-                                    <li><strong>Regular Audits:</strong> We conduct security assessments to maintain protection standards</li>
-                                    <li><strong>Employee Training:</strong> Our team is trained in data protection best practices</li>
+                                    @foreach(__('privacy.sections.security.measures') as $measure => $description)
+                                        <li><strong>{{ $measure }}:</strong> {{ $description }}</li>
+                                    @endforeach
                                 </ul>
-                                <p>While we implement industry-standard security measures, no method of transmission over the internet is 100% secure. We recommend using strong passwords and keeping your login information confidential.</p>
+                                <p>@lang('privacy.sections.security.disclaimer')</p>
                             </div>
                         </div>
 
@@ -117,17 +122,16 @@
                                 <div class="section-icon info">
                                     <i class="fas fa-cookie-bite"></i>
                                 </div>
-                                <h3 class="section-title">Cookies & Tracking Technologies</h3>
+                                <h3 class="section-title">@lang('privacy.sections.cookies.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>We use cookies and similar technologies to enhance your browsing experience:</p>
+                                <p>@lang('privacy.sections.cookies.intro')</p>
                                 <ul>
-                                    <li><strong>Essential Cookies:</strong> Required for the website to function properly</li>
-                                    <li><strong>Performance Cookies:</strong> Help us understand how visitors use our site</li>
-                                    <li><strong>Functional Cookies:</strong> Remember your preferences and settings</li>
-                                    <li><strong>Analytics Cookies:</strong> Provide insights to improve our services</li>
+                                    @foreach(__('privacy.sections.cookies.types') as $type => $description)
+                                        <li><strong>{{ $type }}:</strong> {{ $description }}</li>
+                                    @endforeach
                                 </ul>
-                                <p>You can manage cookie preferences through your browser settings. However, disabling essential cookies may affect website functionality.</p>
+                                <p>@lang('privacy.sections.cookies.management')</p>
                             </div>
                         </div>
 
@@ -137,17 +141,16 @@
                                 <div class="section-icon danger">
                                     <i class="fas fa-external-link-alt"></i>
                                 </div>
-                                <h3 class="section-title">Third-Party Links & Services</h3>
+                                <h3 class="section-title">@lang('privacy.sections.third_party.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>Our website may contain links to external sites and services. Important notes:</p>
+                                <p>@lang('privacy.sections.third_party.intro')</p>
                                 <ul>
-                                    <li>We carefully select our partners but cannot control their privacy practices</li>
-                                    <li>External sites have their own privacy policies we don't control</li>
-                                    <li>We're not responsible for content or practices of linked websites</li>
-                                    <li>We recommend reviewing third-party privacy policies before sharing information</li>
+                                    @foreach(__('privacy.sections.third_party.notes') as $note)
+                                        <li>{{ $note }}</li>
+                                    @endforeach
                                 </ul>
-                                <p>When you leave our site through these links, our privacy policy no longer applies to your activities on those external sites.</p>
+                                <p>@lang('privacy.sections.third_party.disclaimer')</p>
                             </div>
                         </div>
 
@@ -157,17 +160,16 @@
                                 <div class="section-icon secondary">
                                     <i class="fas fa-sync-alt"></i>
                                 </div>
-                                <h3 class="section-title">Policy Updates & Changes</h3>
+                                <h3 class="section-title">@lang('privacy.sections.updates.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>We may update this privacy policy to reflect changes in our practices or legal requirements:</p>
+                                <p>@lang('privacy.sections.updates.intro')</p>
                                 <ul>
-                                    <li>Significant changes will be notified via email or prominent website notice</li>
-                                    <li>Continued use of our services after changes constitutes acceptance</li>
-                                    <li>We maintain version history of all policy updates</li>
-                                    <li>The "Last Updated" date at the top indicates the latest revision</li>
+                                    @foreach(__('privacy.sections.updates.procedures') as $procedure)
+                                        <li>{{ $procedure }}</li>
+                                    @endforeach
                                 </ul>
-                                <p>We encourage you to review this policy periodically to stay informed about how we're protecting your information.</p>
+                                <p>@lang('privacy.sections.updates.recommendation')</p>
                             </div>
                         </div>
 
@@ -177,17 +179,16 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <h3 class="section-title">Questions & Contact Information</h3>
+                                <h3 class="section-title">@lang('privacy.sections.contact.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>We're committed to being transparent about our privacy practices. If you have questions or concerns:</p>
+                                <p>@lang('privacy.sections.contact.intro')</p>
                                 <ul>
-                                    <li><strong>Email:</strong> <a href="mailto:contact@lilydecors.com" class="contact-email">contact@lilydecors.com</a></li>
-                                    <li><strong>Data Protection Officer:</strong> John Smith</li>
-                                    <li><strong>Mail:</strong> 123 Privacy Lane, Data City, DC 12345</li>
-                                    <li><strong>Response Time:</strong> We aim to respond within 48 hours</li>
+                                    @foreach(__('privacy.sections.contact.details') as $detail => $value)
+                                        <li><strong>{{ $detail }}:</strong> {!! $value !!}</li>
+                                    @endforeach
                                 </ul>
-                                <p>You have the right to access, correct, or delete your personal information. Contact us to exercise these rights.</p>
+                                <p>@lang('privacy.sections.contact.rights')</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +196,7 @@
                     <!-- Back to Home Button -->
                     <div class="text-center mt-5">
                         <a href="{{ url(app()->getLocale() . '/') }}" class="back-btn">
-                            <i class="fas fa-arrow-left me-2"></i> Return to Homepage
+                            <i class="fas fa-arrow-left me-2"></i> @lang('privacy.back_button')
                         </a>
                     </div>
                 </div>

@@ -1,9 +1,20 @@
 @extends('layouts.master')
 
-@section('title', 'Best Categories & Brands Offers ' . date('Y') . ' - Streamcoupon.com')
-@section('description', 'Discover amazing categories with exclusive offers, discounts, and coupons. Find the best deals from top brands and stores in one place.')
-@section('keywords', 'categories, brands, offers, discounts, coupons, deals, shopping, savings')
-@section('author', 'Your Brand Name')
+@section('title')
+    @lang('categories.meta.title', ['year' => date('Y'), 'app_name' => config('app.name')])
+@endsection
+
+@section('description')
+    @lang('categories.meta.description')
+@endsection
+
+@section('keywords')
+    @lang('categories.meta.keywords')
+@endsection
+
+@section('author')
+    @lang('categories.meta.author')
+@endsection
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/categories.css') }}">
@@ -15,12 +26,12 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a href="{{ url('/') }}" itemprop="item">
-                    <span itemprop="name">@lang('nav.home')</span>
+                    <span itemprop="name">@lang('common.home')</span>
                 </a>
                 <meta itemprop="position" content="1" />
             </li>
             <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name">@lang('nav.cateories')</span>
+                <span itemprop="name">@lang('common.categories')</span>
                 <meta itemprop="position" content="2" />
             </li>
         </ol>
@@ -31,10 +42,10 @@
 <header class="page-header" role="banner">
     <div class="container">
         <h1 class="page-title" itemprop="headline">
-            @lang('message.Best Discounts For Every Category')
+            @lang('categories.header.title')
         </h1>
         <p class="page-subtitle" itemprop="description">
-            Discover exclusive offers and amazing deals across all our categories. Save big with our curated collection of discounts and coupons.
+            @lang('categories.header.subtitle')
         </p>
     </div>
 </header>
@@ -48,29 +59,29 @@
                 <i class="fas fa-layer-group"></i>
                 <div>
                     <strong>{{ count($categories) }}</strong>
-                    <span>Categories</span>
+                    <span>@lang('categories.stats.categories')</span>
                 </div>
             </div>
 
             <div class="stat-item">
                 <i class="fas fa-tags"></i>
                 <div>
-                    <strong>Latest {{ date('Y') }}</strong>
-                    <span>Offers</span>
+                    <strong>@lang('categories.stats.latest_year', ['year' => date('Y')])</strong>
+                    <span>@lang('categories.stats.offers')</span>
                 </div>
             </div>
             <div class="stat-item">
                 <i class="fas fa-percent"></i>
                 <div>
-                    <strong>Verified</strong>
-                    <span>Discounts</span>
+                    <strong>@lang('categories.stats.verified')</strong>
+                    <span>@lang('categories.stats.discounts')</span>
                 </div>
             </div>
         </div>
 
         <!-- Categories Grid -->
         <div class="categories-grid" itemscope itemtype="https://schema.org/ItemList">
-            @foreach ($categories as $category)
+            @forelse ($categories as $category)
                 <article class="category-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/CategoryCode">
                     <div class="category-content-wrapper">
                         <div class="category-header">
@@ -79,7 +90,7 @@
                                 @if ($category->image && file_exists(public_path('uploads/categories/' . $category->image)))
                                     <img src="{{ asset('uploads/categories/' . $category->image) }}"
                                          class="category-img"
-                                         alt="{{ $category->name }} - Category Image"
+                                         alt="{{ $category->name }} - @lang('categories.image_alt')"
                                          itemprop="image"
                                          loading="lazy"
                                          width="80"
@@ -99,35 +110,41 @@
 
                                 <div class="store-count">
                                     <i class="fas fa-store"></i>
-                                    <span>{{ $category->stores()->count()?? 0 }} @lang('nav.stores')</span>
+                                    <span>{{ $category->stores()->count()?? 0 }} @lang('common.stores')</span>
                                 </div>
                                 <div class="blog-count">
                                     <i class="fas fa-blog"></i>
-                                    <span>{{ $category->blogs()->count()?? 0 }} @lang('nav.blogs')</span>
+                                    <span>{{ $category->blogs()->count()?? 0 }} @lang('common.blog')</span>
                                 </div>
 
                                 <meta itemprop="url" content="{{ route('category.details', ['slug' => Str::slug($category->slug)]) }}">
 
                                 <a href="{{ route('category.details', ['slug' => Str::slug($category->slug)]) }}"
                                    class="view-more-btn"
-                                   aria-label="Explore {{ $category->name }} category"
+                                   aria-label="@lang('categories.aria.explore_category', ['name' => $category->name])"
                                    itemprop="url">
-                                    <span>@lang('message.View more')</span>
+                                    <span>@lang('categories.view_more')</span>
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </article>
-            @endforeach
+            @empty
+                <div class="no-categories">
+                    <i class="fas fa-folder-open fa-3x mb-3"></i>
+                    <h3>@lang('categories.empty.title')</h3>
+                    <p>@lang('categories.empty.message')</p>
+                </div>
+            @endforelse
         </div>
 
         <!-- SEO Content Section -->
         <section class="seo-content" aria-labelledby="seo-title">
-            <h2 id="seo-title" class="seo-title">Find the Best Deals Across All Categories</h2>
+            <h2 id="seo-title" class="seo-title">@lang('categories.seo.title')</h2>
             <div class="seo-text">
-                <p>Explore our comprehensive collection of categories featuring exclusive discounts, promotional offers, and money-saving coupons. Whether you're looking for electronics, fashion, home goods, or specialty items, we've curated the best deals from trusted retailers to help you save time and money.</p>
-                <p>Our platform continuously updates offers across all categories to ensure you get access to the latest promotions and discount codes. Browse through our organized categories to find exactly what you're looking for with guaranteed savings.</p>
+                <p>@lang('categories.seo.paragraph1')</p>
+                <p>@lang('categories.seo.paragraph2')</p>
             </div>
         </section>
     </div>

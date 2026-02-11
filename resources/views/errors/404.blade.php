@@ -436,13 +436,13 @@
     </p>
     
     <div class="error-404-actions">
-        <a href="{{ url('/') }}" class="btn btn-primary">
+        <a href="{{ url(app()->getLocale().'/') }}" class="btn btn-primary">
             <i class="bi bi-rocket-takeoff-fill me-2"></i> Launch to Home
         </a>
         <a href="javascript:history.back()" class="btn btn-outline-secondary">
             <i class="bi bi-arrow-return-left me-2"></i> Return Journey
         </a>
-        <a href="{{ route('contact') ?? '#' }}" class="btn btn-outline-primary">
+        <a href="{{ route('contact',['lang' => app()->getLocale()]) ?? '#' }}" class="btn btn-outline-primary">
             <i class="bi bi-life-preserver me-2"></i> Request Rescue
         </a>
     </div>

@@ -45,15 +45,15 @@ class BlogController extends Controller
         $request->validate([
             'name'             => 'required|string|max:255',
             'slug'             => 'required|string|max:255|unique:blogs,slug',
-            'description'      => 'nullable',
+            'description'      => 'nullable|string|max:500',
+            'image'            => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'content'          => 'required|string',
+            'category_id'      => 'required|exists:categories,id',
+            'status'           => 'required|boolean',
+            'language_id'      => 'required|exists:languages,id',
             'title'            => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
             'meta_keyword'     => 'nullable|string|max:255',
-            'image'            => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
-            'content'          => 'nullable|string',
-            'category_id'      => 'required|exists:categories,id',
-            'status'           => 'nullable|boolean',
-            'language_id'      => 'nullable|exists:languages,id',
             'store_id'         => 'nullable|exists:stores,id',
         ]);
 
@@ -88,8 +88,8 @@ class BlogController extends Controller
             $blog->save();
         }
 
-        return redirect()->route('employee.blog.index')
-            ->with('success', 'Blog created successfully.');
+        return redirect()->route('employee.blog.show', $blog->id)
+             ->with('success', 'Blog created successfully.');
     }
     /* ============================
         SHOW
@@ -121,14 +121,14 @@ class BlogController extends Controller
         $request->validate([
             'name'             => 'required|string|max:255',
             'slug'             => 'required|string|max:255|unique:blogs,slug,' . $blog->id,
-            'description'      => 'nullable|string',
+            'description'      => 'required|string|max:500',
             'title'            => 'required|string|max:255',
             'content'          => 'required|string',
             'image'            => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'category_id'      => 'required|exists:categories,id',
-            'language_id'      => 'nullable|exists:languages,id',
+            'language_id'      => 'required|exists:languages,id',
             'store_id'         => 'nullable|exists:stores,id',
-            'status'           => 'nullable|boolean',
+            'status'           => 'required|boolean',
         ]);
 
         /* 🖼 IMAGE UPDATE */
@@ -169,7 +169,7 @@ class BlogController extends Controller
         $blog->category_id      = $request->category_id;
         $blog->save();
 
-        return redirect()->route('employee.blog.index')
+        return redirect()->route('employee.blog.show', $blog->id)
             ->with('success', 'Blog updated successfully.');
     }
 
@@ -203,7 +203,7 @@ class BlogController extends Controller
         }
 
         foreach ($ids as $id) {
-            $blog = Blog::find($id);
+            $blog = Blog::findOrFail($id);
             if ($blog) {
                 if ($blog->image) {
                     $path = public_path('uploads/blogs/' . $blog->image);

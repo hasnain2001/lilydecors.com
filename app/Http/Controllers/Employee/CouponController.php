@@ -211,6 +211,12 @@ class CouponController extends Controller
             if (!$store) {
                 throw new \Exception('Associated store not found');
             }
+              if ($request->filled('ending_date')) {
+            Coupon::where('store_id', $coupon->store_id)
+            ->update([
+            'ending_date' => $request->ending_date,
+            ]);
+            }
             $couponName = $validated['name'] ?? 'Coupon';
             return redirect()->route('employee.store.show', $store->id)
                 ->with('success', "$couponName updated successfully");

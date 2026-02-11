@@ -1,7 +1,16 @@
 @extends('layouts.master')
-@section('title', 'Coupon Codes - Find the latest coupon codes and deals for your favorite stores')
-@section('description', 'Find the latest coupon codes and deals for your favorite stores. Save money on your online shopping with our exclusive discount codes.')
-@section('keywords', 'coupon codes, discount codes, promo codes, deals, offers, vouchers, discounts, savings, online shopping')
+@section('title')
+@lang('coupon.meta.title')
+@endsection
+
+@section('description')
+    @lang('coupon.meta.description')
+@endsection
+
+@section('keywords')
+    @lang('coupon.meta.keywords')
+@endsection
+
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/coupon.css') }}">
 @endpush
@@ -10,8 +19,8 @@
 <!-- Page Header -->
 <header class="page-header">
     <div class="container">
-        <h1 class="page-title">@lang('message.Exclusive Coupon Codes')</h1>
-        <p class="page-subtitle">@lang('message.Save money with our verified discount codes for your favorite online stores')</p>
+        <h1 class="page-title">@lang('coupon.header.title')</h1>
+        <p class="page-subtitle">@lang('coupon.header.subtitle')</p>
     </div>
 </header>
 
@@ -28,11 +37,12 @@
                         <div class="col-md-3 text-center mb-3 mb-md-0">
                             <div class="store-logo-container mx-auto">
                                 @if ($coupon->stores->image)
-                                <a href="{{ route('store.detail', ['slug' => Str::slug($coupon->stores->slug)]) }}">
+                                <a href="{{ route('store.details', ['slug' => Str::slug($coupon->stores->slug)]) }}">
                                     <img src="{{ asset('uploads/stores/' . $coupon->stores->image) }}"
                                          class="store-logo"
-                                         alt="{{ $coupon->stores->name }} Logo"
-                                         loading="lazy">
+                                         alt="@lang('coupon.store_logo_alt', ['name' => $coupon->stores->name])"
+                                         loading="lazy"
+                                         onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
                                 </a>
                                 @else
                                 <i class="fas fa-store fa-lg text-primary"></i>
@@ -54,11 +64,11 @@
                             <div class="coupon-meta">
                                 <div class="meta-item">
                                     <i class="far fa-clock text-primary"></i>
-                                    <span>@lang('message.Expires') {{ \Carbon\Carbon::parse($coupon->ending_date)->format('M d, Y') }}</span>
+                                    <span>@lang('coupon.expires') {{ \Carbon\Carbon::parse($coupon->ending_date)->format('M d, Y') }}</span>
                                 </div>
                                 <div class="meta-item">
                                     <i class="fas fa-users text-primary"></i>
-                                    <span>@lang('welcome.used') {{ $coupon->clicks }} times</span>
+                                    <span>@lang('coupon.used_count', ['count' => $coupon->clicks])</span>
                                 </div>
                             </div>
                         </div>
@@ -68,19 +78,19 @@
                             @if ($coupon->code)
                             <button class="get-code-btn"
                                     onclick="handleRevealCode(event, {{ $coupon->id }}, '{{ $coupon->code }}', '{{ $coupon->name }}', '{{ asset('uploads/stores/' . $coupon->stores->image) }}', '{{ $coupon->stores->destination_url }}', '{{ $coupon->stores->name }}')">
-                                <i class="fas fa-tag me-2"></i>@lang('welcome.Get Code')
+                                <i class="fas fa-tag me-2"></i>@lang('coupon.get_code')
                             </button>
                             @else
                             <a href="{{ $coupon->stores->destination_url }}"
                                target="_blank"
                                class="deal-btn"
                                onclick="updateClickCount({{ $coupon->id }})">
-                                <i class="fas fa-bolt me-2"></i>@lang('welcome.View Deal')
+                                <i class="fas fa-bolt me-2"></i>@lang('coupon.view_deal')
                             </a>
                             @endif
-                            <a href="{{ route('store.detail', ['slug' => Str::slug($coupon->stores->slug)]) }}"
+                            <a href="{{ route('store.details', ['slug' => Str::slug($coupon->stores->slug)]) }}"
                                class="store-btn">
-                                <i class="fas fa-store me-2"></i>@lang('welcome.More Offers')
+                                <i class="fas fa-store me-2"></i>@lang('coupon.more_offers')
                             </a>
                         </div>
                     </div>
@@ -93,9 +103,9 @@
                 <div class="no-coupons-icon">
                     <i class="fas fa-ticket-alt"></i>
                 </div>
-                <h4 class="text-dark mb-3">No Coupons Available</h4>
+                <h4 class="text-dark mb-3">@lang('coupon.empty.title')</h4>
                 <p class="text-muted mb-0">
-                    @lang('message.No coupons found. Please check back later for new deals.')
+                    @lang('coupon.empty.message')
                 </p>
             </div>
         </div>
@@ -105,7 +115,7 @@
     <!-- Pagination -->
     @if($coupons->hasPages())
     <div class="d-flex justify-content-center mt-5">
-        <nav aria-label="Coupons pagination">
+        <nav aria-label="@lang('coupon.pagination.label')">
             <ul class="pagination pagination-custom">
                 {{ $coupons->links('pagination::bootstrap-5') }}
             </ul>
@@ -122,17 +132,18 @@
             <div class="modal-header position-relative">
                 <div class="position-absolute top-0 start-50 translate-middle mt-n4">
                     <span class="badge bg-success text-white px-3 py-2 shadow-sm">
-                        <i class="fas fa-bolt me-1"></i> EXCLUSIVE OFFER
+                        <i class="fas fa-bolt me-1"></i> @lang('coupon.modal.exclusive_offer')
                     </span>
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@lang('common.close')"></button>
             </div>
 
             <!-- Modal Body -->
             <div class="modal-body">
                 <!-- Store Logo -->
                 <div class="mb-4">
-                    <img src="" alt="Store Logo" id="storeImage" class="store-logo-modal">
+                    <img src="" alt="@lang('coupon.modal.store_logo_alt')" id="storeImage" class="store-logo-modal"
+                         onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
                 </div>
 
                 <!-- Coupon Title -->
@@ -141,30 +152,29 @@
                 <!-- Coupon Code Section -->
                 <div class="coupon-code-display">
                     <p class="small text-muted mb-2">
-                        <i class="fas fa-tag me-1 text-primary"></i> YOUR COUPON CODE
+                        <i class="fas fa-tag me-1 text-primary"></i> @lang('coupon.modal.your_coupon_code')
                     </p>
                     <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
                         <span id="couponCode" class="fw-bold"></span>
                         <button class="btn-copy" onclick="copyToClipboard()">
-                            <i class="fas fa-copy me-2"></i>Copy
+                            <i class="fas fa-copy me-2"></i>@lang('coupon.modal.copy')
                         </button>
                     </div>
                     <p id="copyMessage" class="small text-success fw-bold mb-0" style="display: none;">
-                        <i class="fas fa-check-circle me-1"></i> Copied to clipboard!
+                        <i class="fas fa-check-circle me-1"></i> @lang('coupon.modal.copied')
                     </p>
                 </div>
 
                 <!-- Instructions -->
                 <p class="small text-muted mb-0">
-                    <i class="fas fa-info-circle me-1 text-primary"></i> Use this code at checkout on
-                    <a href="" id="couponUrl" class="text-decoration-none fw-semibold text-primary"></a>
+                    <i class="fas fa-info-circle me-1 text-primary"></i> @lang('coupon.modal.instructions', ['store' => '<a href="" id="couponUrl" class="text-decoration-none fw-semibold text-primary"></a>'])
                 </p>
             </div>
 
             <!-- Modal Footer -->
             <div class="modal-footer bg-light justify-content-center">
                 <a href="" id="storeLink" target="_blank" class="btn btn-primary px-4 py-2 rounded-pill">
-                    <i class="fas fa-external-link-alt me-2"></i> Go to Store
+                    <i class="fas fa-external-link-alt me-2"></i> @lang('coupon.modal.go_to_store')
                 </a>
             </div>
         </div>

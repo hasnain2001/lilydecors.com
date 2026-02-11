@@ -1,8 +1,19 @@
 @extends('layouts.master')
-@section('title', $blog->name . ' | ' . config('app.name'))
-@section('description', 'Explore our latest blog post: ' . $blog->name . '. ' . $blog->description)
-@section('keywords', $blog->keywords)
-@section('author', $blog->author ?? 'Unknown')
+@section('title')
+ {{ $blog->title . ' | ' . config('app.name') }}
+@endsection
+
+@section('description')
+    @lang('blog-detail.meta.description', ['name' => $blog->name, 'description' => $blog->description])
+@endsection
+
+@section('keywords')
+{{ $blog->keywords }}
+@endsection
+
+@section('author')
+{{ $blog->user->name ?? trans('blog-detail.meta.default_author') }}
+@endsection
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/blog-detail.css') }}">
@@ -16,7 +27,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a href="/" class="text-decoration-none">
-                        <i class="fas fa-home me-1"></i>@lang('nav.home')
+                        <i class="fas fa-home me-1"></i>@lang('common.home')
                     </a>
                 </li>
                 <li class="breadcrumb-item">
@@ -29,7 +40,7 @@
               
                 <li class="breadcrumb-item">
                     <a href="{{ route('blog', ['lang' => app()->getLocale()]) }}" class="text-decoration-none">
-                        <i class="fas fa-blog me-1"></i> @lang('nav.blogs')
+                        <i class="fas fa-blog me-1"></i> @lang('common.blog')
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
@@ -64,7 +75,7 @@
                             </span>
                             <span class="meta-badge author">
                                 <i class="fas fa-user"></i>
-                                {{ $blog->user->name ?? 'Unknown' }}
+                                {{ $blog->user->name ?? trans('blog-detail.meta.default_author') }}
                             </span>
                         </div>
                         {{-- <p class="blog-description">{{ $blog->description }}</p> --}}
@@ -81,7 +92,7 @@
                 <div class="sidebar-card">
                     <div class="card-header">
                         <h5 class="card-title">
-                            <i class="fas fa-store"></i>@lang('message.Related Stores')
+                            <i class="fas fa-store"></i>@lang('blog-detail.sidebar.related_stores')
                         </h5>
                     </div>
                     <div class="card-body">
@@ -106,7 +117,7 @@
                         @empty
                             <div class="no-items">
                                 <i class="fas fa-store-slash"></i>
-                                @lang('message.No related stores found.')
+                                @lang('blog-detail.sidebar.no_stores_found')
                             </div>
                         @endforelse
                     </div>
@@ -116,7 +127,7 @@
                 <div class="sidebar-card">
                     <div class="card-header">
                         <h5 class="card-title">
-                            <i class="fas fa-blog"></i>@lang('message.related blogs')
+                            <i class="fas fa-blog"></i>@lang('blog-detail.sidebar.related_blogs')
                         </h5>
                     </div>
                     <div class="card-body">
@@ -141,7 +152,7 @@
                         @empty
                             <div class="no-items">
                                 <i class="fas fa-file-alt"></i>
-                                @lang('message.No related blogs found.')
+                                @lang('blog-detail.sidebar.no_blogs_found')
                             </div>
                         @endforelse
                     </div>

@@ -1,4 +1,4 @@
-@extends('admin.layouts.guest')
+@extends('admin.layouts.sorted-app-layout')
 @section('title', 'Store Details - ' . $store->name)
 @section('content')
 <main class="container-fluid px-0 text-capitalize">

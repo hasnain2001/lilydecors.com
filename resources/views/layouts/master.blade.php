@@ -21,8 +21,8 @@ header("X-Robots-Tag:index, follow");
     <meta name="google" content="notranslate">
 
     <!-- Author / Publisher -->
-    <meta name="author" content="lilydecors">
-    <meta name="publisher" content="lilydecors">
+    <meta name="author" content="@yield('author',config('app.name'))">
+    <meta name="publisher" content="@yield('publisher',config('app.name'))">
 
     <!-- Canonical URL (Correct Placement) -->
     <link rel="canonical" href="{{ url()->current() }}">
@@ -47,7 +47,7 @@ header("X-Robots-Tag:index, follow");
     <link rel="stylesheet" href="{{ asset('assets/css/root.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/pagination.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

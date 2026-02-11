@@ -1,13 +1,13 @@
 @extends('layouts.master')
 {{-- 🏷️ Page Title --}}
 @section('title')
-@if (!empty($category->meta_title))
-    {{ ucwords($category->meta_title) }} | {{ date('Y') }} Coupons, Deals & Offers
-@elseif (!empty($category->title))
-    {{ ucwords($category->title) }} | {{ date('Y') }} Coupons & Discount Codes
-@else
-    {{ ucwords($category->name) }} | {{ date('Y') }} Deals, Offers & Promo Codes
-@endif
+    @if (!empty($category->meta_title))
+        @lang('category-detail.meta.title.custom', ['title' => ucwords($category->meta_title), 'year' => date('Y')])
+    @elseif (!empty($category->title))
+        @lang('category-detail.meta.title.custom', ['title' => ucwords($category->title), 'year' => date('Y')])
+    @else
+        @lang('category-detail.meta.title.default', ['name' => ucwords($category->name), 'year' => date('Y')])
+    @endif
 @endsection
 
 {{-- 📝 Meta Description --}}
@@ -15,8 +15,11 @@
 @if (!empty($category->meta_description))
     {{ ucfirst($category->meta_description) }}
 @else
-    Find the best {{ ucwords($category->name) }} deals and verified discount codes for {{ date('Y') }}.
-    Save money with exclusive {{ strtolower($category->name) }} coupons, vouchers, and promo offers updated daily.
+    @lang('category-detail.meta.description.default', [
+        'name' => ucwords($category->name), 
+        'year' => date('Y'),
+        'lower_name' => strtolower($category->name)
+    ])
 @endif
 @endsection
 
@@ -25,9 +28,9 @@
 @if (!empty($category->meta_keywords))
     {{ strtolower($category->meta_keywords) }}
 @else
-    {{ strtolower($category->name) }}, {{ strtolower($category->name) }} coupons,
-    {{ strtolower($category->name) }} promo codes, {{ strtolower($category->name) }} vouchers,
-    discount offers, {{ strtolower($category->name) }} deals, save money online
+    @lang('category-detail.meta.keywords.default', [
+        'name' => strtolower($category->name)
+    ])
 @endif
 @endsection
 
@@ -42,12 +45,12 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a href="{{ url(app()->getlocale().'/') }}" class="text-decoration-none">
-                        <i class="fas fa-home me-1"></i>@lang('nav.home')
+                        <i class="fas fa-home me-1"></i>@lang('common.home')
                     </a>
                 </li>
                 <li class="breadcrumb-item">
                     <a href="{{ route('category', ['lang' => app()->getLocale()]) }}" class="text-decoration-none">
-                        @lang('nav.cateories')
+                        @lang('common.categories')
                     </a>
                 </li>
                 <li class="breadcrumb-item active fw-bold" aria-current="page">
@@ -62,29 +65,29 @@
                 <h1 class="text-uppercase">{{ $category->name }}</h1>
                 <div class="stats-badge">
                     <i class="fas fa-file-alt"></i>
-                    {{ $relatedblogs->count() }} Blogs Available
+                    @lang('category-detail.stats.blogs_available', ['count' => $relatedblogs->count()])
                 </div>
                 <div class="stats-badge">
                     <i class="fas fa-store"></i>
-                    {{ $stores->count() }} Stores Available
+                    @lang('category-detail.stats.stores_available', ['count' => $stores->count()])
                 </div>
             </div>
         </div>
 
-        <!-- Store Count -->
+        <!-- Count Sections -->
         <div class="blog-count">
             <i class="fas fa-tags"></i>
-            Total Blogs<strong>{{ $relatedblogs->count() }}</strong>
+            @lang('category-detail.total.blogs') <strong>{{ $relatedblogs->count() }}</strong>
         </div>
         <div class="store-count">
             <i class="fas fa-tags"></i>
-            @lang('message.total store') <strong>{{ $stores->count() }}</strong>
+            @lang('category-detail.total.stores') <strong>{{ $stores->count() }}</strong>
         </div>
         
         <!-- Blog Section -->
         @if($relatedblogs->count() > 0)
             <section class="blog-section">
-                <h2 class="section-title">@lang('message.Shopping Hacks & Savings Tips & Tricks')</h2>
+                <h2 class="section-title">@lang('category-detail.blog_section.title')</h2>
                 <div class="blog-grid">
                     @foreach ($relatedblogs as $blog)
                         <article class="blog-card">
@@ -92,12 +95,13 @@
                                 <img src="{{ asset('uploads/blogs/' . $blog->image) }}" 
                                      class="blog-img" 
                                      alt="{{ $blog->title }}"
-                                     loading="lazy">
+                                     loading="lazy"
+                                     onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
                             </a>
                             <div class="blog-content">
                                 <h5 class="blog-title">{{ $blog->title }}</h5>
                                 <button class="read-more-btn" onclick="window.location.href='{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}'">
-                                    @lang('welcome.Read More')
+                                    @lang('common.read_more')
                                     <i class="fas fa-arrow-right ms-2"></i>
                                 </button>
                             </div>
@@ -105,43 +109,52 @@
                     @endforeach
                 </div>
             </section>
+            
+            <!-- Pagination for Blogs -->
+            @if($relatedblogs->hasPages())
+                <div class="d-flex justify-content-center mt-5">
+                    <nav aria-label="@lang('category-detail.pagination.blogs_label')">
+                        <ul class="pagination pagination-custom">
+                            {{ $relatedblogs->links('pagination::bootstrap-5') }}
+                        </ul>
+                    </nav>
+                </div>
+            @endif
         @endif
+        
         <!-- Stores Grid -->
-        <section>
-         @if($stores->count() > 0)
-            <div class="stores-grid">
-                @forelse ($stores as $store)
-                    <a href="{{ route('store.details', ['slug' => Str::slug($store->slug)]) }}" class="text-decoration-none">
-                        <div class="store-card">
-                            <div class="store-img-container">
-                                <img src="{{ $store->image ? asset('uploads/stores/' . $store->image) : asset('front/assets/images/no-image-found.jpg') }}"
-                                    class="store-img"
-                                    alt="{{ $store->name }}"
-                                    loading="lazy"
-                                    onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
+        @if($stores->count() > 0)
+            <section class="stores-section">
+                <h2 class="section-title">@lang('category-detail.stores_section.title', ['name' => $category->name])</h2>
+                <div class="stores-grid">
+                    @foreach ($stores as $store)
+                        <a href="{{ route('store.details', ['slug' => Str::slug($store->slug)]) }}" class="text-decoration-none">
+                            <div class="store-card">
+                                <div class="store-img-container">
+                                    <img src="{{ $store->image ? asset('uploads/stores/' . $store->image) : asset('front/assets/images/no-image-found.jpg') }}"
+                                        class="store-img"
+                                        alt="{{ $store->name }}"
+                                        loading="lazy"
+                                        onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
+                                </div>
+                                <h5 class="store-title">{{ $store->name ?: @lang('category-detail.store_default_name') }}</h5>
                             </div>
-                            <h5 class="store-title">{{ $store->name ?: "Title not found" }}</h5>
-                        </div>
-                    </a>
-                @empty
-                    <div class="col-12">
-                        <div class="no-stores-alert">
-                            <div class="no-stores-icon">
-                                <i class="fas fa-store-slash"></i>
-                            </div>
-                            <h4 class="text-dark mb-3">@lang('message.No stores found in this category!Explore new')</h4>
-                            <a href="{{ route('store', ['lang' => app()->getLocale()]) }}" class="explore-stores-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                @lang('nav.stores')
-                            </a>
-                        </div>
-                    </div>
-                @endforelse
+                        </a>
+                    @endforeach
+                </div>
+            </section>
+        @else
+            <div class="no-stores-alert">
+                <div class="no-stores-icon">
+                    <i class="fas fa-store-slash"></i>
+                </div>
+                <h4 class="text-dark mb-3">@lang('category-detail.empty_stores.title')</h4>
+                <a href="{{ route('store', ['lang' => app()->getLocale()]) }}" class="explore-stores-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    @lang('category-detail.empty_stores.explore_link')
+                </a>
             </div>
         @endif
-        </section>
-
-
     </div>
 @endsection
 
@@ -149,7 +162,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Image error handling
-    document.querySelectorAll('.store-img').forEach(img => {
+    document.querySelectorAll('.store-img, .blog-img').forEach(img => {
         img.addEventListener('error', function() {
             this.src = '{{ asset("assets/img/no-image-found.png") }}';
         });

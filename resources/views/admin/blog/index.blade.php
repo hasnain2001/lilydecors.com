@@ -1,4 +1,4 @@
-@extends('admin.layouts.app')
+@extends('admin.layouts.guest')
 @section('title', 'Blog Management')
 @section('content')
 <div class="row">
@@ -123,7 +123,7 @@
                 @endif
 
                 <div class="table-responsive">
-                    <table class="table table-hover table-centered mb-0" id="blogsTable">
+                    <table class="table table-hover table-centered mb-0" id="basic-datatable">
                         <thead class="table-light">
                             <tr>
                                 <th class="border-0">#</th>

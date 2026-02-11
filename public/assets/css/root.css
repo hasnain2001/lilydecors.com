@@ -96,6 +96,11 @@
     0%, 100% { background-position: 0% 0%; }
     50% { background-position: 100% 100%; }
 }
+@keyframes shine {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
 /* Enhanced Button System using Brand Colors */
 .btn-primary {
     background: var(--primary-gradient);
@@ -333,118 +338,98 @@
     width: 100%;
     padding: 14px 32px;
     background: var(--secondary-gradient);
-    background-size: 200% 200%;
-    color:var(--text-primary);
+    color: var(--text-primary);
     border: none;
     border-radius: 12px;
     font-size: 1.1rem;
     font-weight: 800;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow:
-        0 8px 25px rgba(67, 113, 192, 0.4),
+        0 8px 25px rgba(67, 113, 192, 0.35),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align: center;
     position: relative;
     overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    animation: shimmer 3s infinite ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .get-code-btn::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
+    left: 0;
+    width: 50%;
     height: 100%;
     background: linear-gradient(
-        90deg,
+        120deg,
         transparent,
-        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.35),
         transparent
     );
-    animation: shimmer 3s infinite linear;
+    transform: translateX(-100%);
+    animation: shine 3.5s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .get-code-btn:hover {
-    background: var(--primary-lighter);
-    transform: translateY(-4px) scale(1.05);
+    transform: translateY(-3px) scale(1.04);
     box-shadow:
-        0 15px 35px rgba(67, 161, 192, 0.6),
+        0 14px 35px rgba(67, 161, 192, 0.55),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.get-code-btn:active {
-    transform: translateY(-1px);
-    box-shadow:
-        0 5px 15px rgba(67, 113, 192, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
 
 /* Deal Button - Enhanced */
 .deal-btn {
     width: 100%;
     background: var(--primary-gradient);
-    background-size: 200% 200%;
     color: white;
     border: none;
     border-radius: 12px;
     padding: 14px 32px;
     font-weight: 800;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow:
-        0 8px 25px rgba(44, 166, 164, 0.4),
+        0 8px 25px rgba(42, 42, 42, 0.35),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    animation: shimmer 4s infinite ease-in-out;
 }
 
 .deal-btn::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
+    left: 0;
+    width: 45%;
     height: 100%;
     background: linear-gradient(
-        90deg,
+        120deg,
         transparent,
         rgba(255, 255, 255, 0.25),
         transparent
     );
-    transition: left 0.6s;
+    transform: translateX(-100%);
+    animation: shine 4s ease-in-out infinite;
+    pointer-events: none;
 }
 
 .deal-btn:hover {
-    background: var(--primary-light);
-    transform: translateY(-4px) scale(1.05);
+    transform: translateY(-3px) scale(1.04);
     box-shadow:
-        0 15px 35px rgba(44, 166, 164, 0.6),
+        0 14px 35px rgba(42, 42, 42, 0.55),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-.deal-btn:hover::before {
-    left: 100%;
-}
-
-.deal-btn:active {
-    transform: translateY(-1px);
-    box-shadow:
-        0 5px 15px rgba(44, 166, 164, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Ghost Button */

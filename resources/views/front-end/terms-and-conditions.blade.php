@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Terms and Conditions | ' . config('app.name'))
+@section('title', '@lang('common.terms_and_conditions') | ' . config('app.name'))
 @section('description', 'Read our terms and conditions to understand your rights and responsibilities while using our services.')
 @section('keywords', 'terms, conditions, user agreement')
 @section('author', 'John Doe')
@@ -13,10 +13,10 @@
 <div class="terms-header">
     <div class="container">
         <div class="terms-header-content">
-            <h1>Terms and Conditions</h1>
-            <p class="lead">Understand your rights and responsibilities when using our services</p>
+            <h1>@lang('common.terms_and_conditions')</h1>
+            <p class="lead">@lang('common.understand_your_rights')</p>
             <div class="last-updated">
-                <i class="fas fa-calendar-alt me-2"></i>Last updated on {{ date('F j, Y') }}
+                <i class="fas fa-calendar-alt me-2"></i>@lang('common.last_updated_on') {{ date('F j, Y') }}
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
                 <!-- Card Header -->
                 <div class="card-header terms-card-header">
                     <i class="fas fa-balance-scale terms-icon"></i>
-                    <h2>Legal Agreement & User Terms</h2>
+                    <h2>@lang('common.legal_agreement_user_terms')</h2>
                 </div>
 
                 <!-- Card Body -->
@@ -41,7 +41,7 @@
                         <div class="d-flex align-items-center">
                             <i class="fas fa-info-circle me-3"></i>
                             <div>
-                                <strong>Important:</strong> By accessing or using our services, you agree to be bound by these terms. Please read them carefully before proceeding.
+                                <strong>@lang('common.important'):</strong> @lang('common.by_accessing_our_services')
                             </div>
                         </div>
                     </div>
@@ -54,12 +54,12 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-check-circle"></i>
                                 </div>
-                                <h3 class="section-title">1. Acceptance of Terms</h3>
+                                <h3 class="section-title">1. @lang('common.acceptance_of_terms')</h3>
                             </div>
                             <div class="section-content">
-                                <p>By accessing or using our website, mobile application, or any services provided by {{ config('app.name') }} (collectively, the "Services"), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+                                <p>@lang('common.by_accessing_our_website', ['app_name' => config('app.name')])</p>
                                 <div class="info-card">
-                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> If you do not agree with any part of these terms, you must immediately discontinue your use of our Services.</p>
+                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('common.if_you_disagree')</p>
                                 </div>
                             </div>
                         </section>
@@ -70,19 +70,19 @@
                                 <div class="section-icon success">
                                     <i class="fas fa-user-lock"></i>
                                 </div>
-                                <h3 class="section-title">2. User Responsibilities</h3>
+                                <h3 class="section-title">2. @lang('common.user_responsibilities')</h3>
                             </div>
                             <div class="section-content">
-                                <p>As a user of our Services, you are solely responsible for:</p>
+                                <p>@lang('common.as_a_user')</p>
                                 <ul>
-                                    <li>Maintaining the confidentiality and security of your account credentials</li>
-                                    <li>All activities, transactions, and content associated with your account</li>
-                                    <li>Providing accurate, current, and complete information during registration</li>
-                                    <li>Complying with all applicable local, state, national, and international laws</li>
-                                    <li>Ensuring that your use of our Services does not violate any third-party rights</li>
+                                    <li>@lang('common.maintaining_account_security')</li>
+                                    <li>@lang('common.account_activities')</li>
+                                    <li>@lang('common.accurate_information')</li>
+                                    <li>@lang('common.complying_with_laws')</li>
+                                    <li>@lang('common.not_violating_rights')</li>
                                 </ul>
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> You agree to notify us immediately of any unauthorized access to or use of your account at <strong>support@lilydecors.com</strong>.</p>
+                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> @lang('common.notify_unauthorized_access', ['email' => 'support@lilydecors.com'])</p>
                                 </div>
                             </div>
                         </section>
@@ -93,46 +93,46 @@
                                 <div class="section-icon danger">
                                     <i class="fas fa-ban"></i>
                                 </div>
-                                <h3 class="section-title">3. Prohibited Activities</h3>
+                                <h3 class="section-title">3. @lang('common.prohibited_activities')</h3>
                             </div>
                             <div class="section-content">
-                                <p>When using our Services, you must not engage in any of the following activities:</p>
+                                <p>@lang('common.when_using_services')</p>
 
                                 <div class="activity-grid">
                                     <div class="activity-card">
                                         <i class="fas fa-gavel"></i>
-                                        <h5>Illegal Activities</h5>
-                                        <p>Use our Services for any unlawful purpose or in violation of any applicable laws</p>
+                                        <h5>@lang('common.illegal_activities')</h5>
+                                        <p>@lang('common.illegal_activities_desc')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-user-secret"></i>
-                                        <h5>Unauthorized Access</h5>
-                                        <p>Attempt to gain unauthorized access to systems, accounts, or networks</p>
+                                        <h5>@lang('common.unauthorized_access')</h5>
+                                        <p>@lang('common.unauthorized_access_desc')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-bug"></i>
-                                        <h5>Harmful Content</h5>
-                                        <p>Post, transmit, or share harmful, offensive, or infringing content</p>
+                                        <h5>@lang('common.harmful_content')</h5>
+                                        <p>@lang('common.harmful_content_desc')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-network-wired"></i>
-                                        <h5>Service Disruption</h5>
-                                        <p>Disrupt, interfere with, or overload the Services' performance</p>
+                                        <h5>@lang('common.service_disruption')</h5>
+                                        <p>@lang('common.service_disruption_desc')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-robot"></i>
-                                        <h5>Automated Access</h5>
-                                        <p>Use bots, scrapers, or other automated means to access our Services</p>
+                                        <h5>@lang('common.automated_access')</h5>
+                                        <p>@lang('common.automated_access_desc')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-chart-line"></i>
-                                        <h5>Commercial Use</h5>
-                                        <p>Use our Services for commercial purposes without explicit authorization</p>
+                                        <h5>@lang('common.commercial_use')</h5>
+                                        <p>@lang('common.commercial_use_desc')</p>
                                     </div>
                                 </div>
 
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> Violation of these prohibitions may result in immediate termination of your account and legal action.</p>
+                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('common.violation_consequences')</p>
                                 </div>
                             </div>
                         </section>
@@ -143,21 +143,21 @@
                                 <div class="section-icon warning">
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
-                                <h3 class="section-title">4. Intellectual Property</h3>
+                                <h3 class="section-title">4. @lang('common.intellectual_property')</h3>
                             </div>
                             <div class="section-content">
-                                <p>All content, features, and functionality available through our Services, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, are the exclusive property of {{ config('app.name') }} and its licensors.</p>
+                                <p>@lang('common.intellectual_property_desc', ['app_name' => config('app.name')])</p>
 
                                 <div class="highlight-box">
-                                    <p class="mb-0"><i class="fas fa-lightbulb text-warning me-2"></i> These materials are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+                                    <p class="mb-0"><i class="fas fa-lightbulb text-warning me-2"></i> @lang('common.protected_materials')</p>
                                 </div>
 
-                                <p>You may not:</p>
+                                <p>@lang('common.you_may_not')</p>
                                 <ul>
-                                    <li>Reproduce, distribute, or create derivative works</li>
-                                    <li>Modify, adapt, or reverse engineer any portion of our Services</li>
-                                    <li>Remove any copyright, trademark, or other proprietary notices</li>
-                                    <li>Use our intellectual property without express written permission</li>
+                                    <li>@lang('common.reproduce_content')</li>
+                                    <li>@lang('common.modify_content')</li>
+                                    <li>@lang('common.remove_notices')</li>
+                                    <li>@lang('common.use_without_permission')</li>
                                 </ul>
                             </div>
                         </section>
@@ -168,20 +168,20 @@
                                 <div class="section-icon danger">
                                     <i class="fas fa-exclamation-circle"></i>
                                 </div>
-                                <h3 class="section-title">5. Disclaimer of Warranties</h3>
+                                <h3 class="section-title">5. @lang('common.disclaimer_of_warranties')</h3>
                             </div>
                             <div class="section-content">
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-info-circle me-2"></i> Our Services are provided "as is" and "as available" without warranties of any kind, either express or implied. To the fullest extent permissible by law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                                    <p class="mb-0"><i class="fas fa-info-circle me-2"></i> @lang('common.services_as_is')</p>
                                 </div>
-                                <p class="mt-3">We do not guarantee that:</p>
+                                <p class="mt-3">@lang('common.we_do_not_guarantee')</p>
                                 <ul>
-                                    <li>Our Services will be uninterrupted, secure, or available at any particular time or location</li>
-                                    <li>Any errors or defects will be corrected</li>
-                                    <li>Our Services are free of viruses or other harmful components</li>
-                                    <li>The results of using our Services will meet your requirements</li>
+                                    <li>@lang('common.uninterrupted_services')</li>
+                                    <li>@lang('common.errors_corrected')</li>
+                                    <li>@lang('common.virus_free')</li>
+                                    <li>@lang('common.meet_requirements')</li>
                                 </ul>
-                                <p><strong>Your use of our Services is solely at your own risk.</strong></p>
+                                <p><strong>@lang('common.use_at_own_risk')</strong></p>
                             </div>
                         </section>
 
@@ -191,24 +191,24 @@
                                 <div class="section-icon info">
                                     <i class="fas fa-hand-paper"></i>
                                 </div>
-                                <h3 class="section-title">6. Limitation of Liability</h3>
+                                <h3 class="section-title">6. @lang('common.limitation_of_liability')</h3>
                             </div>
                             <div class="section-content">
-                                <p>To the maximum extent permitted by applicable law, {{ config('app.name') }} shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:</p>
+                                <p>@lang('common.not_liable_for', ['app_name' => config('app.name')])</p>
                                 <ul>
-                                    <li>Loss of profits, revenue, or data</li>
-                                    <li>Loss of use, goodwill, or other intangible losses</li>
-                                    <li>Damages resulting from unauthorized access to or alteration of your transmissions</li>
-                                    <li>Any conduct or content of any third party on the Services</li>
+                                    <li>@lang('common.loss_of_profits')</li>
+                                    <li>@lang('common.loss_of_use')</li>
+                                    <li>@lang('common.unauthorized_transmissions')</li>
+                                    <li>@lang('common.third_party_content')</li>
                                 </ul>
 
                                 <div class="highlight-box">
-                                    <h5 class="h6 mb-2 fw-semibold">In no event shall our total liability exceed:</h5>
+                                    <h5 class="h6 mb-2 fw-semibold">@lang('common.liability_limit')</h5>
                                     <div class="d-flex align-items-center flex-wrap">
                                         <span class="liability-badge">
                                             <i class="fas fa-dollar-sign me-1"></i>100
                                         </span>
-                                        <span class="small">or the amount you paid us in the last 12 months, whichever is greater.</span>
+                                        <span class="small">@lang('common.or_amount_paid')</span>
                                     </div>
                                 </div>
                             </div>
@@ -220,17 +220,17 @@
                                 <div class="section-icon secondary">
                                     <i class="fas fa-globe-americas"></i>
                                 </div>
-                                <h3 class="section-title">7. Governing Law & Jurisdiction</h3>
+                                <h3 class="section-title">7. @lang('common.governing_law')</h3>
                             </div>
                             <div class="section-content">
-                                <p>These Terms shall be governed by and construed in accordance with the laws of united states of america, without regard to its conflict of law provisions.</p>
+                                <p>@lang('common.governed_by_law', ['country' => 'united states of america'])</p>
 
                                 <div class="info-card">
                                     <div class="d-flex">
                                         <i class="fas fa-gavel me-3 mt-1" style="color: var(--primary);"></i>
                                         <div>
-                                            <p class="mb-1 fw-semibold">Exclusive Jurisdiction</p>
-                                            <p class="mb-0 small">Any legal suit, action, or proceeding arising out of or related to these Terms shall be instituted exclusively in the courts located in [Your Jurisdiction]. You consent to the personal jurisdiction of such courts.</p>
+                                            <p class="mb-1 fw-semibold">@lang('common.exclusive_jurisdiction')</p>
+                                            <p class="mb-0 small">@lang('common.exclusive_jurisdiction_desc')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -243,15 +243,15 @@
                                 <div class="section-icon warning">
                                     <i class="fas fa-sync-alt"></i>
                                 </div>
-                                <h3 class="section-title">8. Changes to Terms</h3>
+                                <h3 class="section-title">8. @lang('common.changes_to_terms')</h3>
                             </div>
                             <div class="section-content">
                                 <div class="warning-card">
                                     <div class="d-flex">
                                         <i class="fas fa-bell me-3 mt-1" style="color: #ffc107;"></i>
                                         <div>
-                                            <p class="mb-1 fw-semibold">We reserve the right to modify these Terms at any time.</p>
-                                            <p class="mb-0 small">When we do, we will revise the "last updated" date at the top of this page. We may also provide additional notice (such as adding a statement to our homepage or sending you a notification). Your continued use of our Services after such modifications constitutes your acceptance of the new Terms.</p>
+                                            <p class="mb-1 fw-semibold">@lang('common.we_reserve_right')</p>
+                                            <p class="mb-0 small">@lang('common.terms_modification_notice')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -264,25 +264,25 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <h3 class="section-title">9. Contact Information</h3>
+                                <h3 class="section-title">9. @lang('common.contact_information')</h3>
                             </div>
                             <div class="section-content">
-                                <p>For questions, concerns, or notices about these Terms and Conditions, please contact us through any of the following methods:</p>
+                                <p>@lang('common.contact_us_for_questions')</p>
 
                                 <div class="contact-buttons">
                                     <a href="mailto:contact@lilydecors.com" class="contact-btn">
-                                        <i class="fas fa-envelope me-2"></i>Email Legal Team
+                                        <i class="fas fa-envelope me-2"></i>@lang('common.email_legal_team')
                                     </a>
                                     <a href="{{ url('contact') }}" class="contact-btn">
-                                        <i class="fas fa-comment-alt me-2"></i>Contact Form
+                                        <i class="fas fa-comment-alt me-2"></i>@lang('common.contact_form')
                                     </a>
                                     <a href="#" class="contact-btn">
-                                        <i class="fas fa-map-marker-alt me-2"></i>Visit Our Office
+                                        <i class="fas fa-map-marker-alt me-2"></i>@lang('common.visit_our_office')
                                     </a>
                                 </div>
 
                                 <div class="info-card mt-3">
-                                    <p class="mb-0"><i class="fas fa-clock me-2"></i> We typically respond to legal inquiries within 2-3 business days.</p>
+                                    <p class="mb-0"><i class="fas fa-clock me-2"></i> @lang('common.response_time')</p>
                                 </div>
                             </div>
                         </section>
@@ -291,10 +291,10 @@
                     <!-- Action Buttons -->
                     <div class="action-buttons">
                         <a href="{{ url(app()->getLocale() . '/') }}" class="home-btn">
-                            <i class="fas fa-home me-2"></i>Back to Homepage
+                            <i class="fas fa-home me-2"></i>@lang('common.back_to_homepage')
                         </a>
                         <button onclick="window.print()" class="print-btn">
-                            <i class="fas fa-print me-2"></i>Print Terms
+                            <i class="fas fa-print me-2"></i>@lang('common.print_terms')
                         </button>
                     </div>
                 </div>

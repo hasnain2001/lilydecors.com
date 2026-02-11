@@ -1,8 +1,17 @@
 @extends('layouts.master')
-@section('title', 'Affiliate Disclosure | LilyDecors - Home Decor & Design Inspiration')
-@section('description', 'Learn about our affiliate disclosure policy. We believe in transparency about how we earn commissions through affiliate links on our home decor blog.')
-@section('keywords', 'affiliate disclosure, affiliate links, commissions, transparency, policy, home decor blog')
-@section('author', 'LilyDecors')
+@section('title')
+    @lang('affiliate.title')
+@endsection
+
+@section('description')
+    @lang('affiliate.description')
+@endsection
+
+@section('keywords')
+    @lang('affiliate.keywords')
+@endsection
+
+@section('author', config('app.name'))
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/affiliate-disclosure.css') }}">
@@ -12,29 +21,29 @@
 <div class="affiliate-content">
     <!-- Breadcrumb -->
     <nav class="breadcrumb-affiliate">
-        <a href="/"><i class="fas fa-home"></i> Home</a>
+        <a href="/"><i class="fas fa-home"></i> @lang('common.home')</a>
         <span class="mx-2">/</span>
-        <span class="active">Affiliate Disclosure</span>
+        <span class="active">@lang('affiliate.breadcrumb')</span>
     </nav>
 
     <!-- Hero Section -->
     <section class="affiliate-hero">
-        <h1>Affiliate Disclosure</h1>
-        <p class="hero-subtitle">Transparency and trust are the foundation of our relationship with you. Here's everything you need to know about how we operate.</p>
+        <h1>@lang('affiliate.hero.title')</h1>
+        <p class="hero-subtitle">@lang('affiliate.hero.subtitle')</p>
     </section>
 
     <!-- Main Disclosure Section -->
     <section class="affiliate-section">
-        <h2 class="section-title">Our Transparency Promise</h2>
+        <h2 class="section-title">@lang('affiliate.transparency.title')</h2>
         <div class="section-content">
-            <p>At LilyDecors, we believe in complete transparency with our readers. This website participates in various affiliate marketing programs, which means we may earn commissions on purchases made through our links to retailer sites.</p>
+            <p>@lang('affiliate.transparency.intro', ['app_name' => config('app.name')])</p>
             
             <div class="icon-section">
                 <div class="icon-box">
                     <i class="fas fa-handshake"></i>
                 </div>
                 <div class="icon-content">
-                    <p><strong>Our Commitment:</strong> We only recommend products and services that we genuinely believe will add value to your home decor journey. Every product featured on LilyDecors goes through our rigorous review process before being shared with you.</p>
+                    <p><strong>@lang('affiliate.transparency.commitment.title'):</strong> @lang('affiliate.transparency.commitment.description', ['app_name' => config('app.name')])</p>
                 </div>
             </div>
 
@@ -43,7 +52,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <div class="icon-content">
-                    <p><strong>No Extra Cost to You:</strong> When you use our affiliate links to make a purchase, the price you pay remains exactly the same. The commission we earn comes directly from the retailer as a thank-you for referring you.</p>
+                    <p><strong>@lang('affiliate.transparency.no_cost.title'):</strong> @lang('affiliate.transparency.no_cost.description', ['app_name' => config('app.name')])</p>
                 </div>
             </div>
         </div>
@@ -51,33 +60,33 @@
 
     <!-- Important Notice -->
     <div class="important-box">
-        <h3 class="important-title"><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
-        <p>All content on LilyDecors, including product recommendations and reviews, is created based on our honest opinions and experiences. Affiliate relationships do not influence our editorial content – if we don't love it, we don't recommend it.</p>
+        <h3 class="important-title"><i class="fas fa-exclamation-triangle"></i> @lang('affiliate.important.title')</h3>
+        <p>@lang('affiliate.important.description', ['app_name' => config('app.name')])</p>
     </div>
 
     <!-- How It Works -->
     <section class="affiliate-section">
-        <h2 class="section-title">How Affiliate Links Work</h2>
+        <h2 class="section-title">@lang('affiliate.how_it_works.title')</h2>
         <div class="section-content">
-            <p>When you click on an affiliate link on our site, a small tracking cookie is placed in your browser. This cookie tells the retailer that you came from LilyDecors, and if you make a purchase within their specified time frame (usually 24-48 hours), we earn a small commission.</p>
+            <p>@lang('affiliate.how_it_works.description', ['app_name' => config('app.name')])</p>
             
             <div class="principles-grid">
                 <div class="principle-card">
                     <i class="fas fa-link principle-icon"></i>
-                    <h3>Tracking Links</h3>
-                    <p>Special links that track referrals without compromising your privacy or security</p>
+                    <h3>@lang('affiliate.how_it_works.tracking_links.title')</h3>
+                    <p>@lang('affiliate.how_it_works.tracking_links.description')</p>
                 </div>
                 
                 <div class="principle-card">
                     <i class="fas fa-cookie principle-icon"></i>
-                    <h3>Session Cookies</h3>
-                    <p>Temporary tracking that doesn't store personal information</p>
+                    <h3>@lang('affiliate.how_it_works.session_cookies.title')</h3>
+                    <p>@lang('affiliate.how_it_works.session_cookies.description')</p>
                 </div>
                 
                 <div class="principle-card">
                     <i class="fas fa-shopping-cart principle-icon"></i>
-                    <h3>Commission Earned</h3>
-                    <p>Small percentage from retailers, never added to your purchase price</p>
+                    <h3>@lang('affiliate.how_it_works.commission_earned.title')</h3>
+                    <p>@lang('affiliate.how_it_works.commission_earned.description')</p>
                 </div>
             </div>
         </div>
@@ -85,25 +94,25 @@
 
     <!-- Our Principles -->
     <section class="affiliate-section">
-        <h2 class="section-title">Our Guiding Principles</h2>
+        <h2 class="section-title">@lang('affiliate.principles.title')</h2>
         <div class="section-content">
             <div class="principles-grid">
                 <div class="principle-card">
                     <i class="fas fa-balance-scale principle-icon"></i>
-                    <h3>Honesty First</h3>
-                    <p>We provide honest reviews and only recommend products we truly believe in</p>
+                    <h3>@lang('affiliate.principles.honesty.title')</h3>
+                    <p>@lang('affiliate.principles.honesty.description')</p>
                 </div>
                 
                 <div class="principle-card">
                     <i class="fas fa-eye principle-icon"></i>
-                    <h3>Full Transparency</h3>
-                    <p>Clear disclosure of all affiliate relationships and potential commissions</p>
+                    <h3>@lang('affiliate.principles.transparency.title')</h3>
+                    <p>@lang('affiliate.principles.transparency.description')</p>
                 </div>
                 
                 <div class="principle-card">
                     <i class="fas fa-user-shield principle-icon"></i>
-                    <h3>Reader-First Approach</h3>
-                    <p>Your interests and experience always come before potential earnings</p>
+                    <h3>@lang('affiliate.principles.reader_first.title')</h3>
+                    <p>@lang('affiliate.principles.reader_first.description')</p>
                 </div>
             </div>
         </div>
@@ -111,59 +120,59 @@
 
     <!-- FAQ Section -->
     <section class="faq-section">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+        <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">@lang('affiliate.faq.title')</h2>
         
         <div class="faq-item" onclick="toggleFAQ(this)">
             <div class="faq-question">
-                Does using affiliate links cost me more?
+                @lang('affiliate.faq.question1.question')
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Absolutely not! The price you pay remains exactly the same whether you use our affiliate link or go directly to the retailer. The commission comes from the retailer's marketing budget, not from your purchase.</p>
+                <p>@lang('affiliate.faq.question1.answer')</p>
             </div>
         </div>
         
         <div class="faq-item" onclick="toggleFAQ(this)">
             <div class="faq-question">
-                Do affiliate relationships influence your reviews?
+                @lang('affiliate.faq.question2.question')
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>No. We maintain strict editorial independence. If we don't genuinely love a product, we won't recommend it, regardless of potential commissions. Our reputation and your trust are far more valuable than any affiliate commission.</p>
+                <p>@lang('affiliate.faq.question2.answer', ['app_name' => config('app.name')])</p>
             </div>
         </div>
         
         <div class="faq-item" onclick="toggleFAQ(this)">
             <div class="faq-question">
-                How do affiliate commissions support LilyDecors?
+                @lang('affiliate.faq.question3.question', ['app_name' => config('app.name')])
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>Affiliate commissions help us maintain and improve LilyDecors. They cover hosting costs, content creation, product testing, and allow us to continue providing free, high-quality home decor content to our readers.</p>
+                <p>@lang('affiliate.faq.question3.answer', ['app_name' => config('app.name')])</p>
             </div>
         </div>
         
         <div class="faq-item" onclick="toggleFAQ(this)">
             <div class="faq-question">
-                Are all links on your site affiliate links?
+                @lang('affiliate.faq.question4.question')
                 <span class="faq-toggle">+</span>
             </div>
             <div class="faq-answer">
-                <p>No. We include a mix of affiliate and non-affiliate links. We always strive to provide the most helpful resources, regardless of whether they're affiliate links or not.</p>
+                <p>@lang('affiliate.faq.question4.answer')</p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <h3>Your Trust Matters to Us</h3>
-        <p>We're committed to maintaining the highest standards of transparency and integrity. If you have any questions about our affiliate relationships, we're here to help.</p>
+        <h3>@lang('affiliate.cta.title')</h3>
+        <p>@lang('affiliate.cta.description')</p>
         <div class="cta-buttons">
             <a href="/contact" class="cta-btn primary">
-                <i class="fas fa-envelope me-2"></i>Contact Us
+                <i class="fas fa-envelope me-2"></i>@lang('common.contact_us')
             </a>
             <a href="/privacy-policy" class="cta-btn secondary">
-                <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                <i class="fas fa-shield-alt me-2"></i>@lang('common.privacy_policy')
             </a>
         </div>
     </section>
@@ -204,7 +213,7 @@
                 width: ${size}px;
                 height: ${size}px;
                 top: ${y}px;
-                left: ${x}px;
+                    left: ${x}px;
                 pointer-events: none;
             `;
             

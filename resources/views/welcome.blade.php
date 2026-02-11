@@ -1,16 +1,19 @@
 @extends('layouts.master')
 
 @section('title')
-    {{ config('app.name') }} | Home Decor & Fashion Blogs {{ date('Y') }}
+    @lang('welcome.title')
 @endsection
 
 @section('description')
-    Discover beautiful home decor ideas and fashion trends. Get inspired with our curated blogs on interior design, styling tips, and modern living.
+    @lang('welcome.description')
 @endsection
 
-@section('keywords', 'home decor, interior design, fashion blogs, lifestyle, home improvement, styling tips')
+@section('keywords')
+    @lang('welcome.keywords')
+@endsection
 
-@section('author', 'John Doe')
+@section('author', 'Marcus Johnson')
+@section('publisher', 'Marcus Johnson')
 
 @push('styles')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,10 +26,10 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Beautiful Homes, Inspired Living</h1>
-                <p class="hero-subtitle">Discover the latest home decor ideas, fashion trends, and lifestyle tips to transform your space and style.</p>
+                <h1 class="hero-title">@lang('welcome.hero_title')</h1>
+                <p class="hero-subtitle">@lang('welcome.hero_subtitle')</p>
                 <a href="{{ route('blog') }}" class="btn hero-btn">
-                    Explore Inspiration <i class="fas fa-arrow-right ms-2"></i>
+                    @lang('welcome.hero_button') <i class="fas fa-arrow-right ms-2"></i>
                 </a>
             </div>
         </div>
@@ -51,14 +54,14 @@
 
                                 <h4 class="category-name">{{ $category->name }}</h4>
                                 <span class="category-count">
-                                    {{ $category->blogs->count() ?? 0 }} Ideas
+                                    {{ trans_choice('welcome.category_ideas', $category->blogs->count() ?? 0, ['count' => $category->blogs->count() ?? 0]) }}
                                 </span>
                             </div>
                         </a>
                     </div>
                 @empty
                     <div class="col-12 text-center">
-                        <p class="lead">No categories found. Check back soon!</p>
+                        <p class="lead">@lang('welcome.no_categories')</p>
                     </div>
                 @endforelse
             </div>
@@ -68,7 +71,7 @@
     <!-- Featured Room Blogs Slider -->
     <section id="featured" class="py-5">
         <div class="container">
-            <h2 class="section-title">Latest Room Ideas</h2>
+            <h2 class="section-title">@lang('welcome.latest_room_ideas')</h2>
             
             @if($roomBlogs->count() > 0)
                 <div class="slider-container">
@@ -90,10 +93,10 @@
                                             <p class="card-text">{{ Str::limit($blog->description ?? '', 120) }}</p>
                                             <div class="card-meta">
                                                 <span><i class="far fa-calendar me-1"></i> {{ $blog->created_at->format('M d, Y') }}</span>
-                                                <span><i class="far fa-eye me-1"></i> 1.2k</span>
+                                                <span><i class="far fa-eye me-1"></i> @lang('welcome.view_count', ['count' => '1.2'])</span>
                                             </div>
                                             <a href="{{ route('blog.details', ['slug' => $blog->slug]) }}" class="read-more-btn">
-                                                Read More <i class="fas fa-arrow-right"></i>
+                                                @lang('welcome.read_more') <i class="fas fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -112,12 +115,12 @@
                 
                 <div class="text-center mt-4">
                     <a href="{{ route('category.details', ['slug' => 'living-room']) }}" class="btn btn-outline-secondary btn-lg">
-                        View All Room Ideas <i class="fas fa-arrow-right ms-2"></i>
+                        @lang('welcome.view_all_rooms') <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             @else
                 <div class="col-12 text-center">
-                    <p class="lead">No room blogs found. Check back soon!</p>
+                    <p class="lead">@lang('welcome.no_room_blogs')</p>
                 </div>
             @endif
         </div>
@@ -126,7 +129,7 @@
     <!-- Fashion Blogs Slider -->
     <section class="featured-section">
         <div class="container">
-            <h2 class="section-title">Fashion & Style Trends</h2>
+            <h2 class="section-title">@lang('welcome.fashion_trends')</h2>
             
             @if($fashionBlogs->count() > 0)
                 <div class="slider-container">
@@ -148,10 +151,10 @@
                                             <p class="card-text">{{ Str::limit($blog->description ?? '', 120) }}</p>
                                             <div class="card-meta">
                                                 <span><i class="far fa-calendar me-1"></i> {{ $blog->created_at->format('M d, Y') }}</span>
-                                                <span><i class="far fa-eye me-1"></i> 1.5k</span>
+                                                <span><i class="far fa-eye me-1"></i> @lang('welcome.view_count', ['count' => '1.5'])</span>
                                             </div>
                                             <a href="{{ route('blog.details', ['slug' => $blog->slug]) }}" class="read-more-btn">
-                                                Read More <i class="fas fa-arrow-right"></i>
+                                                @lang('welcome.read_more') <i class="fas fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -170,12 +173,12 @@
                 
                 <div class="text-center mt-4">
                     <a href="{{ route('category.details', ['slug' => 'fashion']) }}" class="btn btn-outline-secondary btn-lg">
-                        View All Fashion Trends <i class="fas fa-arrow-right ms-2"></i>
+                        @lang('welcome.view_all_fashion') <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             @else
                 <div class="col-12 text-center">
-                    <p class="lead">No fashion blogs found. Check back soon!</p>
+                    <p class="lead">@lang('welcome.no_fashion_blogs')</p>
                 </div>
             @endif
         </div>
@@ -188,25 +191,25 @@
                 <div class="col-6 col-md-3">
                     <div class="stat-item">
                         <div class="stat-number">{{ $blogs->count() }}</div>
-                        <div class="stat-label">Blog Articles</div>
+                        <div class="stat-label">@lang('welcome.blog_articles')</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="stat-item">
                         <div class="stat-number">{{ $categories->count() }}</div>
-                        <div class="stat-label">Categories</div>
+                        <div class="stat-label">@lang('welcome.categories')</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="stat-item">
                         <div class="stat-number">10K+</div>
-                        <div class="stat-label">Monthly Readers</div>
+                        <div class="stat-label">@lang('welcome.monthly_readers')</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="stat-item">
                         <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-label">@lang('welcome.years_experience')</div>
                     </div>
                 </div>
             </div>
@@ -216,14 +219,14 @@
     <!-- Newsletter Section -->
     <section class="newsletter-section">
         <div class="container">
-            <h2 class="newsletter-title">Stay Updated</h2>
-            <p class="mb-4">Subscribe to our newsletter for weekly inspiration, tips, and exclusive content.</p>
+            <h2 class="newsletter-title">@lang('welcome.stay_updated')</h2>
+            <p class="mb-4">@lang('welcome.newsletter_text')</p>
             <form class="newsletter-form" id="newsletterForm">
                 <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Enter your email address" required>
-                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                    <input type="email" class="form-control" placeholder="@lang('welcome.email_placeholder')" required>
+                    <button class="btn btn-primary" type="submit">@lang('welcome.subscribe')</button>
                 </div>
-                <p class="mt-3 small opacity-75">We respect your privacy. Unsubscribe at any time.</p>
+                <p class="mt-3 small opacity-75">@lang('welcome.privacy_note')</p>
             </form>
         </div>
     </section>
@@ -231,14 +234,15 @@
     <!-- All Categories CTA -->
     <section class="py-5">
         <div class="container text-center">
-            <h2 class="section-title">Explore All Categories</h2>
-            <p class="lead mb-4">Discover content across all our categories to find exactly what inspires you.</p>
+            <h2 class="section-title">@lang('welcome.explore_categories')</h2>
+            <p class="lead mb-4">@lang('welcome.explore_all_categories_text')</p>
             <a href="{{ route('category') }}" class="btn btn-secondary btn-lg">
-                <i class="fas fa-th-large me-2"></i> Browse All Categories
+                <i class="fas fa-th-large me-2"></i> @lang('welcome.browse_all_categories')
             </a>
         </div>
     </section>
 @endsection
+
 
 @push('scripts')
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

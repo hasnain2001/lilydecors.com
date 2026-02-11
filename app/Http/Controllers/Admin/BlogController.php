@@ -32,7 +32,7 @@ class BlogController extends Controller
     {
         return view('admin.blog.create', [
             'categories' => Category::latest('created_at')->get(),
-            // 'languages'  => Language::latest()->get(),
+            'languages'  => Language::latest()->get(),
             'stores'     => Store::latest('created_at')->get(),
         ]);
     }
@@ -49,17 +49,17 @@ class BlogController extends Controller
             'title'            => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
             'meta_keyword'     => 'nullable|string|max:255',
-            'image'            => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
-            'content'          => 'nullable|string',
+            'image'            => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'content'          => 'required|string',
             'category_id'      => 'required|exists:categories,id',
-            'status'           => 'nullable|boolean',
-            // 'language_id'      => 'nullable|exists:languages,id',
+            'status'           => 'required|boolean',
+            'language_id'      => 'required|exists:languages,id',
             'store_id'         => 'nullable|exists:stores,id',
         ]);
 
         $blog = new Blog();
         $blog->user_id        = Auth::id();
-        // $blog->language_id    = $request->input('language_id') ?? 1;
+        $blog->language_id    = $request->input('language_id');
         $blog->store_id       = $request->input('store_id');
         $blog->name           = $request->input('name');
         $blog->slug           = $request->input('slug');
@@ -86,7 +86,7 @@ class BlogController extends Controller
             $blog->save();
         }
 
-        return redirect()->route('admin.blog.index')
+        return redirect()->route('admin.blog.show', $blog->id)
             ->with('success', 'Blog created successfully.');
     }
     /* ============================
@@ -107,7 +107,7 @@ class BlogController extends Controller
         return view('admin.blog.edit', [
             'blog'       => $blog,
             'categories' => Category::latest('created_at')->get(),
-            // 'languages'  => Language::latest('created_at')->get(),
+            'languages'  => Language::latest('created_at')->get(),
             'stores'     => Store::latest('created_at')->get(),
         ]);
     }
@@ -125,7 +125,7 @@ class BlogController extends Controller
             'content'          => 'required|string',
             'image'            => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'category_id'      => 'required|exists:categories,id',
-            // 'language_id'      => 'nullable|exists:languages,id',
+            'language_id'      => 'required|exists:languages,id',
             'store_id'         => 'nullable|exists:stores,id',
             'status'           => 'nullable|boolean',
         ]);
@@ -155,20 +155,20 @@ class BlogController extends Controller
 
         /* 📝 UPDATE DATA */
         $blog->updated_id       = Auth::id();
-        // $blog->language_id      = $request->input('language_id') ?? $blog->language_id;
-        $blog->store_id         = $request->input('store_id');
-        $blog->name             = $request->input('name');
-        $blog->slug             = $request->input('slug');
-        $blog->description      = $request->input('description');
-        $blog->title            = $request->input('title');
-        $blog->content          = $request->input('content');
-        $blog->meta_keyword     = $request->input('meta_keyword');
-        $blog->meta_description = $request->input('meta_description');
+        $blog->language_id      = $request->input('language_id') ?? $blog->language_id;
+        $blog->store_id         = $request->input('store_id') ?? $blog->store_id;
+        $blog->name             = $request->input('name') ?? $blog->name;
+        $blog->slug             = $request->input('slug') ?? $blog->slug;
+        $blog->description      = $request->input('description') ?? $blog->description;
+        $blog->title            = $request->input('title') ?? $blog->title;
+        $blog->content          = $request->input('content') ?? $blog->content;
+        $blog->meta_keyword     = $request->input('meta_keyword') ?? $blog->meta_keyword;
+        $blog->meta_description = $request->input('meta_description') ?? $blog->meta_description;
         $blog->status           = $request->input('status') ?? 0;
-        $blog->category_id      = $request->input('category_id');
+        $blog->category_id      = $request->input('category_id') ?? $blog->category_id;
         $blog->save();
 
-        return redirect()->route('admin.blog.index')
+        return redirect()->route('admin.blog.show', $blog->id)
             ->with('success', 'Blog updated successfully.');
     }
 

@@ -1,19 +1,32 @@
 @extends('layouts.master')
-@section('title', 'Imprint - Legal Information | ' . config('app.name'))
-@section('description', 'Legal information, company details, and contact information for ' . config('app.name') . '. Find our imprint, disclaimer, and legal notices.')
-@section('keywords', 'imprint, legal information, company details, contact, disclaimer, copyright, ' . config('app.name'))
-@section('author', config('app.name'))
+@section('title')
+    @lang('imprint.meta.title', ['app_name' => config('app.name')])
+@endsection
+
+@section('description')
+    @lang('imprint.meta.description', ['app_name' => config('app.name')])
+@endsection
+
+@section('keywords')
+    @lang('imprint.meta.keywords', ['app_name' => config('app.name')])
+@endsection
+
+@section('author')
+    @lang('imprint.meta.author')
+@endsection
+
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/imprint.css') }}">
 @endpush
+
 @section('content')
 <main>
     <!-- Hero Section -->
     <section class="imprint-hero">
         <div class="container">
             <div class="imprint-hero-content">
-                <h1>Legal Imprint</h1>
-                <p>Company details, legal information, and contact details</p>
+                <h1>@lang('imprint.hero.title')</h1>
+                <p>@lang('imprint.hero.description')</p>
             </div>
         </div>
     </section>
@@ -26,8 +39,7 @@
                     <!-- Card Header -->
                     <div class="imprint-header">
                         <div class="imprint-header-content">
-                            <h2><i class="fas fa-scale-balanced "></i>Legal Information</h2>
-
+                            <h2><i class="fas fa-scale-balanced"></i>@lang('imprint.header.title')</h2>
                         </div>
                     </div>
 
@@ -36,10 +48,10 @@
                         <div class="info-icon">
                             <i class="fas fa-building"></i>
                         </div>
-                        <h3 class="info-title">Company Details</h3>
+                        <h3 class="info-title">@lang('imprint.sections.company.title')</h3>
                         <div class="info-content">
-                            <p class="mb-2"><strong>Lilydecors Ltd.</strong></p>
-                            <p class="mb-0">Your trusted partner for deals and coupons</p>
+                            <p class="mb-2"><strong>@lang('imprint.sections.company.name')</strong></p>
+                            <p class="mb-0">@lang('imprint.sections.company.description', ['app_name' => config('app.name')])</p>
                         </div>
                     </div>
 
@@ -48,11 +60,11 @@
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h3 class="info-title">Registered Address</h3>
+                        <h3 class="info-title">@lang('imprint.sections.address.title')</h3>
                         <div class="info-content">
-                            <p class="mb-1">3000 Hoffman Dr,</p>
-                            <p class="mb-1">Plano, Tx USA 75074</p>
-                            <p class="mb-0">United States of America</p>
+                            <p class="mb-1">@lang('imprint.sections.address.line1')</p>
+                            <p class="mb-1">@lang('imprint.sections.address.line2')</p>
+                            <p class="mb-0">@lang('imprint.sections.address.country')</p>
                         </div>
                     </div>
 
@@ -61,16 +73,16 @@
                         <div class="info-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h3 class="info-title">Contact Information</h3>
+                        <h3 class="info-title">@lang('imprint.sections.contact.title')</h3>
                         <div class="info-content">
                             <div class="contact-highlight">
                                 <p class="mb-2">
-                                    <strong>Email:</strong>
-                                    <a href="mailto:contact@Lilydecors.com">contact@Lilydecors.com</a>
+                                    <strong>@lang('imprint.sections.contact.email_label'):</strong>
+                                    <a href="mailto:@lang('imprint.sections.contact.email_address')">@lang('imprint.sections.contact.email_address')</a>
                                 </p>
                                 <p class="mb-0">
-                                    <strong>Phone:</strong>
-                                    <a href="tel:+17473651163">+17473651163</a>
+                                    <strong>@lang('imprint.sections.contact.phone_label'):</strong>
+                                    <a href="tel:@lang('imprint.sections.contact.phone_number')">@lang('imprint.sections.contact.phone_number')</a>
                                 </p>
                             </div>
                         </div>
@@ -81,11 +93,10 @@
                         <div class="info-icon">
                             <i class="fas fa-gavel"></i>
                         </div>
-                        <h3 class="info-title">Legal Representation</h3>
+                        <h3 class="info-title">@lang('imprint.sections.legal.title')</h3>
                         <div class="info-content">
-                            {{-- <p class="mb-2"><strong>Managing Director:</strong> John Doe</p> --}}
-                            <p class="mb-2"><strong>Commercial Register:</strong> Plano County, HRB 123456</p>
-                            <p class="mb-0"><strong>VAT Identification Number:</strong> US123456789</p>
+                            <p class="mb-2"><strong>@lang('imprint.sections.legal.commercial_register_label'):</strong> @lang('imprint.sections.legal.commercial_register')</p>
+                            <p class="mb-0"><strong>@lang('imprint.sections.legal.vat_label'):</strong> @lang('imprint.sections.legal.vat_number')</p>
                         </div>
                     </div>
 
@@ -94,11 +105,11 @@
                         <div class="info-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h3 class="info-title">Professional Indemnity Insurance</h3>
+                        <h3 class="info-title">@lang('imprint.sections.insurance.title')</h3>
                         <div class="info-content">
-                            <p class="mb-2"><strong>Insurance Provider:</strong> Example Insurance Co.</p>
-                            <p class="mb-2"><strong>Territorial Coverage:</strong> Worldwide</p>
-                            <p class="mb-0"><strong>Policy Number:</strong> EI-987654321</p>
+                            <p class="mb-2"><strong>@lang('imprint.sections.insurance.provider_label'):</strong> @lang('imprint.sections.insurance.provider')</p>
+                            <p class="mb-2"><strong>@lang('imprint.sections.insurance.coverage_label'):</strong> @lang('imprint.sections.insurance.coverage')</p>
+                            <p class="mb-0"><strong>@lang('imprint.sections.insurance.policy_label'):</strong> @lang('imprint.sections.insurance.policy_number')</p>
                         </div>
                     </div>
 
@@ -107,11 +118,11 @@
                         <div class="info-icon">
                             <i class="fas fa-exclamation-triangle"></i>
                         </div>
-                        <h3 class="info-title">Disclaimer</h3>
+                        <h3 class="info-title">@lang('imprint.sections.disclaimer.title')</h3>
                         <div class="info-content">
-                            <span class="legal-badge">Important Legal Notice</span>
-                            <p class="mb-3">The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
-                            <p class="mb-0">Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+                            <span class="legal-badge">@lang('imprint.sections.disclaimer.badge')</span>
+                            <p class="mb-3">@lang('imprint.sections.disclaimer.paragraph1')</p>
+                            <p class="mb-0">@lang('imprint.sections.disclaimer.paragraph2')</p>
                         </div>
                     </div>
 
@@ -120,10 +131,10 @@
                         <div class="info-icon">
                             <i class="fas fa-external-link-alt"></i>
                         </div>
-                        <h3 class="info-title">External Links Disclaimer</h3>
+                        <h3 class="info-title">@lang('imprint.sections.external_links.title')</h3>
                         <div class="info-content">
-                            <p class="mb-3">Through this website you are able to link to other websites which are not under the control of Lilydecors Ltd. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
-                            <p class="mb-0">Every effort is made to keep the website up and running smoothly. However, Lilydecors Ltd. takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+                            <p class="mb-3">@lang('imprint.sections.external_links.paragraph1')</p>
+                            <p class="mb-0">@lang('imprint.sections.external_links.paragraph2')</p>
                         </div>
                     </div>
 
@@ -132,10 +143,10 @@
                         <div class="info-icon">
                             <i class="fas fa-copyright"></i>
                         </div>
-                        <h3 class="info-title">Copyright Notice</h3>
+                        <h3 class="info-title">@lang('imprint.sections.copyright.title')</h3>
                         <div class="info-content">
-                            <p class="mb-3">© {{ date('Y') }} Lilydecors Ltd. All rights reserved.</p>
-                            <p class="mb-0">All content, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Lilydecors Ltd. or its content suppliers and protected by international copyright laws.</p>
+                            <p class="mb-3">@lang('imprint.sections.copyright.notice', ['year' => date('Y'), 'app_name' => config('app.name')])</p>
+                            <p class="mb-0">@lang('imprint.sections.copyright.description', ['app_name' => config('app.name')])</p>
                         </div>
                     </div>
 
@@ -144,18 +155,18 @@
                         <div class="info-icon">
                             <i class="fas fa-sync-alt"></i>
                         </div>
-                        <h3 class="info-title">Updates & Changes</h3>
+                        <h3 class="info-title">@lang('imprint.sections.updates.title')</h3>
                         <div class="info-content">
-                            <p class="mb-3">We reserve the right to update or change our imprint information at any time. Any changes will be posted on this page with an updated revision date.</p>
-                            <p class="mb-1"><strong>Last Updated:</strong> {{ date('F j, Y') }}</p>
-                            <p class="mb-0"><strong>Effective Date:</strong> January 1, 2023</p>
+                            <p class="mb-3">@lang('imprint.sections.updates.paragraph1')</p>
+                            <p class="mb-1"><strong>@lang('imprint.sections.updates.last_updated_label'):</strong> {{ date('F j, Y') }}</p>
+                            <p class="mb-0"><strong>@lang('imprint.sections.updates.effective_date_label'):</strong> @lang('imprint.sections.updates.effective_date')</p>
                         </div>
                     </div>
 
                     <!-- Back to Home -->
                     <div class="back-home-section">
                         <a href="{{ url('/') }}" class="btn-primary-custom">
-                            <i class="fas fa-home"></i>Back to Homepage
+                            <i class="fas fa-home"></i>@lang('imprint.back_home.button')
                         </a>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('title')
     @if ($store->title)
-    {{ $store->title }} - {{ config('app.name') }}
+    {{ $store->title }} in {{ date('Y') }}
     @else
-    {{ $store->name }} - Coupons & Promo Codes {{ date('Y') }} - {{ config('app.name') }}
+    {{ $store->name }} - @lang('common.coupons') & @lang('common.discount_codes') {{ date('Y') }} - {{ config('app.name') }}
     @endif
 @endsection
 
@@ -11,15 +11,15 @@
     @if ($store->meta_description)
         {{ $store->meta_description }}
     @else
-        Save money at {{ $store->name }} with exclusive promo codes, vouchers, and special offers. Get the best deals and discounts verified by Vouchersweell.com.
+        @lang('common.save_money_at') {{ $store->name }} @lang('common.with_exclusive_promo_codes')
     @endif
 @endsection
 
 @section('keywords')
     @if ($store->meta_keyword)
-        {{ $store->meta_keyword }}, {{ $store->name }} discounts, {{ $store->name }} promo codes
+        {{ $store->meta_keyword }}, {{ $store->name }} @lang('common.discounts'), {{ $store->name }} @lang('common.promo_codes')
     @else
-        {{ $store->name }}, {{ $store->name }} coupons, {{ $store->name }} vouchers, discount codes, promo offers, save money, online deals
+        {{ $store->name }}, {{ $store->name }} @lang('common.coupons'), {{ $store->name }} @lang('common.vouchers'), @lang('common.discount_codes'), @lang('common.promo_offers'), @lang('common.save_money'), @lang('common.online_deals')
     @endif
 @endsection
 
@@ -54,7 +54,7 @@
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
                             </span>
-                            <span class="breadcrumb-text">@lang('nav.home')</span>
+                            <span class="breadcrumb-text">@lang('common.home')</span>
                         </a>
 
                         <span class="breadcrumb-separator">
@@ -75,7 +75,7 @@
                                     <span class="breadcrumb-text">{{ $store->category->name }}</span>
                                 </a>
                             @else
-                                <span class="breadcrumb-text">No Category</span>
+                                <span class="breadcrumb-text">@lang('common.no_category')</span>
                             @endif
                         </div>
 
@@ -93,7 +93,7 @@
                                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                 </svg>
                             </span>
-                            <span class="breadcrumb-text">@lang('nav.stores')</span>
+                            <span class="breadcrumb-text">@lang('common.stores')</span>
                         </a>
 
                         <span class="breadcrumb-separator">
@@ -135,20 +135,23 @@
                 </div>
 
                 <!-- Store Info -->
-                <div class="col-md-7 col-8">
+                <div class="col-md-10 col-7">
                     <div class="store-info">
-                        <h1 class="mb-2">{{ $store->name }}</h1>
+                        <h1 class="store-name mb-2">{{ $store->name }} @lang('common.coupon_codes_deals') February {{ date('Y') }} -
+                            {{ config('app.name') }}
+                        </h1>
+                       
                         <div class="store-rating d-flex align-items-center mb-3">
                             <div class="stars text-warning me-2">
                                 ⭐⭐⭐⭐⭐
                             </div>
-                            <span class="text-muted small">(4.8/5) • {{ $totalCount }} offers</span>
+                            <span class="text-muted small">(4.8/5) • {{ $totalCount }} @lang('common.offers')</span>
                         </div>
-                        <p class="store-tagline mb-0 d-none d-md-block">
-                            {{ $store->description, 150 }}
+                        <p class=" mb-0 d-none d-md-block">
+                            {{ $store->description ? Str::limit($store->description, 150) : '@lang("common.discover_amazing_deals_at") ' . $store->name . '. @lang("common.save_big_with_exclusive_coupons")' }}
                         </p>
                         <a href="{{ $store->destination_url }}" target="_blank" class="btn btn-golden btn-sm">
-                            <i class="fas fa-external-link-alt me-2"></i>@lang('message.Visit Store')
+                            <i class="fas fa-external-link-alt me-2"></i>@lang('common.visit_store')
                         </a>
                     </div>
                 </div>
@@ -163,19 +166,19 @@
                 <div class="col-md-4 col-4 mb-3 mb-md-0">
                     <div class="stat-item">
                         <div class="stat-number text-golden">{{ $totalCount }}</div>
-                        <div class="stat-label">Total Offers</div>
+                        <div class="stat-label">@lang('common.total_offers')</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-4 mb-3 mb-md-0">
                     <div class="stat-item">
                         <div class="stat-number text-success">{{ $codeCount }}</div>
-                        <div class="stat-label">Coupon Codes</div>
+                        <div class="stat-label">@lang('common.coupon_codes')</div>
                     </div>
                 </div>
                 <div class="col-md-4 col-4">
                     <div class="stat-item">
                         <div class="stat-number text-info">{{ $dealCount }}</div>
-                        <div class="stat-label">Deals & Sales</div>
+                        <div class="stat-label">@lang('common.deals_sales')</div>
                     </div>
                 </div>
             </div>
@@ -191,27 +194,27 @@
                     <!-- Filter Section -->
                     <div class="filter-section mb-4">
                         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-                            <h4 class="filter-title mb-0">Available Offers</h4>
+                            <h4 class="filter-title mb-0">@lang('common.available_offers')</h4>
 
                             <!-- Mobile Filter Dropdown -->
                             <div class="dropdown d-lg-none">
                                 <button class="btn btn-outline-primary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-filter me-2"></i>Filter Offers
+                                    <i class="fas fa-filter me-2"></i>@lang('common.filter_offers')
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a class="dropdown-item {{ !request()->has('sort') ? 'active' : '' }}" href="{{ url()->current() }}">
-                                            All <span class="badge bg-primary ms-2">{{ $totalCount }}</span>
+                                            @lang('common.all') <span class="badge bg-primary ms-2">{{ $totalCount }}</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item {{ request('sort') == 'codes' ? 'active' : '' }}" href="{{ url()->current() }}?sort=codes">
-                                            Codes <span class="badge bg-success ms-2">{{ $codeCount }}</span>
+                                            @lang('common.codes') <span class="badge bg-success ms-2">{{ $codeCount }}</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="dropdown-item {{ request('sort') == 'deals' ? 'active' : '' }}" href="{{ url()->current() }}?sort=deals">
-                                            Deals <span class="badge bg-info ms-2">{{ $dealCount }}</span>
+                                            @lang('common.deals') <span class="badge bg-info ms-2">{{ $dealCount }}</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -226,10 +229,10 @@
                             <div class="empty-icon mb-4">
                                 <i class="fas fa-tag fa-4x text-muted"></i>
                             </div>
-                            <h3 class="empty-title mb-3">@lang('message.Oops! No Coupons Available')</h3>
-                            <p class="empty-text text-muted mb-4">@lang('message.Dont worry, you can still explore amazing deals from our partnered brands.')</p>
+                            <h3 class="empty-title mb-3">@lang('common.oops_no_coupons')</h3>
+                            <p class="empty-text text-muted mb-4">@lang('common.explore_amazing_deals')</p>
                             <a href="{{ route('store') }}" class="btn btn-golden btn-lg px-4 rounded-pill">
-                                @lang('message.Explore Brands')<i class="fas fa-arrow-right ms-2"></i>
+                                @lang('common.explore_brands')<i class="fas fa-arrow-right ms-2"></i>
                             </a>
                         </div>
                         @else
@@ -249,7 +252,7 @@
                                     <!-- Hot Offer Ribbon -->
                                     @if($coupon->clicks > 50)
                                     <div class="hot-offer-ribbon">
-                                        <i class="fas fa-fire me-1"></i>HOT
+                                        <i class="fas fa-fire me-1"></i>@lang('common.hot')
                                     </div>
                                     @endif
 
@@ -257,7 +260,7 @@
                                         <!-- Coupon Type Badge -->
                                         <div class="coupon-type-badge {{ $coupon->code ? 'badge-code' : 'badge-deal' }}">
                                             <i class="fas {{ $coupon->code ? 'fa-tag' : 'fa-percent' }} me-1"></i>
-                                            {{ $coupon->code ? 'Code' : 'Deal' }}
+                                            {{ $coupon->code ? __('common.code') : __('common.deal') }}
                                         </div>
 
                                         <!-- Store Image -->
@@ -283,7 +286,7 @@
                                         <div class="coupon-meta">
                                             <span class="ending-date small {{ \Carbon\Carbon::parse($coupon->ending_date)->isPast() ? 'text-danger' : 'text-muted' }}">
                                                 <i class="fas fa-clock me-1"></i>
-                                                Ends: {{ \Carbon\Carbon::parse($coupon->ending_date)->format('M d') }}
+                                                @lang('common.ends'): {{ \Carbon\Carbon::parse($coupon->ending_date)->format('M d') }}
                                             </span>
                                             <span class="used-count small text-muted">
                                                 <i class="fas fa-users me-1"></i>
@@ -296,7 +299,7 @@
                                         <button class="get-code-btn position-relative"
                                                 onclick="handleRevealCode(event, {{ $coupon->id }}, '{{ $coupon->code }}', '{{ $coupon->name }}', '{{ asset('uploads/stores/' . $store->image) }}', '{{ $store->destination_url }}', '{{ $coupon->stores->name }}')">
                                             <span class="position-relative z-2">
-                                                <i class="fas fa-gift me-2"></i>Get Code
+                                                <i class="fas fa-gift me-2"></i>@lang('common.get_code')
                                             </span>
                                             <div class="btn-shine position-absolute top-0 left-0 w-100 h-100"></div>
                                         </button>
@@ -306,7 +309,7 @@
                                            class="deal-btn position-relative"
                                            onclick="updateClickCount('{{ $coupon->id }}')">
                                             <span class="position-relative z-2">
-                                                <i class="fas fa-bolt me-2"></i>View Deal
+                                                <i class="fas fa-bolt me-2"></i>@lang('common.view_deal')
                                             </span>
                                             <div class="btn-shine position-absolute top-0 left-0 w-100 h-100"></div>
                                         </a>
@@ -330,7 +333,7 @@
                                 </div>
                                 @else
                                 <div class="related-blogs">
-                                    <h3 class="section-title mb-4">Related Articles</h3>
+                                    <h3 class="section-title mb-4">@lang('common.related_articles')</h3>
                                     @foreach ($relatedblogs as $blog)
                                     <div class="blog-item mb-4 pb-4 border-bottom">
                                         <h4 class="blog-title h5 mb-3">{{ $blog->title }}</h4>
@@ -345,7 +348,7 @@
                                             {!! Str::limit(strip_tags($blog->content), 150) !!}
                                         </div>
                                         <a href="{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}" class="btn btn-link text-primary p-0 mt-2 small">
-                                            Read More <i class="fas fa-arrow-right ms-1"></i>
+                                            @lang('common.read_more') <i class="fas fa-arrow-right ms-1"></i>
                                         </a>
                                     </div>
                                     @endforeach
@@ -363,7 +366,7 @@
                         <!-- Store Quick Actions -->
                         <div class="sidebar-card card mb-4">
                             <div class="card-header">
-                                <h5 class="mb-0"><i class="fas fa-store me-2"></i>Store Quick View</h5>
+                                <h5 class="mb-0"><i class="fas fa-store me-2"></i>@lang('common.store_quick_view')</h5>
                             </div>
                             <div class="card-body">
                                 <div class="text-center mb-4">
@@ -379,31 +382,31 @@
 
                                 <div class="d-grid gap-2 mb-4">
                                     <a href="{{ $store->destination_url }}" target="_blank" class="btn btn-golden">
-                                        <i class="fas fa-external-link-alt me-2"></i>Visit Store
+                                        <i class="fas fa-external-link-alt me-2"></i>@lang('common.visit_store')
                                     </a>
                                     <button class="btn btn-outline-primary" onclick="scrollToCoupons()">
-                                        <i class="fas fa-tags me-2"></i>View All Coupons
+                                        <i class="fas fa-tags me-2"></i>@lang('common.view_all_coupons')
                                     </button>
                                 </div>
 
                                 <!-- Store Stats -->
                                 <div class="store-stats">
-                                    <h6 class="stats-title text-center mb-3">Store Statistics</h6>
+                                    <h6 class="stats-title text-center mb-3">@lang('common.store_statistics')</h6>
                                     <div class="stat-circle">
                                         <div class="stat-number">{{ $totalCount }}</div>
-                                        <div class="stat-label">Total Offers</div>
+                                        <div class="stat-label">@lang('common.total_offers')</div>
                                     </div>
                                     <div class="row text-center">
                                         <div class="col-6">
                                             <div class="mini-stat">
                                                 <div class="mini-stat-number text-success">{{ $codeCount }}</div>
-                                                <div class="mini-stat-label">Codes</div>
+                                                <div class="mini-stat-label">@lang('common.codes')</div>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="mini-stat">
                                                 <div class="mini-stat-number text-info">{{ $dealCount }}</div>
-                                                <div class="mini-stat-label">Deals</div>
+                                                <div class="mini-stat-label">@lang('common.deals')</div>
                                             </div>
                                         </div>
                                     </div>
@@ -414,23 +417,23 @@
                         <!-- Filter Options -->
                         <div class="sidebar-card card mb-4">
                             <div class="card-header">
-                                <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Filter Offers</h5>
+                                <h5 class="mb-0"><i class="fas fa-filter me-2"></i>@lang('common.filter_offers')</h5>
                             </div>
                             <div class="card-body">
                                 <div class="d-grid gap-2">
                                     <a href="{{ url()->current() }}" class="btn btn-outline-primary text-start {{ !request()->has('sort') ? 'active' : '' }}">
                                         <i class="fas fa-layer-group me-2"></i>
-                                        All Offers
+                                        @lang('common.all_offers')
                                         <span class="badge bg-primary float-end">{{ $totalCount }}</span>
                                     </a>
                                     <a href="{{ url()->current() }}?sort=codes" class="btn btn-outline-success text-start {{ request('sort') == 'codes' ? 'active' : '' }}">
                                         <i class="fas fa-tag me-2"></i>
-                                        Coupon Codes
+                                        @lang('common.coupon_codes')
                                         <span class="badge bg-success float-end">{{ $codeCount }}</span>
                                     </a>
                                     <a href="{{ url()->current() }}?sort=deals" class="btn btn-outline-info text-start {{ request('sort') == 'deals' ? 'active' : '' }}">
                                         <i class="fas fa-percent me-2"></i>
-                                        Deals & Sales
+                                        @lang('common.deals_sales')
                                         <span class="badge bg-info float-end">{{ $dealCount }}</span>
                                     </a>
                                 </div>
@@ -443,8 +446,8 @@
                                         <i class="fas fa-info-circle fa-lg text-primary"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-1 fw-bold text-dark">About {{ $store->name }}</h5>
-                                        <p class="text-muted small mb-0">Store details and information</p>
+                                        <h5 class="mb-1 fw-bold text-dark">@lang('common.about') {{ $store->name }}</h5>
+                                        <p class="text-muted small mb-0">@lang('common.store_details_info')</p>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +459,7 @@
                                 @else
                                     <div class="text-center py-3">
                                         <i class="fas fa-info-circle fa-2x text-light mb-3" style="color: var(--medium-gray) !important;"></i>
-                                        <p class="text-muted small mb-0">No store description available</p>
+                                        <p class="text-muted small mb-0">@lang('common.no_store_description')</p>
                                     </div>
                                 @endif
                             </div>
@@ -465,7 +468,7 @@
                         @if($relatedStores->isNotEmpty())
                         <div class="sidebar-card card">
                             <div class="card-header">
-                                <h5 class="mb-0"><i class="fas fa-store me-2"></i>Similar Stores</h5>
+                                <h5 class="mb-0"><i class="fas fa-store me-2"></i>@lang('common.similar_stores')</h5>
                             </div>
                             <div class="card-body">
                                 <div class="related-stores-list">
@@ -483,7 +486,7 @@
                                                     <i class="fas fa-star"></i> 4.5
                                                 </span>
                                                 <span class="text-muted small">
-                                                    <i class="fas fa-tag ms-2"></i> {{ $relatedStore->coupons()->count() ?? 0 }} offers
+                                                    <i class="fas fa-tag ms-2"></i> {{ $relatedStore->coupons()->count() ?? 0 }} @lang('common.offers')
                                                 </span>
                                             </div>
                                         </div>
@@ -506,17 +509,17 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold w-100 text-center" id="couponModalLabel">EXCLUSIVE DISCOUNT</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title fw-bold w-100 text-center" id="couponModalLabel">@lang('common.exclusive_discount')</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="@lang('common.close')"></button>
             </div>
             <div class="modal-body text-center py-4 px-5">
                 <div class="mb-4">
-                    <img src="" alt="Brand Logo" id="storeImage" class="img-fluid rounded-circle bounce" style="width: 100px; height: 100px; object-fit: cover;" loading="lazy">
+                    <img src="" alt="@lang('common.brand_logo')" id="storeImage" class="img-fluid rounded-circle bounce" style="width: 100px; height: 100px; object-fit: cover;" loading="lazy">
                 </div>
                 <h5 class="fw-bold text-dark mb-4" id="couponName"></h5>
                 <div class="coupon-container bg-light rounded-3 p-3 mb-4">
                     <p class="small text-muted mb-2">
-                        <i class="fas fa-tag me-1"></i> YOUR EXCLUSIVE CODE
+                        <i class="fas fa-tag me-1"></i> @lang('common.your_exclusive_code')
                     </p>
                     <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
                         <span id="couponCode" class="fw-bold fs-3 text-dark coupon-code-text"></span>
@@ -525,17 +528,17 @@
                         </button>
                     </div>
                     <p id="copyMessage" class="small text-success fw-bold mb-0" style="display: none;">
-                        <i class="fas fa-check-circle me-1"></i> Copied to clipboard!
+                        <i class="fas fa-check-circle me-1"></i> @lang('common.copied_clipboard')
                     </p>
                 </div>
                 <p class="small text-muted mb-0">
-                    <i class="fas fa-info-circle me-1"></i> Apply this code at checkout on
+                    <i class="fas fa-info-circle me-1"></i> @lang('common.apply_code_checkout')
                     <a href="" id="couponUrl" class="text-decoration-none fw-semibold text-dark"></a>
                 </p>
             </div>
             <div class="modal-footer justify-content-center border-0 pt-0">
                 <a href="" id="storeLink" class="btn btn-danger btn-lg rounded-pill px-4">
-                    <i class="fas fa-external-link-alt me-2"></i> REDEEM NOW
+                    <i class="fas fa-external-link-alt me-2"></i> @lang('common.redeem_now')
                 </a>
             </div>
         </div>

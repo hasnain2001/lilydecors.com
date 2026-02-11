@@ -1,23 +1,48 @@
 <?php
+
 return [
-    'H1' => 'Derniers codes de réduction et codes promo des magasins populaires',
-    'p1' => 'Découvrez nos magasins soigneusement sélectionnés offrant les meilleurs produits et services',
-    'H2' => 'Profitez des coupons tendance du jour et économisez gros',
-    'H3' => 'Catégories populaires',
-    'H4' => 'Profitez des offres du jour et économisez gros',
-    'H5' => 'Découvrez nos derniers articles de blog',
-    'sp' => 'Dernières mises à jour',
-    'blog-p' => 'Restez informé grâce à nos articles et actualités perspicaces',
-    'Get Code' => 'Obtenir le code',
-    'View Deal' => 'Voir l\'offre',
-    'More Offers' => 'Plus d\'offres',
-    'Verified' => 'Vérifié',
-    'View All Coupons' => 'Voir tous les coupons',
-    'View All Categories' => 'Voir toutes les catégories',
-    'View All Articles' => 'Voir tous les articles',
-    'used' => 'utilisé',
-    'active' => 'actif',
-    'inactive' => 'inactif',
-    'Read More' => 'Lire la suite',
-    'Exclusive' => 'Exclusif'
+    'title' => ''.config('app.name').' | Home Decor & Fashion Blogs '.date('Y').'',
+    'description' => 'Discover beautiful home decor ideas and fashion trends. Get inspired with our curated blogs on interior design, styling tips, and modern living.',
+    'keywords' => 'home decor, interior design, fashion blogs, lifestyle, home improvement, styling tips, modern living, home inspiration, fashion trends',
+    
+    // Hero Section
+    'hero_title' => 'Beautiful Homes, Inspired Living',
+    'hero_subtitle' => 'Discover the latest home decor ideas, fashion trends, and lifestyle tips to transform your space and style.',
+    'hero_button' => 'Explore Inspiration',
+    
+    // Section Titles
+    'latest_room_ideas' => 'Latest Room Ideas',
+    'fashion_trends' => 'Fashion & Style Trends',
+    'explore_categories' => 'Explore All Categories',
+    
+    // Category
+    'no_categories' => 'No categories found. Check back soon!',
+    'category_ideas' => ':count Ideas',
+    
+    // Blogs
+    'no_room_blogs' => 'No room blogs found. Check back soon!',
+    'no_fashion_blogs' => 'No fashion blogs found. Check back soon!',
+    'view_all_rooms' => 'View All Room Ideas',
+    'view_all_fashion' => 'View All Fashion Trends',
+    'read_more' => 'Read More',
+    
+    // Stats
+    'blog_articles' => 'Blog Articles',
+    'categories' => 'Categories',
+    'monthly_readers' => 'Monthly Readers',
+    'years_experience' => 'Years Experience',
+    
+    // Newsletter
+    'stay_updated' => 'Stay Updated',
+    'newsletter_text' => 'Subscribe to our newsletter for weekly inspiration, tips, and exclusive content.',
+    'email_placeholder' => 'Enter your email address',
+    'subscribe' => 'Subscribe',
+    'privacy_note' => 'We respect your privacy. Unsubscribe at any time.',
+    
+    // CTA
+    'explore_all_categories_text' => 'Discover content across all our categories to find exactly what inspires you.',
+    'browse_all_categories' => 'Browse All Categories',
+    
+    // Meta
+    'view_count' => ':count k',
 ];

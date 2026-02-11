@@ -1,39 +1,103 @@
 <?php
 
 return [
-    'heading-1' => 'Bienvenue sur streamcoupon : Votre Guru du Shopping',
-
-    'heading-2' => ' Fatigué de payer le prix fort ? Nous vous comprenons ! cut2 coupon est votre compagnon de confiance dans le monde des réductions, bons plans, codes promo, offres groupées et astuces précieuses pour économiser. Nous sommes plus qu’un simple site web ; nous vous donnons le pouvoir d’être un acheteur intelligent et informé, rendant vos sessions shopping plus enrichissantes et économiques.',
-
-    'heading-3' => 'Notre Vision : Encourager un Shopping Plus Intelligent',
-
-    'heading-4' => 'Notre mission est claire : offrir une destination unique où les acheteurs peuvent trouver une large gamme de coupons adaptés à leurs besoins et préférences uniques. Nous croyons que faire des économies doit être simple, excitant et gratifiant. En connectant les consommateurs avec des offres exclusives et en collaborant avec les meilleurs détaillants, nous visons à redéfinir la façon dont les gens abordent le shopping en ligne.',
-
-    'heading-5' => 'Libérez Votre Potentiel d’Économie avec cut2 coupon',
-    'heading-7' => 'Codes de Réduction',
-    'heading-8' => 'Nous sélectionnons et fournissons une large gamme de codes de réduction de vos marques et détaillants préférés.',
-    'heading-9' => '2. Offres et Promotions',
-    'heading-10' => 'Découvrez les offres les plus récentes et les plus chaudes sur cut2 coupon. Économisez gros sur tout ce dont vous avez besoin et que vous aimez.',
-    'heading-11' => '3. Offres Groupées',
-
-    'heading-12' => 'Économisez encore plus en explorant nos offres groupées. Trouvez des offres fantastiques sur des produits complémentaires.',
-    'heading-13' => '4. Comparaisons de Produits',
-    'heading-14' => 'Prendre des décisions éclairées est essentiel lors des achats. Nous offrons des comparaisons détaillées de produits pour vous aider à choisir la meilleure option correspondant à vos besoins et à votre budget.',
-    'heading-15' => '',
-    'heading-16' => 'Pourquoi Faire de cut2 coupon Votre Allié Shopping ?',
-    'heading-17' => '',
-    'Access promotions you wont find anywhere else' => 'Informations Fiables',
-    'Personalized Recommendations:' => 'Large Gamme d’Offres',
-    'Tailored deals based on your preferences.' => 'Offres personnalisées selon vos préférences.',
-    'Real-Time Savings:' => 'Économies en Temps Réel :',
-    'Stay ahead with the latest and most up-to-date coupons.' => 'Restez à jour avec les coupons les plus récents et actualisés.',
-    'Community Engagement:' => 'Communauté et Support',
-    'Connect with fellow savers, share tips, and celebrate your successes.' => 'Connectez-vous avec d’autres économes, partagez des astuces et célébrez vos réussites.',
-    'heading-18' =>'',
-    'heading-19' => '',
-    'heading-20' => '',
-    'heading-21'  => '',
-    'heading-22' => '',
-
+    'title' => 'About '.config('app.name').' | Premium Home Decor Inspiration & Design Blog',
+    'description' => 'Learn about '.config('app.name').' - your trusted source for interior design inspiration, home decor ideas, and practical decorating guides. Discover our mission to transform houses into beautiful homes.',
+    'keywords' => 'home decor, interior design, decorating ideas, home inspiration, design blog, home improvement',
+    
+    // Header Section
+    'header' => [
+        'title' => 'About LilyDecors',
+        'subtitle' => 'Transforming houses into beautiful, inspiring homes through curated design inspiration and practical decorating wisdom.',
+    ],
+    
+    // Breadcrumb
+    'breadcrumb' => [
+        'home' => 'Home',
+        'current' => 'About Us',
+    ],
+    
+    // Introduction Section
+    'intro' => [
+        'title' => 'Welcome to LilyDecors',
+        'lead' => 'Your trusted source for interior design inspiration, practical decorating guides, and curated home decor recommendations.',
+        'paragraph1' => 'At LilyDecors, we believe that every home tells a story. Our mission is to help you write yours through beautiful, functional, and inspiring spaces that reflect your personality and lifestyle. Whether you\'re decorating your first apartment, renovating your family home, or simply looking for fresh ideas, we\'re here to guide you every step of the way.',
+        'paragraph2' => 'Founded by a team of passionate interior designers and home decor enthusiasts, LilyDecors has grown from a simple blog into a comprehensive resource for homeowners, renters, and design lovers worldwide.',
+    ],
+    
+    // Mission & Vision
+    'mission' => [
+        'title' => 'Our Mission',
+        'description' => 'To democratize beautiful design by providing accessible, practical, and inspiring home decor guidance that empowers everyone to create spaces they love.',
+    ],
+    
+    'vision' => [
+        'title' => 'Our Vision',
+        'description' => 'To become the world\'s most trusted home decor community, inspiring millions to transform their living spaces and find joy in the art of homemaking.',
+    ],
+    
+    // Features/What We Do
+    'features' => [
+        'title' => 'What Sets Us Apart',
+        'subtitle' => 'Discover why thousands of readers trust LilyDecors for their home decor journey',
+        'curated_inspiration' => 'Curated Inspiration',
+        'curated_description' => 'We handpick and curate the best design ideas from around the world, saving you hours of searching and providing quality over quantity.',
+        'practical_guidance' => 'Practical Guidance',
+        'practical_description' => 'Our content is designed to be actionable. From budget breakdowns to step-by-step tutorials, we make beautiful design achievable.',
+        'expert_insights' => 'Expert Insights',
+        'expert_description' => 'Our team includes professional interior designers, architects, and stylists who share their expertise and industry secrets.',
+    ],
+    
+    // Stats Section
+    'stats' => [
+        'title' => 'Our Community in Numbers',
+        'subtitle' => 'Join thousands of design enthusiasts who trust LilyDecors',
+        'monthly_readers' => 'Monthly Readers',
+        'published_articles' => 'Published Articles',
+        'expert_contributors' => 'Expert Contributors',
+        'countries_reached' => 'Countries Reached',
+    ],
+    
+    // Values Section
+    'values' => [
+        'title' => 'Our Core Values',
+        'subtitle' => 'The principles that guide everything we do',
+        'passion_for_design' => 'Passion for Design',
+        'passion_description' => 'We genuinely love home decor and believe beautiful spaces improve quality of life.',
+        'integrity_trust' => 'Integrity & Trust',
+        'integrity_description' => 'We\'re transparent about partnerships and only recommend products we truly believe in.',
+        'community_focus' => 'Community Focus',
+        'community_description' => 'We listen to our readers and create content that addresses their real needs and challenges.',
+        'continuous_innovation' => 'Continuous Innovation',
+        'innovation_description' => 'We constantly evolve to bring you the latest trends, tools, and techniques in home decor.',
+    ],
+    
+    // Team Section
+    'team' => [
+        'title' => 'Meet Our Founders',
+        'subtitle' => 'The passionate team behind LilyDecors',
+        'sarah' => [
+            'name' => 'Sarah Chen',
+            'role' => 'Lead Interior Designer',
+            'description' => 'With 15 years in residential design, Sarah brings professional expertise and a keen eye for timeless elegance.',
+        ],
+        'marcus' => [
+            'name' => 'Marcus Johnson',
+            'role' => 'Creative Director',
+            'description' => 'Former magazine editor turned decor blogger, Marcus ensures our content is both beautiful and practical.',
+        ],
+        'elena' => [
+            'name' => 'Elena Rodriguez',
+            'role' => 'Community Manager',
+            'description' => 'Elena connects with our readers daily, turning their questions into valuable content and building our community.',
+        ],
+    ],
+    
+    // CTA Section
+    'cta' => [
+        'title' => 'Ready to Transform Your Space?',
+        'description' => 'Join our community of home decor enthusiasts and start creating the home of your dreams today.',
+        'explore_blog' => 'Explore Our Blog',
+        'get_in_touch' => 'Get in Touch',
+    ],
 ];
-
