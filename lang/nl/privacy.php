@@ -3,200 +3,200 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Privacy Policy | ' . config('app.name'),
-        'description' => 'Read our privacy policy to understand how we handle your data and protect your privacy.',
-        'keywords' => 'privacy, policy, data protection, data security, GDPR, cookies',
+        'title' => 'Privacybeleid | ' . config('app.name'),
+        'description' => 'Lees ons privacybeleid om te begrijpen hoe we met uw gegevens omgaan en uw privacy beschermen.',
+        'keywords' => 'privacy, beleid, gegevensbescherming, gegevensbeveiliging, AVG, cookies',
         'author' => config('app.name'),
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Privacy Policy',
-        'subtitle' => 'Your privacy is important to us. Learn how we protect and handle your data.',
-        'last_updated' => 'Last updated on',
+        'title' => 'Privacybeleid',
+        'subtitle' => 'Uw privacy is belangrijk voor ons. Lees hoe we uw gegevens beschermen en verwerken.',
+        'last_updated' => 'Laatst bijgewerkt op',
     ],
     
-    // Main card
+    // Hoofdkaart
     'card' => [
-        'title' => 'Your Data Protection & Privacy',
+        'title' => 'Uw Gegevensbescherming & Privacy',
     ],
     
-    // Alert section
+    // Alert sectie
     'alert' => [
-        'title' => 'Transparency Matters',
-        'description' => 'This policy explains how we collect, use, and protect your information in clear, simple terms.',
+        'title' => 'Transparantie is Belangrijk',
+        'description' => 'Dit beleid legt in duidelijke, eenvoudige bewoordingen uit hoe we uw informatie verzamelen, gebruiken en beschermen.',
     ],
     
-    // Policy sections
+    // Beleidssecties
     'sections' => [
         'collection' => [
-            'title' => 'Information We Collect',
-            'intro' => 'We collect information that helps us provide better services and improve your experience. This includes:',
+            'title' => 'Informatie Die We Verzamelen',
+            'intro' => 'We verzamelen informatie die ons helpt betere diensten te leveren en uw ervaring te verbeteren. Dit omvat:',
             'types' => [
-                'Personal Information' => 'Name, email address, and contact details when you register or contact us',
-                'Usage Data' => 'How you interact with our website, pages visited, and features used',
-                'Technical Information' => 'Browser type, device information, and IP address for security purposes',
-                'Communication Data' => 'Messages, feedback, and inquiries you send to us',
+                'Persoonlijke Informatie' => 'Naam, e-mailadres en contactgegevens wanneer u zich registreert of contact met ons opneemt',
+                'Gebruiksgegevens' => 'Hoe u met onze website omgaat, bezochte pagina\'s en gebruikte functies',
+                'Technische Informatie' => 'Browsertype, apparaatinformatie en IP-adres voor beveiligingsdoeleinden',
+                'Communicatiegegevens' => 'Berichten, feedback en vragen die u naar ons stuurt',
             ],
-            'conclusion' => 'We only collect information that\'s necessary to provide our services and enhance your experience.',
+            'conclusion' => 'We verzamelen alleen informatie die nodig is om onze diensten te leveren en uw ervaring te verbeteren.',
         ],
         
         'usage' => [
-            'title' => 'How We Use Your Information',
-            'intro' => 'Your information helps us deliver excellent service and improve our platform. We use it to:',
+            'title' => 'Hoe We Uw Informatie Gebruiken',
+            'intro' => 'Uw informatie helpt ons uitstekende service te leveren en ons platform te verbeteren. We gebruiken het om:',
             'purposes' => [
-                'Respond to your inquiries and provide personalized customer support',
-                'Process transactions and deliver the services you request',
-                'Improve our website functionality and user experience',
-                'Send important updates about our services (you can opt-out anytime)',
-                'Protect against fraud and ensure platform security',
-                'Analyze usage patterns to enhance our offerings',
+                'Te reageren op uw vragen en gepersonaliseerde klantenservice te bieden',
+                'Transacties te verwerken en de diensten die u aanvraagt te leveren',
+                'Onze websitefunctionaliteit en gebruikerservaring te verbeteren',
+                'Belangrijke updates over onze diensten te sturen (u kunt zich altijd afmelden)',
+                'Te beschermen tegen fraude en platformbeveiliging te waarborgen',
+                'Gebruikspatronen te analyseren om ons aanbod te verbeteren',
             ],
-            'important_note' => 'We do not and will never sell your personal information to third parties.',
+            'important_note' => 'We verkopen uw persoonlijke gegevens niet en zullen dit nooit doen aan derden.',
         ],
         
         'security' => [
-            'title' => 'Data Security & Protection',
-            'intro' => 'We take your data security seriously and implement robust measures to protect it:',
+            'title' => 'Gegevensbeveiliging & Bescherming',
+            'intro' => 'We nemen de beveiliging van uw gegevens serieus en implementeren robuuste maatregelen om deze te beschermen:',
             'measures' => [
-                'Encryption' => 'All sensitive data is encrypted during transmission and storage',
-                'Secure Servers' => 'Your information is stored on protected servers with limited access',
-                'Access Controls' => 'Strict internal policies control who can access your data',
-                'Regular Audits' => 'We conduct security assessments to maintain protection standards',
-                'Employee Training' => 'Our team is trained in data protection best practices',
+                'Encryptie' => 'Alle gevoelige gegevens worden versleuteld tijdens verzending en opslag',
+                'Beveiligde Servers' => 'Uw informatie wordt opgeslagen op beschermde servers met beperkte toegang',
+                'Toegangscontroles' => 'Strikt intern beleid controleert wie toegang heeft tot uw gegevens',
+                'Regelmatige Audits' => 'We voeren beveiligingsbeoordelingen uit om beschermingsnormen te handhaven',
+                'Medewerkerstraining' => 'Ons team is getraind in best practices voor gegevensbescherming',
             ],
-            'disclaimer' => 'While we implement industry-standard security measures, no method of transmission over the internet is 100% secure. We recommend using strong passwords and keeping your login information confidential.',
+            'disclaimer' => 'Hoewel we beveiligingsmaatregelen op brancheniveau implementeren, is geen enkele methode van verzending via internet 100% veilig. We raden aan sterke wachtwoorden te gebruiken en uw inloggegevens vertrouwelijk te houden.',
         ],
         
         'cookies' => [
-            'title' => 'Cookies & Tracking Technologies',
-            'intro' => 'We use cookies and similar technologies to enhance your browsing experience:',
+            'title' => 'Cookies & Tracking Technologieën',
+            'intro' => 'We gebruiken cookies en vergelijkbare technologieën om uw browse-ervaring te verbeteren:',
             'types' => [
-                'Essential Cookies' => 'Required for the website to function properly',
-                'Performance Cookies' => 'Help us understand how visitors use our site',
-                'Functional Cookies' => 'Remember your preferences and settings',
-                'Analytics Cookies' => 'Provide insights to improve our services',
+                'Essentiële Cookies' => 'Nodig voor de juiste werking van de website',
+                'Prestatiecookies' => 'Helpen ons begrijpen hoe bezoekers onze site gebruiken',
+                'Functionele Cookies' => 'Onthouden uw voorkeuren en instellingen',
+                'Analytische Cookies' => 'Bieden inzichten om onze diensten te verbeteren',
             ],
-            'management' => 'You can manage cookie preferences through your browser settings. However, disabling essential cookies may affect website functionality.',
+            'management' => 'U kunt cookievoorkeuren beheren via uw browserinstellingen. Het uitschakelen van essentiële cookies kan echter de functionaliteit van de website beïnvloeden.',
         ],
         
         'third_party' => [
-            'title' => 'Third-Party Links & Services',
-            'intro' => 'Our website may contain links to external sites and services. Important notes:',
+            'title' => 'Links & Diensten van Derden',
+            'intro' => 'Onze website kan links naar externe sites en diensten bevatten. Belangrijke opmerkingen:',
             'notes' => [
-                'We carefully select our partners but cannot control their privacy practices',
-                'External sites have their own privacy policies we don\'t control',
-                'We\'re not responsible for content or practices of linked websites',
-                'We recommend reviewing third-party privacy policies before sharing information',
+                'We selecteren onze partners zorgvuldig maar kunnen hun privacypraktijken niet controleren',
+                'Externe sites hebben hun eigen privacybeleid waar we geen controle over hebben',
+                'We zijn niet verantwoordelijk voor de inhoud of praktijken van gelinkte websites',
+                'We raden aan het privacybeleid van derden te bekijken voordat u informatie deelt',
             ],
-            'disclaimer' => 'When you leave our site through these links, our privacy policy no longer applies to your activities on those external sites.',
+            'disclaimer' => 'Wanneer u onze site via deze links verlaat, is ons privacybeleid niet langer van toepassing op uw activiteiten op die externe sites.',
         ],
         
         'updates' => [
-            'title' => 'Policy Updates & Changes',
-            'intro' => 'We may update this privacy policy to reflect changes in our practices or legal requirements:',
+            'title' => 'Beleidsupdates & Wijzigingen',
+            'intro' => 'We kunnen dit privacybeleid bijwerken om veranderingen in onze praktijken of wettelijke vereisten weer te geven:',
             'procedures' => [
-                'Significant changes will be notified via email or prominent website notice',
-                'Continued use of our services after changes constitutes acceptance',
-                'We maintain version history of all policy updates',
-                'The "Last Updated" date at the top indicates the latest revision',
+                'Belangrijke wijzigingen worden gemeld via e-mail of prominente websitekennisgeving',
+                'Voortgezet gebruik van onze diensten na wijzigingen impliceert acceptatie',
+                'We houden versiegeschiedenis bij van alle beleidsupdates',
+                'De datum "Laatst bijgewerkt" bovenaan geeft de laatste herziening aan',
             ],
-            'recommendation' => 'We encourage you to review this policy periodically to stay informed about how we\'re protecting your information.',
+            'recommendation' => 'We raden u aan dit beleid regelmatig te bekijken om op de hoogte te blijven van hoe we uw informatie beschermen.',
         ],
         
         'contact' => [
-            'title' => 'Questions & Contact Information',
-            'intro' => 'We\'re committed to being transparent about our privacy practices. If you have questions or concerns:',
+            'title' => 'Vragen & Contactinformatie',
+            'intro' => 'We streven naar transparantie over onze privacypraktijken. Als u vragen of opmerkingen heeft:',
             'details' => [
-                'Email' => '<a href="mailto:contact@lilydecors.com" class="contact-email">contact@lilydecors.com</a>',
-                'Data Protection Officer' => 'John Smith',
-                'Mail' => '123 Privacy Lane, Data City, DC 12345',
-                'Response Time' => 'We aim to respond within 48 hours',
+                'E-mail' => '<a href="mailto:contact@lilydecors.nl" class="contact-email">contact@lilydecors.nl</a>',
+                'Functionaris Gegevensbescherming' => 'Jan Jansen',
+                'Post' => 'Privacystraat 123, Gegevensstad, GC 12345',
+                'Reactietijd' => 'We streven ernaar binnen 48 uur te reageren',
             ],
-            'rights' => 'You have the right to access, correct, or delete your personal information. Contact us to exercise these rights.',
+            'rights' => 'U heeft het recht om uw persoonlijke gegevens in te zien, te corrigeren of te verwijderen. Neem contact met ons op om deze rechten uit te oefenen.',
         ],
     ],
     
-    // Back button
-    'back_button' => 'Return to Homepage',
+    // Terugknop
+    'back_button' => 'Terug naar Homepage',
     
-    // Additional terms for cookie consent banner (if needed)
+    // Aanvullende termen voor cookie-toestemmingsbanner (indien nodig)
     'cookie_consent' => [
-        'title' => 'Cookie Preferences',
-        'message' => 'We use cookies to enhance your browsing experience and analyze our traffic.',
-        'accept_all' => 'Accept All',
-        'reject_all' => 'Reject All',
-        'manage' => 'Manage Preferences',
-        'necessary' => 'Necessary',
-        'analytics' => 'Analytics',
+        'title' => 'Cookievoorkeuren',
+        'message' => 'We gebruiken cookies om uw browse-ervaring te verbeteren en ons verkeer te analyseren.',
+        'accept_all' => 'Alles Accepteren',
+        'reject_all' => 'Alles Weigeren',
+        'manage' => 'Voorkeuren Beheren',
+        'necessary' => 'Noodzakelijk',
+        'analytics' => 'Analytisch',
         'marketing' => 'Marketing',
-        'preferences' => 'Preferences',
-        'save' => 'Save Preferences',
+        'preferences' => 'Voorkeuren',
+        'save' => 'Voorkeuren Opslaan',
     ],
     
-    // Data rights (GDPR specific)
+    // Gegevensrechten (AVG specifiek)
     'data_rights' => [
-        'title' => 'Your Data Rights',
-        'access' => 'Right to Access',
-        'rectification' => 'Right to Rectification',
-        'erasure' => 'Right to Erasure (Right to be Forgotten)',
-        'restriction' => 'Right to Restrict Processing',
-        'portability' => 'Right to Data Portability',
-        'object' => 'Right to Object',
-        'description' => 'Under GDPR and other data protection laws, you have specific rights regarding your personal data.',
+        'title' => 'Uw Gegevensrechten',
+        'access' => 'Recht op Inzage',
+        'rectification' => 'Recht op Rectificatie',
+        'erasure' => 'Recht op Verwijdering (Recht om Vergeten te Worden)',
+        'restriction' => 'Recht op Beperking van Verwerking',
+        'portability' => 'Recht op Gegevensoverdraagbaarheid',
+        'object' => 'Recht van Bezwaar',
+        'description' => 'Onder de AVG en andere gegevensbeschermingswetten heeft u specifieke rechten met betrekking tot uw persoonlijke gegevens.',
     ],
     
-    // Data retention
+    // Gegevensbewaring
     'retention' => [
-        'title' => 'Data Retention',
-        'description' => 'We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected.',
+        'title' => 'Gegevensbewaring',
+        'description' => 'We bewaren uw persoonlijke gegevens alleen zo lang als nodig is om de doeleinden waarvoor ze zijn verzameld te vervullen.',
         'periods' => [
-            'account_data' => 'Account data: While your account is active',
-            'transaction_data' => 'Transaction data: 7 years for tax purposes',
-            'communication_data' => 'Communication data: 3 years',
-            'analytics_data' => 'Analytics data: 26 months',
+            'account_data' => 'Accountgegevens: Zolang uw account actief is',
+            'transaction_data' => 'Transactiegegevens: 7 jaar voor belastingdoeleinden',
+            'communication_data' => 'Communicatiegegevens: 3 jaar',
+            'analytics_data' => 'Analytische gegevens: 26 maanden',
         ],
     ],
     
-    // International data transfers
+    // Internationale gegevensoverdracht
     'international_transfers' => [
-        'title' => 'International Data Transfers',
-        'description' => 'Your information may be transferred to and processed in countries other than your own.',
-        'safeguards' => 'We implement appropriate safeguards for international data transfers.',
+        'title' => 'Internationale Gegevensoverdracht',
+        'description' => 'Uw informatie kan worden overgedragen naar en verwerkt in andere landen dan uw eigen land.',
+        'safeguards' => 'We implementeren passende waarborgen voor internationale gegevensoverdracht.',
     ],
     
-    // Children's privacy
+    // Privacy van kinderen
     'children' => [
-        'title' => 'Children\'s Privacy',
-        'description' => 'Our services are not directed to children under 16. We do not knowingly collect personal information from children.',
-        'contact' => 'If you believe we have collected information from a child, please contact us immediately.',
+        'title' => 'Privacy van Kinderen',
+        'description' => 'Onze diensten zijn niet gericht op kinderen onder de 16 jaar. We verzamelen niet bewust persoonlijke informatie van kinderen.',
+        'contact' => 'Als u denkt dat we informatie van een kind hebben verzameld, neem dan onmiddellijk contact met ons op.',
     ],
     
-    // Automated decision making
+    // Geautomatiseerde besluitvorming
     'automated_decisions' => [
-        'title' => 'Automated Decision Making',
-        'description' => 'We do not use automated decision-making or profiling that produces legal effects.',
+        'title' => 'Geautomatiseerde Besluitvorming',
+        'description' => 'We gebruiken geen geautomatiseerde besluitvorming of profilering die rechtsgevolgen heeft.',
     ],
     
-    // Data breach notification
+    // Melding gegevenslek
     'data_breach' => [
-        'title' => 'Data Breach Notification',
-        'description' => 'In the event of a data breach, we will notify affected users and authorities as required by law.',
+        'title' => 'Melding Gegevenslek',
+        'description' => 'In geval van een gegevenslek zullen we getroffen gebruikers en autoriteiten op de hoogte stellen zoals wettelijk vereist.',
     ],
     
-    // Do Not Track signals
+    // Do Not Track signalen
     'do_not_track' => [
-        'title' => 'Do Not Track Signals',
-        'description' => 'Our website does not respond to Do Not Track signals from browsers.',
+        'title' => 'Do Not Track Signalen',
+        'description' => 'Onze website reageert niet op Do Not Track-signalen van browsers.',
     ],
     
-    // California privacy rights (CCPA)
+    // Californië privacyrechten (CCPA)
     'ccpa' => [
-        'title' => 'California Privacy Rights',
-        'description' => 'California residents have additional rights under the California Consumer Privacy Act (CCPA).',
-        'right_to_know' => 'Right to Know',
-        'right_to_delete' => 'Right to Delete',
-        'right_to_opt_out' => 'Right to Opt-Out of Sale',
-        'non_discrimination' => 'Right to Non-Discrimination',
+        'title' => 'Privacyrechten voor Californië',
+        'description' => 'Inwoners van Californië hebben aanvullende rechten onder de California Consumer Privacy Act (CCPA).',
+        'right_to_know' => 'Recht op Informatie',
+        'right_to_delete' => 'Recht op Verwijdering',
+        'right_to_opt_out' => 'Recht om Verkoop te Weigeren',
+        'non_discrimination' => 'Recht op Non-Discriminatie',
     ],
 ];

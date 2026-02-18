@@ -3,157 +3,157 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Contact Us | ' . config('app.name'),
-        'description' => 'Get in touch with us for any inquiries or support.',
-        'keywords' => 'contact, support, inquiries, help, customer service',
+        'title' => 'Contact Opnemen | ' . config('app.name'),
+        'description' => 'Neem contact met ons op voor vragen of ondersteuning.',
+        'keywords' => 'contact, ondersteuning, vragen, hulp, klantenservice',
         'author' => config('app.name'),
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Contact Us',
-        'subtitle' => 'Get in touch with us. We\'re here to help with any questions or concerns you may have.',
+        'title' => 'Contact Opnemen',
+        'subtitle' => 'Neem contact met ons op. We staan klaar om u te helpen met al uw vragen of opmerkingen.',
     ],
     
-    // Form section
+    // Formulier sectie
     'form' => [
-        'description' => 'Fill out the form below and we\'ll get back to you as soon as possible.',
+        'description' => 'Vul onderstaand formulier in en we nemen zo snel mogelijk contact met u op.',
         'fields' => [
             'name' => [
-                'label' => 'Name',
-                'placeholder' => 'Your full name',
+                'label' => 'Naam',
+                'placeholder' => 'Uw volledige naam',
             ],
             'email' => [
-                'label' => 'Email',
-                'placeholder' => 'your.email@example.com',
+                'label' => 'E-mail',
+                'placeholder' => 'uw.email@voorbeeld.com',
             ],
             'subject' => [
-                'label' => 'Subject',
-                'placeholder' => 'What is this regarding?',
+                'label' => 'Onderwerp',
+                'placeholder' => 'Waar gaat het over?',
             ],
             'message' => [
-                'label' => 'Message',
-                'placeholder' => 'Your message here...',
+                'label' => 'Bericht',
+                'placeholder' => 'Uw bericht hier...',
             ],
         ],
-        'submit' => 'Send Message',
-        'sending' => 'Sending...',
-        'required_fields' => 'Fields marked with * are required',
+        'submit' => 'Verstuur Bericht',
+        'sending' => 'Verzenden...',
+        'required_fields' => 'Velden gemarkeerd met * zijn verplicht',
     ],
     
-    // Contact information
+    // Contactinformatie
     'info' => [
         'location' => [
-            'title' => 'Our Location',
-            'address_line1' => '123 Main Street',
+            'title' => 'Onze Locatie',
+            'address_line1' => 'Hoofdstraat 123',
             'address_line2' => 'Suite 100',
-            'city_state' => 'City, State',
+            'city_state' => 'Stad, Staat',
             'zip_code' => '12345',
-            'country' => 'United States',
+            'country' => 'Nederland',
         ],
         'phone' => [
-            'title' => 'Call Us',
-            'primary' => '+1 (123) 456-7890',
-            'secondary' => '+1 (987) 654-3210',
-            'hours' => 'Mon-Fri: 9AM-6PM EST',
+            'title' => 'Bel Ons',
+            'primary' => '+31 (0)123 456789',
+            'secondary' => '+31 (0)987 654321',
+            'hours' => 'Ma-Vr: 9:00-18:00 uur',
         ],
         'email' => [
-            'title' => 'Email Us',
-            'contact' => 'contact@' . config('app.domain', 'example.com'),
-            'support' => 'support@' . config('app.domain', 'example.com'),
-            'response_time' => 'We typically respond within 24 hours',
+            'title' => 'E-mail Ons',
+            'contact' => 'contact@' . config('app.domain', 'voorbeeld.nl'),
+            'support' => 'ondersteuning@' . config('app.domain', 'voorbeeld.nl'),
+            'response_time' => 'We reageren meestal binnen 24 uur',
         ],
     ],
     
-    // Messages and alerts
+    // Berichten en meldingen
     'messages' => [
-        'success' => 'Thank you! Your message has been sent successfully.',
-        'error_title' => 'Please fix the following errors:',
-        'validation_error' => 'There were some errors with your submission.',
-        'captcha_error' => 'Please complete the security check.',
-        'server_error' => 'Something went wrong. Please try again later.',
+        'success' => 'Bedankt! Uw bericht is succesvol verzonden.',
+        'error_title' => 'Corrigeer de volgende fouten:',
+        'validation_error' => 'Er waren enkele fouten in uw inzending.',
+        'captcha_error' => 'Voltooi de veiligheidscontrole.',
+        'server_error' => 'Er is iets misgegaan. Probeer het later opnieuw.',
     ],
     
-    // Additional sections (if added)
+    // Aanvullende secties (indien toegevoegd)
     'faq' => [
-        'title' => 'Frequently Asked Questions',
-        'question1' => 'How long does it take to get a response?',
-        'answer1' => 'We typically respond within 24 hours during business days.',
-        'question2' => 'What information should I include?',
-        'answer2' => 'Please include your contact information and detailed description of your inquiry.',
-        'question3' => 'Do you offer phone support?',
-        'answer3' => 'Yes, you can reach us at the phone number listed above.',
+        'title' => 'Veelgestelde Vragen',
+        'question1' => 'Hoe lang duurt het voordat ik een reactie krijg?',
+        'answer1' => 'We reageren meestal binnen 24 uur op werkdagen.',
+        'question2' => 'Welke informatie moet ik meesturen?',
+        'answer2' => 'Voeg uw contactgegevens en een gedetailleerde beschrijving van uw vraag toe.',
+        'question3' => 'Bieden jullie telefonische ondersteuning?',
+        'answer3' => 'Ja, u kunt ons bereiken op het bovenstaande telefoonnummer.',
     ],
     
-    // Business hours
+    // Kantooruren
     'business_hours' => [
-        'title' => 'Business Hours',
-        'weekdays' => 'Monday - Friday: 9:00 AM - 6:00 PM EST',
-        'weekends' => 'Saturday: 10:00 AM - 4:00 PM EST',
-        'closed' => 'Sunday: Closed',
-        'holidays' => 'Holidays: Closed',
+        'title' => 'Kantooruren',
+        'weekdays' => 'Maandag - Vrijdag: 9:00 - 18:00 uur',
+        'weekends' => 'Zaterdag: 10:00 - 16:00 uur',
+        'closed' => 'Zondag: Gesloten',
+        'holidays' => 'Feestdagen: Gesloten',
     ],
     
-    // Support types
+    // Ondersteuningstypes
     'support_types' => [
-        'general' => 'General Inquiries',
-        'technical' => 'Technical Support',
-        'billing' => 'Billing Questions',
-        'partnership' => 'Partnership Opportunities',
-        'feedback' => 'Feedback & Suggestions',
+        'general' => 'Algemene Vragen',
+        'technical' => 'Technische Ondersteuning',
+        'billing' => 'Facturatie Vragen',
+        'partnership' => 'Samenwerkingsmogelijkheden',
+        'feedback' => 'Feedback & Suggesties',
     ],
     
-    // Social media (if you add social links)
+    // Sociale media (indien u sociale links toevoegt)
     'social' => [
-        'title' => 'Connect With Us',
-        'follow_us' => 'Follow us on social media',
+        'title' => 'Volg Ons',
+        'follow_us' => 'Volg ons op sociale media',
         'facebook' => 'Facebook',
         'twitter' => 'Twitter',
         'instagram' => 'Instagram',
         'linkedin' => 'LinkedIn',
     ],
     
-    // Map/address details
+    // Kaart/adres details
     'map' => [
-        'title' => 'Find Us',
-        'directions' => 'Get Directions',
+        'title' => 'Vind Ons',
+        'directions' => 'Routebeschrijving',
         'open_in_maps' => 'Open in Google Maps',
-        'parking' => 'Parking Information',
-        'public_transport' => 'Public Transport',
+        'parking' => 'Parkeerinformatie',
+        'public_transport' => 'Openbaar Vervoer',
     ],
     
-    // Privacy and data
+    // Privacy en gegevens
     'privacy' => [
-        'title' => 'Privacy & Data',
-        'description' => 'Your information is secure and will only be used to respond to your inquiry.',
-        'gdpr_compliant' => 'GDPR Compliant',
-        'no_spam' => 'We don\'t spam or share your information',
+        'title' => 'Privacy & Gegevens',
+        'description' => 'Uw informatie is veilig en wordt alleen gebruikt om uw vraag te beantwoorden.',
+        'gdpr_compliant' => 'AVG Conform',
+        'no_spam' => 'We sturen geen spam en delen uw informatie niet',
     ],
     
-    // Response time
+    // Reactietijd
     'response_time' => [
-        'title' => 'Expected Response Time',
-        'instant' => 'Immediate for urgent matters',
-        'within_24h' => 'Within 24 hours for general inquiries',
-        'within_48h' => 'Within 48 hours for complex issues',
-        'emergency' => 'For emergencies, call the number above',
+        'title' => 'Verwachte Reactietijd',
+        'instant' => 'Direct voor urgente zaken',
+        'within_24h' => 'Binnen 24 uur voor algemene vragen',
+        'within_48h' => 'Binnen 48 uur voor complexe problemen',
+        'emergency' => 'Voor noodgevallen, bel het bovenstaande nummer',
     ],
     
-    // Form validation messages
+    // Formuliervalidatie berichten
     'validation' => [
-        'name_required' => 'Please enter your name',
-        'email_required' => 'Please enter your email address',
-        'email_invalid' => 'Please enter a valid email address',
-        'message_required' => 'Please enter your message',
-        'message_min' => 'Message must be at least 10 characters',
-        'message_max' => 'Message cannot exceed 2000 characters',
+        'name_required' => 'Voer uw naam in',
+        'email_required' => 'Voer uw e-mailadres in',
+        'email_invalid' => 'Voer een geldig e-mailadres in',
+        'message_required' => 'Voer uw bericht in',
+        'message_min' => 'Bericht moet minimaal 10 tekens bevatten',
+        'message_max' => 'Bericht mag niet meer dan 2000 tekens bevatten',
     ],
     
-    // Accessibility
+    // Toegankelijkheid
     'accessibility' => [
-        'form_label' => 'Contact Form',
-        'required_indicator' => 'Required field',
-        'success_announcement' => 'Your message has been sent successfully',
-        'error_announcement' => 'There were errors in your submission',
+        'form_label' => 'Contactformulier',
+        'required_indicator' => 'Verplicht veld',
+        'success_announcement' => 'Uw bericht is succesvol verzonden',
+        'error_announcement' => 'Er waren fouten in uw inzending',
     ],
 ];

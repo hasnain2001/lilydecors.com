@@ -4,133 +4,133 @@ return [
     // Meta tags
     'meta' => [
         'title' => [
-            'custom' => ':title | :year Coupons, Deals & Offers',
-            'default' => ':name | :year Deals, Offers & Promo Codes',
+            'custom' => ':title | :year Coupons, Deals & Aanbiedingen',
+            'default' => ':name | :year Deals, Aanbiedingen & Promotiecodes',
         ],
         'description' => [
-            'default' => 'Find the best :name deals and verified discount codes for :year. Save money with exclusive :lower_name coupons, vouchers, and promo offers updated daily.',
+            'default' => 'Vind de beste :name deals en geverifieerde kortingscodes voor :year. Bespaar geld met exclusieve :lower_name coupons, vouchers en promotionele aanbiedingen dagelijks bijgewerkt.',
         ],
         'keywords' => [
-            'default' => ':name, :name coupons, :name promo codes, :name vouchers, discount offers, :name deals, save money online',
+            'default' => ':name, :name coupons, :name promotiecodes, :name vouchers, kortingsaanbiedingen, :name deals, online geld besparen',
         ],
     ],
     
-    // Statistics badges
+    // Statistieken badges
     'stats' => [
-        'blogs_available' => ':count Blogs Available',
-        'stores_available' => ':count Stores Available',
+        'blogs_available' => ':count Blogs Beschikbaar',
+        'stores_available' => ':count Winkels Beschikbaar',
     ],
     
-    // Total counts
+    // Totalen aantallen
     'total' => [
-        'blogs' => 'Total Blogs',
-        'stores' => 'Total Stores',
+        'blogs' => 'Totaal Blogs',
+        'stores' => 'Totaal Winkels',
     ],
     
-    // Blog section
+    // Blog sectie
     'blog_section' => [
-        'title' => 'Shopping Hacks & Savings Tips & Tricks',
+        'title' => 'Winkeltips & Bespaartips & Trucs',
     ],
     
-    // Stores section
+    // Winkels sectie
     'stores_section' => [
-        'title' => ':name Stores & Brands',
+        'title' => ':name Winkels & Merken',
     ],
     
-    // Pagination
+    // Paginering
     'pagination' => [
-        'blogs_label' => 'Blogs pagination',
-        'stores_label' => 'Stores pagination',
+        'blogs_label' => 'Blogs paginering',
+        'stores_label' => 'Winkels paginering',
     ],
     
-    // Empty states
+    // Lege staten
     'empty_stores' => [
-        'title' => 'No stores found in this category! Explore new stores',
-        'explore_link' => 'Explore All Stores',
+        'title' => 'Geen winkels gevonden in deze categorie! Ontdek nieuwe winkels',
+        'explore_link' => 'Bekijk Alle Winkels',
     ],
     
-    // Store default values
-    'store_default_name' => 'Store Name Not Available',
+    // Standaardwaarden voor winkels
+    'store_default_name' => 'Winkelnaam Niet Beschikbaar',
     
-    // Related content
+    // Gerelateerde content
     'related_content' => [
-        'blogs_title' => 'Related Blog Posts',
-        'stores_title' => 'Related Stores',
-        'no_blogs_found' => 'No blog posts found in this category',
-        'no_stores_found' => 'No stores found in this category',
+        'blogs_title' => 'Gerelateerde Blogberichten',
+        'stores_title' => 'Gerelateerde Winkels',
+        'no_blogs_found' => 'Geen blogberichten gevonden in deze categorie',
+        'no_stores_found' => 'Geen winkels gevonden in deze categorie',
     ],
     
-    // Filter options (if you add filtering)
+    // Filteropties (indien u filtering toevoegt)
     'filter' => [
-        'sort_by' => 'Sort By',
-        'popularity' => 'Popularity',
-        'newest' => 'Newest',
-        'alphabetical' => 'Alphabetical',
-        'rating' => 'Rating',
-        'discount' => 'Highest Discount',
+        'sort_by' => 'Sorteer Op',
+        'popularity' => 'Populariteit',
+        'newest' => 'Nieuwste',
+        'alphabetical' => 'Alfabetisch',
+        'rating' => 'Beoordeling',
+        'discount' => 'Hoogste Korting',
     ],
     
-    // Store features (if you add badges/icons)
+    // Winkelkenmerken (indien u badges/pictogrammen toevoegt)
     'features' => [
-        'top_store' => 'Top Store',
-        'verified' => 'Verified',
-        'exclusive' => 'Exclusive Offer',
-        'limited_time' => 'Limited Time',
-        'free_shipping' => 'Free Shipping',
+        'top_store' => 'Top Winkel',
+        'verified' => 'Geverifieerd',
+        'exclusive' => 'Exclusieve Aanbieding',
+        'limited_time' => 'Beperkte Tijd',
+        'free_shipping' => 'Gratis Verzending',
     ],
     
-    // Coupon statistics (if you add coupon counts)
+    // Coupon statistieken (indien u couponaantallen toevoegt)
     'coupon_stats' => [
-        'active_coupons' => ':count Active Coupons',
-        'verified_offers' => ':count Verified Offers',
-        'success_rate' => ':rate% Success Rate',
-        'last_updated' => 'Updated :time ago',
+        'active_coupons' => ':count Actieve Coupons',
+        'verified_offers' => ':count Geverifieerde Aanbiedingen',
+        'success_rate' => ':rate% Succespercentage',
+        'last_updated' => ':time geleden bijgewerkt',
     ],
     
-    // Newsletter (if you add it)
+    // Nieuwsbrief (indien u het toevoegt)
     'newsletter' => [
-        'title' => 'Get :name Deals in Your Inbox',
-        'description' => 'Subscribe to receive exclusive :name coupons and deals',
-        'subscribe' => 'Subscribe',
-        'success' => 'Subscribed successfully! Check your email.',
+        'title' => 'Ontvang :name Deals in Uw Inbox',
+        'description' => 'Abonneer om exclusieve :name coupons en deals te ontvangen',
+        'subscribe' => 'Abonneren',
+        'success' => 'Succesvol geabonneerd! Check uw e-mail.',
     ],
     
-    // Social sharing (if you add it)
+    // Sociaal delen (indien u het toevoegt)
     'share' => [
-        'title' => 'Share this category',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Deel deze categorie',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'pinterest' => 'Pinnen op Pinterest',
+        'email' => 'Delen via E-mail',
     ],
     
-    // Breadcrumb (if you need separate from common)
+    // Broodkruimelpad (indien u apart van algemeen nodig heeft)
     'breadcrumb' => [
-        'current' => ':name Category',
+        'current' => ':name Categorie',
     ],
     
-    // Seasonal/holiday banners (if you add them)
+    // Seizoens-/feestdagbanners (indien u ze toevoegt)
     'seasonal' => [
-        'holiday_sales' => 'Holiday Sales',
+        'holiday_sales' => 'Feestdagen Uitverkoop',
         'black_friday' => 'Black Friday Deals',
-        'cyber_monday' => 'Cyber Monday Offers',
-        'seasonal_savings' => 'Seasonal Savings',
+        'cyber_monday' => 'Cyber Monday Aanbiedingen',
+        'seasonal_savings' => 'Seizoensbesparingen',
     ],
     
-    // User engagement (if you add ratings/reviews)
+    // Gebruikersbetrokkenheid (indien u beoordelingen/reviews toevoegt)
     'user_engagement' => [
-        'rate_this_category' => 'Rate this category',
-        'user_ratings' => 'User Ratings',
-        'average_rating' => 'Average Rating: :rating/5',
-        'based_on' => 'Based on :count ratings',
-        'write_review' => 'Write a Review',
+        'rate_this_category' => 'Beoordeel deze categorie',
+        'user_ratings' => 'Gebruikersbeoordelingen',
+        'average_rating' => 'Gemiddelde Beoordeling: :rating/5',
+        'based_on' => 'Gebaseerd op :count beoordelingen',
+        'write_review' => 'Schrijf een Review',
     ],
     
-    // Mobile app CTA (if you add it)
+    // Mobiele app CTA (indien u het toevoegt)
     'mobile_app' => [
-        'title' => 'Get Our Mobile App',
-        'description' => 'Get :name deals on the go with our mobile app',
-        'download' => 'Download Now',
-        'available_on' => 'Available on iOS & Android',
+        'title' => 'Download Onze Mobiele App',
+        'description' => 'Ontvang :name deals onderweg met onze mobiele app',
+        'download' => 'Download Nu',
+        'available_on' => 'Beschikbaar op iOS & Android',
     ],
-];  
+];

@@ -3,44 +3,44 @@
 return [
     /*
     |--------------------------------------------------------------------------
-    | Pagination Language Lines
+    | Taallijnen voor Paginering
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used by the paginator library to build
-    | the simple pagination links. You are free to change them to anything
-    | you want to customize your views to better match your application.
+    | De volgende taallijnen worden door de paginatorbibliotheek gebruikt om de
+    | eenvoudige pagineringslinks op te bouwen. U kunt ze vrijelijk wijzigen
+    | om uw weergaven beter aan te passen aan uw applicatie.
     |
     */
 
-    // Default Laravel pagination
-    'previous' => '&laquo; Previous',
-    'next' => 'Next &raquo;',
+    // Standaard Laravel paginering
+    'previous' => '&laquo; Vorige',
+    'next' => 'Volgende &raquo;',
 
-    // Custom pagination template text
+    // Aangepaste paginering sjabloontekst
     'mobile' => [
-        'showing' => 'Showing',
-        'to' => 'to',
-        'of' => 'of',
-        'previous' => 'Previous',
-        'next' => 'Next',
+        'showing' => 'Toont',
+        'to' => 'tot',
+        'of' => 'van',
+        'previous' => 'Vorige',
+        'next' => 'Volgende',
     ],
 
     'desktop' => [
-        'showing' => 'Showing',
-        'to' => 'to',
-        'of' => 'of',
-        'results' => 'results',
-        'previous' => 'Previous',
-        'next' => 'Next',
+        'showing' => 'Toont',
+        'to' => 'tot',
+        'of' => 'van',
+        'results' => 'resultaten',
+        'previous' => 'Vorige',
+        'next' => 'Volgende',
     ],
 
-    // Common terms
+    // Algemene termen
     'common' => [
-        'showing' => 'Showing',
-        'to' => 'to',
-        'of' => 'of',
-        'results' => 'results',
-        'previous' => 'Previous',
-        'next' => 'Next',
+        'showing' => 'Toont',
+        'to' => 'tot',
+        'of' => 'van',
+        'results' => 'resultaten',
+        'previous' => 'Vorige',
+        'next' => 'Volgende',
     ],
 ];

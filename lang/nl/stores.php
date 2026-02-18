@@ -1,61 +1,60 @@
 <?php
 
 return [
-    'title' => 'All Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
-    'meta-title' => 'New Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
-    'description' => 'Discover amazing stores with exclusive offers, discounts, and coupons. Find the best deals from top brands in one place.',
-    'keywords' => 'stores, offers, discounts, coupons, deals, shopping, brands, savings',
+    'title' => 'Alle Winkels Coupons, Promotiecodes & Beste Deals ' . date('Y') . ' | ' . config('app.name'),
+    'meta-title' => 'Nieuwe Winkels Coupons, Promotiecodes & Beste Deals ' . date('Y') . ' | ' . config('app.name'),
+    'description' => 'Ontdek geweldige winkels met exclusieve aanbiedingen, kortingen en coupons. Vind de beste deals van topmerken op één plek.',
+    'keywords' => 'winkels, aanbiedingen, kortingen, coupons, deals, winkelen, merken, besparingen',
     
-    // Header Section
+    // Header Sectie
     'header' => [
-        'title' => 'All Stores',
-        'subtitle' => 'Discover amazing stores with exclusive offers and discounts. Find the best deals from trusted brands.',
+        'title' => 'Alle Winkels',
+        'subtitle' => 'Ontdek geweldige winkels met exclusieve aanbiedingen en kortingen. Vind de beste deals van vertrouwde merken.',
     ],
     
-    // Stats Section
+    // Statistieken Sectie
     'stats' => [
-        'stores' => 'Stores',
-        'latest_deals' => 'Latest :year Deals',
-        'verified_offers' => 'Verified Offers',
+        'stores' => 'Winkels',
+        'latest_deals' => 'Nieuwste :year Deals',
+        'verified_offers' => 'Geverifieerde Aanbiedingen',
     ],
     
-    // Store Cards
+    // Winkel Kaarten
     'store_badge' => [
-        'top_store' => 'Top Store',
+        'top_store' => 'Top Winkel',
     ],
     
-    'store_default_name' => 'Store Name',
-    'offers_count' => 'Offers',
+    'store_default_name' => 'Winkelnaam',
+    'offers_count' => 'Aanbiedingen',
     
-    // Empty State
+    // Lege Staat
     'empty' => [
-        'title' => 'No Stores Available',
-        'message' => 'No stores found in this category! Explore new stores for exciting deals.',
+        'title' => 'Geen Winkels Beschikbaar',
+        'message' => 'Geen winkels gevonden in deze categorie! Ontdek nieuwe winkels voor interessante deals.',
     ],
     
-    // Pagination
+    // Paginering
     'pagination' => [
-        'label' => 'Stores pagination',
+        'label' => 'Winkels paginering',
     ],
 
    'common' => [
     'home' => 'Home',
-    'stores' => 'Stores',
-    'offers' => 'Offers',
+    'stores' => 'Winkels',
+    'offers' => 'Aanbiedingen',
     'coupons' => 'Coupons',
     'deals' => 'Deals',
-    'categories' => 'Categories',
-    'search' => 'Search',
-    'filter' => 'Filter',
-    'sort_by' => 'Sort By',
-    'view_all' => 'View All',
-    'read_more' => 'Read More',
-    'learn_more' => 'Learn More',
-    'get_started' => 'Get Started',
-    'subscribe' => 'Subscribe',
-    'download' => 'Download',
-    'share' => 'Share',
-    'save' => 'Save',
+    'categories' => 'Categorieën',
+    'search' => 'Zoeken',
+    'filter' => 'Filteren',
+    'sort_by' => 'Sorteren Op',
+    'view_all' => 'Alles Bekijken',
+    'read_more' => 'Lees Meer',
+    'learn_more' => 'Meer Informatie',
+    'get_started' => 'Aan de Slag',
+    'subscribe' => 'Abonneren',
+    'download' => 'Downloaden',
+    'share' => 'Delen',
+    'save' => 'Opslaan',
     ],
 ];
-

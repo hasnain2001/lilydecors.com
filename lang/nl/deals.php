@@ -3,186 +3,185 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Hot Deals - Limited-time offers & exclusive discounts | ' . config('app.name'),
-        'description' => 'Discover today\'s hottest deals and limited-time offers from your favorite stores. Save big with our exclusive discounts!',
-        'keywords' => 'hot deals, limited-time offers, flash sales, exclusive discounts, online shopping deals',
+        'title' => 'Hot Deals - Tijdelijke aanbiedingen & exclusieve kortingen | ' . config('app.name'),
+        'description' => 'Ontdek de heetste deals van vandaag en tijdelijke aanbiedingen van uw favoriete winkels. Bespaar veel met onze exclusieve kortingen!',
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
         'title' => '🔥 FLASH DEALS ALERT!',
-        'subtitle' => 'Limited-time offers you won\'t want to miss - act fast before they\'re gone!',
+        'subtitle' => 'Tijdelijke aanbiedingen die u niet wilt missen - wees er snel bij voordat ze weg zijn!',
     ],
     
-    // Categories section
+    // Categorieën sectie
     'categories' => [
-        'title' => 'Shop by Category:',
-        'all' => 'All Categories',
+        'title' => 'Winkel per Categorie:',
+        'all' => 'Alle Categorieën',
     ],
     
-    // Deal card elements
+    // Deal kaart elementen
     'deal_badge' => [
         'hot' => 'HOT DEAL',
-        'featured' => 'FEATURED',
-        'exclusive' => 'EXCLUSIVE',
-        'limited_time' => 'LIMITED TIME',
+        'featured' => 'UITGELICHT',
+        'exclusive' => 'EXCLUSIEF',
+        'limited_time' => 'BEPERKTE TIJD',
     ],
     
-    'image_alt' => ':name deal image',
-    'expires' => 'Expires',
-    'used_count' => ':count used',
+    'image_alt' => ':name deal afbeelding',
+    'expires' => 'Verloopt',
+    'used_count' => ':count gebruikt',
     
-    // Action buttons
-    'view_deal' => 'View Deal',
-    'more_offers' => 'More Offers',
+    // Actieknoppen
+    'view_deal' => 'Bekijk Deal',
+    'more_offers' => 'Meer Aanbiedingen',
     
-    // Empty state
+    // Lege staat
     'empty' => [
-        'title' => 'No Hot Deals Available',
-        'message' => 'Check back soon for new flash deals and limited-time offers!',
+        'title' => 'Geen Hot Deals Beschikbaar',
+        'message' => 'Kom binnenkort terug voor nieuwe flash deals en tijdelijke aanbiedingen!',
     ],
     
-    // Pagination
+    // Paginering
     'pagination' => [
-        'label' => 'Deals pagination',
+        'label' => 'Deals paginering',
     ],
     
     // Deal types
     'types' => [
         'flash_sale' => 'Flash Sale',
-        'limited_time' => 'Limited Time',
-        'doorbuster' => 'Doorbuster',
-        'clearance' => 'Clearance',
-        'holiday' => 'Holiday Deal',
-        'seasonal' => 'Seasonal Sale',
+        'limited_time' => 'Beperkte Tijd',
+        'doorbuster' => 'Dagaanbieding',
+        'clearance' => 'Opruiming',
+        'holiday' => 'Feestdag Deal',
+        'seasonal' => 'Seizoensuitverkoop',
     ],
     
-    // Timer/Countdown (if added)
+    // Timer/Aftelling (indien toegevoegd)
     'countdown' => [
-        'expires_in' => 'Expires in:',
-        'days' => 'days',
-        'hours' => 'hours',
-        'minutes' => 'minutes',
-        'seconds' => 'seconds',
-        'expired' => 'Deal expired!',
+        'expires_in' => 'Verloopt over:',
+        'days' => 'dagen',
+        'hours' => 'uren',
+        'minutes' => 'minuten',
+        'seconds' => 'seconden',
+        'expired' => 'Deal verlopen!',
     ],
     
-    // Statistics (if added)
+    // Statistieken (indien toegevoegd)
     'stats' => [
-        'total_deals' => 'Total Deals',
-        'active_deals' => 'Active Now',
-        'ending_soon' => 'Ending Soon',
-        'avg_discount' => 'Average Discount',
+        'total_deals' => 'Totaal Deals',
+        'active_deals' => 'Nu Actief',
+        'ending_soon' => 'Eindigt Binnenkort',
+        'avg_discount' => 'Gemiddelde Korting',
     ],
     
-    // Filter and sorting (if added)
+    // Filter en sortering (indien toegevoegd)
     'filter' => [
         'title' => 'Filter Deals',
-        'sort_by' => 'Sort By',
-        'newest' => 'Newest',
-        'ending_soon' => 'Ending Soon',
-        'most_popular' => 'Most Popular',
-        'highest_discount' => 'Highest Discount',
-        'category' => 'Category',
-        'store' => 'Store',
+        'sort_by' => 'Sorteer Op',
+        'newest' => 'Nieuwste',
+        'ending_soon' => 'Eindigt Binnenkort',
+        'most_popular' => 'Meest Populair',
+        'highest_discount' => 'Hoogste Korting',
+        'category' => 'Categorie',
+        'store' => 'Winkel',
     ],
     
-    // Featured deals section (if added)
+    // Uitgelichte deals sectie (indien toegevoegd)
     'featured' => [
-        'title' => 'Today\'s Featured Deals',
-        'view_all' => 'View All Deals',
+        'title' => 'Uitgelichte Deals van Vandaag',
+        'view_all' => 'Bekijk Alle Deals',
     ],
     
-    // Top stores with deals (if added)
+    // Topwinkels met deals (indien toegevoegd)
     'top_stores' => [
-        'title' => 'Stores with Hot Deals',
-        'view_all_stores' => 'View All Stores',
+        'title' => 'Winkels met Hot Deals',
+        'view_all_stores' => 'Bekijk Alle Winkels',
     ],
     
-    // Seasonal/holiday deals (if added)
+    // Seizoens-/feestdagdeals (indien toegevoegd)
     'seasonal' => [
         'black_friday' => 'Black Friday Deals',
         'cyber_monday' => 'Cyber Monday Deals',
-        'holiday_sales' => 'Holiday Sales',
-        'summer_sales' => 'Summer Sales',
-        'winter_sales' => 'Winter Sales',
+        'holiday_sales' => 'Feestdagen Uitverkoop',
+        'summer_sales' => 'Zomer Uitverkoop',
+        'winter_sales' => 'Winter Uitverkoop',
     ],
     
-    // Newsletter signup (if added)
+    // Nieuwsbrief aanmelding (indien toegevoegd)
     'newsletter' => [
-        'title' => 'Get Hot Deal Alerts',
-        'description' => 'Subscribe to receive flash deal notifications directly in your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive hot deal alerts.',
+        'title' => 'Ontvang Hot Deal Meldingen',
+        'description' => 'Abonneer om flash deal meldingen direct in uw inbox te ontvangen',
+        'subscribe' => 'Abonneren',
+        'success' => 'Succesvol geabonneerd! U ontvangt hot deal meldingen.',
     ],
     
-    // Social sharing (if added)
+    // Sociaal delen (indien toegevoegd)
     'share' => [
-        'title' => 'Share this deal',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'whatsapp' => 'Share on WhatsApp',
-        'email' => 'Share via Email',
+        'title' => 'Deel deze deal',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'pinterest' => 'Pinnen op Pinterest',
+        'whatsapp' => 'Delen op WhatsApp',
+        'email' => 'Delen via E-mail',
     ],
     
-    // Success rate/savings
+    // Succespercentage/besparingen
     'savings' => [
-        'up_to' => 'Up to :percent% off',
-        'save_amount' => 'Save :amount',
-        'free_shipping' => 'Free Shipping',
-        'bogo' => 'Buy One Get One',
-        'extra_off' => 'Extra :percent% off',
+        'up_to' => 'Tot :percent% korting',
+        'save_amount' => 'Bespaar :amount',
+        'free_shipping' => 'Gratis Verzending',
+        'bogo' => '1+1 Gratis',
+        'extra_off' => 'Extra :percent% korting',
     ],
     
-    // Deal urgency indicators
+    // Urgentie-indicatoren voor deals
     'urgency' => [
-        'almost_gone' => 'Almost gone!',
-        'selling_fast' => 'Selling fast!',
-        'limited_stock' => 'Limited stock!',
-        'last_chance' => 'Last chance!',
-        'expiring_today' => 'Expiring today!',
+        'almost_gone' => 'Bijna weg!',
+        'selling_fast' => 'Gaat snel!',
+        'limited_stock' => 'Beperkte voorraad!',
+        'last_chance' => 'Laatste kans!',
+        'expiring_today' => 'Verloopt vandaag!',
     ],
     
-    // User actions
+    // Gebruikersacties
     'actions' => [
-        'view_deal' => 'View Deal',
-        'get_coupon' => 'Get Coupon',
-        'shop_now' => 'Shop Now',
-        'save_deal' => 'Save Deal',
-        'set_reminder' => 'Set Reminder',
-        'report_expired' => 'Report Expired',
+        'view_deal' => 'Bekijk Deal',
+        'get_coupon' => 'Ontvang Coupon',
+        'shop_now' => 'Nu Winkelen',
+        'save_deal' => 'Deal Opslaan',
+        'set_reminder' => 'Herinnering Instellen',
+        'report_expired' => 'Meld Verlopen',
     ],
     
-    // Verification status
+    // Verificatiestatus
     'verification' => [
-        'verified' => 'Verified Deal',
-        'exclusive' => 'Exclusive Deal',
-        'tested' => 'Tested :time',
-        'reported_working' => 'Reported working :time ago',
+        'verified' => 'Geverifieerde Deal',
+        'exclusive' => 'Exclusieve Deal',
+        'tested' => 'Getest :time',
+        'reported_working' => 'Gemeld werkend :time geleden',
     ],
     
-    // Accessibility
+    // Toegankelijkheid
     'accessibility' => [
-        'deal_card' => 'Deal card for :store',
-        'view_deal_button' => 'View deal for :store',
-        'more_offers_button' => 'View more offers from :store',
-        'expiration_info' => 'Expires on :date',
-        'usage_info' => 'Used :count times',
+        'deal_card' => 'Dealkaart voor :store',
+        'view_deal_button' => 'Bekijk deal voor :store',
+        'more_offers_button' => 'Bekijk meer aanbiedingen van :store',
+        'expiration_info' => 'Verloopt op :date',
+        'usage_info' => ':count keer gebruikt',
     ],
     
-    // Loading states
+    // Laadstatussen
     'loading' => [
-        'deals' => 'Loading hot deals...',
-        'please_wait' => 'Please wait while we load the latest deals',
+        'deals' => 'Hot deals laden...',
+        'please_wait' => 'Een ogenblik geduld terwijl we de nieuwste deals laden',
     ],
     
-    // Time periods for deals
+    // Tijdsperioden voor deals
     'time_periods' => [
-        'today' => 'Today\'s Deals',
-        'this_week' => 'This Week',
-        'this_month' => 'This Month',
-        'upcoming' => 'Upcoming Deals',
-        'expired' => 'Recently Expired',
+        'today' => 'Deals van Vandaag',
+        'this_week' => 'Deze Week',
+        'this_month' => 'Deze Maand',
+        'upcoming' => 'Aankomende Deals',
+        'expired' => 'Recent Verlopen',
     ],
 ];

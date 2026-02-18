@@ -3,178 +3,178 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Coupon Codes - Find the latest coupon codes and deals for your favorite stores',
-        'description' => 'Find the latest coupon codes and deals for your favorite stores. Save money on your online shopping with our exclusive discount codes.',
-        'keywords' => 'coupon codes, discount codes, promo codes, deals, offers, vouchers, discounts, savings, online shopping',
+        'title' => 'Couponcodes - Vind de nieuwste couponcodes en deals voor uw favoriete winkels',
+        'description' => 'Vind de nieuwste couponcodes en deals voor uw favoriete winkels. Bespaar geld op uw online aankopen met onze exclusieve kortingscodes.',
+        'keywords' => 'couponcodes, kortingscodes, promotiecodes, deals, aanbiedingen, vouchers, kortingen, besparingen, online winkelen',
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Exclusive Coupon Codes',
-        'subtitle' => 'Save money with our verified discount codes for your favorite online stores',
+        'title' => 'Exclusieve Couponcodes',
+        'subtitle' => 'Bespaar geld met onze geverifieerde kortingscodes voor uw favoriete online winkels',
     ],
     
-    // Coupon card elements
+    // Coupon kaart elementen
     'store_logo_alt' => ':name Logo',
-    'expires' => 'Expires',
-    'used_count' => 'Used :count times',
+    'expires' => 'Verloopt',
+    'used_count' => ':count keer gebruikt',
     
-    // Action buttons
-    'get_code' => 'Get Code',
-    'view_deal' => 'View Deal',
-    'more_offers' => 'More Offers',
+    // Actieknoppen
+    'get_code' => 'Code Ontvangen',
+    'view_deal' => 'Bekijk Deal',
+    'more_offers' => 'Meer Aanbiedingen',
     
-    // Empty state
+    // Lege staat
     'empty' => [
-        'title' => 'No Coupons Available',
-        'message' => 'No coupons found. Please check back later for new deals.',
+        'title' => 'Geen Coupons Beschikbaar',
+        'message' => 'Geen coupons gevonden. Kom later terug voor nieuwe deals.',
     ],
     
-    // Pagination
+    // Paginering
     'pagination' => [
-        'label' => 'Coupons pagination',
+        'label' => 'Coupons paginering',
     ],
     
-    // Modal window
+    // Modaal venster
     'modal' => [
-        'exclusive_offer' => 'EXCLUSIVE OFFER',
-        'store_logo_alt' => 'Store Logo',
-        'your_coupon_code' => 'YOUR COUPON CODE',
-        'copy' => 'Copy',
-        'copied' => 'Copied to clipboard!',
-        'instructions' => 'Use this code at checkout on :store',
-        'go_to_store' => 'Go to Store',
+        'exclusive_offer' => 'EXCLUSIEVE AANBIEDING',
+        'store_logo_alt' => 'Winkel Logo',
+        'your_coupon_code' => 'UW COUPONCODE',
+        'copy' => 'Kopiëren',
+        'copied' => 'Gekopieerd naar klembord!',
+        'instructions' => 'Gebruik deze code bij het afrekenen op :store',
+        'go_to_store' => 'Ga naar Winkel',
     ],
     
-    // Authentication badges
+    // Authenticatie badges
     'auth_badges' => [
-        'verified' => 'Verified',
-        'exclusive' => 'Exclusive',
-        'limited_time' => 'Limited Time',
-        'free_shipping' => 'Free Shipping',
+        'verified' => 'Geverifieerd',
+        'exclusive' => 'Exclusief',
+        'limited_time' => 'Beperkte Tijd',
+        'free_shipping' => 'Gratis Verzending',
     ],
     
-    // Filter and sorting (if added)
+    // Filter en sortering (indien toegevoegd)
     'filter' => [
         'title' => 'Filter Coupons',
-        'sort_by' => 'Sort By',
-        'newest' => 'Newest',
-        'expiring_soon' => 'Expiring Soon',
-        'most_popular' => 'Most Popular',
-        'highest_discount' => 'Highest Discount',
-        'store' => 'Store',
-        'category' => 'Category',
+        'sort_by' => 'Sorteer Op',
+        'newest' => 'Nieuwste',
+        'expiring_soon' => 'Verloopt Binnenkort',
+        'most_popular' => 'Meest Populair',
+        'highest_discount' => 'Hoogste Korting',
+        'store' => 'Winkel',
+        'category' => 'Categorie',
         'type' => 'Type',
     ],
     
-    // Coupon types
+    // Coupontypes
     'types' => [
         'code' => 'Code',
         'deal' => 'Deal',
-        'free_shipping' => 'Free Shipping',
-        'percentage' => 'Percentage Off',
-        'amount' => 'Amount Off',
-        'bogo' => 'Buy One Get One',
+        'free_shipping' => 'Gratis Verzending',
+        'percentage' => 'Percentage Korting',
+        'amount' => 'Bedrag Korting',
+        'bogo' => '1+1 Gratis',
     ],
     
-    // Statistics (if added)
+    // Statistieken (indien toegevoegd)
     'stats' => [
-        'total_coupons' => 'Total Coupons',
-        'active_today' => 'Active Today',
-        'success_rate' => 'Success Rate',
-        'avg_savings' => 'Average Savings',
+        'total_coupons' => 'Totaal Coupons',
+        'active_today' => 'Vandaag Actief',
+        'success_rate' => 'Succespercentage',
+        'avg_savings' => 'Gemiddelde Besparing',
     ],
     
-    // Search functionality (if added)
+    // Zoekfunctionaliteit (indien toegevoegd)
     'search' => [
-        'placeholder' => 'Search coupons by store or keyword...',
-        'no_results' => 'No coupons found for ":query"',
-        'suggestions' => 'Try different keywords or browse all stores',
+        'placeholder' => 'Zoek coupons op winkel of trefwoord...',
+        'no_results' => 'Geen coupons gevonden voor ":query"',
+        'suggestions' => 'Probeer andere zoekwoorden of blader door alle winkels',
     ],
     
-    // Featured coupons (if added)
+    // Uitgelichte coupons (indien toegevoegd)
     'featured' => [
-        'title' => 'Featured Coupons',
-        'view_all' => 'View All Coupons',
+        'title' => 'Uitgelichte Coupons',
+        'view_all' => 'Bekijk Alle Coupons',
     ],
     
-    // Top stores with coupons (if added)
+    // Topwinkels met coupons (indien toegevoegd)
     'top_stores' => [
-        'title' => 'Top Stores with Coupons',
-        'view_all_stores' => 'View All Stores',
+        'title' => 'Topwinkels met Coupons',
+        'view_all_stores' => 'Bekijk Alle Winkels',
     ],
     
-    // Categories with coupons (if added)
+    // Categorieën met coupons (indien toegevoegd)
     'top_categories' => [
-        'title' => 'Popular Categories',
-        'view_all_categories' => 'View All Categories',
+        'title' => 'Populaire Categorieën',
+        'view_all_categories' => 'Bekijk Alle Categorieën',
     ],
     
-    // Newsletter signup (if added)
+    // Nieuwsbrief aanmelding (indien toegevoegd)
     'newsletter' => [
-        'title' => 'Get New Coupon Alerts',
-        'description' => 'Subscribe to receive new coupon codes and deals directly in your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive new coupon alerts.',
+        'title' => 'Ontvang Nieuwe Couponmeldingen',
+        'description' => 'Abonneer om nieuwe couponcodes en deals direct in uw inbox te ontvangen',
+        'subscribe' => 'Abonneren',
+        'success' => 'Succesvol geabonneerd! U ontvangt nieuwe couponmeldingen.',
     ],
     
-    // Social sharing (if added)
+    // Sociaal delen (indien toegevoegd)
     'share' => [
-        'title' => 'Share this coupon',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Deel deze coupon',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'pinterest' => 'Pinnen op Pinterest',
+        'email' => 'Delen via E-mail',
     ],
     
-    // Success rate indicator
+    // Succespercentage indicator
     'success_rate' => [
-        'excellent' => 'Excellent success rate',
-        'good' => 'Good success rate',
-        'average' => 'Average success rate',
-        'low' => 'Low success rate',
-        'new' => 'New coupon',
+        'excellent' => 'Uitstekend succespercentage',
+        'good' => 'Goed succespercentage',
+        'average' => 'Gemiddeld succespercentage',
+        'low' => 'Laag succespercentage',
+        'new' => 'Nieuwe coupon',
     ],
     
-    // Expiration warnings
+    // Vervalwaarschuwingen
     'expiration' => [
-        'expiring_soon' => 'Expiring soon!',
-        'expired' => 'Expired',
-        'expires_today' => 'Expires today!',
-        'valid_until' => 'Valid until :date',
+        'expiring_soon' => 'Verloopt binnenkort!',
+        'expired' => 'Verlopen',
+        'expires_today' => 'Verloopt vandaag!',
+        'valid_until' => 'Geldig tot :date',
     ],
     
-    // User actions
+    // Gebruikersacties
     'actions' => [
-        'reveal_code' => 'Reveal Code',
-        'copy_code' => 'Copy Code',
-        'get_deal' => 'Get Deal',
-        'visit_store' => 'Visit Store',
-        'save_coupon' => 'Save Coupon',
-        'report_expired' => 'Report Expired',
+        'reveal_code' => 'Code Onthullen',
+        'copy_code' => 'Code Kopiëren',
+        'get_deal' => 'Deal Ontvangen',
+        'visit_store' => 'Bezoek Winkel',
+        'save_coupon' => 'Coupon Opslaan',
+        'report_expired' => 'Meld Verlopen',
     ],
     
-    // Verification status
+    // Verificatiestatus
     'verification' => [
-        'verified' => 'Verified',
-        'unverified' => 'Unverified',
-        'tested' => 'Tested :time',
-        'reported_working' => 'Reported working :time ago',
+        'verified' => 'Geverifieerd',
+        'unverified' => 'Ongeverifieerd',
+        'tested' => 'Getest :time',
+        'reported_working' => 'Gemeld werkend :time geleden',
     ],
     
-    // Accessibility
+    // Toegankelijkheid
     'accessibility' => [
-        'coupon_card' => 'Coupon card for :store',
-        'reveal_button' => 'Reveal coupon code for :store',
-        'deal_button' => 'Get deal for :store',
-        'more_offers_button' => 'View more offers from :store',
-        'expiration_info' => 'Expires on :date',
-        'usage_info' => 'Used :count times',
+        'coupon_card' => 'Couponkaart voor :store',
+        'reveal_button' => 'Onthul couponcode voor :store',
+        'deal_button' => 'Ontvang deal voor :store',
+        'more_offers_button' => 'Bekijk meer aanbiedingen van :store',
+        'expiration_info' => 'Verloopt op :date',
+        'usage_info' => ':count keer gebruikt',
     ],
     
-    // Loading states
+    // Laadstatussen
     'loading' => [
-        'coupons' => 'Loading coupons...',
-        'please_wait' => 'Please wait while we load available coupons',
+        'coupons' => 'Coupons laden...',
+        'please_wait' => 'Een ogenblik geduld terwijl we beschikbare coupons laden',
     ],
 ];

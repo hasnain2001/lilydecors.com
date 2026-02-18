@@ -3,174 +3,174 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Imprint - Legal Information | :app_name',
-        'description' => 'Legal information, company details, and contact information for :app_name. Find our imprint, disclaimer, and legal notices.',
-        'keywords' => 'imprint, legal information, company details, contact, disclaimer, copyright, :app_name',
+        'title' => 'Impressum - Juridische Informatie | :app_name',
+        'description' => 'Juridische informatie, bedrijfsgegevens en contactinformatie voor :app_name. Vind ons impressum, disclaimer en juridische kennisgevingen.',
+        'keywords' => 'impressum, juridische informatie, bedrijfsgegevens, contact, disclaimer, copyright, :app_name',
         'author' => ':app_name',
     ],
     
-    // Hero section
+    // Hero sectie
     'hero' => [
-        'title' => 'Legal Imprint',
-        'description' => 'Company details, legal information, and contact details',
+        'title' => 'Juridisch Impressum',
+        'description' => 'Bedrijfsgegevens, juridische informatie en contactgegevens',
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Legal Information',
+        'title' => 'Juridische Informatie',
     ],
     
-    // Information sections
+    // Informatiesecties
     'sections' => [
         'company' => [
-            'title' => 'Company Details',
-            'name' => 'Lilydecors Ltd.',
-            'description' => 'Your trusted partner for deals and coupons',
+            'title' => 'Bedrijfsgegevens',
+            'name' => 'Lilydecors B.V.',
+            'description' => 'Uw vertrouwde partner voor deals en coupons',
         ],
         
         'address' => [
-            'title' => 'Registered Address',
-            'line1' => '3000 Hoffman Dr,',
-            'line2' => 'Plano, Tx USA 75074',
-            'country' => 'United States of America',
+            'title' => 'Vestigingsadres',
+            'line1' => 'Voorbeeldstraat 123',
+            'line2' => '1234 AB Amsterdam',
+            'country' => 'Nederland',
         ],
         
         'contact' => [
-            'title' => 'Contact Information',
-            'email_label' => 'Email',
-            'email_address' => 'contact@Lilydecors.com',
-            'phone_label' => 'Phone',
-            'phone_number' => '+17473651163',
+            'title' => 'Contactgegevens',
+            'email_label' => 'E-mail',
+            'email_address' => 'contact@Lilydecors.nl',
+            'phone_label' => 'Telefoon',
+            'phone_number' => '+31 (0)20 123 4567',
         ],
         
         'legal' => [
-            'title' => 'Legal Representation',
-            'commercial_register_label' => 'Commercial Register',
-            'commercial_register' => 'Plano County, HRB 123456',
-            'vat_label' => 'VAT Identification Number',
-            'vat_number' => 'US123456789',
+            'title' => 'Wettelijke Vertegenwoordiging',
+            'commercial_register_label' => 'Kamer van Koophandel',
+            'commercial_register' => 'Amsterdam, KvK 12345678',
+            'vat_label' => 'BTW-identificatienummer',
+            'vat_number' => 'NL123456789B01',
         ],
         
         'insurance' => [
-            'title' => 'Professional Indemnity Insurance',
-            'provider_label' => 'Insurance Provider',
-            'provider' => 'Example Insurance Co.',
-            'coverage_label' => 'Territorial Coverage',
-            'coverage' => 'Worldwide',
-            'policy_label' => 'Policy Number',
-            'policy_number' => 'EI-987654321',
+            'title' => 'Beroepsaansprakelijkheidsverzekering',
+            'provider_label' => 'Verzekeraar',
+            'provider' => 'Voorbeeld Verzekeringen N.V.',
+            'coverage_label' => 'Dekkingsgebied',
+            'coverage' => 'Wereldwijd',
+            'policy_label' => 'Polisnummer',
+            'policy_number' => 'AV-987654321',
         ],
         
         'disclaimer' => [
             'title' => 'Disclaimer',
-            'badge' => 'Important Legal Notice',
-            'paragraph1' => 'The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.',
-            'paragraph2' => 'Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.',
+            'badge' => 'Belangrijke Juridische Mededeling',
+            'paragraph1' => 'De informatie op deze website is uitsluitend bedoeld voor algemene informatiedoeleinden. Hoewel wij ernaar streven de informatie actueel en correct te houden, geven wij geen garanties van welke aard dan ook, expliciet of impliciet, over de volledigheid, nauwkeurigheid, betrouwbaarheid, geschiktheid of beschikbaarheid met betrekking tot de website of de informatie, producten, diensten of gerelateerde afbeeldingen op de website voor welk doel dan ook.',
+            'paragraph2' => 'Elk vertrouwen dat u in dergelijke informatie stelt, is daarom strikt voor eigen risico. In geen geval zullen wij aansprakelijk zijn voor enig verlies of schade, inclusief maar niet beperkt tot indirect of gevolgschade, of enig verlies of schade voortvloeiend uit gegevensverlies of winstderving, voortvloeiend uit of in verband met het gebruik van deze website.',
         ],
         
         'external_links' => [
-            'title' => 'External Links Disclaimer',
-            'paragraph1' => 'Through this website you are able to link to other websites which are not under the control of Lilydecors Ltd. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.',
-            'paragraph2' => 'Every effort is made to keep the website up and running smoothly. However, Lilydecors Ltd. takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.',
+            'title' => 'Externe Links Disclaimer',
+            'paragraph1' => 'Via deze website kunt u links naar andere websites volgen die niet onder controle staan van Lilydecors B.V. Wij hebben geen controle over de aard, inhoud en beschikbaarheid van die sites. Het opnemen van links impliceert niet noodzakelijk een aanbeveling of onderschrijving van de daarin geuite standpunten.',
+            'paragraph2' => 'Er wordt alles aan gedaan om de website soepel te laten functioneren. Lilydecors B.V. aanvaardt echter geen verantwoordelijkheid voor en is niet aansprakelijk voor de tijdelijke onbeschikbaarheid van de website als gevolg van technische problemen buiten onze controle.',
         ],
         
         'copyright' => [
-            'title' => 'Copyright Notice',
-            'notice' => '© :year :app_name. All rights reserved.',
-            'description' => 'All content, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of :app_name or its content suppliers and protected by international copyright laws.',
+            'title' => 'Auteursrecht',
+            'notice' => '© :year :app_name. Alle rechten voorbehouden.',
+            'description' => 'Alle inhoud, inclusief maar niet beperkt tot tekst, grafische elementen, logo\'s, knopiconen, afbeeldingen, audioclips, digitale downloads, gegevensverzamelingen en software, is eigendom van :app_name of haar contentleveranciers en beschermd door internationale auteursrechtwetten.',
         ],
         
         'updates' => [
-            'title' => 'Updates & Changes',
-            'paragraph1' => 'We reserve the right to update or change our imprint information at any time. Any changes will be posted on this page with an updated revision date.',
-            'last_updated_label' => 'Last Updated',
-            'effective_date_label' => 'Effective Date',
-            'effective_date' => 'January 1, 2023',
+            'title' => 'Updates & Wijzigingen',
+            'paragraph1' => 'Wij behouden ons het recht voor om onze impressum-informatie op elk moment bij te werken of te wijzigen. Eventuele wijzigingen worden op deze pagina geplaatst met een bijgewerkte revisiedatum.',
+            'last_updated_label' => 'Laatst Bijgewerkt',
+            'effective_date_label' => 'Ingangsdatum',
+            'effective_date' => '1 Januari 2023',
         ],
     ],
     
-    // Back home button
+    // Terug naar home knop
     'back_home' => [
-        'button' => 'Back to Homepage',
+        'button' => 'Terug naar Homepage',
     ],
     
-    // Additional legal sections (if needed)
+    // Aanvullende juridische secties (indien nodig)
     'privacy' => [
-        'title' => 'Privacy Policy',
-        'description' => 'Our privacy policy explains how we collect, use, and protect your personal data.',
+        'title' => 'Privacybeleid',
+        'description' => 'Ons privacybeleid legt uit hoe wij uw persoonlijke gegevens verzamelen, gebruiken en beschermen.',
     ],
     
     'terms' => [
-        'title' => 'Terms of Service',
-        'description' => 'Terms governing the use of our website and services.',
+        'title' => 'Algemene Voorwaarden',
+        'description' => 'Voorwaarden voor het gebruik van onze website en diensten.',
     ],
     
     'accessibility' => [
-        'title' => 'Accessibility Statement',
-        'description' => 'Our commitment to making our website accessible to all users.',
+        'title' => 'Toegankelijkheidsverklaring',
+        'description' => 'Onze toewijding om onze website toegankelijk te maken voor alle gebruikers.',
     ],
     
     'governing_law' => [
-        'title' => 'Governing Law',
-        'description' => 'This imprint and all legal notices are governed by the laws of the United States.',
+        'title' => 'Toepasselijk Recht',
+        'description' => 'Dit impressum en alle juridische kennisgevingen vallen onder Nederlands recht.',
     ],
     
     'dispute_resolution' => [
-        'title' => 'Dispute Resolution',
-        'description' => 'Information about how disputes are resolved.',
+        'title' => 'Geschillenbeslechting',
+        'description' => 'Informatie over hoe geschillen worden opgelost.',
     ],
     
     'intellectual_property' => [
-        'title' => 'Intellectual Property',
-        'description' => 'Information about trademarks, patents, and other intellectual property.',
+        'title' => 'Intellectueel Eigendom',
+        'description' => 'Informatie over handelsmerken, octrooien en ander intellectueel eigendom.',
     ],
     
     'data_protection' => [
-        'title' => 'Data Protection',
-        'description' => 'Information about data protection and GDPR compliance.',
+        'title' => 'Gegevensbescherming',
+        'description' => 'Informatie over gegevensbescherming en AVG-naleving.',
     ],
     
     'social_responsibility' => [
-        'title' => 'Social Responsibility',
-        'description' => 'Our commitment to social and environmental responsibility.',
+        'title' => 'Maatschappelijke Verantwoordelijkheid',
+        'description' => 'Onze toewijding aan sociale en milieuverantwoordelijkheid.',
     ],
     
     'compliance' => [
-        'title' => 'Regulatory Compliance',
-        'description' => 'Information about our compliance with regulations and standards.',
+        'title' => 'Wettelijke Naleving',
+        'description' => 'Informatie over onze naleving van regelgeving en normen.',
     ],
     
     'trade_registry' => [
-        'title' => 'Trade Registry Information',
-        'registry_number' => 'Registry Number',
-        'registration_date' => 'Registration Date',
-        'chamber_of_commerce' => 'Chamber of Commerce',
+        'title' => 'Handelsregistergegevens',
+        'registry_number' => 'Registratienummer',
+        'registration_date' => 'Registratiedatum',
+        'chamber_of_commerce' => 'Kamer van Koophandel',
     ],
     
     'banking_details' => [
-        'title' => 'Banking Details',
-        'bank_name' => 'Bank Name',
-        'account_number' => 'Account Number',
+        'title' => 'Bankgegevens',
+        'bank_name' => 'Banknaam',
+        'account_number' => 'Rekeningnummer',
         'iban' => 'IBAN',
         'swift' => 'SWIFT/BIC',
     ],
     
     'editorial_responsibility' => [
-        'title' => 'Editorial Responsibility',
-        'description' => 'Information about editorial responsibility for content.',
+        'title' => 'Redactionele Verantwoordelijkheid',
+        'description' => 'Informatie over redactionele verantwoordelijkheid voor inhoud.',
     ],
     
     'hosting_provider' => [
         'title' => 'Hosting Provider',
-        'name' => 'Provider Name',
-        'address' => 'Provider Address',
-        'contact' => 'Provider Contact',
+        'name' => 'Providernaam',
+        'address' => 'Provideradres',
+        'contact' => 'Providercontact',
     ],
     
     'additional_contacts' => [
-        'title' => 'Additional Contacts',
-        'press_contact' => 'Press Contact',
-        'business_inquiries' => 'Business Inquiries',
-        'support' => 'Technical Support',
+        'title' => 'Aanvullende Contacten',
+        'press_contact' => 'Perscontact',
+        'business_inquiries' => 'Zakelijke Inquiries',
+        'support' => 'Technische Ondersteuning',
     ],
 ];

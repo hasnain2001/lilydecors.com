@@ -3,74 +3,74 @@
 return [
     // Meta tags
     'meta' => [
-        'description' => 'Explore our latest blog post: :name. :description',
+        'description' => 'Ontdek ons nieuwste blogbericht: :name. :description',
         'default_author' => 'Marcus Johnson',
     ],
     
-    // Sidebar sections
+    // Sidebar secties
     'sidebar' => [
-        'related_stores' => 'Related Stores',
-        'no_stores_found' => 'No related stores found.',
-        'related_blogs' => 'Related Blogs',
-        'no_blogs_found' => 'No related blogs found.',
+        'related_stores' => 'Gerelateerde Winkels',
+        'no_stores_found' => 'Geen gerelateerde winkels gevonden.',
+        'related_blogs' => 'Gerelateerde Blogs',
+        'no_blogs_found' => 'Geen gerelateerde blogs gevonden.',
     ],
     
-    // Optional: You could add more translations for dynamic content if needed
-    'reading_time' => ':minutes min read',
-    'views_count' => ':count views',
+    // Optioneel: U kunt meer vertalingen toevoegen voor dynamische content indien nodig
+    'reading_time' => ':minutes min leestijd',
+    'views_count' => ':count weergaven',
     'shares_count' => ':count shares',
-    'comments_count' => ':count comments',
+    'comments_count' => ':count reacties',
     
-    // Share buttons (if you add them)
+    // Deel knoppen (als u ze toevoegt)
     'share' => [
-        'title' => 'Share this post',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'linkedin' => 'Share on LinkedIn',
-        'email' => 'Share via Email',
+        'title' => 'Deel dit bericht',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'pinterest' => 'Pinnen op Pinterest',
+        'linkedin' => 'Delen op LinkedIn',
+        'email' => 'Delen via E-mail',
     ],
     
-    // Categories & Tags
-    'categories' => 'Categories',
+    // Categorieën & Tags
+    'categories' => 'Categorieën',
     'tags' => 'Tags',
     
-    // Author section
-    'about_author' => 'About the Author',
-    'author_bio' => 'Author Bio',
-    'view_all_posts' => 'View all posts by :author',
+    // Auteur sectie
+    'about_author' => 'Over de Auteur',
+    'author_bio' => 'Auteur Biografie',
+    'view_all_posts' => 'Bekijk alle berichten van :author',
     
-    // Comments section (if you add comments)
-    'comments' => 'Comments',
-    'leave_comment' => 'Leave a Comment',
-    'comment_placeholder' => 'Share your thoughts...',
-    'post_comment' => 'Post Comment',
-    'no_comments' => 'No comments yet. Be the first to comment!',
+    // Reacties sectie (als u reacties toevoegt)
+    'comments' => 'Reacties',
+    'leave_comment' => 'Plaats een Reactie',
+    'comment_placeholder' => 'Deel uw gedachten...',
+    'post_comment' => 'Reactie Plaatsen',
+    'no_comments' => 'Nog geen reacties. Wees de eerste om te reageren!',
     
-    // Navigation
-    'previous_post' => 'Previous Post',
-    'next_post' => 'Next Post',
-    'back_to_blog' => 'Back to Blog',
-    'back_to_category' => 'Back to :category',
+    // Navigatie
+    'previous_post' => 'Vorig Bericht',
+    'next_post' => 'Volgend Bericht',
+    'back_to_blog' => 'Terug naar Blog',
+    'back_to_category' => 'Terug naar :category',
     
-    // Content elements
-    'table_of_contents' => 'Table of Contents',
-    'jump_to_section' => 'Jump to section',
-    'read_more' => 'Read More',
-    'continue_reading' => 'Continue Reading',
+    // Content elementen
+    'table_of_contents' => 'Inhoudsopgave',
+    'jump_to_section' => 'Ga naar sectie',
+    'read_more' => 'Lees Meer',
+    'continue_reading' => 'Verder Lezen',
     
-    // Newsletter (if you add it to blog posts)
+    // Nieuwsbrief (als u het toevoegt aan blogberichten)
     'newsletter' => [
-        'title' => 'Stay Updated',
-        'description' => 'Get the latest home decor tips and inspiration delivered to your inbox.',
-        'subscribe' => 'Subscribe',
-        'email_placeholder' => 'Enter your email',
-        'privacy_note' => 'We respect your privacy. Unsubscribe at any time.',
+        'title' => 'Blijf Op de Hoogte',
+        'description' => 'Ontvang de nieuwste woondecoratie tips en inspiratie in uw inbox.',
+        'subscribe' => 'Abonneren',
+        'email_placeholder' => 'Voer uw e-mail in',
+        'privacy_note' => 'We respecteren uw privacy. Op elk moment uitschrijfbaar.',
     ],
     
-    // Print/Save options
-    'print' => 'Print',
-    'save_for_later' => 'Save for Later',
-    'bookmark' => 'Bookmark',
-    'download_pdf' => 'Download as PDF',
+    // Print/Opslaan opties
+    'print' => 'Afdrukken',
+    'save_for_later' => 'Bewaren voor Later',
+    'bookmark' => 'Bladwijzer',
+    'download_pdf' => 'Downloaden als PDF',
 ];

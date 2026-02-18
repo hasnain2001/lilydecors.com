@@ -1,156 +1,156 @@
 <?php
 
 return [
-    // Page Meta
-    'title' => 'Terms and Conditions',
-    'description' => 'Read our terms and conditions to understand your rights and responsibilities while using our services.',
-    'keywords' => 'terms, conditions, user agreement',
-    'author' => 'John Doe',
+    // Pagina Meta
+    'title' => 'Algemene Voorwaarden',
+    'description' => 'Lees onze algemene voorwaarden om uw rechten en verantwoordelijkheden bij het gebruik van onze diensten te begrijpen.',
+    'keywords' => 'algemene voorwaarden, gebruikersovereenkomst',
+    'author' => 'Jan Jansen',
     
-    // Header Section
+    // Header Sectie
     'header' => [
-        'title' => 'Terms and Conditions',
-        'subtitle' => 'Understand your rights and responsibilities when using our services',
-        'last_updated' => 'Last updated on',
+        'title' => 'Algemene Voorwaarden',
+        'subtitle' => 'Begrijp uw rechten en verantwoordelijkheden bij het gebruik van onze diensten',
+        'last_updated' => 'Laatst bijgewerkt op',
     ],
     
-    // Main Card
+    // Hoofdkaart
     'card' => [
-        'title' => 'Legal Agreement & User Terms',
+        'title' => 'Juridische Overeenkomst & Gebruikersvoorwaarden',
     ],
     
-    // Alert Section
+    // Alert Sectie
     'alert' => [
-        'title' => 'Important:',
-        'message' => 'By accessing or using our services, you agree to be bound by these terms. Please read them carefully before proceeding.',
+        'title' => 'Belangrijk:',
+        'message' => 'Door toegang te krijgen tot of gebruik te maken van onze diensten, gaat u akkoord met deze voorwaarden. Lees ze zorgvuldig voordat u verdergaat.',
     ],
     
-    // Section 1: Acceptance of Terms
+    // Sectie 1: Aanvaarding van Voorwaarden
     'section1' => [
-        'title' => 'Acceptance of Terms',
-        'content' => 'By accessing or using our website, mobile application, or any services provided by :app_name (collectively, the "Services"), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions.',
-        'warning' => 'If you do not agree with any part of these terms, you must immediately discontinue your use of our Services.',
+        'title' => 'Aanvaarding van Voorwaarden',
+        'content' => 'Door toegang te krijgen tot of gebruik te maken van onze website, mobiele applicatie of enige diensten aangeboden door :app_name (gezamenlijk de "Diensten"), bevestigt u dat u deze Algemene Voorwaarden heeft gelezen, begrepen en ermee instemt hieraan gebonden te zijn.',
+        'warning' => 'Als u niet akkoord gaat met enig deel van deze voorwaarden, moet u onmiddellijk stoppen met het gebruik van onze Diensten.',
     ],
     
-    // Section 2: User Responsibilities
+    // Sectie 2: Verantwoordelijkheden van de Gebruiker
     'section2' => [
-        'title' => 'User Responsibilities',
-        'intro' => 'As a user of our Services, you are solely responsible for:',
+        'title' => 'Verantwoordelijkheden van de Gebruiker',
+        'intro' => 'Als gebruiker van onze Diensten bent u zelf verantwoordelijk voor:',
         'points' => [
-            'maintaining_account' => 'Maintaining the confidentiality and security of your account credentials',
-            'account_activities' => 'All activities, transactions, and content associated with your account',
-            'accurate_information' => 'Providing accurate, current, and complete information during registration',
-            'complying_laws' => 'Complying with all applicable local, state, national, and international laws',
-            'third_party_rights' => 'Ensuring that your use of our Services does not violate any third-party rights',
+            'maintaining_account' => 'Het handhaven van de vertrouwelijkheid en beveiliging van uw accountgegevens',
+            'account_activities' => 'Alle activiteiten, transacties en inhoud die aan uw account zijn gekoppeld',
+            'accurate_information' => 'Het verstrekken van accurate, actuele en volledige informatie tijdens registratie',
+            'complying_laws' => 'Het naleven van alle toepasselijke lokale, regionale, nationale en internationale wetten',
+            'third_party_rights' => 'Ervoor zorgen dat uw gebruik van onze Diensten geen inbreuk maakt op rechten van derden',
         ],
-        'notification' => 'You agree to notify us immediately of any unauthorized access to or use of your account at <strong>:email</strong>.',
+        'notification' => 'U gaat ermee akkoord ons onmiddellijk op de hoogte te stellen van ongeautoriseerde toegang tot of gebruik van uw account via <strong>:email</strong>.',
     ],
     
-    // Section 3: Prohibited Activities
+    // Sectie 3: Verboden Activiteiten
     'section3' => [
-        'title' => 'Prohibited Activities',
-        'intro' => 'When using our Services, you must not engage in any of the following activities:',
+        'title' => 'Verboden Activiteiten',
+        'intro' => 'Bij het gebruik van onze Diensten mag u geen van de volgende activiteiten ondernemen:',
         'activities' => [
             'illegal' => [
-                'title' => 'Illegal Activities',
-                'description' => 'Use our Services for any unlawful purpose or in violation of any applicable laws',
+                'title' => 'Illegale Activiteiten',
+                'description' => 'Gebruik onze Diensten voor onwettige doeleinden of in strijd met toepasselijke wetten',
             ],
             'unauthorized_access' => [
-                'title' => 'Unauthorized Access',
-                'description' => 'Attempt to gain unauthorized access to systems, accounts, or networks',
+                'title' => 'Ongeautoriseerde Toegang',
+                'description' => 'Proberen ongeautoriseerde toegang te krijgen tot systemen, accounts of netwerken',
             ],
             'harmful_content' => [
-                'title' => 'Harmful Content',
-                'description' => 'Post, transmit, or share harmful, offensive, or infringing content',
+                'title' => 'Schadelijke Inhoud',
+                'description' => 'Schadelijke, aanstootgevende of inbreukmakende inhoud plaatsen, verzenden of delen',
             ],
             'service_disruption' => [
-                'title' => 'Service Disruption',
-                'description' => 'Disrupt, interfere with, or overload the Services\' performance',
+                'title' => 'Dienstverstoring',
+                'description' => 'De prestaties van de Diensten verstoren, hinderen of overbelasten',
             ],
             'automated_access' => [
-                'title' => 'Automated Access',
-                'description' => 'Use bots, scrapers, or other automated means to access our Services',
+                'title' => 'Geautomatiseerde Toegang',
+                'description' => 'Bots, scrapers of andere geautomatiseerde middelen gebruiken om toegang te krijgen tot onze Diensten',
             ],
             'commercial_use' => [
-                'title' => 'Commercial Use',
-                'description' => 'Use our Services for commercial purposes without explicit authorization',
+                'title' => 'Commercieel Gebruik',
+                'description' => 'Onze Diensten gebruiken voor commerciële doeleinden zonder expliciete toestemming',
             ],
         ],
-        'warning' => 'Violation of these prohibitions may result in immediate termination of your account and legal action.',
+        'warning' => 'Overtreding van deze verbodsbepalingen kan leiden tot onmiddellijke beëindiging van uw account en juridische stappen.',
     ],
     
-    // Section 4: Intellectual Property
+    // Sectie 4: Intellectueel Eigendom
     'section4' => [
-        'title' => 'Intellectual Property',
-        'content' => 'All content, features, and functionality available through our Services, including but not limited to text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, are the exclusive property of :app_name and its licensors.',
-        'protected' => 'These materials are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.',
-        'restrictions' => 'You may not:',
+        'title' => 'Intellectueel Eigendom',
+        'content' => 'Alle inhoud, functies en functionaliteit die beschikbaar zijn via onze Diensten, inclusief maar niet beperkt tot tekst, afbeeldingen, logo\'s, iconen, afbeeldingen, audioclips, digitale downloads, gegevensverzamelingen en software, zijn het exclusieve eigendom van :app_name en haar licentiegevers.',
+        'protected' => 'Deze materialen worden beschermd door internationale auteursrecht-, handelsmerk-, octrooi-, handelsgeheim- en andere wetten inzake intellectueel eigendom of eigendomsrechten.',
+        'restrictions' => 'U mag niet:',
         'restriction_points' => [
-            'reproduce' => 'Reproduce, distribute, or create derivative works',
-            'modify' => 'Modify, adapt, or reverse engineer any portion of our Services',
-            'remove_notices' => 'Remove any copyright, trademark, or other proprietary notices',
-            'unauthorized_use' => 'Use our intellectual property without express written permission',
+            'reproduce' => 'Reproduceren, verspreiden of afgeleide werken maken',
+            'modify' => 'Enig deel van onze Diensten wijzigen, aanpassen of reverse-engineeren',
+            'remove_notices' => 'Auteursrecht-, handelsmerk- of andere eigendomsvermeldingen verwijderen',
+            'unauthorized_use' => 'Ons intellectueel eigendom gebruiken zonder uitdrukkelijke schriftelijke toestemming',
         ],
     ],
     
-    // Section 5: Disclaimer of Warranties
+    // Sectie 5: Uitsluiting van Garanties
     'section5' => [
-        'title' => 'Disclaimer of Warranties',
-        'content' => 'Our Services are provided "as is" and "as available" without warranties of any kind, either express or implied. To the fullest extent permissible by law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.',
-        'guarantees_intro' => 'We do not guarantee that:',
+        'title' => 'Uitsluiting van Garanties',
+        'content' => 'Onze Diensten worden aangeboden "zoals ze zijn" en "zoals beschikbaar" zonder enige vorm van garantie, expliciet of impliciet. Voor zover wettelijk toegestaan, wijzen we alle garanties af, inclusief maar niet beperkt tot impliciete garanties van verkoopbaarheid, geschiktheid voor een bepaald doel en niet-inbreuk.',
+        'guarantees_intro' => 'We garanderen niet dat:',
         'guarantees' => [
-            'uninterrupted' => 'Our Services will be uninterrupted, secure, or available at any particular time or location',
-            'errors_corrected' => 'Any errors or defects will be corrected',
-            'virus_free' => 'Our Services are free of viruses or other harmful components',
-            'meet_requirements' => 'The results of using our Services will meet your requirements',
+            'uninterrupted' => 'Onze Diensten ononderbroken, veilig of op een bepaald tijdstip of locatie beschikbaar zijn',
+            'errors_corrected' => 'Eventuele fouten of defecten worden gecorrigeerd',
+            'virus_free' => 'Onze Diensten vrij zijn van virussen of andere schadelijke componenten',
+            'meet_requirements' => 'De resultaten van het gebruik van onze Diensten aan uw vereisten voldoen',
         ],
-        'risk' => 'Your use of our Services is solely at your own risk.',
+        'risk' => 'Uw gebruik van onze Diensten is geheel voor eigen risico.',
     ],
     
-    // Section 6: Limitation of Liability
+    // Sectie 6: Beperking van Aansprakelijkheid
     'section6' => [
-        'title' => 'Limitation of Liability',
-        'content' => 'To the maximum extent permitted by applicable law, :app_name shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation:',
+        'title' => 'Beperking van Aansprakelijkheid',
+        'content' => 'Voor zover maximaal toegestaan door toepasselijk recht, is :app_name niet aansprakelijk voor enige indirecte, incidentele, speciale, gevolg- of punitieve schade, inclusief maar niet beperkt tot:',
         'damages' => [
-            'loss_profits' => 'Loss of profits, revenue, or data',
-            'loss_use' => 'Loss of use, goodwill, or other intangible losses',
-            'unauthorized_access' => 'Damages resulting from unauthorized access to or alteration of your transmissions',
-            'third_party_content' => 'Any conduct or content of any third party on the Services',
+            'loss_profits' => 'Verlies van winst, omzet of gegevens',
+            'loss_use' => 'Verlies van gebruik, goodwill of andere immateriële verliezen',
+            'unauthorized_access' => 'Schade voortvloeiend uit ongeautoriseerde toegang tot of wijziging van uw verzendingen',
+            'third_party_content' => 'Enig gedrag of inhoud van derden op de Diensten',
         ],
-        'liability_limit' => 'In no event shall our total liability exceed:',
-        'liability_amount' => 'or the amount you paid us in the last 12 months, whichever is greater.',
+        'liability_limit' => 'In geen geval zal onze totale aansprakelijkheid hoger zijn dan:',
+        'liability_amount' => 'of het bedrag dat u ons in de afgelopen 12 maanden heeft betaald, afhankelijk van welk bedrag hoger is.',
     ],
     
-    // Section 7: Governing Law
+    // Sectie 7: Toepasselijk Recht
     'section7' => [
-        'title' => 'Governing Law & Jurisdiction',
-        'content' => 'These Terms shall be governed by and construed in accordance with the laws of :country, without regard to its conflict of law provisions.',
-        'jurisdiction_title' => 'Exclusive Jurisdiction',
-        'jurisdiction_content' => 'Any legal suit, action, or proceeding arising out of or related to these Terms shall be instituted exclusively in the courts located in :jurisdiction. You consent to the personal jurisdiction of such courts.',
+        'title' => 'Toepasselijk Recht & Rechtsbevoegdheid',
+        'content' => 'Op deze Voorwaarden is Nederlands recht van toepassing en deze worden dienovereenkomstig uitgelegd, zonder rekening te houden met conflicterende wettelijke bepalingen.',
+        'jurisdiction_title' => 'Exclusieve Rechtsbevoegdheid',
+        'jurisdiction_content' => 'Elke juridische procedure, actie of rechtszaak die voortvloeit uit of verband houdt met deze Voorwaarden zal uitsluitend worden behandeld door de rechtbanken in :jurisdiction. U stemt in met de persoonlijke rechtsbevoegdheid van dergelijke rechtbanken.',
     ],
     
-    // Section 8: Changes to Terms
+    // Sectie 8: Wijzigingen in Voorwaarden
     'section8' => [
-        'title' => 'Changes to Terms',
-        'content' => 'We reserve the right to modify these Terms at any time.',
-        'modification_notice' => 'When we do, we will revise the "last updated" date at the top of this page. We may also provide additional notice (such as adding a statement to our homepage or sending you a notification). Your continued use of our Services after such modifications constitutes your acceptance of the new Terms.',
+        'title' => 'Wijzigingen in Voorwaarden',
+        'content' => 'We behouden ons het recht voor om deze Voorwaarden op elk moment te wijzigen.',
+        'modification_notice' => 'Wanneer we dit doen, zullen we de datum "Laatst bijgewerkt" bovenaan deze pagina herzien. We kunnen ook aanvullende kennisgeving geven (zoals het toevoegen van een verklaring op onze homepage of het sturen van een melding). Uw voortgezet gebruik van onze Diensten na dergelijke wijzigingen vormt uw aanvaarding van de nieuwe Voorwaarden.',
     ],
     
-    // Section 9: Contact Information
+    // Sectie 9: Contactinformatie
     'section9' => [
-        'title' => 'Contact Information',
-        'intro' => 'For questions, concerns, or notices about these Terms and Conditions, please contact us through any of the following methods:',
+        'title' => 'Contactinformatie',
+        'intro' => 'Voor vragen, opmerkingen of kennisgevingen over deze Algemene Voorwaarden kunt u contact met ons opnemen via een van de volgende methoden:',
         'buttons' => [
-            'email' => 'Email Legal Team',
-            'contact_form' => 'Contact Form',
-            'visit_office' => 'Visit Our Office',
+            'email' => 'E-mail Juridische Afdeling',
+            'contact_form' => 'Contactformulier',
+            'visit_office' => 'Bezoek Ons Kantoor',
         ],
-        'response_time' => 'We typically respond to legal inquiries within 2-3 business days.',
+        'response_time' => 'We reageren doorgaans binnen 2-3 werkdagen op juridische vragen.',
     ],
     
-    // Action Buttons
+    // Actieknoppen
     'actions' => [
-        'back_home' => 'Back to Homepage',
-        'print_terms' => 'Print Terms',
+        'back_home' => 'Terug naar Homepage',
+        'print_terms' => 'Voorwaarden Afdrukken',
     ],
 ];

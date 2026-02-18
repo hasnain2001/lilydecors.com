@@ -3,145 +3,145 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Best Categories & Brands Offers :year - :app_name',
-        'description' => 'Discover amazing categories with exclusive offers, discounts, and coupons. Find the best deals from top brands and stores in one place.',
-        'keywords' => 'categories, brands, offers, discounts, coupons, deals, shopping, savings',
-        'author' => 'Your Brand Name',
+        'title' => 'Beste Categorieën & Merken Aanbiedingen :year - :app_name',
+        'description' => 'Ontdek geweldige categorieën met exclusieve aanbiedingen, kortingen en coupons. Vind de beste deals van topmerken en winkels op één plek.',
+        'keywords' => 'categorieën, merken, aanbiedingen, kortingen, coupons, deals, winkelen, besparen',
+        'author' => 'Uw Merknaam',
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Best Discounts For Every Category',
-        'subtitle' => 'Discover exclusive offers and amazing deals across all our categories. Save big with our curated collection of discounts and coupons.',
+        'title' => 'Beste Kortingen Voor Elke Categorie',
+        'subtitle' => 'Ontdek exclusieve aanbiedingen en geweldige deals in al onze categorieën. Bespaar veel met onze samengestelde collectie kortingen en coupons.',
     ],
     
-    // Statistics section
+    // Statistieken sectie
     'stats' => [
-        'categories' => 'Categories',
-        'offers' => 'Offers',
-        'discounts' => 'Discounts',
-        'verified' => 'Verified',
-        'latest_year' => 'Latest :year',
+        'categories' => 'Categorieën',
+        'offers' => 'Aanbiedingen',
+        'discounts' => 'Kortingen',
+        'verified' => 'Geverifieerd',
+        'latest_year' => 'Nieuwste :year',
     ],
     
-    // Category cards
-    'image_alt' => 'Category Image',
+    // Categorie kaarten
+    'image_alt' => 'Categorie Afbeelding',
     'aria' => [
-        'explore_category' => 'Explore :name category',
+        'explore_category' => 'Verken :name categorie',
     ],
-    'view_more' => 'View more',
+    'view_more' => 'Bekijk meer',
     
-    // Empty state
+    // Lege staat
     'empty' => [
-        'title' => 'No Categories Found',
-        'message' => 'Check back soon for updated categories and offers.',
+        'title' => 'Geen Categorieën Gevonden',
+        'message' => 'Kom binnenkort terug voor bijgewerkte categorieën en aanbiedingen.',
     ],
     
-    // SEO content section
+    // SEO content sectie
     'seo' => [
-        'title' => 'Find the Best Deals Across All Categories',
-        'paragraph1' => 'Explore our comprehensive collection of categories featuring exclusive discounts, promotional offers, and money-saving coupons. Whether you\'re looking for electronics, fashion, home goods, or specialty items, we\'ve curated the best deals from trusted retailers to help you save time and money.',
-        'paragraph2' => 'Our platform continuously updates offers across all categories to ensure you get access to the latest promotions and discount codes. Browse through our organized categories to find exactly what you\'re looking for with guaranteed savings.',
+        'title' => 'Vind de Beste Deals in Alle Categorieën',
+        'paragraph1' => 'Ontdek onze uitgebreide collectie categorieën met exclusieve kortingen, promotionele aanbiedingen en geldbesparende coupons. Of u nu op zoek bent naar elektronica, mode, huishoudelijke artikelen of speciale items, wij hebben de beste deals van vertrouwde winkels samengesteld om u tijd en geld te besparen.',
+        'paragraph2' => 'Ons platform werkt continu aanbiedingen in alle categorieën bij om ervoor te zorgen dat u toegang krijgt tot de nieuwste promoties en kortingscodes. Blader door onze georganiseerde categorieën om precies te vinden wat u zoekt met gegarandeerde besparingen.',
     ],
     
-    // Filter and sorting (if added)
+    // Filter en sortering (indien toegevoegd)
     'filter' => [
-        'title' => 'Filter Categories',
-        'popular' => 'Most Popular',
-        'newest' => 'Newest',
+        'title' => 'Filter Categorieën',
+        'popular' => 'Meest Populair',
+        'newest' => 'Nieuwste',
         'alphabetical' => 'A-Z',
-        'with_stores' => 'With Stores',
-        'with_blogs' => 'With Blogs',
+        'with_stores' => 'Met Winkels',
+        'with_blogs' => 'Met Blogs',
     ],
     
-    // Search functionality (if added)
+    // Zoekfunctionaliteit (indien toegevoegd)
     'search' => [
-        'placeholder' => 'Search categories...',
-        'no_results' => 'No categories found for ":query"',
-        'suggestions' => 'Try different keywords or browse all categories',
+        'placeholder' => 'Zoek categorieën...',
+        'no_results' => 'Geen categorieën gevonden voor ":query"',
+        'suggestions' => 'Probeer andere zoekwoorden of blader door alle categorieën',
     ],
     
-    // Featured categories (if you add featured section)
+    // Uitgelichte categorieën (als u een uitgelichte sectie toevoegt)
     'featured' => [
-        'title' => 'Featured Categories',
-        'view_all' => 'View All Categories',
+        'title' => 'Uitgelichte Categorieën',
+        'view_all' => 'Bekijk Alle Categorieën',
     ],
     
-    // Top categories (if you add ranking)
+    // Topcategorieën (als u rangschikking toevoegt)
     'top_categories' => [
-        'title' => 'Top Categories This Month',
-        'based_on' => 'Based on store count and user engagement',
-        'trending' => 'Trending Now',
+        'title' => 'Topcategorieën Deze Maand',
+        'based_on' => 'Gebaseerd op aantal winkels en gebruikersbetrokkenheid',
+        'trending' => 'Nu Trending',
     ],
     
-    // Category types (if you categorize categories)
+    // Categorietypen (als u categorieën categoriseert)
     'types' => [
-        'shopping' => 'Shopping',
-        'services' => 'Services',
-        'travel' => 'Travel',
-        'food_dining' => 'Food & Dining',
+        'shopping' => 'Winkelen',
+        'services' => 'Diensten',
+        'travel' => 'Reizen',
+        'food_dining' => 'Eten & Drinken',
         'entertainment' => 'Entertainment',
-        'home_garden' => 'Home & Garden',
-        'electronics' => 'Electronics',
-        'fashion' => 'Fashion',
-        'health_beauty' => 'Health & Beauty',
-        'automotive' => 'Automotive',
+        'home_garden' => 'Huis & Tuin',
+        'electronics' => 'Elektronica',
+        'fashion' => 'Mode',
+        'health_beauty' => 'Gezondheid & Schoonheid',
+        'automotive' => 'Auto',
     ],
     
-    // Newsletter signup (if added)
+    // Nieuwsbrief aanmelding (indien toegevoegd)
     'newsletter' => [
-        'title' => 'Get Category Updates',
-        'description' => 'Subscribe to receive updates on new categories and exclusive offers',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive category updates.',
+        'title' => 'Ontvang Categorie Updates',
+        'description' => 'Abonneer om updates te ontvangen over nieuwe categorieën en exclusieve aanbiedingen',
+        'subscribe' => 'Abonneren',
+        'success' => 'Succesvol geabonneerd! U ontvangt categorie-updates.',
     ],
     
-    // Social sharing (if added)
+    // Sociaal delen (indien toegevoegd)
     'share' => [
-        'title' => 'Share Categories',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Deel Categorieën',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'pinterest' => 'Pinnen op Pinterest',
+        'email' => 'Delen via E-mail',
     ],
     
-    // Seasonal/holiday categories (if added)
+    // Seizoens-/feestdagcategorieën (indien toegevoegd)
     'seasonal' => [
-        'holiday' => 'Holiday Categories',
-        'seasonal_sales' => 'Seasonal Sales',
-        'limited_time' => 'Limited Time Categories',
+        'holiday' => 'Feestdag Categorieën',
+        'seasonal_sales' => 'Seizoensuitverkoop',
+        'limited_time' => 'Tijdelijke Categorieën',
     ],
     
-    // Mobile app CTA (if added)
+    // Mobiele app CTA (indien toegevoegd)
     'mobile_app' => [
-        'title' => 'Browse Categories On The Go',
-        'description' => 'Access all categories and deals from our mobile app',
+        'title' => 'Blader door Categorieën Onderweg',
+        'description' => 'Toegang tot alle categorieën en deals via onze mobiele app',
         'download' => 'Download App',
-        'available_on' => 'Available on iOS & Android',
+        'available_on' => 'Beschikbaar op iOS & Android',
     ],
     
-    // Breadcrumb (if separate from common)
+    // Broodkruimelpad (indien apart van algemeen)
     'breadcrumb' => [
-        'current' => 'All Categories',
+        'current' => 'Alle Categorieën',
     ],
     
-    // Accessibility
+    // Toegankelijkheid
     'accessibility' => [
-        'skip_to_content' => 'Skip to main content',
-        'skip_to_categories' => 'Skip to categories grid',
+        'skip_to_content' => 'Naar hoofdinhoud gaan',
+        'skip_to_categories' => 'Naar categorieraster gaan',
     ],
     
-    // Loading states
+    // Laadstatussen
     'loading' => [
-        'categories' => 'Loading categories...',
-        'please_wait' => 'Please wait while we load the categories',
+        'categories' => 'Categorieën laden...',
+        'please_wait' => 'Een ogenblik geduld terwijl we de categorieën laden',
     ],
     
-    // Pagination (if added)
+    // Paginering (indien toegevoegd)
     'pagination' => [
-        'showing' => 'Showing :from to :to of :total categories',
-        'previous' => 'Previous',
-        'next' => 'Next',
-        'page' => 'Page :current of :last',
+        'showing' => 'Toont :from tot :to van :total categorieën',
+        'previous' => 'Vorige',
+        'next' => 'Volgende',
+        'page' => 'Pagina :current van :last',
     ],
 ];

@@ -1,47 +1,47 @@
 <?php
 
 return [
-    'title' => ''.config('app.name').' | Home Decor & Fashion Blogs '.date('Y').'',
-    'description' => 'Discover beautiful home decor ideas and fashion trends. Get inspired with our curated blogs on interior design, styling tips, and modern living.',
-    'keywords' => 'home decor, interior design, fashion blogs, lifestyle, home improvement, styling tips, modern living, home inspiration, fashion trends',
+    'title' => ''.config('app.name').' | Woondecoratie & Mode Blogs '.date('Y').'',
+    'description' => 'Ontdek prachtige woondecoratie ideeën en modetrends. Laat u inspireren door onze samengestelde blogs over interieurontwerp, stijltips en modern wonen.',
+    'keywords' => 'woondecoratie, interieurontwerp, modeblogs, lifestyle, huis verbeteren, stijltips, modern wonen, thuis inspiratie, modetrends',
     
-    // Hero Section
-    'hero_title' => 'Beautiful Homes, Inspired Living',
-    'hero_subtitle' => 'Discover the latest home decor ideas, fashion trends, and lifestyle tips to transform your space and style.',
-    'hero_button' => 'Explore Inspiration',
+    // Hero Sectie
+    'hero_title' => 'Prachtige Huizen, Geïnspireerd Leven',
+    'hero_subtitle' => 'Ontdek de nieuwste woondecoratie ideeën, modetrends en lifestyletips om uw ruimte en stijl te transformeren.',
+    'hero_button' => 'Ontdek Inspiratie',
     
-    // Section Titles
-    'latest_room_ideas' => 'Latest Room Ideas',
-    'fashion_trends' => 'Fashion & Style Trends',
-    'explore_categories' => 'Explore All Categories',
+    // Sectie Titels
+    'latest_room_ideas' => 'Nieuwste Kamerideeën',
+    'fashion_trends' => 'Mode & Stijltrends',
+    'explore_categories' => 'Ontdek Alle Categorieën',
     
-    // Category
-    'no_categories' => 'No categories found. Check back soon!',
-    'category_ideas' => ':count Ideas',
+    // Categorie
+    'no_categories' => 'Geen categorieën gevonden. Kom binnenkort terug!',
+    'category_ideas' => ':count Ideeën',
     
     // Blogs
-    'no_room_blogs' => 'No room blogs found. Check back soon!',
-    'no_fashion_blogs' => 'No fashion blogs found. Check back soon!',
-    'view_all_rooms' => 'View All Room Ideas',
-    'view_all_fashion' => 'View All Fashion Trends',
-    'read_more' => 'Read More',
+    'no_room_blogs' => 'Geen kamerblogs gevonden. Kom binnenkort terug!',
+    'no_fashion_blogs' => 'Geen modeblogs gevonden. Kom binnenkort terug!',
+    'view_all_rooms' => 'Bekijk Alle Kamerideeën',
+    'view_all_fashion' => 'Bekijk Alle Modetrends',
+    'read_more' => 'Lees Meer',
     
-    // Stats
-    'blog_articles' => 'Blog Articles',
-    'categories' => 'Categories',
-    'monthly_readers' => 'Monthly Readers',
-    'years_experience' => 'Years Experience',
+    // Statistieken
+    'blog_articles' => 'Blogartikelen',
+    'categories' => 'Categorieën',
+    'monthly_readers' => 'Maandelijkse Lezers',
+    'years_experience' => 'Jaar Ervaring',
     
-    // Newsletter
-    'stay_updated' => 'Stay Updated',
-    'newsletter_text' => 'Subscribe to our newsletter for weekly inspiration, tips, and exclusive content.',
-    'email_placeholder' => 'Enter your email address',
-    'subscribe' => 'Subscribe',
-    'privacy_note' => 'We respect your privacy. Unsubscribe at any time.',
+    // Nieuwsbrief
+    'stay_updated' => 'Blijf Op de Hoogte',
+    'newsletter_text' => 'Abonneer op onze nieuwsbrief voor wekelijkse inspiratie, tips en exclusieve content.',
+    'email_placeholder' => 'Voer uw e-mailadres in',
+    'subscribe' => 'Abonneren',
+    'privacy_note' => 'We respecteren uw privacy. Op elk moment uitschrijfbaar.',
     
     // CTA
-    'explore_all_categories_text' => 'Discover content across all our categories to find exactly what inspires you.',
-    'browse_all_categories' => 'Browse All Categories',
+    'explore_all_categories_text' => 'Ontdek content in al onze categorieën om precies te vinden wat u inspireert.',
+    'browse_all_categories' => 'Blader Door Alle Categorieën',
     
     // Meta
     'view_count' => ':count k',

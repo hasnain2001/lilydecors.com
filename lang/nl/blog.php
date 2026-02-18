@@ -3,133 +3,133 @@
 return [
     // Meta tags
     'meta' => [
-        'title' => 'Latest Coupon & Shopping Tips Blog :year | :app_name',
-        'description' => 'Explore our amazing blogs and offers. Find the best products and services in one place.',
-        'keywords' => 'blogs, offers, products, services',
-        'author' => 'John Doe',
+        'title' => 'Nieuwste Coupon & Winkeltips Blog :year | :app_name',
+        'description' => 'Ontdek onze geweldige blogs en aanbiedingen. Vind de beste producten en diensten op één plek.',
+        'keywords' => 'blogs, aanbiedingen, producten, diensten',
+        'author' => 'Jan Jansen',
     ],
     
-    // Header section
+    // Header sectie
     'header' => [
-        'title' => 'Our Blog',
-        'subtitle' => 'Discover the latest insights, tips, and news on :app_name',
+        'title' => 'Onze Blog',
+        'subtitle' => 'Ontdek de nieuwste inzichten, tips en nieuws op :app_name',
     ],
     
-    // Statistics section
+    // Statistieken sectie
     'stats' => [
-        'articles_published' => 'Articles Published',
-        'expert_writers' => 'Expert Writers',
-        'latest_updates' => 'Latest Updates',
+        'articles_published' => 'Artikelen Gepubliceerd',
+        'expert_writers' => 'Deskundige Schrijvers',
+        'latest_updates' => 'Laatste Updates',
     ],
     
-    // Default values
+    // Standaardwaarden
     'defaults' => [
         'author_initials' => 'A',
-        'author_name' => 'Admin',
+        'author_name' => 'Beheerder',
     ],
     
-    // Empty state
+    // Lege staat
     'empty' => [
-        'title' => 'No Blogs Found',
-        'message' => 'Check back soon for new blog posts and updates.',
+        'title' => 'Geen Blogs Gevonden',
+        'message' => 'Kom binnenkort terug voor nieuwe blogberichten en updates.',
     ],
     
-    // Categories filter (if you add category filtering)
+    // Categorieën filter (als u categorie filtering toevoegt)
     'categories' => [
-        'all' => 'All Categories',
-        'filter_by' => 'Filter by Category',
-        'popular' => 'Popular Categories',
+        'all' => 'Alle Categorieën',
+        'filter_by' => 'Filter op Categorie',
+        'popular' => 'Populaire Categorieën',
     ],
     
-    // Sorting options (if you add sorting)
+    // Sorteeropties (als u sortering toevoegt)
     'sort' => [
-        'latest' => 'Latest',
-        'popular' => 'Most Popular',
+        'latest' => 'Nieuwste',
+        'popular' => 'Meest Populair',
         'trending' => 'Trending',
-        'oldest' => 'Oldest',
-        'title_az' => 'Title (A-Z)',
-        'title_za' => 'Title (Z-A)',
+        'oldest' => 'Oudste',
+        'title_az' => 'Titel (A-Z)',
+        'title_za' => 'Titel (Z-A)',
     ],
     
-    // Search functionality (if you add search)
+    // Zoekfunctionaliteit (als u zoeken toevoegt)
     'search' => [
-        'placeholder' => 'Search blog posts...',
-        'no_results' => 'No posts found for ":query"',
-        'suggestions' => 'Try different keywords or browse categories',
+        'placeholder' => 'Doorzoek blogberichten...',
+        'no_results' => 'Geen berichten gevonden voor ":query"',
+        'suggestions' => 'Probeer andere zoekwoorden of blader door categorieën',
     ],
     
-    // Featured posts section (if you add it)
+    // Uitgelichte berichten sectie (als u het toevoegt)
     'featured' => [
-        'title' => 'Featured Posts',
-        'view_all' => 'View All Featured',
+        'title' => 'Uitgelichte Berichten',
+        'view_all' => 'Bekijk Alle Uitgelichte',
     ],
     
-    // Newsletter signup (if you add it to blog page)
+    // Nieuwsbrief aanmelding (als u het toevoegt aan blogpagina)
     'newsletter' => [
-        'title' => 'Subscribe to Our Blog',
-        'description' => 'Get the latest posts delivered directly to your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! Check your email.',
+        'title' => 'Abonneer op Onze Blog',
+        'description' => 'Ontvang de nieuwste berichten direct in uw inbox',
+        'subscribe' => 'Abonneren',
+        'success' => 'Succesvol geabonneerd! Check uw e-mail.',
     ],
     
-    // Social sharing (if you add share buttons)
+    // Sociaal delen (als u deelknoppen toevoegt)
     'share' => [
-        'title' => 'Share this post',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'linkedin' => 'Share on LinkedIn',
-        'pinterest' => 'Pin on Pinterest',
+        'title' => 'Deel dit bericht',
+        'facebook' => 'Delen op Facebook',
+        'twitter' => 'Delen op Twitter',
+        'linkedin' => 'Delen op LinkedIn',
+        'pinterest' => 'Pinnen op Pinterest',
     ],
     
-    // Reading time (if you add it)
+    // Leestijd (als u het toevoegt)
     'reading_time' => [
-        'min_read' => 'min read',
-        'less_than_minute' => 'Less than a minute',
+        'min_read' => 'min leestijd',
+        'less_than_minute' => 'Minder dan een minuut',
     ],
     
-    // Tags (if you add tagging system)
+    // Tags (als u een tagsysteem toevoegt)
     'tags' => [
-        'title' => 'Popular Tags',
-        'view_all_tags' => 'View All Tags',
-        'no_tags' => 'No tags available',
+        'title' => 'Populaire Tags',
+        'view_all_tags' => 'Bekijk Alle Tags',
+        'no_tags' => 'Geen tags beschikbaar',
     ],
     
-    // Comments (if you add comment system)
+    // Reacties (als u een reactiesysteem toevoegt)
     'comments' => [
-        'title' => 'Comments',
-        'no_comments' => 'No comments yet. Be the first to comment!',
-        'leave_comment' => 'Leave a Comment',
-        'post_comment' => 'Post Comment',
-        'reply' => 'Reply',
+        'title' => 'Reacties',
+        'no_comments' => 'Nog geen reacties. Wees de eerste om te reageren!',
+        'leave_comment' => 'Plaats een Reactie',
+        'post_comment' => 'Reactie Plaatsen',
+        'reply' => 'Reageer',
     ],
     
-    // Related posts (if you add related posts section)
+    // Gerelateerde berichten (als u een gerelateerde berichten sectie toevoegt)
     'related' => [
-        'title' => 'You Might Also Like',
-        'read_more' => 'Read More',
+        'title' => 'Dit Vindt U Misschien Ook Leuk',
+        'read_more' => 'Lees Meer',
     ],
     
-    // Pagination
+    // Paginering
     'pagination' => [
-        'showing' => 'Showing :from to :to of :total posts',
-        'previous' => 'Previous',
-        'next' => 'Next',
-        'page' => 'Page :current of :last',
+        'showing' => 'Toont :from tot :to van :total berichten',
+        'previous' => 'Vorige',
+        'next' => 'Volgende',
+        'page' => 'Pagina :current van :last',
     ],
     
-    // Archive (if you add archive functionality)
+    // Archief (als u archieffunctionaliteit toevoegt)
     'archive' => [
-        'title' => 'Blog Archive',
-        'by_month' => 'Posts by Month',
-        'by_year' => 'Posts by Year',
-        'by_category' => 'Posts by Category',
+        'title' => 'Blog Archief',
+        'by_month' => 'Berichten per Maand',
+        'by_year' => 'Berichten per Jaar',
+        'by_category' => 'Berichten per Categorie',
     ],
     
-    // Authors (if you add author pages)
+    // Auteurs (als u auteurspagina's toevoegt)
     'authors' => [
-        'title' => 'Our Authors',
-        'view_profile' => 'View Profile',
-        'posts_by' => 'Posts by :author',
-        'bio' => 'About the Author',
+        'title' => 'Onze Auteurs',
+        'view_profile' => 'Bekijk Profiel',
+        'posts_by' => 'Berichten door :author',
+        'bio' => 'Over de Auteur',
     ],
 ];

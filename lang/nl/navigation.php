@@ -1,30 +1,29 @@
 <?php
- return [
-    // nav //
+return [
+    // Navigatie //
     'home' => 'Home',
-    'contact' => 'Contact Us',
-    'blogs' => 'blogs',
-    'stores' =>'stores',
-    'cateories' => 'categories',
+    'contact' => 'Contact Opnemen',
+    'blogs' => 'Blogs',
+    'stores' => 'Winkels',
+    'cateories' => 'Categorieën',
     'Coupons' => 'Coupons',
-    'deal' => 'deal',
-    'Popular-Categories' =>'Popular Categories',
-    'Featured' => 'Featured',
-    'New-Arrivals' => 'New Arrivals',
-    'Special-Offers' => 'Special Offers',
+    'deal' => 'Deal',
+    'Popular-Categories' => 'Populaire Categorieën',
+    'Featured' => 'Uitgelicht',
+    'New-Arrivals' => 'Nieuwe Binnenkomsten',
+    'Special-Offers' => 'Speciale Aanbiedingen',
     'Dashboard' => 'Dashboard',
-    'Login' => 'Login',
-    'register' =>'Register',
-   'Search here' => 'Search stores for coupons, deals...',
+    'Login' => 'Inloggen',
+    'register' => 'Registreren',
+    'Search here' => 'Zoek winkels voor coupons, deals...',
 
-    //footer//
-   'support'=> 'support',
-    'about'=> 'about',
-    'Privacy Policy'=>'Privacy Policy',
-    'Terms of Service' => 'Terms of Service',
-    'Imprint' => "Imprint",
-    'Quick Links' => 'Quick Links',
-    'Company Name. All rights reserved' => 'streamcoupon.com. All rights reserved',
-    'about-f' =>'Discover top coupons, exclusive deals, and discounts from your favorite online stores.',
-
-  ];
+    // Footer //
+    'support' => 'Ondersteuning',
+    'about' => 'Over Ons',
+    'Privacy Policy' => 'Privacybeleid',
+    'Terms of Service' => 'Servicevoorwaarden',
+    'Imprint' => 'Impressum',
+    'Quick Links' => 'Snelkoppelingen',
+    'Company Name. All rights reserved' => 'streamcoupon.com. Alle rechten voorbehouden',
+    'about-f' => 'Ontdek topcoupons, exclusieve deals en kortingen van uw favoriete online winkels.',
+];
