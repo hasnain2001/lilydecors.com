@@ -1,180 +1,180 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Coupon Codes - Find the latest coupon codes and deals for your favorite stores',
-        'description' => 'Find the latest coupon codes and deals for your favorite stores. Save money on your online shopping with our exclusive discount codes.',
-        'keywords' => 'coupon codes, discount codes, promo codes, deals, offers, vouchers, discounts, savings, online shopping',
+        'title' => 'Codes Promo - Trouvez les derniers codes promo et offres pour vos boutiques préférées',
+        'description' => 'Trouvez les derniers codes promo et offres pour vos boutiques préférées. Économisez sur vos achats en ligne avec nos codes de réduction exclusifs.',
+        'keywords' => 'codes promo, codes de réduction, coupons, offres, bonnes affaires, bons d\'achat, réductions, économies, shopping en ligne',
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => 'Exclusive Coupon Codes',
-        'subtitle' => 'Save money with our verified discount codes for your favorite online stores',
+        'title' => 'Codes Promo Exclusifs',
+        'subtitle' => 'Économisez avec nos codes de réduction vérifiés pour vos boutiques en ligne préférées',
     ],
     
-    // Coupon card elements
-    'store_logo_alt' => ':name Logo',
-    'expires' => 'Expires',
-    'used_count' => 'Used :count times',
+    // Éléments de carte coupon
+    'store_logo_alt' => 'Logo :name',
+    'expires' => 'Expire',
+    'used_count' => 'Utilisé :count fois',
     
-    // Action buttons
-    'get_code' => 'Get Code',
-    'view_deal' => 'View Deal',
-    'more_offers' => 'More Offers',
+    // Boutons d'action
+    'get_code' => 'Obtenir le Code',
+    'view_deal' => 'Voir l\'Offre',
+    'more_offers' => 'Plus d\'Offres',
     
-    // Empty state
+    // État vide
     'empty' => [
-        'title' => 'No Coupons Available',
-        'message' => 'No coupons found. Please check back later for new deals.',
+        'title' => 'Aucun Coupon Disponible',
+        'message' => 'Aucun coupon trouvé. Veuillez revenir plus tard pour de nouvelles offres.',
     ],
     
     // Pagination
     'pagination' => [
-        'label' => 'Coupons pagination',
+        'label' => 'Pagination des coupons',
     ],
     
-    // Modal window
+    // Fenêtre modale
     'modal' => [
-        'exclusive_offer' => 'EXCLUSIVE OFFER',
-        'store_logo_alt' => 'Store Logo',
-        'your_coupon_code' => 'YOUR COUPON CODE',
-        'copy' => 'Copy',
-        'copied' => 'Copied to clipboard!',
-        'instructions' => 'Use this code at checkout on :store',
-        'go_to_store' => 'Go to Store',
+        'exclusive_offer' => 'OFFRE EXCLUSIVE',
+        'store_logo_alt' => 'Logo de la Boutique',
+        'your_coupon_code' => 'VOTRE CODE PROMO',
+        'copy' => 'Copier',
+        'copied' => 'Copié dans le presse-papiers !',
+        'instructions' => 'Utilisez ce code au paiement sur :store',
+        'go_to_store' => 'Aller à la Boutique',
     ],
     
-    // Authentication badges
+    // Badges d'authentification
     'auth_badges' => [
-        'verified' => 'Verified',
-        'exclusive' => 'Exclusive',
-        'limited_time' => 'Limited Time',
-        'free_shipping' => 'Free Shipping',
+        'verified' => 'Vérifié',
+        'exclusive' => 'Exclusif',
+        'limited_time' => 'Temps Limité',
+        'free_shipping' => 'Livraison Gratuite',
     ],
     
-    // Filter and sorting (if added)
+    // Filtre et tri (si ajoutés)
     'filter' => [
-        'title' => 'Filter Coupons',
-        'sort_by' => 'Sort By',
-        'newest' => 'Newest',
-        'expiring_soon' => 'Expiring Soon',
-        'most_popular' => 'Most Popular',
-        'highest_discount' => 'Highest Discount',
-        'store' => 'Store',
-        'category' => 'Category',
+        'title' => 'Filtrer les Coupons',
+        'sort_by' => 'Trier par',
+        'newest' => 'Plus Récents',
+        'expiring_soon' => 'Expire Bientôt',
+        'most_popular' => 'Plus Populaires',
+        'highest_discount' => 'Plus Haute Réduction',
+        'store' => 'Boutique',
+        'category' => 'Catégorie',
         'type' => 'Type',
     ],
     
-    // Coupon types
+    // Types de coupons
     'types' => [
         'code' => 'Code',
-        'deal' => 'Deal',
-        'free_shipping' => 'Free Shipping',
-        'percentage' => 'Percentage Off',
-        'amount' => 'Amount Off',
-        'bogo' => 'Buy One Get One',
+        'deal' => 'Offre',
+        'free_shipping' => 'Livraison Gratuite',
+        'percentage' => 'Pourcentage de Réduction',
+        'amount' => 'Montant de Réduction',
+        'bogo' => 'Achetez un - Recevez un',
     ],
     
-    // Statistics (if added)
+    // Statistiques (si ajoutées)
     'stats' => [
         'total_coupons' => 'Total Coupons',
-        'active_today' => 'Active Today',
-        'success_rate' => 'Success Rate',
-        'avg_savings' => 'Average Savings',
+        'active_today' => 'Actifs Aujourd\'hui',
+        'success_rate' => 'Taux de Réussite',
+        'avg_savings' => 'Économies Moyennes',
     ],
     
-    // Search functionality (if added)
+    // Fonctionnalité de recherche (si ajoutée)
     'search' => [
-        'placeholder' => 'Search coupons by store or keyword...',
-        'no_results' => 'No coupons found for ":query"',
-        'suggestions' => 'Try different keywords or browse all stores',
+        'placeholder' => 'Rechercher des coupons par boutique ou mot-clé...',
+        'no_results' => 'Aucun coupon trouvé pour ":query"',
+        'suggestions' => 'Essayez d\'autres mots-clés ou parcourez toutes les boutiques',
     ],
     
-    // Featured coupons (if added)
+    // Coupons en vedette (si ajoutés)
     'featured' => [
-        'title' => 'Featured Coupons',
-        'view_all' => 'View All Coupons',
+        'title' => 'Coupons à la Une',
+        'view_all' => 'Voir Tous les Coupons',
     ],
     
-    // Top stores with coupons (if added)
+    // Top boutiques avec coupons (si ajoutées)
     'top_stores' => [
-        'title' => 'Top Stores with Coupons',
-        'view_all_stores' => 'View All Stores',
+        'title' => 'Meilleures Boutiques avec Coupons',
+        'view_all_stores' => 'Voir Toutes les Boutiques',
     ],
     
-    // Categories with coupons (if added)
+    // Catégories avec coupons (si ajoutées)
     'top_categories' => [
-        'title' => 'Popular Categories',
-        'view_all_categories' => 'View All Categories',
+        'title' => 'Catégories Populaires',
+        'view_all_categories' => 'Voir Toutes les Catégories',
     ],
     
-    // Newsletter signup (if added)
+    // Inscription à la newsletter (si ajoutée)
     'newsletter' => [
-        'title' => 'Get New Coupon Alerts',
-        'description' => 'Subscribe to receive new coupon codes and deals directly in your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive new coupon alerts.',
+        'title' => 'Recevez des Alertes de Nouveaux Coupons',
+        'description' => 'Abonnez-vous pour recevoir de nouveaux codes promo et offres directement dans votre boîte mail',
+        'subscribe' => 'S\'abonner',
+        'success' => 'Abonnement réussi ! Vous recevrez des alertes de nouveaux coupons.',
     ],
     
-    // Social sharing (if added)
+    // Partage social (si ajouté)
     'share' => [
-        'title' => 'Share this coupon',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Partager ce coupon',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'pinterest' => 'Épingler sur Pinterest',
+        'email' => 'Partager par Email',
     ],
     
-    // Success rate indicator
+    // Indicateur de taux de réussite
     'success_rate' => [
-        'excellent' => 'Excellent success rate',
-        'good' => 'Good success rate',
-        'average' => 'Average success rate',
-        'low' => 'Low success rate',
-        'new' => 'New coupon',
+        'excellent' => 'Excellent taux de réussite',
+        'good' => 'Bon taux de réussite',
+        'average' => 'Taux de réussite moyen',
+        'low' => 'Faible taux de réussite',
+        'new' => 'Nouveau coupon',
     ],
     
-    // Expiration warnings
+    // Avertissements d'expiration
     'expiration' => [
-        'expiring_soon' => 'Expiring soon!',
-        'expired' => 'Expired',
-        'expires_today' => 'Expires today!',
-        'valid_until' => 'Valid until :date',
+        'expiring_soon' => 'Expire bientôt !',
+        'expired' => 'Expiré',
+        'expires_today' => 'Expire aujourd\'hui !',
+        'valid_until' => 'Valide jusqu\'au :date',
     ],
     
-    // User actions
+    // Actions utilisateur
     'actions' => [
-        'reveal_code' => 'Reveal Code',
-        'copy_code' => 'Copy Code',
-        'get_deal' => 'Get Deal',
-        'visit_store' => 'Visit Store',
-        'save_coupon' => 'Save Coupon',
-        'report_expired' => 'Report Expired',
+        'reveal_code' => 'Révéler le Code',
+        'copy_code' => 'Copier le Code',
+        'get_deal' => 'Obtenir l\'Offre',
+        'visit_store' => 'Visiter la Boutique',
+        'save_coupon' => 'Sauvegarder le Coupon',
+        'report_expired' => 'Signaler comme Expiré',
     ],
     
-    // Verification status
+    // Statut de vérification
     'verification' => [
-        'verified' => 'Verified',
-        'unverified' => 'Unverified',
-        'tested' => 'Tested :time',
-        'reported_working' => 'Reported working :time ago',
+        'verified' => 'Vérifié',
+        'unverified' => 'Non vérifié',
+        'tested' => 'Testé :time',
+        'reported_working' => 'Signalé comme fonctionnel il y a :time',
     ],
     
-    // Accessibility
+    // Accessibilité
     'accessibility' => [
-        'coupon_card' => 'Coupon card for :store',
-        'reveal_button' => 'Reveal coupon code for :store',
-        'deal_button' => 'Get deal for :store',
-        'more_offers_button' => 'View more offers from :store',
-        'expiration_info' => 'Expires on :date',
-        'usage_info' => 'Used :count times',
+        'coupon_card' => 'Carte coupon pour :store',
+        'reveal_button' => 'Révéler le code promo pour :store',
+        'deal_button' => 'Obtenir l\'offre pour :store',
+        'more_offers_button' => 'Voir plus d\'offres de :store',
+        'expiration_info' => 'Expire le :date',
+        'usage_info' => 'Utilisé :count fois',
     ],
     
-    // Loading states
+    // États de chargement
     'loading' => [
-        'coupons' => 'Loading coupons...',
-        'please_wait' => 'Please wait while we load available coupons',
+        'coupons' => 'Chargement des coupons...',
+        'please_wait' => 'Veuillez patienter pendant le chargement des coupons disponibles',
     ],
 ];

@@ -1,103 +1,103 @@
 <?php
 
 return [
-    'title' => 'About '.config('app.name').' | Premium Home Decor Inspiration & Design Blog',
-    'description' => 'Learn about '.config('app.name').' - your trusted source for interior design inspiration, home decor ideas, and practical decorating guides. Discover our mission to transform houses into beautiful homes.',
-    'keywords' => 'home decor, interior design, decorating ideas, home inspiration, design blog, home improvement',
+    'title' => 'À propos de '.config('app.name').' | Inspiration de décoration d\'intérieur premium et blog design',
+    'description' => 'Découvrez '.config('app.name').' - votre source fiable d\'inspiration en design d\'intérieur, d\'idées de décoration et de guides pratiques. Apprenez-en plus sur notre mission : transformer les maisons en foyers magnifiques.',
+    'keywords' => 'décoration d\'intérieur, design d\'intérieur, idées déco, inspiration maison, blog design, amélioration de l\'habitat',
     
-    // Header Section
+    // Section En-tête
     'header' => [
-        'title' => 'About LilyDecors',
-        'subtitle' => 'Transforming houses into beautiful, inspiring homes through curated design inspiration and practical decorating wisdom.',
+        'title' => 'À propos de LilyDecors',
+        'subtitle' => 'Transformer les maisons en foyers beaux et inspirants grâce à une inspiration design soigneusement sélectionnée et des conseils déco pratiques.',
     ],
     
-    // Breadcrumb
+    // Fil d'Ariane
     'breadcrumb' => [
-        'home' => 'Home',
-        'current' => 'About Us',
+        'home' => 'Accueil',
+        'current' => 'À propos',
     ],
     
-    // Introduction Section
+    // Section d'introduction
     'intro' => [
-        'title' => 'Welcome to LilyDecors',
-        'lead' => 'Your trusted source for interior design inspiration, practical decorating guides, and curated home decor recommendations.',
-        'paragraph1' => 'At LilyDecors, we believe that every home tells a story. Our mission is to help you write yours through beautiful, functional, and inspiring spaces that reflect your personality and lifestyle. Whether you\'re decorating your first apartment, renovating your family home, or simply looking for fresh ideas, we\'re here to guide you every step of the way.',
-        'paragraph2' => 'Founded by a team of passionate interior designers and home decor enthusiasts, LilyDecors has grown from a simple blog into a comprehensive resource for homeowners, renters, and design lovers worldwide.',
+        'title' => 'Bienvenue chez LilyDecors',
+        'lead' => 'Votre source fiable d\'inspiration en design d\'intérieur, de guides de décoration pratiques et de recommandations de décoration maison soigneusement sélectionnées.',
+        'paragraph1' => 'Chez LilyDecors, nous croyons que chaque maison raconte une histoire. Notre mission est de vous aider à écrire la vôtre à travers des espaces beaux, fonctionnels et inspirants qui reflètent votre personnalité et votre style de vie. Que vous décoriez votre premier appartement, rénoviez votre maison familiale ou cherchiez simplement de nouvelles idées, nous sommes là pour vous guider à chaque étape.',
+        'paragraph2' => 'Fondé par une équipe de designers d\'intérieur passionnés et d\'enthousiastes de la décoration, LilyDecors est passé d\'un simple blog à une ressource complète pour les propriétaires, les locataires et les amateurs de design du monde entier.',
     ],
     
     // Mission & Vision
     'mission' => [
-        'title' => 'Our Mission',
-        'description' => 'To democratize beautiful design by providing accessible, practical, and inspiring home decor guidance that empowers everyone to create spaces they love.',
+        'title' => 'Notre Mission',
+        'description' => 'Démocratiser le beau design en fournissant des conseils de décoration d\'intérieur accessibles, pratiques et inspirants qui permettent à chacun de créer des espaces qu\'il aime.',
     ],
     
     'vision' => [
-        'title' => 'Our Vision',
-        'description' => 'To become the world\'s most trusted home decor community, inspiring millions to transform their living spaces and find joy in the art of homemaking.',
+        'title' => 'Notre Vision',
+        'description' => 'Devenir la communauté de décoration maison la plus fiable au monde, inspirant des millions de personnes à transformer leurs espaces de vie et à trouver de la joie dans l\'art de l\'aménagement intérieur.',
     ],
     
-    // Features/What We Do
+    // Fonctionnalités / Ce que nous faisons
     'features' => [
-        'title' => 'What Sets Us Apart',
-        'subtitle' => 'Discover why thousands of readers trust LilyDecors for their home decor journey',
-        'curated_inspiration' => 'Curated Inspiration',
-        'curated_description' => 'We handpick and curate the best design ideas from around the world, saving you hours of searching and providing quality over quantity.',
-        'practical_guidance' => 'Practical Guidance',
-        'practical_description' => 'Our content is designed to be actionable. From budget breakdowns to step-by-step tutorials, we make beautiful design achievable.',
-        'expert_insights' => 'Expert Insights',
-        'expert_description' => 'Our team includes professional interior designers, architects, and stylists who share their expertise and industry secrets.',
+        'title' => 'Ce qui nous distingue',
+        'subtitle' => 'Découvrez pourquoi des milliers de lecteurs font confiance à LilyDecors pour leur voyage déco',
+        'curated_inspiration' => 'Inspiration Curatée',
+        'curated_description' => 'Nous sélectionnons et curatons les meilleures idées design du monde entier, vous faisant gagner des heures de recherche et privilégiant la qualité à la quantité.',
+        'practical_guidance' => 'Conseils Pratiques',
+        'practical_description' => 'Notre contenu est conçu pour être applicable. Des répartitions de budget aux tutoriels étape par étape, nous rendons le beau design accessible.',
+        'expert_insights' => 'Expertises',
+        'expert_description' => 'Notre équipe comprend des designers d\'intérieur professionnels, des architectes et des stylistes qui partagent leur expertise et leurs secrets du métier.',
     ],
     
-    // Stats Section
+    // Section Statistiques
     'stats' => [
-        'title' => 'Our Community in Numbers',
-        'subtitle' => 'Join thousands of design enthusiasts who trust LilyDecors',
-        'monthly_readers' => 'Monthly Readers',
-        'published_articles' => 'Published Articles',
-        'expert_contributors' => 'Expert Contributors',
-        'countries_reached' => 'Countries Reached',
+        'title' => 'Notre communauté en chiffres',
+        'subtitle' => 'Rejoignez les milliers d\'enthousiastes du design qui font confiance à LilyDecors',
+        'monthly_readers' => 'Lecteurs Mensuels',
+        'published_articles' => 'Articles Publiés',
+        'expert_contributors' => 'Contributeurs Experts',
+        'countries_reached' => 'Pays Atteints',
     ],
     
-    // Values Section
+    // Section Valeurs
     'values' => [
-        'title' => 'Our Core Values',
-        'subtitle' => 'The principles that guide everything we do',
-        'passion_for_design' => 'Passion for Design',
-        'passion_description' => 'We genuinely love home decor and believe beautiful spaces improve quality of life.',
-        'integrity_trust' => 'Integrity & Trust',
-        'integrity_description' => 'We\'re transparent about partnerships and only recommend products we truly believe in.',
-        'community_focus' => 'Community Focus',
-        'community_description' => 'We listen to our readers and create content that addresses their real needs and challenges.',
-        'continuous_innovation' => 'Continuous Innovation',
-        'innovation_description' => 'We constantly evolve to bring you the latest trends, tools, and techniques in home decor.',
+        'title' => 'Nos Valeurs Fondamentales',
+        'subtitle' => 'Les principes qui guident tout ce que nous faisons',
+        'passion_for_design' => 'Passion pour le Design',
+        'passion_description' => 'Nous aimons sincèrement la décoration d\'intérieur et croyons que les beaux espaces améliorent la qualité de vie.',
+        'integrity_trust' => 'Intégrité & Confiance',
+        'integrity_description' => 'Nous sommes transparents concernant nos partenariats et ne recommandons que les produits auxquels nous croyons vraiment.',
+        'community_focus' => 'Focus Communauté',
+        'community_description' => 'Nous écoutons nos lecteurs et créons du contenu qui répond à leurs véritables besoins et défis.',
+        'continuous_innovation' => 'Innovation Continue',
+        'innovation_description' => 'Nous évoluons constamment pour vous apporter les dernières tendances, outils et techniques en décoration d\'intérieur.',
     ],
     
-    // Team Section
+    // Section Équipe
     'team' => [
-        'title' => 'Meet Our Founders',
-        'subtitle' => 'The passionate team behind LilyDecors',
+        'title' => 'Rencontrez Nos Fondateurs',
+        'subtitle' => 'L\'équipe passionnée derrière LilyDecors',
         'sarah' => [
             'name' => 'Sarah Chen',
-            'role' => 'Lead Interior Designer',
-            'description' => 'With 15 years in residential design, Sarah brings professional expertise and a keen eye for timeless elegance.',
+            'role' => 'Designer d\'Intérieur Principale',
+            'description' => 'Avec 15 ans d\'expérience en design résidentiel, Sarah apporte son expertise professionnelle et son sens aigu de l\'élégance intemporelle.',
         ],
         'marcus' => [
             'name' => 'Marcus Johnson',
-            'role' => 'Creative Director',
-            'description' => 'Former magazine editor turned decor blogger, Marcus ensures our content is both beautiful and practical.',
+            'role' => 'Directeur Artistique',
+            'description' => 'Ancien rédacteur en chef de magazine devenu blogueur déco, Marcus veille à ce que notre contenu soit à la fois beau et pratique.',
         ],
         'elena' => [
             'name' => 'Elena Rodriguez',
-            'role' => 'Community Manager',
-            'description' => 'Elena connects with our readers daily, turning their questions into valuable content and building our community.',
+            'role' => 'Responsable Communauté',
+            'description' => 'Elena est en contact quotidien avec nos lecteurs, transformant leurs questions en contenu précieux et renforçant notre communauté.',
         ],
     ],
     
-    // CTA Section
+    // Section CTA
     'cta' => [
-        'title' => 'Ready to Transform Your Space?',
-        'description' => 'Join our community of home decor enthusiasts and start creating the home of your dreams today.',
-        'explore_blog' => 'Explore Our Blog',
-        'get_in_touch' => 'Get in Touch',
+        'title' => 'Prêt(e) à transformer votre espace ?',
+        'description' => 'Rejoignez notre communauté d\'enthousiastes de la décoration et commencez dès aujourd\'hui à créer la maison de vos rêves.',
+        'explore_blog' => 'Explorer Notre Blog',
+        'get_in_touch' => 'Nous Contacter',
     ],
 ];

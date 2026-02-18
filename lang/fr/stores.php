@@ -1,61 +1,60 @@
 <?php
 
 return [
-    'title' => 'All Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
-    'meta-title' => 'New Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
-    'description' => 'Discover amazing stores with exclusive offers, discounts, and coupons. Find the best deals from top brands in one place.',
-    'keywords' => 'stores, offers, discounts, coupons, deals, shopping, brands, savings',
+    'title' => 'Tous les Magasins - Coupons, Codes Promo & Meilleures Offres ' . date('Y') . ' | ' . config('app.name'),
+    'meta-title' => 'Nouveaux Magasins - Coupons, Codes Promo & Meilleures Offres ' . date('Y') . ' | ' . config('app.name'),
+    'description' => 'Découvrez des magasins exceptionnels avec des offres exclusives, réductions et coupons. Trouvez les meilleures offres des grandes marques en un seul endroit.',
+    'keywords' => 'magasins, boutiques, offres, réductions, coupons, bonnes affaires, shopping, marques, économies',
     
-    // Header Section
+    // Section En-tête
     'header' => [
-        'title' => 'All Stores',
-        'subtitle' => 'Discover amazing stores with exclusive offers and discounts. Find the best deals from trusted brands.',
+        'title' => 'Tous les Magasins',
+        'subtitle' => 'Découvrez des magasins exceptionnels avec des offres et réductions exclusives. Trouvez les meilleures offres de marques de confiance.',
     ],
     
-    // Stats Section
+    // Section Statistiques
     'stats' => [
-        'stores' => 'Stores',
-        'latest_deals' => 'Latest :year Deals',
-        'verified_offers' => 'Verified Offers',
+        'stores' => 'Magasins',
+        'latest_deals' => 'Dernières Offres :year',
+        'verified_offers' => 'Offres Vérifiées',
     ],
     
-    // Store Cards
+    // Cartes Magasin
     'store_badge' => [
-        'top_store' => 'Top Store',
+        'top_store' => 'Top Magasin',
     ],
     
-    'store_default_name' => 'Store Name',
-    'offers_count' => 'Offers',
+    'store_default_name' => 'Nom du Magasin',
+    'offers_count' => 'Offres',
     
-    // Empty State
+    // État Vide
     'empty' => [
-        'title' => 'No Stores Available',
-        'message' => 'No stores found in this category! Explore new stores for exciting deals.',
+        'title' => 'Aucun Magasin Disponible',
+        'message' => 'Aucun magasin trouvé dans cette catégorie ! Explorez de nouveaux magasins pour des offres excitantes.',
     ],
     
     // Pagination
     'pagination' => [
-        'label' => 'Stores pagination',
+        'label' => 'Pagination des magasins',
     ],
 
    'common' => [
-         'home' => 'Home',
-    'stores' => 'Stores',
-    'offers' => 'Offers',
+         'home' => 'Accueil',
+    'stores' => 'Magasins',
+    'offers' => 'Offres',
     'coupons' => 'Coupons',
-    'deals' => 'Deals',
-    'categories' => 'Categories',
-    'search' => 'Search',
-    'filter' => 'Filter',
-    'sort_by' => 'Sort By',
-    'view_all' => 'View All',
-    'read_more' => 'Read More',
-    'learn_more' => 'Learn More',
-    'get_started' => 'Get Started',
-    'subscribe' => 'Subscribe',
-    'download' => 'Download',
-    'share' => 'Share',
-    'save' => 'Save',
+    'deals' => 'Bonnes Affaires',
+    'categories' => 'Catégories',
+    'search' => 'Rechercher',
+    'filter' => 'Filtrer',
+    'sort_by' => 'Trier par',
+    'view_all' => 'Voir Tout',
+    'read_more' => 'Lire Plus',
+    'learn_more' => 'En Savoir Plus',
+    'get_started' => 'Commencer',
+    'subscribe' => 'S\'abonner',
+    'download' => 'Télécharger',
+    'share' => 'Partager',
+    'save' => 'Économiser',
     ],
 ];
-

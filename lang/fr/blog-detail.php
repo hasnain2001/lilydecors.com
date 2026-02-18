@@ -1,76 +1,76 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'description' => 'Explore our latest blog post: :name. :description',
+        'description' => 'Découvrez notre dernier article de blog : :name. :description',
         'default_author' => 'Marcus Johnson',
     ],
     
-    // Sidebar sections
+    // Sections Barre Latérale
     'sidebar' => [
-        'related_stores' => 'Related Stores',
-        'no_stores_found' => 'No related stores found.',
-        'related_blogs' => 'Related Blogs',
-        'no_blogs_found' => 'No related blogs found.',
+        'related_stores' => 'Magasins Associés',
+        'no_stores_found' => 'Aucun magasin associé trouvé.',
+        'related_blogs' => 'Articles Similaires',
+        'no_blogs_found' => 'Aucun article similaire trouvé.',
     ],
     
-    // Optional: You could add more translations for dynamic content if needed
-    'reading_time' => ':minutes min read',
-    'views_count' => ':count views',
-    'shares_count' => ':count shares',
-    'comments_count' => ':count comments',
+    // Optionnel : Vous pouvez ajouter plus de traductions pour le contenu dynamique si nécessaire
+    'reading_time' => ':minutes min de lecture',
+    'views_count' => ':count vues',
+    'shares_count' => ':count partages',
+    'comments_count' => ':count commentaires',
     
-    // Share buttons (if you add them)
+    // Boutons de partage (si vous les ajoutez)
     'share' => [
-        'title' => 'Share this post',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'linkedin' => 'Share on LinkedIn',
-        'email' => 'Share via Email',
+        'title' => 'Partager cet article',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'pinterest' => 'Épingler sur Pinterest',
+        'linkedin' => 'Partager sur LinkedIn',
+        'email' => 'Partager par Email',
     ],
     
-    // Categories & Tags
-    'categories' => 'Categories',
-    'tags' => 'Tags',
+    // Catégories & Étiquettes
+    'categories' => 'Catégories',
+    'tags' => 'Étiquettes',
     
-    // Author section
-    'about_author' => 'About the Author',
-    'author_bio' => 'Author Bio',
-    'view_all_posts' => 'View all posts by :author',
+    // Section Auteur
+    'about_author' => 'À propos de l\'Auteur',
+    'author_bio' => 'Bio de l\'Auteur',
+    'view_all_posts' => 'Voir tous les articles de :author',
     
-    // Comments section (if you add comments)
-    'comments' => 'Comments',
-    'leave_comment' => 'Leave a Comment',
-    'comment_placeholder' => 'Share your thoughts...',
-    'post_comment' => 'Post Comment',
-    'no_comments' => 'No comments yet. Be the first to comment!',
+    // Section Commentaires (si vous ajoutez des commentaires)
+    'comments' => 'Commentaires',
+    'leave_comment' => 'Laisser un Commentaire',
+    'comment_placeholder' => 'Partagez vos réflexions...',
+    'post_comment' => 'Publier le Commentaire',
+    'no_comments' => 'Aucun commentaire pour le moment. Soyez le premier à commenter !',
     
     // Navigation
-    'previous_post' => 'Previous Post',
-    'next_post' => 'Next Post',
-    'back_to_blog' => 'Back to Blog',
-    'back_to_category' => 'Back to :category',
+    'previous_post' => 'Article Précédent',
+    'next_post' => 'Article Suivant',
+    'back_to_blog' => 'Retour au Blog',
+    'back_to_category' => 'Retour à :category',
     
-    // Content elements
-    'table_of_contents' => 'Table of Contents',
-    'jump_to_section' => 'Jump to section',
-    'read_more' => 'Read More',
-    'continue_reading' => 'Continue Reading',
+    // Éléments de contenu
+    'table_of_contents' => 'Table des Matières',
+    'jump_to_section' => 'Aller à la section',
+    'read_more' => 'Lire la Suite',
+    'continue_reading' => 'Continuer la Lecture',
     
-    // Newsletter (if you add it to blog posts)
+    // Newsletter (si vous l'ajoutez aux articles de blog)
     'newsletter' => [
-        'title' => 'Stay Updated',
-        'description' => 'Get the latest home decor tips and inspiration delivered to your inbox.',
-        'subscribe' => 'Subscribe',
-        'email_placeholder' => 'Enter your email',
-        'privacy_note' => 'We respect your privacy. Unsubscribe at any time.',
+        'title' => 'Restez Informé',
+        'description' => 'Recevez les derniers conseils et inspirations décoration directement dans votre boîte mail.',
+        'subscribe' => 'S\'abonner',
+        'email_placeholder' => 'Entrez votre email',
+        'privacy_note' => 'Nous respectons votre vie privée. Désabonnez-vous à tout moment.',
     ],
     
-    // Print/Save options
-    'print' => 'Print',
-    'save_for_later' => 'Save for Later',
-    'bookmark' => 'Bookmark',
-    'download_pdf' => 'Download as PDF',
+    // Options Impression/Sauvegarde
+    'print' => 'Imprimer',
+    'save_for_later' => 'Sauvegarder pour Plus Tard',
+    'bookmark' => 'Ajouter aux Favoris',
+    'download_pdf' => 'Télécharger en PDF',
 ];

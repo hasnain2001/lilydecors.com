@@ -129,6 +129,7 @@
                                 <th class="border-0">#</th>
                                 <th class="border-0">Blog Info</th>
                                 <th class="border-0">Category</th>
+                                <th class="border-0">Store</th>
                                 <th class="border-0">Status</th>
                                 <th class="border-0">Language</th>
                                 <th class="border-0">Audit Info</th>
@@ -152,7 +153,7 @@
                                                  onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="mb-1 fw-semibold">{{ Str::limit($blog->name, 50) }}</h6>
+                                            <h6 class="mb-1 fw-semibold fw-lighter">{{ Str::limit($blog->name, 50) }}</h6>
                                             <small class="text-muted">ID: {{ $blog->id }}</small>
                                         </div>
                                     </div>
@@ -167,6 +168,18 @@
                                             <i class="fas fa-tag me-1"></i>N/A
                                         </span>
                                     @endif
+                                </td>
+                                <td class="align-middle">
+                                   @if ($blog->store)
+                                        <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill">
+                                            <i class="fas fa-tag me-1"></i>{{ $blog->store->name }}
+                                        </span>
+                                    @else
+                                        <span class="badge bg-secondary bg-opacity-10 text-secondary px-3 py-2 rounded-pill">
+                                            <i class="fas fa-tag me-1"></i>N/A
+                                        </span>
+                                    @endif
+                                        
                                 </td>
                                 <td class="align-middle">
                                     @if ($blog->status == 1)

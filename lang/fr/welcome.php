@@ -1,48 +1,48 @@
 <?php
 
 return [
-    'title' => ''.config('app.name').' | Home Decor & Fashion Blogs '.date('Y').'',
-    'description' => 'Discover beautiful home decor ideas and fashion trends. Get inspired with our curated blogs on interior design, styling tips, and modern living.',
-    'keywords' => 'home decor, interior design, fashion blogs, lifestyle, home improvement, styling tips, modern living, home inspiration, fashion trends',
+    'title' => ''.config('app.name').' | Blogs Décoration & Mode '.date('Y').'',
+    'description' => 'Découvrez de belles idées de décoration intérieure et tendances mode. Inspirez-vous avec nos blogs sélectionnés sur design d\'intérieur, conseils de style et vie moderne.',
+    'keywords' => 'décoration intérieure, design d\'intérieur, blogs mode, lifestyle, amélioration de l\'habitat, conseils de style, vie moderne, inspiration décoration, tendances mode',
     
-    // Hero Section
-    'hero_title' => 'Beautiful Homes, Inspired Living',
-    'hero_subtitle' => 'Discover the latest home decor ideas, fashion trends, and lifestyle tips to transform your space and style.',
-    'hero_button' => 'Explore Inspiration',
+    // Section Héro
+    'hero_title' => 'Maisons Magnifiques, Vie Inspirée',
+    'hero_subtitle' => 'Découvrez les dernières idées déco, tendances mode et conseils lifestyle pour transformer votre espace et votre style.',
+    'hero_button' => 'Explorer l\'Inspiration',
     
-    // Section Titles
-    'latest_room_ideas' => 'Latest Room Ideas',
-    'fashion_trends' => 'Fashion & Style Trends',
-    'explore_categories' => 'Explore All Categories',
+    // Titres de Sections
+    'latest_room_ideas' => 'Dernières Idées Pièce',
+    'fashion_trends' => 'Tendances Mode & Style',
+    'explore_categories' => 'Explorer Toutes les Catégories',
     
-    // Category
-    'no_categories' => 'No categories found. Check back soon!',
-    'category_ideas' => ':count Ideas',
+    // Catégorie
+    'no_categories' => 'Aucune catégorie trouvée. Revenez bientôt !',
+    'category_ideas' => ':count Idées',
     
     // Blogs
-    'no_room_blogs' => 'No room blogs found. Check back soon!',
-    'no_fashion_blogs' => 'No fashion blogs found. Check back soon!',
-    'view_all_rooms' => 'View All Room Ideas',
-    'view_all_fashion' => 'View All Fashion Trends',
-    'read_more' => 'Read More',
+    'no_room_blogs' => 'Aucun blog pièce trouvé. Revenez bientôt !',
+    'no_fashion_blogs' => 'Aucun blog mode trouvé. Revenez bientôt !',
+    'view_all_rooms' => 'Voir Toutes les Idées Pièce',
+    'view_all_fashion' => 'Voir Toutes les Tendances Mode',
+    'read_more' => 'Lire la Suite',
     
-    // Stats
-    'blog_articles' => 'Blog Articles',
-    'categories' => 'Categories',
-    'monthly_readers' => 'Monthly Readers',
-    'years_experience' => 'Years Experience',
+    // Statistiques
+    'blog_articles' => 'Articles de Blog',
+    'categories' => 'Catégories',
+    'monthly_readers' => 'Lecteurs Mensuels',
+    'years_experience' => 'Années d\'Expérience',
     
     // Newsletter
-    'stay_updated' => 'Stay Updated',
-    'newsletter_text' => 'Subscribe to our newsletter for weekly inspiration, tips, and exclusive content.',
-    'email_placeholder' => 'Enter your email address',
-    'subscribe' => 'Subscribe',
-    'privacy_note' => 'We respect your privacy. Unsubscribe at any time.',
+    'stay_updated' => 'Restez Informé',
+    'newsletter_text' => 'Abonnez-vous à notre newsletter pour une inspiration hebdomadaire, des conseils et du contenu exclusif.',
+    'email_placeholder' => 'Entrez votre adresse email',
+    'subscribe' => 'S\'abonner',
+    'privacy_note' => 'Nous respectons votre vie privée. Désabonnez-vous à tout moment.',
     
     // CTA
-    'explore_all_categories_text' => 'Discover content across all our categories to find exactly what inspires you.',
-    'browse_all_categories' => 'Browse All Categories',
+    'explore_all_categories_text' => 'Découvrez du contenu dans toutes nos catégories pour trouver exactement ce qui vous inspire.',
+    'browse_all_categories' => 'Parcourir Toutes les Catégories',
     
-    // Meta
+    // Méta
     'view_count' => ':count k',
 ];

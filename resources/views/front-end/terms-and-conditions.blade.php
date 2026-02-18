@@ -1,8 +1,8 @@
 @extends('layouts.master')
-@section('title', '@lang('common.terms_and_conditions') | ' . config('app.name'))
-@section('description', 'Read our terms and conditions to understand your rights and responsibilities while using our services.')
-@section('keywords', 'terms, conditions, user agreement')
-@section('author', 'John Doe')
+@section('title', __('term.title') . ' | ' . config('app.name'))
+@section('description', __('term.description'))
+@section('keywords', __('term.keywords'))
+@section('author', __('term.author'))
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/terms.css') }}">
@@ -13,10 +13,10 @@
 <div class="terms-header">
     <div class="container">
         <div class="terms-header-content">
-            <h1>@lang('common.terms_and_conditions')</h1>
-            <p class="lead">@lang('common.understand_your_rights')</p>
+            <h1>@lang('term.header.title')</h1>
+            <p class="lead">@lang('term.header.subtitle')</p>
             <div class="last-updated">
-                <i class="fas fa-calendar-alt me-2"></i>@lang('common.last_updated_on') {{ date('F j, Y') }}
+                <i class="fas fa-calendar-alt me-2"></i>@lang('term.header.last_updated') {{ date('F j, Y') }}
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
                 <!-- Card Header -->
                 <div class="card-header terms-card-header">
                     <i class="fas fa-balance-scale terms-icon"></i>
-                    <h2>@lang('common.legal_agreement_user_terms')</h2>
+                    <h2>@lang('term.card.title')</h2>
                 </div>
 
                 <!-- Card Body -->
@@ -41,7 +41,7 @@
                         <div class="d-flex align-items-center">
                             <i class="fas fa-info-circle me-3"></i>
                             <div>
-                                <strong>@lang('common.important'):</strong> @lang('common.by_accessing_our_services')
+                                <strong>@lang('term.alert.title')</strong> @lang('term.alert.message')
                             </div>
                         </div>
                     </div>
@@ -54,12 +54,12 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-check-circle"></i>
                                 </div>
-                                <h3 class="section-title">1. @lang('common.acceptance_of_terms')</h3>
+                                <h3 class="section-title">1. @lang('term.section1.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.by_accessing_our_website', ['app_name' => config('app.name')])</p>
+                                <p>@lang('term.section1.content', ['app_name' => config('app.name')])</p>
                                 <div class="info-card">
-                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('common.if_you_disagree')</p>
+                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('term.section1.warning')</p>
                                 </div>
                             </div>
                         </section>
@@ -70,19 +70,19 @@
                                 <div class="section-icon success">
                                     <i class="fas fa-user-lock"></i>
                                 </div>
-                                <h3 class="section-title">2. @lang('common.user_responsibilities')</h3>
+                                <h3 class="section-title">2. @lang('term.section2.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.as_a_user')</p>
+                                <p>@lang('term.section2.intro')</p>
                                 <ul>
-                                    <li>@lang('common.maintaining_account_security')</li>
-                                    <li>@lang('common.account_activities')</li>
-                                    <li>@lang('common.accurate_information')</li>
-                                    <li>@lang('common.complying_with_laws')</li>
-                                    <li>@lang('common.not_violating_rights')</li>
+                                    <li>@lang('term.section2.points.maintaining_account')</li>
+                                    <li>@lang('term.section2.points.account_activities')</li>
+                                    <li>@lang('term.section2.points.accurate_information')</li>
+                                    <li>@lang('term.section2.points.complying_laws')</li>
+                                    <li>@lang('term.section2.points.third_party_rights')</li>
                                 </ul>
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> @lang('common.notify_unauthorized_access', ['email' => 'support@lilydecors.com'])</p>
+                                    <p class="mb-0"><i class="fas fa-shield-alt me-2"></i> @lang('term.section2.notification', ['email' => 'support@lilydecors.com'])</p>
                                 </div>
                             </div>
                         </section>
@@ -93,46 +93,46 @@
                                 <div class="section-icon danger">
                                     <i class="fas fa-ban"></i>
                                 </div>
-                                <h3 class="section-title">3. @lang('common.prohibited_activities')</h3>
+                                <h3 class="section-title">3. @lang('term.section3.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.when_using_services')</p>
+                                <p>@lang('term.section3.intro')</p>
 
                                 <div class="activity-grid">
                                     <div class="activity-card">
                                         <i class="fas fa-gavel"></i>
-                                        <h5>@lang('common.illegal_activities')</h5>
-                                        <p>@lang('common.illegal_activities_desc')</p>
+                                        <h5>@lang('term.section3.activities.illegal.title')</h5>
+                                        <p>@lang('term.section3.activities.illegal.description')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-user-secret"></i>
-                                        <h5>@lang('common.unauthorized_access')</h5>
-                                        <p>@lang('common.unauthorized_access_desc')</p>
+                                        <h5>@lang('term.section3.activities.unauthorized_access.title')</h5>
+                                        <p>@lang('term.section3.activities.unauthorized_access.description')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-bug"></i>
-                                        <h5>@lang('common.harmful_content')</h5>
-                                        <p>@lang('common.harmful_content_desc')</p>
+                                        <h5>@lang('term.section3.activities.harmful_content.title')</h5>
+                                        <p>@lang('term.section3.activities.harmful_content.description')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-network-wired"></i>
-                                        <h5>@lang('common.service_disruption')</h5>
-                                        <p>@lang('common.service_disruption_desc')</p>
+                                        <h5>@lang('term.section3.activities.service_disruption.title')</h5>
+                                        <p>@lang('term.section3.activities.service_disruption.description')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-robot"></i>
-                                        <h5>@lang('common.automated_access')</h5>
-                                        <p>@lang('common.automated_access_desc')</p>
+                                        <h5>@lang('term.section3.activities.automated_access.title')</h5>
+                                        <p>@lang('term.section3.activities.automated_access.description')</p>
                                     </div>
                                     <div class="activity-card">
                                         <i class="fas fa-chart-line"></i>
-                                        <h5>@lang('common.commercial_use')</h5>
-                                        <p>@lang('common.commercial_use_desc')</p>
+                                        <h5>@lang('term.section3.activities.commercial_use.title')</h5>
+                                        <p>@lang('term.section3.activities.commercial_use.description')</p>
                                     </div>
                                 </div>
 
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('common.violation_consequences')</p>
+                                    <p class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i> @lang('term.section3.warning')</p>
                                 </div>
                             </div>
                         </section>
@@ -143,21 +143,21 @@
                                 <div class="section-icon warning">
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
-                                <h3 class="section-title">4. @lang('common.intellectual_property')</h3>
+                                <h3 class="section-title">4. @lang('term.section4.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.intellectual_property_desc', ['app_name' => config('app.name')])</p>
+                                <p>@lang('term.section4.content', ['app_name' => config('app.name')])</p>
 
                                 <div class="highlight-box">
-                                    <p class="mb-0"><i class="fas fa-lightbulb text-warning me-2"></i> @lang('common.protected_materials')</p>
+                                    <p class="mb-0"><i class="fas fa-lightbulb text-warning me-2"></i> @lang('term.section4.protected')</p>
                                 </div>
 
-                                <p>@lang('common.you_may_not')</p>
+                                <p>@lang('term.section4.restrictions')</p>
                                 <ul>
-                                    <li>@lang('common.reproduce_content')</li>
-                                    <li>@lang('common.modify_content')</li>
-                                    <li>@lang('common.remove_notices')</li>
-                                    <li>@lang('common.use_without_permission')</li>
+                                    <li>@lang('term.section4.restriction_points.reproduce')</li>
+                                    <li>@lang('term.section4.restriction_points.modify')</li>
+                                    <li>@lang('term.section4.restriction_points.remove_notices')</li>
+                                    <li>@lang('term.section4.restriction_points.unauthorized_use')</li>
                                 </ul>
                             </div>
                         </section>
@@ -168,20 +168,20 @@
                                 <div class="section-icon danger">
                                     <i class="fas fa-exclamation-circle"></i>
                                 </div>
-                                <h3 class="section-title">5. @lang('common.disclaimer_of_warranties')</h3>
+                                <h3 class="section-title">5. @lang('term.section5.title')</h3>
                             </div>
                             <div class="section-content">
                                 <div class="warning-card">
-                                    <p class="mb-0"><i class="fas fa-info-circle me-2"></i> @lang('common.services_as_is')</p>
+                                    <p class="mb-0"><i class="fas fa-info-circle me-2"></i> @lang('term.section5.content')</p>
                                 </div>
-                                <p class="mt-3">@lang('common.we_do_not_guarantee')</p>
+                                <p class="mt-3">@lang('term.section5.guarantees_intro')</p>
                                 <ul>
-                                    <li>@lang('common.uninterrupted_services')</li>
-                                    <li>@lang('common.errors_corrected')</li>
-                                    <li>@lang('common.virus_free')</li>
-                                    <li>@lang('common.meet_requirements')</li>
+                                    <li>@lang('term.section5.guarantees.uninterrupted')</li>
+                                    <li>@lang('term.section5.guarantees.errors_corrected')</li>
+                                    <li>@lang('term.section5.guarantees.virus_free')</li>
+                                    <li>@lang('term.section5.guarantees.meet_requirements')</li>
                                 </ul>
-                                <p><strong>@lang('common.use_at_own_risk')</strong></p>
+                                <p><strong>@lang('term.section5.risk')</strong></p>
                             </div>
                         </section>
 
@@ -191,24 +191,24 @@
                                 <div class="section-icon info">
                                     <i class="fas fa-hand-paper"></i>
                                 </div>
-                                <h3 class="section-title">6. @lang('common.limitation_of_liability')</h3>
+                                <h3 class="section-title">6. @lang('term.section6.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.not_liable_for', ['app_name' => config('app.name')])</p>
+                                <p>@lang('term.section6.content', ['app_name' => config('app.name')])</p>
                                 <ul>
-                                    <li>@lang('common.loss_of_profits')</li>
-                                    <li>@lang('common.loss_of_use')</li>
-                                    <li>@lang('common.unauthorized_transmissions')</li>
-                                    <li>@lang('common.third_party_content')</li>
+                                    <li>@lang('term.section6.damages.loss_profits')</li>
+                                    <li>@lang('term.section6.damages.loss_use')</li>
+                                    <li>@lang('term.section6.damages.unauthorized_access')</li>
+                                    <li>@lang('term.section6.damages.third_party_content')</li>
                                 </ul>
 
                                 <div class="highlight-box">
-                                    <h5 class="h6 mb-2 fw-semibold">@lang('common.liability_limit')</h5>
+                                    <h5 class="h6 mb-2 fw-semibold">@lang('term.section6.liability_limit')</h5>
                                     <div class="d-flex align-items-center flex-wrap">
                                         <span class="liability-badge">
                                             <i class="fas fa-dollar-sign me-1"></i>100
                                         </span>
-                                        <span class="small">@lang('common.or_amount_paid')</span>
+                                        <span class="small">@lang('term.section6.liability_amount')</span>
                                     </div>
                                 </div>
                             </div>
@@ -220,17 +220,17 @@
                                 <div class="section-icon secondary">
                                     <i class="fas fa-globe-americas"></i>
                                 </div>
-                                <h3 class="section-title">7. @lang('common.governing_law')</h3>
+                                <h3 class="section-title">7. @lang('term.section7.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.governed_by_law', ['country' => 'united states of america'])</p>
+                                <p>@lang('term.section7.content', ['country' => 'united states of america'])</p>
 
                                 <div class="info-card">
                                     <div class="d-flex">
                                         <i class="fas fa-gavel me-3 mt-1" style="color: var(--primary);"></i>
                                         <div>
-                                            <p class="mb-1 fw-semibold">@lang('common.exclusive_jurisdiction')</p>
-                                            <p class="mb-0 small">@lang('common.exclusive_jurisdiction_desc')</p>
+                                            <p class="mb-1 fw-semibold">@lang('term.section7.jurisdiction_title')</p>
+                                            <p class="mb-0 small">@lang('term.section7.jurisdiction_content', ['jurisdiction' => '[Your Jurisdiction]'])</p>
                                         </div>
                                     </div>
                                 </div>
@@ -243,15 +243,15 @@
                                 <div class="section-icon warning">
                                     <i class="fas fa-sync-alt"></i>
                                 </div>
-                                <h3 class="section-title">8. @lang('common.changes_to_terms')</h3>
+                                <h3 class="section-title">8. @lang('term.section8.title')</h3>
                             </div>
                             <div class="section-content">
                                 <div class="warning-card">
                                     <div class="d-flex">
                                         <i class="fas fa-bell me-3 mt-1" style="color: #ffc107;"></i>
                                         <div>
-                                            <p class="mb-1 fw-semibold">@lang('common.we_reserve_right')</p>
-                                            <p class="mb-0 small">@lang('common.terms_modification_notice')</p>
+                                            <p class="mb-1 fw-semibold">@lang('term.section8.content')</p>
+                                            <p class="mb-0 small">@lang('term.section8.modification_notice')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -264,25 +264,25 @@
                                 <div class="section-icon primary">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <h3 class="section-title">9. @lang('common.contact_information')</h3>
+                                <h3 class="section-title">9. @lang('term.section9.title')</h3>
                             </div>
                             <div class="section-content">
-                                <p>@lang('common.contact_us_for_questions')</p>
+                                <p>@lang('term.section9.intro')</p>
 
                                 <div class="contact-buttons">
                                     <a href="mailto:contact@lilydecors.com" class="contact-btn">
-                                        <i class="fas fa-envelope me-2"></i>@lang('common.email_legal_team')
+                                        <i class="fas fa-envelope me-2"></i>@lang('term.section9.buttons.email')
                                     </a>
                                     <a href="{{ url('contact') }}" class="contact-btn">
-                                        <i class="fas fa-comment-alt me-2"></i>@lang('common.contact_form')
+                                        <i class="fas fa-comment-alt me-2"></i>@lang('term.section9.buttons.contact_form')
                                     </a>
                                     <a href="#" class="contact-btn">
-                                        <i class="fas fa-map-marker-alt me-2"></i>@lang('common.visit_our_office')
+                                        <i class="fas fa-map-marker-alt me-2"></i>@lang('term.section9.buttons.visit_office')
                                     </a>
                                 </div>
 
                                 <div class="info-card mt-3">
-                                    <p class="mb-0"><i class="fas fa-clock me-2"></i> @lang('common.response_time')</p>
+                                    <p class="mb-0"><i class="fas fa-clock me-2"></i> @lang('term.section9.response_time')</p>
                                 </div>
                             </div>
                         </section>
@@ -291,10 +291,10 @@
                     <!-- Action Buttons -->
                     <div class="action-buttons">
                         <a href="{{ url(app()->getLocale() . '/') }}" class="home-btn">
-                            <i class="fas fa-home me-2"></i>@lang('common.back_to_homepage')
+                            <i class="fas fa-home me-2"></i>@lang('term.actions.back_home')
                         </a>
                         <button onclick="window.print()" class="print-btn">
-                            <i class="fas fa-print me-2"></i>@lang('common.print_terms')
+                            <i class="fas fa-print me-2"></i>@lang('term.actions.print_terms')
                         </button>
                     </div>
                 </div>

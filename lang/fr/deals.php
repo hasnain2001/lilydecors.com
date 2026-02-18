@@ -1,188 +1,188 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Hot Deals - Limited-time offers & exclusive discounts | ' . config('app.name'),
-        'description' => 'Discover today\'s hottest deals and limited-time offers from your favorite stores. Save big with our exclusive discounts!',
-        'keywords' => 'hot deals, limited-time offers, flash sales, exclusive discounts, online shopping deals',
+        'title' => 'Offres Chaudes - Promotions temporaires & réductions exclusives | ' . config('app.name'),
+        'description' => 'Découvrez les offres les plus chaudes du jour et les promotions limitées de vos boutiques préférées. Économisez gros avec nos réductions exclusives !',
+        'keywords' => 'offres chaudes, promotions limitées, ventes flash, réductions exclusives, bonnes affaires en ligne',
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => '🔥 FLASH DEALS ALERT!',
-        'subtitle' => 'Limited-time offers you won\'t want to miss - act fast before they\'re gone!',
+        'title' => '🔥 ALERTE VENTES FLASH !',
+        'subtitle' => 'Offres limitées à ne pas manquer - agissez vite avant qu\'elles ne disparaissent !',
     ],
     
-    // Categories section
+    // Section Catégories
     'categories' => [
-        'title' => 'Shop by Category:',
-        'all' => 'All Categories',
+        'title' => 'Acheter par Catégorie :',
+        'all' => 'Toutes les Catégories',
     ],
     
-    // Deal card elements
+    // Éléments de carte offre
     'deal_badge' => [
-        'hot' => 'HOT DEAL',
-        'featured' => 'FEATURED',
-        'exclusive' => 'EXCLUSIVE',
-        'limited_time' => 'LIMITED TIME',
+        'hot' => 'OFFRE CHAUDE',
+        'featured' => 'À LA UNE',
+        'exclusive' => 'EXCLUSIF',
+        'limited_time' => 'TEMPS LIMITÉ',
     ],
     
-    'image_alt' => ':name deal image',
-    'expires' => 'Expires',
-    'used_count' => ':count used',
+    'image_alt' => 'Image de l\'offre :name',
+    'expires' => 'Expire',
+    'used_count' => ':count utilisations',
     
-    // Action buttons
-    'view_deal' => 'View Deal',
-    'more_offers' => 'More Offers',
+    // Boutons d'action
+    'view_deal' => 'Voir l\'Offre',
+    'more_offers' => 'Plus d\'Offres',
     
-    // Empty state
+    // État vide
     'empty' => [
-        'title' => 'No Hot Deals Available',
-        'message' => 'Check back soon for new flash deals and limited-time offers!',
+        'title' => 'Aucune Offre Chaude Disponible',
+        'message' => 'Revenez bientôt pour de nouvelles ventes flash et offres limitées !',
     ],
     
     // Pagination
     'pagination' => [
-        'label' => 'Deals pagination',
+        'label' => 'Pagination des offres',
     ],
     
-    // Deal types
+    // Types d'offres
     'types' => [
-        'flash_sale' => 'Flash Sale',
-        'limited_time' => 'Limited Time',
-        'doorbuster' => 'Doorbuster',
-        'clearance' => 'Clearance',
-        'holiday' => 'Holiday Deal',
-        'seasonal' => 'Seasonal Sale',
+        'flash_sale' => 'Vente Flash',
+        'limited_time' => 'Temps Limité',
+        'doorbuster' => 'Offre Éclair',
+        'clearance' => 'Liquidation',
+        'holiday' => 'Offre Fêtes',
+        'seasonal' => 'Soldes Saisonniers',
     ],
     
-    // Timer/Countdown (if added)
+    // Compte à rebours (si ajouté)
     'countdown' => [
-        'expires_in' => 'Expires in:',
-        'days' => 'days',
-        'hours' => 'hours',
+        'expires_in' => 'Expire dans :',
+        'days' => 'jours',
+        'hours' => 'heures',
         'minutes' => 'minutes',
-        'seconds' => 'seconds',
-        'expired' => 'Deal expired!',
+        'seconds' => 'secondes',
+        'expired' => 'Offre expirée !',
     ],
     
-    // Statistics (if added)
+    // Statistiques (si ajoutées)
     'stats' => [
-        'total_deals' => 'Total Deals',
-        'active_deals' => 'Active Now',
-        'ending_soon' => 'Ending Soon',
-        'avg_discount' => 'Average Discount',
+        'total_deals' => 'Total des Offres',
+        'active_deals' => 'Actives Maintenant',
+        'ending_soon' => 'Se Terminent Bientôt',
+        'avg_discount' => 'Réduction Moyenne',
     ],
     
-    // Filter and sorting (if added)
+    // Filtre et tri (si ajoutés)
     'filter' => [
-        'title' => 'Filter Deals',
-        'sort_by' => 'Sort By',
-        'newest' => 'Newest',
-        'ending_soon' => 'Ending Soon',
-        'most_popular' => 'Most Popular',
-        'highest_discount' => 'Highest Discount',
-        'category' => 'Category',
-        'store' => 'Store',
+        'title' => 'Filtrer les Offres',
+        'sort_by' => 'Trier par',
+        'newest' => 'Plus Récentes',
+        'ending_soon' => 'Se Terminent Bientôt',
+        'most_popular' => 'Plus Populaires',
+        'highest_discount' => 'Plus Haute Réduction',
+        'category' => 'Catégorie',
+        'store' => 'Boutique',
     ],
     
-    // Featured deals section (if added)
+    // Section offres en vedette (si ajoutée)
     'featured' => [
-        'title' => 'Today\'s Featured Deals',
-        'view_all' => 'View All Deals',
+        'title' => 'Offres à la Une du Jour',
+        'view_all' => 'Voir Toutes les Offres',
     ],
     
-    // Top stores with deals (if added)
+    // Top boutiques avec offres (si ajoutées)
     'top_stores' => [
-        'title' => 'Stores with Hot Deals',
-        'view_all_stores' => 'View All Stores',
+        'title' => 'Boutiques avec Offres Chaudes',
+        'view_all_stores' => 'Voir Toutes les Boutiques',
     ],
     
-    // Seasonal/holiday deals (if added)
+    // Offres saisonnières/fêtes (si ajoutées)
     'seasonal' => [
-        'black_friday' => 'Black Friday Deals',
-        'cyber_monday' => 'Cyber Monday Deals',
-        'holiday_sales' => 'Holiday Sales',
-        'summer_sales' => 'Summer Sales',
-        'winter_sales' => 'Winter Sales',
+        'black_friday' => 'Offres Black Friday',
+        'cyber_monday' => 'Promotions Cyber Monday',
+        'holiday_sales' => 'Soldes Fêtes',
+        'summer_sales' => 'Soldes d\'Été',
+        'winter_sales' => 'Soldes d\'Hiver',
     ],
     
-    // Newsletter signup (if added)
+    // Inscription à la newsletter (si ajoutée)
     'newsletter' => [
-        'title' => 'Get Hot Deal Alerts',
-        'description' => 'Subscribe to receive flash deal notifications directly in your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive hot deal alerts.',
+        'title' => 'Recevez des Alertes d\'Offres Chaudes',
+        'description' => 'Abonnez-vous pour recevoir des notifications de ventes flash directement dans votre boîte mail',
+        'subscribe' => 'S\'abonner',
+        'success' => 'Abonnement réussi ! Vous recevrez des alertes d\'offres chaudes.',
     ],
     
-    // Social sharing (if added)
+    // Partage social (si ajouté)
     'share' => [
-        'title' => 'Share this deal',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'whatsapp' => 'Share on WhatsApp',
-        'email' => 'Share via Email',
+        'title' => 'Partager cette offre',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'pinterest' => 'Épingler sur Pinterest',
+        'whatsapp' => 'Partager sur WhatsApp',
+        'email' => 'Partager par Email',
     ],
     
-    // Success rate/savings
+    // Taux de réussite/économies
     'savings' => [
-        'up_to' => 'Up to :percent% off',
-        'save_amount' => 'Save :amount',
-        'free_shipping' => 'Free Shipping',
-        'bogo' => 'Buy One Get One',
-        'extra_off' => 'Extra :percent% off',
+        'up_to' => 'Jusqu\'à :percent% de réduction',
+        'save_amount' => 'Économisez :amount',
+        'free_shipping' => 'Livraison Gratuite',
+        'bogo' => 'Achetez un - Recevez un',
+        'extra_off' => ':percent% supplémentaire de réduction',
     ],
     
-    // Deal urgency indicators
+    // Indicateurs d'urgence des offres
     'urgency' => [
-        'almost_gone' => 'Almost gone!',
-        'selling_fast' => 'Selling fast!',
-        'limited_stock' => 'Limited stock!',
-        'last_chance' => 'Last chance!',
-        'expiring_today' => 'Expiring today!',
+        'almost_gone' => 'Presque épuisé !',
+        'selling_fast' => 'Part vite !',
+        'limited_stock' => 'Stock limité !',
+        'last_chance' => 'Dernière chance !',
+        'expiring_today' => 'Expire aujourd\'hui !',
     ],
     
-    // User actions
+    // Actions utilisateur
     'actions' => [
-        'view_deal' => 'View Deal',
-        'get_coupon' => 'Get Coupon',
-        'shop_now' => 'Shop Now',
-        'save_deal' => 'Save Deal',
-        'set_reminder' => 'Set Reminder',
-        'report_expired' => 'Report Expired',
+        'view_deal' => 'Voir l\'Offre',
+        'get_coupon' => 'Obtenir le Coupon',
+        'shop_now' => 'Acheter Maintenant',
+        'save_deal' => 'Sauvegarder l\'Offre',
+        'set_reminder' => 'Programmer un Rappel',
+        'report_expired' => 'Signaler comme Expirée',
     ],
     
-    // Verification status
+    // Statut de vérification
     'verification' => [
-        'verified' => 'Verified Deal',
-        'exclusive' => 'Exclusive Deal',
-        'tested' => 'Tested :time',
-        'reported_working' => 'Reported working :time ago',
+        'verified' => 'Offre Vérifiée',
+        'exclusive' => 'Offre Exclusive',
+        'tested' => 'Testée :time',
+        'reported_working' => 'Signalée comme fonctionnelle il y a :time',
     ],
     
-    // Accessibility
+    // Accessibilité
     'accessibility' => [
-        'deal_card' => 'Deal card for :store',
-        'view_deal_button' => 'View deal for :store',
-        'more_offers_button' => 'View more offers from :store',
-        'expiration_info' => 'Expires on :date',
-        'usage_info' => 'Used :count times',
+        'deal_card' => 'Carte d\'offre pour :store',
+        'view_deal_button' => 'Voir l\'offre pour :store',
+        'more_offers_button' => 'Voir plus d\'offres de :store',
+        'expiration_info' => 'Expire le :date',
+        'usage_info' => 'Utilisée :count fois',
     ],
     
-    // Loading states
+    // États de chargement
     'loading' => [
-        'deals' => 'Loading hot deals...',
-        'please_wait' => 'Please wait while we load the latest deals',
+        'deals' => 'Chargement des offres chaudes...',
+        'please_wait' => 'Veuillez patienter pendant le chargement des dernières offres',
     ],
     
-    // Time periods for deals
+    // Périodes temporelles pour les offres
     'time_periods' => [
-        'today' => 'Today\'s Deals',
-        'this_week' => 'This Week',
-        'this_month' => 'This Month',
-        'upcoming' => 'Upcoming Deals',
-        'expired' => 'Recently Expired',
+        'today' => 'Offres du Jour',
+        'this_week' => 'Cette Semaine',
+        'this_month' => 'Ce Mois',
+        'upcoming' => 'Offres à Venir',
+        'expired' => 'Récemment Expirées',
     ],
 ];

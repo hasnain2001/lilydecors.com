@@ -1,176 +1,176 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Imprint - Legal Information | :app_name',
-        'description' => 'Legal information, company details, and contact information for :app_name. Find our imprint, disclaimer, and legal notices.',
-        'keywords' => 'imprint, legal information, company details, contact, disclaimer, copyright, :app_name',
+        'title' => 'Mentions Légales - Informations Juridiques | :app_name',
+        'description' => 'Informations juridiques, détails de la société et coordonnées de :app_name. Trouvez nos mentions légales, avertissement et notices légales.',
+        'keywords' => 'mentions légales, informations juridiques, détails société, contact, avertissement, copyright, :app_name',
         'author' => ':app_name',
     ],
     
-    // Hero section
+    // Section Héro
     'hero' => [
-        'title' => 'Legal Imprint',
-        'description' => 'Company details, legal information, and contact details',
+        'title' => 'Mentions Légales',
+        'description' => 'Détails de la société, informations juridiques et coordonnées',
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => 'Legal Information',
+        'title' => 'Informations Juridiques',
     ],
     
-    // Information sections
+    // Sections d'information
     'sections' => [
         'company' => [
-            'title' => 'Company Details',
+            'title' => 'Détails de la Société',
             'name' => 'Lilydecors Ltd.',
-            'description' => 'Your trusted partner for deals and coupons',
+            'description' => 'Votre partenaire de confiance pour offres et coupons',
         ],
         
         'address' => [
-            'title' => 'Registered Address',
+            'title' => 'Adresse Enregistrée',
             'line1' => '3000 Hoffman Dr,',
             'line2' => 'Plano, Tx USA 75074',
-            'country' => 'United States of America',
+            'country' => 'États-Unis d\'Amérique',
         ],
         
         'contact' => [
-            'title' => 'Contact Information',
+            'title' => 'Coordonnées',
             'email_label' => 'Email',
             'email_address' => 'contact@Lilydecors.com',
-            'phone_label' => 'Phone',
+            'phone_label' => 'Téléphone',
             'phone_number' => '+17473651163',
         ],
         
         'legal' => [
-            'title' => 'Legal Representation',
-            'commercial_register_label' => 'Commercial Register',
-            'commercial_register' => 'Plano County, HRB 123456',
-            'vat_label' => 'VAT Identification Number',
+            'title' => 'Représentation Légale',
+            'commercial_register_label' => 'Registre du Commerce',
+            'commercial_register' => 'Comté de Plano, HRB 123456',
+            'vat_label' => 'Numéro de TVA',
             'vat_number' => 'US123456789',
         ],
         
         'insurance' => [
-            'title' => 'Professional Indemnity Insurance',
-            'provider_label' => 'Insurance Provider',
+            'title' => 'Assurance Responsabilité Professionnelle',
+            'provider_label' => 'Assureur',
             'provider' => 'Example Insurance Co.',
-            'coverage_label' => 'Territorial Coverage',
-            'coverage' => 'Worldwide',
-            'policy_label' => 'Policy Number',
+            'coverage_label' => 'Couverture Territoriale',
+            'coverage' => 'Mondiale',
+            'policy_label' => 'Numéro de Police',
             'policy_number' => 'EI-987654321',
         ],
         
         'disclaimer' => [
-            'title' => 'Disclaimer',
-            'badge' => 'Important Legal Notice',
-            'paragraph1' => 'The information contained on this website is for general information purposes only. While we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.',
-            'paragraph2' => 'Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.',
+            'title' => 'Avertissement',
+            'badge' => 'Avis Juridique Important',
+            'paragraph1' => 'Les informations contenues sur ce site web sont fournies à titre informatif uniquement. Bien que nous nous efforcions de maintenir les informations à jour et correctes, nous ne faisons aucune déclaration ni garantie, expresse ou implicite, quant à l\'exhaustivité, l\'exactitude, la fiabilité, la pertinence ou la disponibilité des informations, produits, services ou graphiques associés contenus sur le site web à quelque fin que ce soit.',
+            'paragraph2' => 'Toute confiance que vous accordez à ces informations est donc strictement à vos propres risques. En aucun cas nous ne serons responsables de toute perte ou dommage, y compris, sans limitation, les pertes ou dommages indirects ou consécutifs, ou toute perte ou dommage découlant de la perte de données ou de bénéfices découlant de ou en relation avec l\'utilisation de ce site web.',
         ],
         
         'external_links' => [
-            'title' => 'External Links Disclaimer',
-            'paragraph1' => 'Through this website you are able to link to other websites which are not under the control of Lilydecors Ltd. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.',
-            'paragraph2' => 'Every effort is made to keep the website up and running smoothly. However, Lilydecors Ltd. takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.',
+            'title' => 'Avertissement Liens Externes',
+            'paragraph1' => 'Via ce site web, vous pouvez accéder à d\'autres sites web qui ne sont pas sous le contrôle de Lilydecors Ltd. Nous n\'avons aucun contrôle sur la nature, le contenu et la disponibilité de ces sites. L\'inclusion de tout lien n\'implique pas nécessairement une recommandation ou une approbation des opinions qui y sont exprimées.',
+            'paragraph2' => 'Tous les efforts sont faits pour maintenir le site web opérationnel et fonctionnel. Cependant, Lilydecors Ltd. n\'assume aucune responsabilité et ne sera pas responsable de l\'indisponibilité temporaire du site web due à des problèmes techniques indépendants de notre volonté.',
         ],
         
         'copyright' => [
-            'title' => 'Copyright Notice',
-            'notice' => '© :year :app_name. All rights reserved.',
-            'description' => 'All content, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of :app_name or its content suppliers and protected by international copyright laws.',
+            'title' => 'Notice de Copyright',
+            'notice' => '© :year :app_name. Tous droits réservés.',
+            'description' => 'Tout le contenu, y compris mais sans s\'y limiter, texte, graphiques, logos, icônes, images, clips audio, téléchargements numériques, compilations de données et logiciels, est la propriété de :app_name ou de ses fournisseurs de contenu et protégé par les lois internationales sur le droit d\'auteur.',
         ],
         
         'updates' => [
-            'title' => 'Updates & Changes',
-            'paragraph1' => 'We reserve the right to update or change our imprint information at any time. Any changes will be posted on this page with an updated revision date.',
-            'last_updated_label' => 'Last Updated',
-            'effective_date_label' => 'Effective Date',
-            'effective_date' => 'January 1, 2023',
+            'title' => 'Mises à Jour & Modifications',
+            'paragraph1' => 'Nous nous réservons le droit de mettre à jour ou de modifier nos mentions légales à tout moment. Toute modification sera publiée sur cette page avec une date de révision mise à jour.',
+            'last_updated_label' => 'Dernière Mise à Jour',
+            'effective_date_label' => 'Date d\'Effet',
+            'effective_date' => '1er janvier 2023',
         ],
     ],
     
-    // Back home button
+    // Bouton retour accueil
     'back_home' => [
-        'button' => 'Back to Homepage',
+        'button' => 'Retour à l\'Accueil',
     ],
     
-    // Additional legal sections (if needed)
+    // Sections juridiques supplémentaires (si nécessaire)
     'privacy' => [
-        'title' => 'Privacy Policy',
-        'description' => 'Our privacy policy explains how we collect, use, and protect your personal data.',
+        'title' => 'Politique de Confidentialité',
+        'description' => 'Notre politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles.',
     ],
     
     'terms' => [
-        'title' => 'Terms of Service',
-        'description' => 'Terms governing the use of our website and services.',
+        'title' => 'Conditions d\'Utilisation',
+        'description' => 'Conditions régissant l\'utilisation de notre site web et services.',
     ],
     
     'accessibility' => [
-        'title' => 'Accessibility Statement',
-        'description' => 'Our commitment to making our website accessible to all users.',
+        'title' => 'Déclaration d\'Accessibilité',
+        'description' => 'Notre engagement à rendre notre site web accessible à tous les utilisateurs.',
     ],
     
     'governing_law' => [
-        'title' => 'Governing Law',
-        'description' => 'This imprint and all legal notices are governed by the laws of the United States.',
+        'title' => 'Droit Applicable',
+        'description' => 'Ces mentions légales et tous les avis juridiques sont régis par les lois des États-Unis.',
     ],
     
     'dispute_resolution' => [
-        'title' => 'Dispute Resolution',
-        'description' => 'Information about how disputes are resolved.',
+        'title' => 'Règlement des Litiges',
+        'description' => 'Informations sur la résolution des litiges.',
     ],
     
     'intellectual_property' => [
-        'title' => 'Intellectual Property',
-        'description' => 'Information about trademarks, patents, and other intellectual property.',
+        'title' => 'Propriété Intellectuelle',
+        'description' => 'Informations sur les marques, brevets et autres propriétés intellectuelles.',
     ],
     
     'data_protection' => [
-        'title' => 'Data Protection',
-        'description' => 'Information about data protection and GDPR compliance.',
+        'title' => 'Protection des Données',
+        'description' => 'Informations sur la protection des données et conformité RGPD.',
     ],
     
     'social_responsibility' => [
-        'title' => 'Social Responsibility',
-        'description' => 'Our commitment to social and environmental responsibility.',
+        'title' => 'Responsabilité Sociale',
+        'description' => 'Notre engagement en matière de responsabilité sociale et environnementale.',
     ],
     
     'compliance' => [
-        'title' => 'Regulatory Compliance',
-        'description' => 'Information about our compliance with regulations and standards.',
+        'title' => 'Conformité Réglementaire',
+        'description' => 'Informations sur notre conformité aux réglementations et normes.',
     ],
     
     'trade_registry' => [
-        'title' => 'Trade Registry Information',
-        'registry_number' => 'Registry Number',
-        'registration_date' => 'Registration Date',
-        'chamber_of_commerce' => 'Chamber of Commerce',
+        'title' => 'Informations du Registre du Commerce',
+        'registry_number' => 'Numéro d\'Immatriculation',
+        'registration_date' => 'Date d\'Immatriculation',
+        'chamber_of_commerce' => 'Chambre de Commerce',
     ],
     
     'banking_details' => [
-        'title' => 'Banking Details',
-        'bank_name' => 'Bank Name',
-        'account_number' => 'Account Number',
+        'title' => 'Coordonnées Bancaires',
+        'bank_name' => 'Nom de la Banque',
+        'account_number' => 'Numéro de Compte',
         'iban' => 'IBAN',
         'swift' => 'SWIFT/BIC',
     ],
     
     'editorial_responsibility' => [
-        'title' => 'Editorial Responsibility',
-        'description' => 'Information about editorial responsibility for content.',
+        'title' => 'Responsabilité Éditoriale',
+        'description' => 'Informations sur la responsabilité éditoriale du contenu.',
     ],
     
     'hosting_provider' => [
-        'title' => 'Hosting Provider',
-        'name' => 'Provider Name',
-        'address' => 'Provider Address',
-        'contact' => 'Provider Contact',
+        'title' => 'Hébergeur',
+        'name' => 'Nom de l\'Hébergeur',
+        'address' => 'Adresse de l\'Hébergeur',
+        'contact' => 'Contact de l\'Hébergeur',
     ],
     
     'additional_contacts' => [
-        'title' => 'Additional Contacts',
-        'press_contact' => 'Press Contact',
-        'business_inquiries' => 'Business Inquiries',
-        'support' => 'Technical Support',
+        'title' => 'Contacts Supplémentaires',
+        'press_contact' => 'Contact Presse',
+        'business_inquiries' => 'Demandes Commerciales',
+        'support' => 'Support Technique',
     ],
 ];

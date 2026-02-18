@@ -7,7 +7,7 @@
                     <span class="pagination-current">{{ $paginator->firstItem() }}</span>
                     - 
                     <span class="pagination-current">{{ $paginator->lastItem() }}</span>
-                    of
+                    @lang('pagination.mobile.of')
                     <span class="pagination-total">{{ $paginator->total() }}</span>
                 </span>
             </div>
@@ -17,14 +17,14 @@
                     <li class="pagination-item-mobile disabled" aria-disabled="true">
                         <span class="pagination-link-mobile pagination-prev">
                             <i class="fas fa-chevron-left"></i>
-                            <span class="pagination-text">Previous</span>
+                            <span class="pagination-text">@lang('pagination.mobile.previous')</span>
                         </span>
                     </li>
                 @else
                     <li class="pagination-item-mobile">
                         <a class="pagination-link-mobile pagination-prev" href="{{ $paginator->previousPageUrl() }}" rel="prev">
                             <i class="fas fa-chevron-left"></i>
-                            <span class="pagination-text">Previous</span>
+                            <span class="pagination-text">@lang('pagination.mobile.previous')</span>
                         </a>
                     </li>
                 @endif
@@ -33,14 +33,14 @@
                 @if ($paginator->hasMorePages())
                     <li class="pagination-item-mobile">
                         <a class="pagination-link-mobile pagination-next" href="{{ $paginator->nextPageUrl() }}" rel="next">
-                            <span class="pagination-text">Next</span>
+                            <span class="pagination-text">@lang('pagination.mobile.next')</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
                     </li>
                 @else
                     <li class="pagination-item-mobile disabled" aria-disabled="true">
                         <span class="pagination-link-mobile pagination-next">
-                            <span class="pagination-text">Next</span>
+                            <span class="pagination-text">@lang('pagination.mobile.next')</span>
                             <i class="fas fa-chevron-right"></i>
                         </span>
                     </li>
@@ -55,13 +55,13 @@
                 <div class="pagination-meta">
                     <span class="pagination-meta-item">
                         <i class="fas fa-list-ol"></i>
-                        <span>Showing</span>
+                        <span>@lang('pagination.desktop.showing')</span>
                         <span class="pagination-current">{{ $paginator->firstItem() }}</span>
-                        <span>to</span>
+                        <span>@lang('pagination.desktop.to')</span>
                         <span class="pagination-current">{{ $paginator->lastItem() }}</span>
-                        <span>of</span>
+                        <span>@lang('pagination.desktop.of')</span>
                         <span class="pagination-total">{{ $paginator->total() }}</span>
-                        <span>results</span>
+                        <span>@lang('pagination.desktop.results')</span>
                     </span>
                 </div>
             </div>
@@ -74,14 +74,14 @@
                         <li class="pagination-item disabled" aria-disabled="true" aria-label="@lang('pagination.previous')">
                             <span class="pagination-link pagination-nav pagination-prev" aria-hidden="true">
                                 <i class="fas fa-chevron-left"></i>
-                                <span class="pagination-nav-text">Previous</span>
+                                <span class="pagination-nav-text">@lang('pagination.desktop.previous')</span>
                             </span>
                         </li>
                     @else
                         <li class="pagination-item">
                             <a class="pagination-link pagination-nav pagination-prev" href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')">
                                 <i class="fas fa-chevron-left"></i>
-                                <span class="pagination-nav-text">Previous</span>
+                                <span class="pagination-nav-text">@lang('pagination.desktop.previous')</span>
                             </a>
                         </li>
                     @endif
@@ -121,14 +121,14 @@
                     @if ($paginator->hasMorePages())
                         <li class="pagination-item">
                             <a class="pagination-link pagination-nav pagination-next" href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">
-                                <span class="pagination-nav-text">Next</span>
+                                <span class="pagination-nav-text">@lang('pagination.desktop.next')</span>
                                 <i class="fas fa-chevron-right"></i>
                             </a>
                         </li>
                     @else
                         <li class="pagination-item disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
                             <span class="pagination-link pagination-nav pagination-next" aria-hidden="true">
-                                <span class="pagination-nav-text">Next</span>
+                                <span class="pagination-nav-text">@lang('pagination.desktop.next')</span>
                                 <i class="fas fa-chevron-right"></i>
                             </span>
                         </li>

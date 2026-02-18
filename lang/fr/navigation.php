@@ -1,30 +1,29 @@
 <?php
- return [
-    // nav //
-    'home' => 'Home',
-    'contact' => 'Contact Us',
-    'blogs' => 'blogs',
-    'stores' =>'stores',
-    'cateories' => 'categories',
-    'Coupons' => 'Coupons',
-    'deal' => 'deal',
-    'Popular-Categories' =>'Popular Categories',
-    'Featured' => 'Featured',
-    'New-Arrivals' => 'New Arrivals',
-    'Special-Offers' => 'Special Offers',
-    'Dashboard' => 'Dashboard',
-    'Login' => 'Login',
-    'register' =>'Register',
-   'Search here' => 'Search stores for coupons, deals...',
+return [
+    // Navigation //
+    'home' => 'Accueil',
+    'contact' => 'Contactez-nous',
+    'blogs' => 'Blogs',
+    'stores' => 'Boutiques',
+    'categories' => 'Catégories',
+    'coupons' => 'Coupons',
+    'deal' => 'Bonnes Affaires',
+    'popular-categories' => 'Catégories Populaires',
+    'featured' => 'À la Une',
+    'new-arrivals' => 'Nouveautés',
+    'special-offers' => 'Offres Spéciales',
+    'dashboard' => 'Tableau de Bord',
+    'login' => 'Connexion',
+    'register' => 'Inscription',
+    'search here' => 'Rechercher des boutiques pour coupons, offres...',
 
-    //footer//
-   'support'=> 'support',
-    'about'=> 'about',
-    'Privacy Policy'=>'Privacy Policy',
-    'Terms of Service' => 'Terms of Service',
-    'Imprint' => "Imprint",
-    'Quick Links' => 'Quick Links',
-    'Company Name. All rights reserved' => 'streamcoupon.com. All rights reserved',
-    'about-f' =>'Discover top coupons, exclusive deals, and discounts from your favorite online stores.',
-
-  ];
+    // Pied de page //
+    'support' => 'Support',
+    'about' => 'À Propos',
+    'privacy policy' => 'Politique de Confidentialité',
+    'terms of service' => 'Conditions d\'Utilisation',
+    'imprint' => 'Mentions Légales',
+    'quick links' => 'Liens Rapides',
+    'company name. all rights reserved' => 'streamcoupon.com. Tous droits réservés.',
+    'about-f' => 'Découvrez les meilleurs coupons, offres exclusives et réductions de vos boutiques en ligne préférées.',
+];

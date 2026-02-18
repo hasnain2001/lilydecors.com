@@ -1,97 +1,97 @@
 <?php
 return [
-    'title' => 'Affiliate Disclosure | ' . config('app.name') . ' - Home Decor & Design Inspiration',
-    'description' => 'Learn about our affiliate disclosure policy. We believe in transparency about how we earn commissions through affiliate links on our home decor blog.',
-    'keywords' => 'affiliate disclosure, affiliate links, commissions, transparency, policy, home decor blog',
+    'title' => 'Divulgation des Affiliation | ' . config('app.name') . ' - Inspiration Décoration & Design d\'Intérieur',
+    'description' => 'Apprenez-en plus sur notre politique de divulgation des affiliations. Nous croyons en la transparence concernant la manière dont nous gagnons des commissions via les liens d\'affiliation sur notre blog de décoration.',
+    'keywords' => 'divulgation affiliation, liens affiliés, commissions, transparence, politique, blog décoration intérieur',
     
-    // Breadcrumb
-    'breadcrumb' => 'Affiliate Disclosure',
+    // Fil d'Ariane
+    'breadcrumb' => 'Divulgation Affiliation',
     
-    // Hero Section
+    // Section Héro
     'hero' => [
-        'title' => 'Affiliate Disclosure',
-        'subtitle' => 'Transparency and trust are the foundation of our relationship with you. Here\'s everything you need to know about how we operate.',
+        'title' => 'Divulgation des Liens d\'Affiliation',
+        'subtitle' => 'La transparence et la confiance sont les fondements de notre relation avec vous. Voici tout ce que vous devez savoir sur notre fonctionnement.',
     ],
     
-    // Transparency Section
+    // Section Transparence
     'transparency' => [
-        'title' => 'Our Transparency Promise',
-        'intro' => 'At :app_name, we believe in complete transparency with our readers. This website participates in various affiliate marketing programs, which means we may earn commissions on purchases made through our links to retailer sites.',
+        'title' => 'Notre Engagement de Transparence',
+        'intro' => 'Chez :app_name, nous croyons en une transparence totale avec nos lecteurs. Ce site participe à divers programmes de marketing d\'affiliation, ce qui signifie que nous pouvons gagner des commissions sur les achats effectués via nos liens vers les sites des détaillants.',
         'commitment' => [
-            'title' => 'Our Commitment',
-            'description' => 'We only recommend products and services that we genuinely believe will add value to your home decor journey. Every product featured on :app_name goes through our rigorous review process before being shared with you.',
+            'title' => 'Notre Engagement',
+            'description' => 'Nous ne recommandons que les produits et services auxquels nous croyons sincèrement qu\'ils apporteront de la valeur à votre parcours déco. Chaque produit présenté sur :app_name passe par notre processus de revue rigoureux avant d\'être partagé avec vous.',
         ],
         'no_cost' => [
-            'title' => 'No Extra Cost to You',
-            'description' => 'When you use our affiliate links to make a purchase, the price you pay remains exactly the same. The commission we earn comes directly from the retailer as a thank-you for referring you.',
+            'title' => 'Aucun Coût Supplémentaire pour Vous',
+            'description' => 'Lorsque vous utilisez nos liens d\'affiliation pour effectuer un achat, le prix que vous payez reste exactement le même. La commission que nous gagnons provient directement du détaillant en remerciement de vous avoir référé.',
         ],
     ],
     
-    // Important Notice
+    // Avis Important
     'important' => [
-        'title' => 'Important Notice',
-        'description' => 'All content on :app_name, including product recommendations and reviews, is created based on our honest opinions and experiences. Affiliate relationships do not influence our editorial content – if we don\'t love it, we don\'t recommend it.',
+        'title' => 'Avis Important',
+        'description' => 'Tout le contenu sur :app_name, y compris les recommandations et avis de produits, est créé sur la base de nos opinions honnêtes et de nos expériences. Les relations d\'affiliation n\'influencent pas notre contenu éditorial - si nous ne l\'aimons pas, nous ne le recommandons pas.',
     ],
     
-    // How It Works Section
+    // Section Fonctionnement
     'how_it_works' => [
-        'title' => 'How Affiliate Links Work',
-        'description' => 'When you click on an affiliate link on our site, a small tracking cookie is placed in your browser. This cookie tells the retailer that you came from :app_name, and if you make a purchase within their specified time frame (usually 24-48 hours), we earn a small commission.',
+        'title' => 'Comment Fonctionnent les Liens d\'Affiliation',
+        'description' => 'Lorsque vous cliquez sur un lien d\'affiliation sur notre site, un petit cookie de suivi est placé dans votre navigateur. Ce cookie indique au détaillant que vous venez de :app_name, et si vous effectuez un achat dans leur délai spécifié (généralement 24-48 heures), nous gagnons une petite commission.',
         'tracking_links' => [
-            'title' => 'Tracking Links',
-            'description' => 'Special links that track referrals without compromising your privacy or security',
+            'title' => 'Liens de Suivi',
+            'description' => 'Des liens spéciaux qui suivent les références sans compromettre votre vie privée ou votre sécurité',
         ],
         'session_cookies' => [
-            'title' => 'Session Cookies',
-            'description' => 'Temporary tracking that doesn\'t store personal information',
+            'title' => 'Cookies de Session',
+            'description' => 'Un suivi temporaire qui ne stocke pas d\'informations personnelles',
         ],
         'commission_earned' => [
-            'title' => 'Commission Earned',
-            'description' => 'Small percentage from retailers, never added to your purchase price',
+            'title' => 'Commission Gagnée',
+            'description' => 'Un petit pourcentage des détaillants, jamais ajouté à votre prix d\'achat',
         ],
     ],
     
-    // Principles Section
+    // Section Principes
     'principles' => [
-        'title' => 'Our Guiding Principles',
+        'title' => 'Nos Principes Directeurs',
         'honesty' => [
-            'title' => 'Honesty First',
-            'description' => 'We provide honest reviews and only recommend products we truly believe in',
+            'title' => 'L\'Honnêteté d\'Abord',
+            'description' => 'Nous fournissons des avis honnêtes et ne recommandons que les produits auxquels nous croyons vraiment',
         ],
         'transparency' => [
-            'title' => 'Full Transparency',
-            'description' => 'Clear disclosure of all affiliate relationships and potential commissions',
+            'title' => 'Transparence Totale',
+            'description' => 'Divulgation claire de toutes les relations d\'affiliation et des commissions potentielles',
         ],
         'reader_first' => [
-            'title' => 'Reader-First Approach',
-            'description' => 'Your interests and experience always come before potential earnings',
+            'title' => 'Approche "Lecteur d\'Abord"',
+            'description' => 'Vos intérêts et votre expérience passent toujours avant les gains potentiels',
         ],
     ],
     
-    // FAQ Section
+    // Section FAQ
     'faq' => [
-        'title' => 'Frequently Asked Questions',
+        'title' => 'Questions Fréquemment Posées',
         'question1' => [
-            'question' => 'Does using affiliate links cost me more?',
-            'answer' => 'Absolutely not! The price you pay remains exactly the same whether you use our affiliate link or go directly to the retailer. The commission comes from the retailer\'s marketing budget, not from your purchase.',
+            'question' => 'L\'utilisation des liens d\'affiliation me coûte-t-elle plus cher ?',
+            'answer' => 'Absolument pas ! Le prix que vous payez reste exactement le même, que vous utilisiez notre lien d\'affiliation ou que vous alliez directement chez le détaillant. La commission provient du budget marketing du détaillant, pas de votre achat.',
         ],
         'question2' => [
-            'question' => 'Do affiliate relationships influence your reviews?',
-            'answer' => 'No. We maintain strict editorial independence. If we don\'t genuinely love a product, we won\'t recommend it, regardless of potential commissions. Our reputation and your trust are far more valuable than any affiliate commission.',
+            'question' => 'Les relations d\'affiliation influencent-elles vos avis ?',
+            'answer' => 'Non. Nous maintenons une stricte indépendance éditoriale. Si nous n\'aimons pas sincèrement un produit, nous ne le recommanderons pas, quelles que soient les commissions potentielles. Notre réputation et votre confiance valent bien plus que toute commission d\'affiliation.',
         ],
         'question3' => [
-            'question' => 'How do affiliate commissions support :app_name?',
-            'answer' => 'Affiliate commissions help us maintain and improve :app_name. They cover hosting costs, content creation, product testing, and allow us to continue providing free, high-quality home decor content to our readers.',
+            'question' => 'Comment les commissions d\'affiliation soutiennent-elles :app_name ?',
+            'answer' => 'Les commissions d\'affiliation nous aident à maintenir et améliorer :app_name. Elles couvrent les frais d\'hébergement, la création de contenu, les tests de produits et nous permettent de continuer à fournir gratuitement du contenu de décoration de qualité à nos lecteurs.',
         ],
         'question4' => [
-            'question' => 'Are all links on your site affiliate links?',
-            'answer' => 'No. We include a mix of affiliate and non-affiliate links. We always strive to provide the most helpful resources, regardless of whether they\'re affiliate links or not.',
+            'question' => 'Tous les liens sur votre site sont-ils des liens d\'affiliation ?',
+            'answer' => 'Non. Nous incluons un mélange de liens affiliés et non affiliés. Nous nous efforçons toujours de fournir les ressources les plus utiles, qu\'il s\'agisse de liens d\'affiliation ou non.',
         ],
     ],
     
-    // CTA Section
+    // Section CTA
     'cta' => [
-        'title' => 'Your Trust Matters to Us',
-        'description' => 'We\'re committed to maintaining the highest standards of transparency and integrity. If you have any questions about our affiliate relationships, we\'re here to help.',
+        'title' => 'Votre Confiance Compte pour Nous',
+        'description' => 'Nous nous engageons à maintenir les normes les plus élevées de transparence et d\'intégrité. Si vous avez des questions concernant nos relations d\'affiliation, nous sommes là pour vous aider.',
     ],
 ];

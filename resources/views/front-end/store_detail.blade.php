@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('title')
     @if ($store->title)
-    {{ $store->title }} in {{ date('Y') }}
+        {{ $store->title }} {{ config('app.name') }}
     @else
-    {{ $store->name }} - @lang('common.coupons') & @lang('common.discount_codes') {{ date('Y') }} - {{ config('app.name') }}
+        {{ $store->name }} {{ trans('common.coupon_codes') }} & {{ trans('common.promo_codes') }} {{ date('Y') }} | {{ config('app.name') }}
     @endif
 @endsection
 
@@ -11,20 +11,46 @@
     @if ($store->meta_description)
         {{ $store->meta_description }}
     @else
-        @lang('common.save_money_at') {{ $store->name }} @lang('common.with_exclusive_promo_codes')
+        {{ trans('common.save_money_at', ['store' => $store->name]) }} {{ date('Y') }}? ✅ {{ trans('common.find_the_latest_verified') }} {{ $store->name }} {{ trans('common.promo_codes') }}, {{ trans('common.coupons') }} & {{ trans('common.discount_deals') }}. {{ trans('common.save_big_today') }}!
     @endif
 @endsection
 
 @section('keywords')
     @if ($store->meta_keyword)
-        {{ $store->meta_keyword }}, {{ $store->name }} @lang('common.discounts'), {{ $store->name }} @lang('common.promo_codes')
+        {{ $store->meta_keyword }}, {{ $store->name }} {{ trans('common.discounts') }}, {{ $store->name }} {{ trans('common.promo_codes') }}, {{ $store->name }} {{ trans('common.coupons') }} {{ date('Y') }}
     @else
-        {{ $store->name }}, {{ $store->name }} @lang('common.coupons'), {{ $store->name }} @lang('common.vouchers'), @lang('common.discount_codes'), @lang('common.promo_offers'), @lang('common.save_money'), @lang('common.online_deals')
+        {{ $store->name }}, {{ $store->name }} {{ trans('common.coupons') }}, {{ $store->name }} {{ trans('common.promo_codes') }}, {{ $store->name }} {{ trans('common.vouchers') }}, {{ $store->name }} {{ trans('common.discount_codes') }}, {{ $store->name }} {{ trans('common.deals') }} {{ date('Y') }}, {{ trans('common.save_money') }} {{ $store->name }}, {{ trans('common.verified_coupons') }} {{ $store->name }}
     @endif
 @endsection
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/store-detail.css') }}">
+<style> 
+     .blog-content {
+        color: var(--text-primary);
+        line-height: 1.8;
+        font-size: 1.05rem;
+    }
+
+    .blog-content h2, .blog-content h3, .blog-content h4 {
+        color: var(--accent-navy);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .blog-content p {
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 2rem 0;
+        box-shadow: var(--shadow-light);
+    }
+</style>
 @endpush
 
 @section('content')
@@ -148,7 +174,7 @@
                             <span class="text-muted small">(4.8/5) • {{ $totalCount }} @lang('common.offers')</span>
                         </div>
                         <p class=" mb-0 d-none d-md-block">
-                            {{ $store->description ? Str::limit($store->description, 150) : '@lang("common.discover_amazing_deals_at") ' . $store->name . '. @lang("common.save_big_with_exclusive_coupons")' }}
+                          {{ $store->description ? Str::limit($store->description, 150) : __('common.discover_amazing_deals_at') . ' ' . $store->name . '. ' . __('common.save_big_with_exclusive_coupons') }}
                         </p>
                         <a href="{{ $store->destination_url }}" target="_blank" class="btn btn-golden btn-sm">
                             <i class="fas fa-external-link-alt me-2"></i>@lang('common.visit_store')
@@ -345,7 +371,7 @@
                                             style="max-height: 200px; object-fit: cover;">
                                         @endif
                                         <div class="blog-content small">
-                                            {!! Str::limit(strip_tags($blog->content), 150) !!}
+                                            {!! $blog->content !!}
                                         </div>
                                         <a href="{{ route('blog.details', ['slug' => Str::slug($blog->slug)]) }}" class="btn btn-link text-primary p-0 mt-2 small">
                                             @lang('common.read_more') <i class="fas fa-arrow-right ms-1"></i>
@@ -446,7 +472,7 @@
                                         <i class="fas fa-info-circle fa-lg text-primary"></i>
                                     </div>
                                     <div>
-                                        <h5 class="mb-1 fw-bold text-dark">@lang('common.about') {{ $store->name }}</h5>
+                                        <h5 class="mb-1 fw-bold text-white">@lang('common.about') {{ $store->name }}</h5>
                                         <p class="text-muted small mb-0">@lang('common.store_details_info')</p>
                                     </div>
                                 </div>

@@ -42,7 +42,7 @@ class SearchController extends Controller
 
         if ($store) {
             // If a single store is found, redirect to its details page
-            return redirect()->route('admin.store.show', ['slug' => Str::slug($store->slug)]);
+            return redirect()->route('admin.store.show', $store->id);
         }
 
         return view('admin.stores.search_results', ['stores' => $stores]);

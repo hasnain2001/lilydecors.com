@@ -137,7 +137,7 @@
                                         loading="lazy"
                                         onerror="this.src='{{ asset('assets/img/no-image-found.png') }}'">
                                 </div>
-                                <h5 class="store-title">{{ $store->name ?: @lang('category-detail.store_default_name') }}</h5>
+                                <h5 class="store-title">{{ $store->name  }}</h5>
                             </div>
                         </a>
                     @endforeach

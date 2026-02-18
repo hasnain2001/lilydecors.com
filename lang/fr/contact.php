@@ -1,159 +1,159 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Contact Us | ' . config('app.name'),
-        'description' => 'Get in touch with us for any inquiries or support.',
-        'keywords' => 'contact, support, inquiries, help, customer service',
+        'title' => 'Nous Contacter | ' . config('app.name'),
+        'description' => 'Contactez-nous pour toute question ou demande de support.',
+        'keywords' => 'contact, support, demandes, aide, service client',
         'author' => config('app.name'),
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => 'Contact Us',
-        'subtitle' => 'Get in touch with us. We\'re here to help with any questions or concerns you may have.',
+        'title' => 'Nous Contacter',
+        'subtitle' => 'Contactez-nous. Nous sommes là pour vous aider avec toutes vos questions ou préoccupations.',
     ],
     
-    // Form section
+    // Section Formulaire
     'form' => [
-        'description' => 'Fill out the form below and we\'ll get back to you as soon as possible.',
+        'description' => 'Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.',
         'fields' => [
             'name' => [
-                'label' => 'Name',
-                'placeholder' => 'Your full name',
+                'label' => 'Nom',
+                'placeholder' => 'Votre nom complet',
             ],
             'email' => [
                 'label' => 'Email',
-                'placeholder' => 'your.email@example.com',
+                'placeholder' => 'votre.email@exemple.com',
             ],
             'subject' => [
-                'label' => 'Subject',
-                'placeholder' => 'What is this regarding?',
+                'label' => 'Sujet',
+                'placeholder' => 'Concernant quelle question ?',
             ],
             'message' => [
                 'label' => 'Message',
-                'placeholder' => 'Your message here...',
+                'placeholder' => 'Votre message ici...',
             ],
         ],
-        'submit' => 'Send Message',
-        'sending' => 'Sending...',
-        'required_fields' => 'Fields marked with * are required',
+        'submit' => 'Envoyer le Message',
+        'sending' => 'Envoi en cours...',
+        'required_fields' => 'Les champs marqués d\'un * sont obligatoires',
     ],
     
-    // Contact information
+    // Informations de contact
     'info' => [
         'location' => [
-            'title' => 'Our Location',
-            'address_line1' => '123 Main Street',
-            'address_line2' => 'Suite 100',
-            'city_state' => 'City, State',
+            'title' => 'Notre Adresse',
+            'address_line1' => '123 Rue Principale',
+            'address_line2' => 'Bureau 100',
+            'city_state' => 'Ville, Région',
             'zip_code' => '12345',
-            'country' => 'United States',
+            'country' => 'France',
         ],
         'phone' => [
-            'title' => 'Call Us',
-            'primary' => '+1 (123) 456-7890',
-            'secondary' => '+1 (987) 654-3210',
-            'hours' => 'Mon-Fri: 9AM-6PM EST',
+            'title' => 'Appelez-nous',
+            'primary' => '+33 (0)1 23 45 67 89',
+            'secondary' => '+33 (0)9 87 65 43 21',
+            'hours' => 'Lun-Ven : 9h-18h heure française',
         ],
         'email' => [
-            'title' => 'Email Us',
-            'contact' => 'contact@' . config('app.domain', 'example.com'),
-            'support' => 'support@' . config('app.domain', 'example.com'),
-            'response_time' => 'We typically respond within 24 hours',
+            'title' => 'Envoyez-nous un Email',
+            'contact' => 'contact@' . config('app.domain', 'exemple.com'),
+            'support' => 'support@' . config('app.domain', 'exemple.com'),
+            'response_time' => 'Nous répondons généralement sous 24h',
         ],
     ],
     
-    // Messages and alerts
+    // Messages et alertes
     'messages' => [
-        'success' => 'Thank you! Your message has been sent successfully.',
-        'error_title' => 'Please fix the following errors:',
-        'validation_error' => 'There were some errors with your submission.',
-        'captcha_error' => 'Please complete the security check.',
-        'server_error' => 'Something went wrong. Please try again later.',
+        'success' => 'Merci ! Votre message a été envoyé avec succès.',
+        'error_title' => 'Veuillez corriger les erreurs suivantes :',
+        'validation_error' => 'Il y a eu des erreurs dans votre envoi.',
+        'captcha_error' => 'Veuillez compléter la vérification de sécurité.',
+        'server_error' => 'Une erreur est survenue. Veuillez réessayer plus tard.',
     ],
     
-    // Additional sections (if added)
+    // Sections supplémentaires (si ajoutées)
     'faq' => [
-        'title' => 'Frequently Asked Questions',
-        'question1' => 'How long does it take to get a response?',
-        'answer1' => 'We typically respond within 24 hours during business days.',
-        'question2' => 'What information should I include?',
-        'answer2' => 'Please include your contact information and detailed description of your inquiry.',
-        'question3' => 'Do you offer phone support?',
-        'answer3' => 'Yes, you can reach us at the phone number listed above.',
+        'title' => 'Questions Fréquemment Posées',
+        'question1' => 'Combien de temps faut-il pour obtenir une réponse ?',
+        'answer1' => 'Nous répondons généralement sous 24h durant les jours ouvrés.',
+        'question2' => 'Quelles informations devrais-je inclure ?',
+        'answer2' => 'Veuillez inclure vos coordonnées et une description détaillée de votre demande.',
+        'question3' => 'Offrez-vous un support téléphonique ?',
+        'answer3' => 'Oui, vous pouvez nous joindre au numéro ci-dessus.',
     ],
     
-    // Business hours
+    // Horaires d'ouverture
     'business_hours' => [
-        'title' => 'Business Hours',
-        'weekdays' => 'Monday - Friday: 9:00 AM - 6:00 PM EST',
-        'weekends' => 'Saturday: 10:00 AM - 4:00 PM EST',
-        'closed' => 'Sunday: Closed',
-        'holidays' => 'Holidays: Closed',
+        'title' => 'Horaires d\'Ouverture',
+        'weekdays' => 'Lundi - Vendredi : 9h00 - 18h00 heure française',
+        'weekends' => 'Samedi : 10h00 - 16h00 heure française',
+        'closed' => 'Dimanche : Fermé',
+        'holidays' => 'Jours fériés : Fermé',
     ],
     
-    // Support types
+    // Types de support
     'support_types' => [
-        'general' => 'General Inquiries',
-        'technical' => 'Technical Support',
-        'billing' => 'Billing Questions',
-        'partnership' => 'Partnership Opportunities',
-        'feedback' => 'Feedback & Suggestions',
+        'general' => 'Demandes Générales',
+        'technical' => 'Support Technique',
+        'billing' => 'Questions de Facturation',
+        'partnership' => 'Opportunités de Partenariat',
+        'feedback' => 'Retours & Suggestions',
     ],
     
-    // Social media (if you add social links)
+    // Réseaux sociaux (si vous ajoutez des liens sociaux)
     'social' => [
-        'title' => 'Connect With Us',
-        'follow_us' => 'Follow us on social media',
+        'title' => 'Connectez-vous avec Nous',
+        'follow_us' => 'Suivez-nous sur les réseaux sociaux',
         'facebook' => 'Facebook',
         'twitter' => 'Twitter',
         'instagram' => 'Instagram',
         'linkedin' => 'LinkedIn',
     ],
     
-    // Map/address details
+    // Détails carte/adresse
     'map' => [
-        'title' => 'Find Us',
-        'directions' => 'Get Directions',
-        'open_in_maps' => 'Open in Google Maps',
-        'parking' => 'Parking Information',
-        'public_transport' => 'Public Transport',
+        'title' => 'Nous Trouver',
+        'directions' => 'Obtenir l\'Itinéraire',
+        'open_in_maps' => 'Ouvrir dans Google Maps',
+        'parking' => 'Informations de Stationnement',
+        'public_transport' => 'Transports en Commun',
     ],
     
-    // Privacy and data
+    // Confidentialité et données
     'privacy' => [
-        'title' => 'Privacy & Data',
-        'description' => 'Your information is secure and will only be used to respond to your inquiry.',
-        'gdpr_compliant' => 'GDPR Compliant',
-        'no_spam' => 'We don\'t spam or share your information',
+        'title' => 'Confidentialité & Données',
+        'description' => 'Vos informations sont sécurisées et seront uniquement utilisées pour répondre à votre demande.',
+        'gdpr_compliant' => 'Conforme au RGPD',
+        'no_spam' => 'Nous n\'envoyons pas de spam et ne partageons pas vos informations',
     ],
     
-    // Response time
+    // Délai de réponse
     'response_time' => [
-        'title' => 'Expected Response Time',
-        'instant' => 'Immediate for urgent matters',
-        'within_24h' => 'Within 24 hours for general inquiries',
-        'within_48h' => 'Within 48 hours for complex issues',
-        'emergency' => 'For emergencies, call the number above',
+        'title' => 'Délai de Réponse Prévu',
+        'instant' => 'Immédiat pour les urgences',
+        'within_24h' => 'Sous 24h pour les demandes générales',
+        'within_48h' => 'Sous 48h pour les problèmes complexes',
+        'emergency' => 'Pour les urgences, appelez le numéro ci-dessus',
     ],
     
-    // Form validation messages
+    // Messages de validation du formulaire
     'validation' => [
-        'name_required' => 'Please enter your name',
-        'email_required' => 'Please enter your email address',
-        'email_invalid' => 'Please enter a valid email address',
-        'message_required' => 'Please enter your message',
-        'message_min' => 'Message must be at least 10 characters',
-        'message_max' => 'Message cannot exceed 2000 characters',
+        'name_required' => 'Veuillez entrer votre nom',
+        'email_required' => 'Veuillez entrer votre adresse email',
+        'email_invalid' => 'Veuillez entrer une adresse email valide',
+        'message_required' => 'Veuillez entrer votre message',
+        'message_min' => 'Le message doit contenir au moins 10 caractères',
+        'message_max' => 'Le message ne peut pas dépasser 2000 caractères',
     ],
     
-    // Accessibility
+    // Accessibilité
     'accessibility' => [
-        'form_label' => 'Contact Form',
-        'required_indicator' => 'Required field',
-        'success_announcement' => 'Your message has been sent successfully',
-        'error_announcement' => 'There were errors in your submission',
+        'form_label' => 'Formulaire de Contact',
+        'required_indicator' => 'Champ obligatoire',
+        'success_announcement' => 'Votre message a été envoyé avec succès',
+        'error_announcement' => 'Il y a eu des erreurs dans votre envoi',
     ],
 ];

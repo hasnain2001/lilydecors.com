@@ -1,136 +1,136 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
         'title' => [
-            'custom' => ':title | :year Coupons, Deals & Offers',
-            'default' => ':name | :year Deals, Offers & Promo Codes',
+            'custom' => ':title | Codes Promo, Offres & Bonnes Affaires :year',
+            'default' => ':name | Offres, Promotions & Codes Promo :year',
         ],
         'description' => [
-            'default' => 'Find the best :name deals and verified discount codes for :year. Save money with exclusive :lower_name coupons, vouchers, and promo offers updated daily.',
+            'default' => 'Trouvez les meilleures offres :name et des codes de réduction vérifiés pour :year. Économisez avec des coupons :lower_name exclusifs, des bons d\'achat et des offres promo mis à jour quotidiennement.',
         ],
         'keywords' => [
-            'default' => ':name, :name coupons, :name promo codes, :name vouchers, discount offers, :name deals, save money online',
+            'default' => ':name, coupons :name, codes promo :name, bons d\'achat :name, offres de réduction, bonnes affaires :name, économiser en ligne',
         ],
     ],
     
-    // Statistics badges
+    // Badges statistiques
     'stats' => [
-        'blogs_available' => ':count Blogs Available',
-        'stores_available' => ':count Stores Available',
+        'blogs_available' => ':count Articles Disponibles',
+        'stores_available' => ':count Boutiques Disponibles',
     ],
     
-    // Total counts
+    // Totaux
     'total' => [
-        'blogs' => 'Total Blogs',
-        'stores' => 'Total Stores',
+        'blogs' => 'Total Articles',
+        'stores' => 'Total Boutiques',
     ],
     
-    // Blog section
+    // Section Blog
     'blog_section' => [
-        'title' => 'Shopping Hacks & Savings Tips & Tricks',
+        'title' => 'Astuces Shopping & Conseils d\'Économies',
     ],
     
-    // Stores section
+    // Section Boutiques
     'stores_section' => [
-        'title' => ':name Stores & Brands',
+        'title' => 'Boutiques & Marques :name',
     ],
     
     // Pagination
     'pagination' => [
-        'blogs_label' => 'Blogs pagination',
-        'stores_label' => 'Stores pagination',
+        'blogs_label' => 'Pagination des articles',
+        'stores_label' => 'Pagination des boutiques',
     ],
     
-    // Empty states
+    // États vides
     'empty_stores' => [
-        'title' => 'No stores found in this category! Explore new stores',
-        'explore_link' => 'Explore All Stores',
+        'title' => 'Aucune boutique trouvée dans cette catégorie ! Découvrez de nouvelles boutiques',
+        'explore_link' => 'Explorer Toutes les Boutiques',
     ],
     
-    // Store default values
-    'store_default_name' => 'Store Name Not Available',
+    // Valeurs par défaut boutique
+    'store_default_name' => 'Nom de Boutique Non Disponible',
     
-    // Related content
+    // Contenu associé
     'related_content' => [
-        'blogs_title' => 'Related Blog Posts',
-        'stores_title' => 'Related Stores',
-        'no_blogs_found' => 'No blog posts found in this category',
-        'no_stores_found' => 'No stores found in this category',
+        'blogs_title' => 'Articles de Blog Associés',
+        'stores_title' => 'Boutiques Associées',
+        'no_blogs_found' => 'Aucun article de blog trouvé dans cette catégorie',
+        'no_stores_found' => 'Aucune boutique trouvée dans cette catégorie',
     ],
     
-    // Filter options (if you add filtering)
+    // Options de filtre (si vous ajoutez un filtrage)
     'filter' => [
-        'sort_by' => 'Sort By',
-        'popularity' => 'Popularity',
-        'newest' => 'Newest',
-        'alphabetical' => 'Alphabetical',
-        'rating' => 'Rating',
-        'discount' => 'Highest Discount',
+        'sort_by' => 'Trier par',
+        'popularity' => 'Popularité',
+        'newest' => 'Plus récentes',
+        'alphabetical' => 'Alphabétique',
+        'rating' => 'Note',
+        'discount' => 'Réduction la plus élevée',
     ],
     
-    // Store features (if you add badges/icons)
+    // Fonctionnalités boutique (si vous ajoutez des badges/icônes)
     'features' => [
-        'top_store' => 'Top Store',
-        'verified' => 'Verified',
-        'exclusive' => 'Exclusive Offer',
-        'limited_time' => 'Limited Time',
-        'free_shipping' => 'Free Shipping',
+        'top_store' => 'Boutique Top',
+        'verified' => 'Vérifiée',
+        'exclusive' => 'Offre Exclusive',
+        'limited_time' => 'Temps Limitée',
+        'free_shipping' => 'Livraison Gratuite',
     ],
     
-    // Coupon statistics (if you add coupon counts)
+    // Statistiques coupons (si vous ajoutez des compteurs de coupons)
     'coupon_stats' => [
-        'active_coupons' => ':count Active Coupons',
-        'verified_offers' => ':count Verified Offers',
-        'success_rate' => ':rate% Success Rate',
-        'last_updated' => 'Updated :time ago',
+        'active_coupons' => ':count Coupons Actifs',
+        'verified_offers' => ':count Offres Vérifiées',
+        'success_rate' => 'Taux de Réussite :rate%',
+        'last_updated' => 'Mis à jour il y a :time',
     ],
     
-    // Newsletter (if you add it)
+    // Newsletter (si vous l'ajoutez)
     'newsletter' => [
-        'title' => 'Get :name Deals in Your Inbox',
-        'description' => 'Subscribe to receive exclusive :name coupons and deals',
-        'subscribe' => 'Subscribe',
-        'success' => 'Subscribed successfully! Check your email.',
+        'title' => 'Recevez les Offres :name par Email',
+        'description' => 'Abonnez-vous pour recevoir des coupons et offres exclusifs :name',
+        'subscribe' => 'S\'abonner',
+        'success' => 'Abonnement réussi ! Vérifiez vos emails.',
     ],
     
-    // Social sharing (if you add it)
+    // Partage social (si vous l'ajoutez)
     'share' => [
-        'title' => 'Share this category',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Partager cette catégorie',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'pinterest' => 'Épingler sur Pinterest',
+        'email' => 'Partager par Email',
     ],
     
-    // Breadcrumb (if you need separate from common)
+    // Fil d'Ariane (si vous avez besoin d'une version séparée du commun)
     'breadcrumb' => [
-        'current' => ':name Category',
+        'current' => 'Catégorie :name',
     ],
     
-    // Seasonal/holiday banners (if you add them)
+    // Bannières saisonnières/fêtes (si vous les ajoutez)
     'seasonal' => [
-        'holiday_sales' => 'Holiday Sales',
-        'black_friday' => 'Black Friday Deals',
-        'cyber_monday' => 'Cyber Monday Offers',
-        'seasonal_savings' => 'Seasonal Savings',
+        'holiday_sales' => 'Soldes Fêtes',
+        'black_friday' => 'Offres Black Friday',
+        'cyber_monday' => 'Promotions Cyber Monday',
+        'seasonal_savings' => 'Économies Saisonnières',
     ],
     
-    // User engagement (if you add ratings/reviews)
+    // Engagement utilisateur (si vous ajoutez des notes/avis)
     'user_engagement' => [
-        'rate_this_category' => 'Rate this category',
-        'user_ratings' => 'User Ratings',
-        'average_rating' => 'Average Rating: :rating/5',
-        'based_on' => 'Based on :count ratings',
-        'write_review' => 'Write a Review',
+        'rate_this_category' => 'Noter cette catégorie',
+        'user_ratings' => 'Notes des Utilisateurs',
+        'average_rating' => 'Note moyenne : :rating/5',
+        'based_on' => 'Basé sur :count avis',
+        'write_review' => 'Écrire un Avis',
     ],
     
-    // Mobile app CTA (if you add it)
+    // CTA Application mobile (si vous l'ajoutez)
     'mobile_app' => [
-        'title' => 'Get Our Mobile App',
-        'description' => 'Get :name deals on the go with our mobile app',
-        'download' => 'Download Now',
-        'available_on' => 'Available on iOS & Android',
+        'title' => 'Téléchargez Notre Application Mobile',
+        'description' => 'Recevez les offres :name en déplacement avec notre application mobile',
+        'download' => 'Télécharger Maintenant',
+        'available_on' => 'Disponible sur iOS & Android',
     ],
-];  
+];

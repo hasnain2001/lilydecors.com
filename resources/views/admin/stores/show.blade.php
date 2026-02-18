@@ -295,22 +295,22 @@
                                         </td>
                                         <td>
                                             @if ($coupon->code)
-                                                <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 text-white">
+                                                <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 text-dark">
                                                     <i class="fas fa-code me-1"></i> Code
                                                 </span>
                                             @else
-                                                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 text-white">
+                                                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 text-dark">
                                                     <i class="fas fa-percentage me-1"></i> Deal
                                                 </span>
                                             @endif
                                         </td>
                                         <td>
                                             @if ($coupon->status == 1)
-                                                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 text-white">
+                                                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2 text-dark">
                                                     <i class="fas fa-check-circle me-1"></i> Active
                                                 </span>
                                             @else
-                                                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-2 text-white">
+                                                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-2 text-dark">
                                                     <i class="fas fa-times-circle me-1"></i> Inactive
                                                 </span>
                                             @endif

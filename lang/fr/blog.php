@@ -1,135 +1,135 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Latest Coupon & Shopping Tips Blog :year | :app_name',
-        'description' => 'Explore our amazing blogs and offers. Find the best products and services in one place.',
-        'keywords' => 'blogs, offers, products, services',
+        'title' => 'Blog des Derniers Codes Promo & Astuces Shopping :year | :app_name',
+        'description' => 'Découvrez nos articles et offres exceptionnels. Trouvez les meilleurs produits et services en un seul endroit.',
+        'keywords' => 'blogs, offres, produits, services',
         'author' => 'John Doe',
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => 'Our Blog',
-        'subtitle' => 'Discover the latest insights, tips, and news on :app_name',
+        'title' => 'Notre Blog',
+        'subtitle' => 'Découvrez les derniers conseils, astuces et actualités sur :app_name',
     ],
     
-    // Statistics section
+    // Section Statistiques
     'stats' => [
-        'articles_published' => 'Articles Published',
-        'expert_writers' => 'Expert Writers',
-        'latest_updates' => 'Latest Updates',
+        'articles_published' => 'Articles Publiés',
+        'expert_writers' => 'Rédacteurs Experts',
+        'latest_updates' => 'Mises à Jour Récentes',
     ],
     
-    // Default values
+    // Valeurs par défaut
     'defaults' => [
         'author_initials' => 'A',
         'author_name' => 'Admin',
     ],
     
-    // Empty state
+    // État vide
     'empty' => [
-        'title' => 'No Blogs Found',
-        'message' => 'Check back soon for new blog posts and updates.',
+        'title' => 'Aucun Blog Trouvé',
+        'message' => 'Revenez bientôt pour de nouveaux articles et mises à jour.',
     ],
     
-    // Categories filter (if you add category filtering)
+    // Filtre par catégories (si vous ajoutez un filtrage par catégorie)
     'categories' => [
-        'all' => 'All Categories',
-        'filter_by' => 'Filter by Category',
-        'popular' => 'Popular Categories',
+        'all' => 'Toutes les Catégories',
+        'filter_by' => 'Filtrer par Catégorie',
+        'popular' => 'Catégories Populaires',
     ],
     
-    // Sorting options (if you add sorting)
+    // Options de tri (si vous ajoutez un tri)
     'sort' => [
-        'latest' => 'Latest',
-        'popular' => 'Most Popular',
-        'trending' => 'Trending',
-        'oldest' => 'Oldest',
-        'title_az' => 'Title (A-Z)',
-        'title_za' => 'Title (Z-A)',
+        'latest' => 'Plus Récents',
+        'popular' => 'Plus Populaires',
+        'trending' => 'Tendance',
+        'oldest' => 'Plus Anciens',
+        'title_az' => 'Titre (A-Z)',
+        'title_za' => 'Titre (Z-A)',
     ],
     
-    // Search functionality (if you add search)
+    // Fonctionnalité de recherche (si vous ajoutez une recherche)
     'search' => [
-        'placeholder' => 'Search blog posts...',
-        'no_results' => 'No posts found for ":query"',
-        'suggestions' => 'Try different keywords or browse categories',
+        'placeholder' => 'Rechercher des articles...',
+        'no_results' => 'Aucun article trouvé pour ":query"',
+        'suggestions' => 'Essayez d\'autres mots-clés ou parcourez les catégories',
     ],
     
-    // Featured posts section (if you add it)
+    // Section Articles en vedette (si vous l'ajoutez)
     'featured' => [
-        'title' => 'Featured Posts',
-        'view_all' => 'View All Featured',
+        'title' => 'Articles à la Une',
+        'view_all' => 'Voir Tous les Articles en Vedette',
     ],
     
-    // Newsletter signup (if you add it to blog page)
+    // Inscription à la newsletter (si vous l'ajoutez à la page du blog)
     'newsletter' => [
-        'title' => 'Subscribe to Our Blog',
-        'description' => 'Get the latest posts delivered directly to your inbox',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! Check your email.',
+        'title' => 'Abonnez-vous à Notre Blog',
+        'description' => 'Recevez les derniers articles directement dans votre boîte mail',
+        'subscribe' => 'S\'abonner',
+        'success' => 'Abonnement réussi ! Vérifiez vos emails.',
     ],
     
-    // Social sharing (if you add share buttons)
+    // Partage social (si vous ajoutez des boutons de partage)
     'share' => [
-        'title' => 'Share this post',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'linkedin' => 'Share on LinkedIn',
-        'pinterest' => 'Pin on Pinterest',
+        'title' => 'Partager cet article',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'linkedin' => 'Partager sur LinkedIn',
+        'pinterest' => 'Épingler sur Pinterest',
     ],
     
-    // Reading time (if you add it)
+    // Temps de lecture (si vous l'ajoutez)
     'reading_time' => [
-        'min_read' => 'min read',
-        'less_than_minute' => 'Less than a minute',
+        'min_read' => 'min de lecture',
+        'less_than_minute' => 'Moins d\'une minute',
     ],
     
-    // Tags (if you add tagging system)
+    // Étiquettes (si vous ajoutez un système d'étiquettes)
     'tags' => [
-        'title' => 'Popular Tags',
-        'view_all_tags' => 'View All Tags',
-        'no_tags' => 'No tags available',
+        'title' => 'Étiquettes Populaires',
+        'view_all_tags' => 'Voir Toutes les Étiquettes',
+        'no_tags' => 'Aucune étiquette disponible',
     ],
     
-    // Comments (if you add comment system)
+    // Commentaires (si vous ajoutez un système de commentaires)
     'comments' => [
-        'title' => 'Comments',
-        'no_comments' => 'No comments yet. Be the first to comment!',
-        'leave_comment' => 'Leave a Comment',
-        'post_comment' => 'Post Comment',
-        'reply' => 'Reply',
+        'title' => 'Commentaires',
+        'no_comments' => 'Aucun commentaire pour le moment. Soyez le premier à commenter !',
+        'leave_comment' => 'Laisser un Commentaire',
+        'post_comment' => 'Publier le Commentaire',
+        'reply' => 'Répondre',
     ],
     
-    // Related posts (if you add related posts section)
+    // Articles similaires (si vous ajoutez une section d'articles similaires)
     'related' => [
-        'title' => 'You Might Also Like',
-        'read_more' => 'Read More',
+        'title' => 'Vous Pourriez Aussi Aimé',
+        'read_more' => 'Lire la Suite',
     ],
     
     // Pagination
     'pagination' => [
-        'showing' => 'Showing :from to :to of :total posts',
-        'previous' => 'Previous',
-        'next' => 'Next',
-        'page' => 'Page :current of :last',
+        'showing' => 'Affichage de :from à :to sur :total articles',
+        'previous' => 'Précédent',
+        'next' => 'Suivant',
+        'page' => 'Page :current sur :last',
     ],
     
-    // Archive (if you add archive functionality)
+    // Archives (si vous ajoutez une fonctionnalité d'archives)
     'archive' => [
-        'title' => 'Blog Archive',
-        'by_month' => 'Posts by Month',
-        'by_year' => 'Posts by Year',
-        'by_category' => 'Posts by Category',
+        'title' => 'Archives du Blog',
+        'by_month' => 'Articles par Mois',
+        'by_year' => 'Articles par Année',
+        'by_category' => 'Articles par Catégorie',
     ],
     
-    // Authors (if you add author pages)
+    // Auteurs (si vous ajoutez des pages d'auteur)
     'authors' => [
-        'title' => 'Our Authors',
-        'view_profile' => 'View Profile',
-        'posts_by' => 'Posts by :author',
-        'bio' => 'About the Author',
+        'title' => 'Nos Rédacteurs',
+        'view_profile' => 'Voir le Profil',
+        'posts_by' => 'Articles de :author',
+        'bio' => 'À propos de l\'Auteur',
     ],
 ];

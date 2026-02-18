@@ -1,147 +1,147 @@
 <?php
 
 return [
-    // Meta tags
+    // Balises Meta
     'meta' => [
-        'title' => 'Best Categories & Brands Offers :year - :app_name',
-        'description' => 'Discover amazing categories with exclusive offers, discounts, and coupons. Find the best deals from top brands and stores in one place.',
-        'keywords' => 'categories, brands, offers, discounts, coupons, deals, shopping, savings',
-        'author' => 'Your Brand Name',
+        'title' => 'Meilleures Offres par Catégories & Marques :year - :app_name',
+        'description' => 'Découvrez des catégories exceptionnelles avec des offres exclusives, des réductions et des codes promo. Trouvez les meilleures offres des plus grandes marques et boutiques en un seul endroit.',
+        'keywords' => 'catégories, marques, offres, réductions, codes promo, bonnes affaires, shopping, économies',
+        'author' => 'Votre Nom de Marque',
     ],
     
-    // Header section
+    // Section En-tête
     'header' => [
-        'title' => 'Best Discounts For Every Category',
-        'subtitle' => 'Discover exclusive offers and amazing deals across all our categories. Save big with our curated collection of discounts and coupons.',
+        'title' => 'Meilleures Remises Pour Chaque Catégorie',
+        'subtitle' => 'Découvrez des offres exclusives et des promotions exceptionnelles dans toutes nos catégories. Économisez gros grâce à notre collection soigneusement sélectionnée de réductions et de coupons.',
     ],
     
-    // Statistics section
+    // Section Statistiques
     'stats' => [
-        'categories' => 'Categories',
-        'offers' => 'Offers',
-        'discounts' => 'Discounts',
-        'verified' => 'Verified',
-        'latest_year' => 'Latest :year',
+        'categories' => 'Catégories',
+        'offers' => 'Offres',
+        'discounts' => 'Remises',
+        'verified' => 'Vérifiées',
+        'latest_year' => 'Dernières :year',
     ],
     
-    // Category cards
-    'image_alt' => 'Category Image',
+    // Cartes de catégorie
+    'image_alt' => 'Image de la Catégorie',
     'aria' => [
-        'explore_category' => 'Explore :name category',
+        'explore_category' => 'Explorer la catégorie :name',
     ],
-    'view_more' => 'View more',
+    'view_more' => 'Voir plus',
     
-    // Empty state
+    // État vide
     'empty' => [
-        'title' => 'No Categories Found',
-        'message' => 'Check back soon for updated categories and offers.',
+        'title' => 'Aucune Catégorie Trouvée',
+        'message' => 'Revenez bientôt pour des catégories et offres mises à jour.',
     ],
     
-    // SEO content section
+    // Section Contenu SEO
     'seo' => [
-        'title' => 'Find the Best Deals Across All Categories',
-        'paragraph1' => 'Explore our comprehensive collection of categories featuring exclusive discounts, promotional offers, and money-saving coupons. Whether you\'re looking for electronics, fashion, home goods, or specialty items, we\'ve curated the best deals from trusted retailers to help you save time and money.',
-        'paragraph2' => 'Our platform continuously updates offers across all categories to ensure you get access to the latest promotions and discount codes. Browse through our organized categories to find exactly what you\'re looking for with guaranteed savings.',
+        'title' => 'Trouvez les Meilleures Offres dans Toutes les Catégories',
+        'paragraph1' => 'Explorez notre collection complète de catégories proposant des réductions exclusives, des offres promotionnelles et des codes promo pour économiser. Que vous cherchiez de l\'électronique, de la mode, des articles pour la maison ou des produits spécialisés, nous avons rassemblé les meilleures offres de détaillants de confiance pour vous aider à gagner du temps et de l\'argent.',
+        'paragraph2' => 'Notre plateforme met continuellement à jour les offres dans toutes les catégories pour vous garantir un accès aux dernières promotions et codes de réduction. Parcourez nos catégories organisées pour trouver exactement ce que vous cherchez avec des économies garanties.',
     ],
     
-    // Filter and sorting (if added)
+    // Filtre et tri (si ajoutés)
     'filter' => [
-        'title' => 'Filter Categories',
-        'popular' => 'Most Popular',
-        'newest' => 'Newest',
+        'title' => 'Filtrer les Catégories',
+        'popular' => 'Les Plus Populaires',
+        'newest' => 'Les Plus Récentes',
         'alphabetical' => 'A-Z',
-        'with_stores' => 'With Stores',
-        'with_blogs' => 'With Blogs',
+        'with_stores' => 'Avec des Boutiques',
+        'with_blogs' => 'Avec des Articles',
     ],
     
-    // Search functionality (if added)
+    // Fonctionnalité de recherche (si ajoutée)
     'search' => [
-        'placeholder' => 'Search categories...',
-        'no_results' => 'No categories found for ":query"',
-        'suggestions' => 'Try different keywords or browse all categories',
+        'placeholder' => 'Rechercher des catégories...',
+        'no_results' => 'Aucune catégorie trouvée pour ":query"',
+        'suggestions' => 'Essayez d\'autres mots-clés ou parcourez toutes les catégories',
     ],
     
-    // Featured categories (if you add featured section)
+    // Catégories en vedette (si vous ajoutez une section vedette)
     'featured' => [
-        'title' => 'Featured Categories',
-        'view_all' => 'View All Categories',
+        'title' => 'Catégories à la Une',
+        'view_all' => 'Voir Toutes les Catégories',
     ],
     
-    // Top categories (if you add ranking)
+    // Catégories populaires (si vous ajoutez un classement)
     'top_categories' => [
-        'title' => 'Top Categories This Month',
-        'based_on' => 'Based on store count and user engagement',
-        'trending' => 'Trending Now',
+        'title' => 'Catégories Tops ce Mois',
+        'based_on' => 'Basé sur le nombre de boutiques et l\'engagement des utilisateurs',
+        'trending' => 'Tendances Actuelles',
     ],
     
-    // Category types (if you categorize categories)
+    // Types de catégories (si vous catégorisez les catégories)
     'types' => [
         'shopping' => 'Shopping',
         'services' => 'Services',
-        'travel' => 'Travel',
-        'food_dining' => 'Food & Dining',
-        'entertainment' => 'Entertainment',
-        'home_garden' => 'Home & Garden',
-        'electronics' => 'Electronics',
-        'fashion' => 'Fashion',
-        'health_beauty' => 'Health & Beauty',
-        'automotive' => 'Automotive',
+        'travel' => 'Voyage',
+        'food_dining' => 'Alimentation & Restauration',
+        'entertainment' => 'Divertissement',
+        'home_garden' => 'Maison & Jardin',
+        'electronics' => 'Électronique',
+        'fashion' => 'Mode',
+        'health_beauty' => 'Santé & Beauté',
+        'automotive' => 'Automobile',
     ],
     
-    // Newsletter signup (if added)
+    // Inscription à la newsletter (si ajoutée)
     'newsletter' => [
-        'title' => 'Get Category Updates',
-        'description' => 'Subscribe to receive updates on new categories and exclusive offers',
-        'subscribe' => 'Subscribe',
-        'success' => 'Successfully subscribed! You\'ll receive category updates.',
+        'title' => 'Recevez les Mises à Jour des Catégories',
+        'description' => 'Abonnez-vous pour recevoir des mises à jour sur les nouvelles catégories et offres exclusives',
+        'subscribe' => 'S\'abonner',
+        'success' => 'Abonnement réussi ! Vous recevrez les mises à jour des catégories.',
     ],
     
-    // Social sharing (if added)
+    // Partage social (si ajouté)
     'share' => [
-        'title' => 'Share Categories',
-        'facebook' => 'Share on Facebook',
-        'twitter' => 'Share on Twitter',
-        'pinterest' => 'Pin on Pinterest',
-        'email' => 'Share via Email',
+        'title' => 'Partager les Catégories',
+        'facebook' => 'Partager sur Facebook',
+        'twitter' => 'Partager sur Twitter',
+        'pinterest' => 'Épingler sur Pinterest',
+        'email' => 'Partager par Email',
     ],
     
-    // Seasonal/holiday categories (if added)
+    // Catégories saisonnières/fêtes (si ajoutées)
     'seasonal' => [
-        'holiday' => 'Holiday Categories',
-        'seasonal_sales' => 'Seasonal Sales',
-        'limited_time' => 'Limited Time Categories',
+        'holiday' => 'Catégories Fêtes',
+        'seasonal_sales' => 'Soldes Saisonniers',
+        'limited_time' => 'Catégories à Durée Limitée',
     ],
     
-    // Mobile app CTA (if added)
+    // CTA Application mobile (si ajoutée)
     'mobile_app' => [
-        'title' => 'Browse Categories On The Go',
-        'description' => 'Access all categories and deals from our mobile app',
-        'download' => 'Download App',
-        'available_on' => 'Available on iOS & Android',
+        'title' => 'Parcourez les Catégories en Déplacement',
+        'description' => 'Accédez à toutes les catégories et offres depuis notre application mobile',
+        'download' => 'Télécharger l\'App',
+        'available_on' => 'Disponible sur iOS & Android',
     ],
     
-    // Breadcrumb (if separate from common)
+    // Fil d'Ariane (si séparé du commun)
     'breadcrumb' => [
-        'current' => 'All Categories',
+        'current' => 'Toutes les Catégories',
     ],
     
-    // Accessibility
+    // Accessibilité
     'accessibility' => [
-        'skip_to_content' => 'Skip to main content',
-        'skip_to_categories' => 'Skip to categories grid',
+        'skip_to_content' => 'Passer au contenu principal',
+        'skip_to_categories' => 'Passer à la grille des catégories',
     ],
     
-    // Loading states
+    // États de chargement
     'loading' => [
-        'categories' => 'Loading categories...',
-        'please_wait' => 'Please wait while we load the categories',
+        'categories' => 'Chargement des catégories...',
+        'please_wait' => 'Veuillez patienter pendant le chargement des catégories',
     ],
     
-    // Pagination (if added)
+    // Pagination (si ajoutée)
     'pagination' => [
-        'showing' => 'Showing :from to :to of :total categories',
-        'previous' => 'Previous',
-        'next' => 'Next',
-        'page' => 'Page :current of :last',
+        'showing' => 'Affichage de :from à :to sur :total catégories',
+        'previous' => 'Précédent',
+        'next' => 'Suivant',
+        'page' => 'Page :current sur :last',
     ],
 ];

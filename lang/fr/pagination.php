@@ -1,19 +1,46 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
-    | Pagination Language Lines
+    | Lignes de Langue pour la Pagination
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used by the paginator library to build
-    | the simple pagination links. You are free to change them to anything
-    | you want to customize your views to better match your application.
+    | Les lignes de langue suivantes sont utilisées par la bibliothèque de pagination
+    | pour construire les liens de pagination simples. Vous êtes libre de les modifier
+    | pour personnaliser vos vues et mieux correspondre à votre application.
     |
     */
 
-    'previous' => '&laquo; Previous',
-    'next' => 'Next &raquo;',
+    // Pagination Laravel par défaut
+    'previous' => '&laquo; Précédent',
+    'next' => 'Suivant &raquo;',
 
+    // Texte de template de pagination personnalisé
+    'mobile' => [
+        'showing' => 'Affichage',
+        'to' => 'à',
+        'of' => 'sur',
+        'previous' => 'Précédent',
+        'next' => 'Suivant',
+    ],
+
+    'desktop' => [
+        'showing' => 'Affichage',
+        'to' => 'à',
+        'of' => 'sur',
+        'results' => 'résultats',
+        'previous' => 'Précédent',
+        'next' => 'Suivant',
+    ],
+
+    // Termes courants
+    'common' => [
+        'showing' => 'Affichage',
+        'to' => 'à',
+        'of' => 'sur',
+        'results' => 'résultats',
+        'previous' => 'Précédent',
+        'next' => 'Suivant',
+    ],
 ];
