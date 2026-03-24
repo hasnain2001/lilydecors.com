@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title')
-    @if ($store->title)
-        {{ $store->title }} {{ config('app.name') }}
+    @if ($store->title) 
+        {{ $store->title }} - {{ config('app.name') }}
     @else
         {{ $store->name }} {{ trans('common.coupon_codes') }} & {{ trans('common.promo_codes') }} {{ date('Y') }} | {{ config('app.name') }}
     @endif
@@ -366,7 +366,7 @@
                                         @if($blog->image)
                                         <img class="blog-image img-fluid rounded mb-3"
                                             src="{{ asset('uploads/blogs/' . $blog->image) }}"
-                                            alt="{{ $blog->title }}"
+                                            alt="{{ $blog->name }}"
                                             loading="lazy"
                                             style="max-height: 200px; object-fit: cover;">
                                         @endif

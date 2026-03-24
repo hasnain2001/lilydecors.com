@@ -30,7 +30,7 @@
             <div class="search-box me-3">
               <form role="search" class="position-relative d-flex align-items-center" action="{{ route('admin.search') }}" method="GET">
                     <i class="fas fa-search search-icon"></i>
-                <input type="text" class="form-control" name="query" id="searchInput" placeholder="Search store here..." aria-label="Search">
+                <input type="text" class="form-control" name="query" id="searchInput" placeholder="Search store, blog, category, coupon, here..." aria-label="Search">
                 </form>
             </div>
 

@@ -298,6 +298,29 @@
             }
         });
     </script>
+    <script>
+                    $(document).ready(function() {
+                        let searchTimer;
+                        $('#adminSearch').on('keyup', function() {
+                            clearTimeout(searchTimer);
+                            const query = $(this).val();
+                            
+                            if (query.length < 2) return;
+                            
+                            searchTimer = setTimeout(function() {
+                                $.ajax({
+                                    url: '{{ route("admin.search") }}',
+                                    type: 'GET',
+                                    data: { query: query, ajax: true },
+                                    success: function(response) {
+                                        // Handle suggestions display
+                                        displaySearchSuggestions(response);
+                                    }
+                                });
+                            }, 300);
+                        });
+                    });
+        </script>
     <!-- DataTables Buttons -->
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>

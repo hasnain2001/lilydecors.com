@@ -295,7 +295,7 @@
                                         </td>
                                         <td>
                                             @if ($coupon->code)
-                                                <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 text-dark">
+                                                <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 text-primary">
                                                     <i class="fas fa-code me-1"></i> Code
                                                 </span>
                                             @else

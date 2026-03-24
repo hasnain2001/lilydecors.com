@@ -38,8 +38,9 @@ use App\Http\Controllers\Admin\SliderController;
     Route::get('/search/store', 'searchStores')->name('search.store');
     Route::get('/search/store/coupons', 'searchStoresCoupons')->name('search.store.coupons');
     Route::get('/search',  'search')->name('search');
-    Route::get('/search_results',  'searchResults')->name('search_results');
+    Route::get('/search_results',  'searchResults')->name('search.results');
     });
+
     Route::resource('/slider', SliderController::class)->names('admin.slider');
     Route::patch('/{slider}/toggle-status', [SliderController::class, 'toggleStatus'])->name('admin.slider.toggle-status');
     Route::get('/export', [SliderController::class, 'export'])->name('admin.slider.export');
