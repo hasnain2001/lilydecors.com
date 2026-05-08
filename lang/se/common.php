@@ -352,4 +352,16 @@ return [
     'about' => 'Om',
     'coupon_codes'=> 'Kupongkod ',
     'save_money_at_store' => 'Spara pengar hos :store med exklusiva kampanjkoder och rabatter',
+        // Store & Coupon specific
+    'coupon_code' => 'Rabattkod',
+    'up_to_50_percent_off' => 'Upp till 50% rabatt',
+    'verified_deals' => 'Verifierade erbjudanden',
+    'verified_coupons' => 'Verifierade kuponger',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Upp till :percent% rabatt',
+    'verified_coupons_deals' => 'Verifierade kuponger och erbjudanden',
+    'best_discounts' => 'Bästa rabatterna',
+    'today_coupon_codes' => 'Dagens rabattkoder',
+    'active_offers' => 'Aktiva erbjudanden',
 ];

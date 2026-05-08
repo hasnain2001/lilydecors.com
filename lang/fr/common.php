@@ -351,4 +351,17 @@ return [
     'about' => 'À propos',
     'coupon_codes' => 'Code promo',
     'save_money_at_store' => 'Économisez chez :store avec des codes promo et réductions exclusifs',
+
+        // Store & Coupon specific
+    'coupon_code' => 'Code promo',
+    'up_to_50_percent_off' => 'Jusqu\'à 50% de réduction',
+    'verified_deals' => 'Offres vérifiées',
+    'verified_coupons' => 'Coupons vérifiés',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Jusqu\'à :percent% de réduction',
+    'verified_coupons_deals' => 'Coupons et offres vérifiés',
+    'best_discounts' => 'Meilleures réductions',
+    'today_coupon_codes' => 'Codes promo du jour',
+    'active_offers' => 'Offres actives',
 ];

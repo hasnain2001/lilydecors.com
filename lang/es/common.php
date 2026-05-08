@@ -350,4 +350,17 @@ return [
     'save_big_today' => 'Ahorra mucho hoy',
     'about' => 'Acerca de',
     'coupon_codes' => 'Códigos de Cupón ',
+
+        // Store & Coupon specific
+    'coupon_code' => 'Código de cupón',
+    'up_to_50_percent_off' => 'Hasta 50% de descuento',
+    'verified_deals' => 'Ofertas verificadas',
+    'verified_coupons' => 'Cupones verificados',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Hasta :percent% de descuento',
+    'verified_coupons_deals' => 'Cupones y ofertas verificadas',
+    'best_discounts' => 'Mejores descuentos',
+    'today_coupon_codes' => 'Códigos de cupón de hoy',
+    'active_offers' => 'Ofertas activas',
 ];

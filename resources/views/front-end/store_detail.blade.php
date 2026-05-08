@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('title')
     @if ($store->title) 
-        {{ $store->title }} - {{ config('app.name') }}
+        {{ $store->title }} 
     @else
-        {{ $store->name }} {{ trans('common.coupon_codes') }} & {{ trans('common.promo_codes') }} {{ date('Y') }} | {{ config('app.name') }}
+        {{ $store->name }} {{ trans('common.coupon_code') }} {{ date('Y') }} – {{ trans('common.up_to_50_percent_off') }} ({{ trans('common.verified_deals') }}) 
     @endif
 @endsection
 
@@ -163,8 +163,7 @@
                 <!-- Store Info -->
                 <div class="col-md-10 col-7">
                     <div class="store-info">
-                        <h1 class="store-name mb-2">{{ $store->name }} @lang('common.coupon_codes_deals') February {{ date('Y') }} -
-                            {{ config('app.name') }}
+                        <h1 class="store-name mb-2">{{ $store->name }} @lang('common.coupon_codes_deals') {{ date('F Y') }}  - @lang('common.verified_deals')
                         </h1>
                        
                         <div class="store-rating d-flex align-items-center mb-3">
@@ -174,7 +173,16 @@
                             <span class="text-muted small">(4.8/5) • {{ $totalCount }} @lang('common.offers')</span>
                         </div>
                         <p class=" mb-0 d-none d-md-block">
-                          {{ $store->description ? Str::limit($store->description, 150) : __('common.discover_amazing_deals_at') . ' ' . $store->name . '. ' . __('common.save_big_with_exclusive_coupons') }}
+                          @if ($store->description)
+                                {{ $store->description }}
+                            @else
+                                @lang('common.default_description', [
+                                    'store_name' => $store->name,
+                                    'month_year' => date('F Y'),
+                                    'app_name' => config('app.name')
+                                ])
+                            @endif
+                          
                         </p>
                         <a href="{{ $store->destination_url }}" target="_blank" class="btn btn-golden btn-sm">
                             <i class="fas fa-external-link-alt me-2"></i>@lang('common.visit_store')

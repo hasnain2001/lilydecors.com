@@ -353,4 +353,16 @@ return [
     'about' => 'O',
     'coupon_codes'=> 'Kupóny ',
     'save_money_at_store' => 'Ušetřete v :store s exkluzivními propagačními kódy a slevami',
+        // Store & Coupon specific
+    'coupon_code' => 'Kód kupónu',
+    'up_to_50_percent_off' => 'Až 50% sleva',
+    'verified_deals' => 'Ověřené nabídky',
+    'verified_coupons' => 'Ověřené kupóny',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Až :percent% sleva',
+    'verified_coupons_deals' => 'Ověřené kupóny a nabídky',
+    'best_discounts' => 'Nejlepší slevy',
+    'today_coupon_codes' => 'Dnešní kupónové kódy',
+    'active_offers' => 'Aktivní nabídky',
 ];

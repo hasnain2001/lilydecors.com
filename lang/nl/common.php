@@ -353,4 +353,16 @@ return [
     'about' => 'Over',
     'coupon_codes'=> 'Couponcode ',
     'save_money_at_store' => 'Bespaar geld bij :store met exclusieve promotiecodes en kortingen',
+        // Store & Coupon specific
+    'coupon_code' => 'Couponcode',
+    'up_to_50_percent_off' => 'Tot 50% korting',
+    'verified_deals' => 'Geverifieerde aanbiedingen',
+    'verified_coupons' => 'Geverifieerde coupons',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Tot :percent% korting',
+    'verified_coupons_deals' => 'Geverifieerde coupons en aanbiedingen',
+    'best_discounts' => 'Beste kortingen',
+    'today_coupon_codes' => 'Couponcodes van vandaag',
+    'active_offers' => 'Actieve aanbiedingen',
 ];

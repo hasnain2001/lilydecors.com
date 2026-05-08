@@ -353,4 +353,16 @@ return [
     'about' => 'Informazioni',
     'coupon_codes'=> 'Codice Coupon',
     'save_money_at_store' => 'Risparmia su :store con codici promozionali esclusivi e sconti',
+        // Store & Coupon specific
+    'coupon_code' => 'Codice coupon',
+    'up_to_50_percent_off' => 'Fino al 50% di sconto',
+    'verified_deals' => 'Offerte verificate',
+    'verified_coupons' => 'Coupon verificati',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Fino al :percent% di sconto',
+    'verified_coupons_deals' => 'Coupon e offerte verificati',
+    'best_discounts' => 'Migliori sconti',
+    'today_coupon_codes' => 'Codici coupon di oggi',
+    'active_offers' => 'Offerte attive',
 ];

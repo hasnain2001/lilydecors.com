@@ -1,6 +1,69 @@
 <?php
 
 return [
+        // Navigation Specific Terms
+    'navigation' => [
+        'select_language' => 'Select Language',
+        'menu' => 'Menu',
+        'top_stores' => 'Top Rated Stores',
+        'new_stores' => 'New Stores',
+        'today_deals' => 'Today\'s Deals',
+        'expiring_soon' => 'Expiring Soon',
+        'resources' => 'Resources',
+        'how_to_save' => 'How to Save',
+        'faq' => 'FAQ',
+        'all_posts' => 'All Posts',
+        'search_placeholder' => 'Search for Blog posts, stores, or categories...',
+    ],
+    
+    // Footer Specific Terms
+    'footer' => [
+        'tagline' => 'Transforming houses into homes with curated decor inspiration, practical guides, and timeless design ideas.',
+        'social' => [
+            'pinterest' => 'Pinterest',
+            'instagram' => 'Instagram',
+            'facebook' => 'Facebook',
+            'twitter' => 'Twitter',
+            'youtube' => 'YouTube',
+        ],
+        'newsletter' => [
+            'title' => 'Join Our Newsletter',
+            'description' => 'Get weekly decor inspiration & exclusive tips',
+            'placeholder' => 'Your email address',
+            'button' => 'Subscribe',
+        ],
+        'quick_links' => [
+            'title' => 'Quick Links',
+            'shop_favorites' => 'Shop Our Favorites',
+            'latest_coupons' => 'Latest Coupons',
+            'hot_deals' => 'Hot Deals',
+            'cashback_offers' => 'Cashback Offers',
+            'top_stores' => 'Top Stores',
+            'decor_blog' => 'Decor Blog',
+            'how_to_guides' => 'How to Guides',
+            'trending_now' => 'Trending Now',
+        ],
+        'categories' => [
+            'title' => 'Categories',
+        ],
+        'about_help' => [
+            'title' => 'About & Help',
+            'about' => 'About LilyDecors',
+            'imprint' => 'Imprint',
+        ],
+        'copyright' => '© :year :app_name – All Rights Reserved | Interior Design Blog & Inspiration',
+        'bottom' => [
+            'sitemap' => 'Sitemap',
+            'accessibility' => 'Accessibility',
+            'cookie_policy' => 'Cookie Policy',
+        ],
+        'privacy' => [
+            'message' => 'We use cookies to enhance your browsing experience and analyze our traffic.',
+            'accept_all' => 'Accept All',
+            'manage_settings' => 'Manage Settings',
+            'reject_all' => 'Reject All',
+        ],
+    ],
     // Navigation & Basic Terms
     'home' => 'Home',
     'stores' => 'Stores',
@@ -134,69 +197,7 @@ return [
     'page' => 'Page',
     'of' => 'of',
     
-    // Navigation Specific Terms
-    'navigation' => [
-        'select_language' => 'Select Language',
-        'menu' => 'Menu',
-        'top_stores' => 'Top Rated Stores',
-        'new_stores' => 'New Stores',
-        'today_deals' => 'Today\'s Deals',
-        'expiring_soon' => 'Expiring Soon',
-        'resources' => 'Resources',
-        'how_to_save' => 'How to Save',
-        'faq' => 'FAQ',
-        'all_posts' => 'All Posts',
-        'search_placeholder' => 'Search for Blog posts, stores, or categories...',
-    ],
-    
-    // Footer Specific Terms
-    'footer' => [
-        'tagline' => 'Transforming houses into homes with curated decor inspiration, practical guides, and timeless design ideas.',
-        'social' => [
-            'pinterest' => 'Pinterest',
-            'instagram' => 'Instagram',
-            'facebook' => 'Facebook',
-            'twitter' => 'Twitter',
-            'youtube' => 'YouTube',
-        ],
-        'newsletter' => [
-            'title' => 'Join Our Newsletter',
-            'description' => 'Get weekly decor inspiration & exclusive tips',
-            'placeholder' => 'Your email address',
-            'button' => 'Subscribe',
-        ],
-        'quick_links' => [
-            'title' => 'Quick Links',
-            'shop_favorites' => 'Shop Our Favorites',
-            'latest_coupons' => 'Latest Coupons',
-            'hot_deals' => 'Hot Deals',
-            'cashback_offers' => 'Cashback Offers',
-            'top_stores' => 'Top Stores',
-            'decor_blog' => 'Decor Blog',
-            'how_to_guides' => 'How to Guides',
-            'trending_now' => 'Trending Now',
-        ],
-        'categories' => [
-            'title' => 'Categories',
-        ],
-        'about_help' => [
-            'title' => 'About & Help',
-            'about' => 'About LilyDecors',
-            'imprint' => 'Imprint',
-        ],
-        'copyright' => '© :year :app_name – All Rights Reserved | Interior Design Blog & Inspiration',
-        'bottom' => [
-            'sitemap' => 'Sitemap',
-            'accessibility' => 'Accessibility',
-            'cookie_policy' => 'Cookie Policy',
-        ],
-        'privacy' => [
-            'message' => 'We use cookies to enhance your browsing experience and analyze our traffic.',
-            'accept_all' => 'Accept All',
-            'manage_settings' => 'Manage Settings',
-            'reject_all' => 'Reject All',
-        ],
-    ],
+
     
     // Additional terms from your language file
     'blogs' => 'Blogs',
@@ -353,4 +354,19 @@ return [
     'about' => 'About',
     'coupon_codes'=> 'Coupon Code ',
     'save_money_at_store' => 'Save money at :store with exclusive promo codes and discounts',
+
+    // Store & Coupon specific
+    'coupon_code' => 'Coupon Code',
+    'up_to_50_percent_off' => 'Up to 50% Off',
+    'verified_deals' => 'Verified Deals',
+    'verified_coupons' => 'Verified Coupons',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Up to :percent% Off',
+    'verified_coupons_deals' => 'Verified Coupons & Deals',
+    'best_discounts' => 'Best Discounts',
+    'today_coupon_codes' => 'Today\'s Coupon Codes',
+    'active_offers' => 'Active Offers',
+    'default_description' => 'Save more with the latest :store_name promo codes and coupons for :month_year. All deals are tested and verified to help you get the best discounts. Find exclusive offers and start saving today at :app_name',
+    
 ];

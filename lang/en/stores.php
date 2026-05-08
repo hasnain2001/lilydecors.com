@@ -5,6 +5,8 @@ return [
     'meta-title' => 'New Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
     'description' => 'Discover amazing stores with exclusive offers, discounts, and coupons. Find the best deals from top brands in one place.',
     'keywords' => 'stores, offers, discounts, coupons, deals, shopping, brands, savings',
+
+
     
     // Header Section
     'header' => [
@@ -57,5 +59,9 @@ return [
     'share' => 'Share',
     'save' => 'Save',
     ],
+         'top-stores' => [
+        'title' => 'Top Stores Coupons, Promo Codes & Best Deals ' . date('Y') . ' | ' . config('app.name'),
+        'meta-title' => 'Explore our top stores with exclusive offers and discounts. Find the best deals from trusted brands and save big on your shopping.',
+        ],
 ];
 

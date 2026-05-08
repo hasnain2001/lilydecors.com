@@ -161,6 +161,27 @@
                             @endforelse
                         </div>
                     </div>
+                    <div class="sidebar-card">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="fas fa-blog"></i>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2808971624656630"
+                                crossorigin="anonymous"></script>
+                            <!-- blog page -->
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-2808971624656630"
+                                data-ad-slot="6179405621"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

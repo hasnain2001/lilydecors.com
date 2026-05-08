@@ -92,7 +92,7 @@
             <button class="nav-search-btn" id="navSearchToggle" aria-label="@lang('common.search')">
                 <i class="fas fa-search"></i>
             </button>
-            <button class="nav-subscribe-btn">@lang('common.subscribe')</button>
+                        
             <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="@lang('common.navigation.menu')">
                 <i class="fas fa-bars"></i>
             </button>
@@ -144,7 +144,7 @@
 <!-- Mobile Overlay -->
 <div class="nav-mobile-overlay" id="navMobileOverlay"></div>
 
-<!-- Loader HTML -->
+{{-- <!-- Loader HTML -->
 <div class="loader-wrapper" id="loaderWrapper">
     <div class="loader-container">
         <div class="loader-spinner"></div>
@@ -155,7 +155,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Back to Top Button HTML -->
 <button class="back-to-top" id="backToTop" aria-label="@lang('common.back_to_top')">

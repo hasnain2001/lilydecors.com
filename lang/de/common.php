@@ -352,4 +352,16 @@ return [
     'coupon_codes' => 'Gutscheincode ',
     'save_money_at_store' => 'Sparen Sie Geld bei :store mit exklusiven Aktionscodes und Rabatten',
     'apply_code_checkout_on' => 'Verwenden Sie diesen Code an der Kasse auf :store',
+        // Store & Coupon specific
+    'coupon_code' => 'Coupon-Code',
+    'up_to_50_percent_off' => 'Bis zu 50% Rabatt',
+    'verified_deals' => 'Verifizierte Angebote',
+    'verified_coupons' => 'Verifizierte Coupons',
+
+    // Or if you want more flexibility with percentage
+    'up_to_percent_off' => 'Bis zu :percent% Rabatt',
+    'verified_coupons_deals' => 'Verifizierte Coupons & Angebote',
+    'best_discounts' => 'Beste Rabatte',
+    'today_coupon_codes' => 'Heutige Coupon-Codes',
+    'active_offers' => 'Aktive Angebote',
 ];

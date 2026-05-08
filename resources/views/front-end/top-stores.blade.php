@@ -1,8 +1,7 @@
 @extends('layouts.master')
-@section('title', __('title'))
-@section('meta-title', __('meta-title'))
-@section('description', __('description'))
-@section('keywords', __('keywords'))
+@section('title', __('top-stores.title'))
+@section('description', __('top-stores.description'))
+@section('keywords', __('top-stores.keywords'))
 @section('author', 'Your Brand Name')
 @section('content')
 
@@ -14,9 +13,9 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1 class="page-title floating-text">@lang('common.stores')</h1>
+            <h1 class="page-title floating-text">@lang('top-stores.header.title')</h1>
             <p class="page-subtitle">
-                @lang('header.subtitle')
+                @lang('top-stores.header.subtitle')
             </p>
         </div>
     </header>
@@ -36,7 +35,7 @@
                         <i class="fas fa-chevron-right small"></i>
                     </span>
                     <i class="fas fa-store me-2 text-primary"></i>
-                    @lang('common.stores')
+                    @lang('top-stores.header.title')
                 </li>
             </ol>
         </nav>
@@ -45,15 +44,15 @@
         <div class="stats-bar">
             <div class="stat-item">
                 <i class="fas fa-store"></i>
-                <span>{{ $stores->total() }} @lang('stats.stores')</span>
+                <span>{{ $stores->total() }} @lang('top-stores.stores')</span>
             </div>
             <div class="stat-item">
                 <i class="fas fa-tags"></i>
-                <span>@lang('stats.latest_deals', ['year' => date('Y')])</span>
+                <span>@lang('top-stores.latest_deals', ['year' => date('Y')])</span>
             </div>
             <div class="stat-item">
                 <i class="fas fa-star"></i>
-                <span>@lang('stats.verified_offers')</span>
+                <span>@lang('top-stores.verified_offers')</span>
             </div>
         </div>
 
@@ -72,7 +71,7 @@
                             />
                             @if($store->top_store)
                                 <div class="store-badge">
-                                    <i class="fas fa-crown me-1"></i>@lang('store_badge.top_store')
+                                    <i class="fas fa-crown me-1"></i>@lang('top-stores.store_badge.top_store')
                                 </div>
                             @endif
                         </div>
@@ -82,7 +81,7 @@
                             </h5>
                             <div class="store-meta">
                                 <i class="fas fa-tag"></i>
-                                <span>{{ $store->coupons->count() ?? '0'}} @lang('offers_count')</span>
+                                <span>{{ $store->coupons->count() ?? '0'}} @lang('top-stores.offers_count')</span>
                             </div>
                         </div>
                     </div>
@@ -93,9 +92,9 @@
                         <div class="no-stores-icon">
                             <i class="fas fa-store-slash"></i>
                         </div>
-                        <h4 class="text-dark mb-3">@lang('empty.title')</h4>
+                        <h4 class="text-dark mb-3">@lang('top-stores.empty.title')</h4>
                         <p class="text-muted mb-0">
-                            @lang('empty.message')
+                            @lang('top-stores.empty.message')
                         </p>
                     </div>
                 </div>
@@ -105,7 +104,7 @@
         <!-- Pagination -->
         @if($stores->hasPages())
             <div class="d-flex justify-content-center mt-5">
-                <nav aria-label="@lang('pagination.label')">
+                <nav aria-label="@lang('top-stores.pagination.label')">
                     <ul class="pagination pagination-custom">
                         {{ $stores->links('pagination::bootstrap-5') }}
                     </ul>
